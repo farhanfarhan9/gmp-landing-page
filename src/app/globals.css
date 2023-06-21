@@ -2,12 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-pts-24{
+.pts-24 {
   font-size: 24px;
 }
-pts-20{
+.pts-20 {
   font-size: 20px;
 }
-pts-40{
+.pts-40 {
   font-size: 40px;
+  line-height: 50px;
+}
+.pts-48 {
+  font-size: 48px;
+  line-height: 60px;
+}
+.pts-80 {
+  font-size: 80px;
+}
+
+html {
+  scroll-behavior: smooth;
 }

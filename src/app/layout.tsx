@@ -27,8 +27,8 @@ export default function RootLayout({
               <div className="flex items-center">
                 <Link className="flex-shrink-0" href="/">
                   <Image
-                    width={100}
-                    height={100}
+                    width={176}
+                    height={48}
                     unoptimized
                     className="h-11"
                     src="/logo.png"
@@ -52,23 +52,20 @@ export default function RootLayout({
                       >
                         Tentang Kami
                       </Link>
-                      <div
-                        className="h-full relative text-[#41444B]"
-                        x-data="{ open: false }"
-                      >
+                      <div className="h-full relative text-[#41444B]">
                         <button className="flex items-center">
                           Waste Water Technology{" "}
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
-                            stroke-width="1.5"
+                            strokeWidth="1.5"
                             stroke="currentColor"
                             className="w-4 h-4 ml-2"
                           >
                             <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
                               d="M19.5 8.25l-7.5 7.5-7.5-7.5"
                             />
                           </svg>
@@ -110,34 +107,31 @@ export default function RootLayout({
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
-                            stroke-width="1.5"
+                            strokeWidth="1.5"
                             stroke="currentColor"
                             className="w-4 h-4 ml-2"
                           >
                             <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
                               d="M19.5 8.25l-7.5 7.5-7.5-7.5"
                             />
                           </svg>
                         </button>
-                        <div
-                          className="absolute bg-slate-50 z-20 px-2 mt-9 py-2 flex flex-col space-y-1 w-48"
-                          x-show="open"
-                        >
+                        <div className="absolute bg-slate-50 z-20 px-2 mt-9 py-2 flex flex-col space-y-1 w-48">
                           <div className="hover:text-blue-800 py-2 px-3 rounded flex justify-between items-center">
                             Machineries{" "}
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               fill="none"
                               viewBox="0 0 24 24"
-                              stroke-width="1.5"
+                              strokeWidth="1.5"
                               stroke="currentColor"
                               className="w-6 h-6"
                             >
                               <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
                                 d="M8.25 4.5l7.5 7.5-7.5 7.5"
                               />
                             </svg>
@@ -148,13 +142,13 @@ export default function RootLayout({
                               xmlns="http://www.w3.org/2000/svg"
                               fill="none"
                               viewBox="0 0 24 24"
-                              stroke-width="1.5"
+                              strokeWidth="1.5"
                               stroke="currentColor"
                               className="w-6 h-6"
                             >
                               <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
                                 d="M8.25 4.5l7.5 7.5-7.5 7.5"
                               />
                             </svg>
@@ -294,7 +288,22 @@ export default function RootLayout({
                 </div>
                 <table className="mb-2">
                   <tr>
-                    <td></td>
+                    <td className="px-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1.5}
+                        stroke="currentColor"
+                        className="w-6 h-6"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                        />
+                      </svg>
+                    </td>
                     <td>Email</td>
                   </tr>
                   <tr>
@@ -304,7 +313,22 @@ export default function RootLayout({
                 </table>
                 <table>
                   <tr>
-                    <td></td>
+                    <td className="px-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1.5}
+                        stroke="currentColor"
+                        className="w-6 h-6"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"
+                        />
+                      </svg>
+                    </td>
                     <td className="capitalize">Satria access</td>
                   </tr>
                   <tr>
@@ -317,11 +341,35 @@ export default function RootLayout({
                 <div>
                   Satria Nusa Enjinering © All rights reserved Copyrights 2023
                 </div>
-                <div className="flex space-x-2 ml-2">
-                  <Image width={100} height={100} src="/twitter.svg" alt="" />
-                  <Image width={100} height={100} src="/facebook.svg" alt="" />
-                  <Image width={100} height={100} src="/linkedin.svg" alt="" />
-                  <Image width={100} height={100} src="/youtube.svg" alt="" />
+                <div className="flex space-x-2 ml-2 items-center">
+                  <Image
+                    unoptimized
+                    width={40}
+                    height={40}
+                    src="/twitter.svg"
+                    alt=""
+                  />
+                  <Image
+                    unoptimized
+                    width={40}
+                    height={40}
+                    src="/facebook.svg"
+                    alt=""
+                  />
+                  <Image
+                    unoptimized
+                    width={40}
+                    height={40}
+                    src="/linkedin.svg"
+                    alt=""
+                  />
+                  <Image
+                    unoptimized
+                    width={40}
+                    height={40}
+                    src="/youtube.svg"
+                    alt=""
+                  />
                 </div>
               </div>
             </div>

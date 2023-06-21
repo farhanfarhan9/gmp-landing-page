@@ -1,3 +1,4 @@
+import CarouselComponent from "@/components/home/CarouselComponent";
 import Section1 from "@/components/home/Section1";
 import Image from "next/image";
 import Link from "next/link";
@@ -22,38 +23,11 @@ export default function Home() {
             Learn more
           </button>
         </div>
-        <div className="flex">
-          <div className="flex items-center">
-            <Image
-              unoptimized
-              width={100}
-              height={100}
-              src="/foto2.png"
-              alt="foto2"
-              className="w-72"
-            />
-          </div>
-          <div className="flex items-center ml-3">
-            <Image
-              unoptimized
-              width={100}
-              height={100}
-              src="/foto1.png"
-              alt="foto1"
-              className="w-96"
-            />
-          </div>
-          <div className="flex items-center ml-3">
-            <Image
-              unoptimized
-              width={100}
-              height={100}
-              src="/foto3.png"
-              alt="foto2"
-              className="w-72"
-            />
-          </div>
+
+        <div>
+          <CarouselComponent />
         </div>
+
       </section>
       <section className="relative flex justify-center">
         <div className="w-2/5 relative">

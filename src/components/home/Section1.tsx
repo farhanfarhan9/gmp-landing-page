@@ -1,10 +1,46 @@
+"use client"
 import Image from 'next/image'
-import React from 'react'
+import { useEffect, useState } from 'react';
+
+
+const millisecondsPerDay = 24 * 60 * 60 * 1000;
+const additionalValuePerDay = 4090;
 
 const Section1 = () => {
+
+  const [value, setValue] = useState(0);
+
+  useEffect(() => {
+    const startDate = new Date('06/21/2023 00:00:00');
+    const currentDate = new Date();
+    const elapsedTime = currentDate.getTime() - startDate.getTime();
+    const totalDays = Math.floor(elapsedTime / millisecondsPerDay);
+    const additionalValue = totalDays * additionalValuePerDay;
+
+    const storedValue = localStorage.getItem('counterValue');
+
+    if (storedValue) {
+      setValue(parseFloat(storedValue));
+    } else {
+      setValue(1783605 + additionalValue);
+    }
+
+    const interval = setInterval(() => {
+      setValue((prevValue) => {
+        const newValue = prevValue + additionalValuePerDay / millisecondsPerDay;
+        localStorage.setItem('counterValue', newValue.toString());
+        return newValue;
+      });
+    }, 1);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
   return (
     <>
-    <section className="relative">
+      <section className="relative">
         <Image
           width={100}
           height={100}
@@ -41,11 +77,10 @@ const Section1 = () => {
               <div className="pts-48 flex">
                 Conserved Water :
                 <div className="flex">
-                  <div className="bg-stone-100 bg-opacity-40 rounded-xl px-3 py-1 mx-2">
-                    714,923,129
+                  <div className="bg-stone-100 bg-opacity-40 rounded-xl px-3 py-1 mx-2 font-mono">
+                    {value.toLocaleString(undefined, { minimumFractionDigits: 3 })}
                   </div>
                   <div className="text-superscript">
-                    {" "}
                     m<sup>2</sup>
                   </div>
                 </div>

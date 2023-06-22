@@ -1,21 +1,63 @@
+import Image from "next/image";
 import React from "react";
 
 interface Props {
-  children: React.ReactNode;
-  pt: string;
-  title: string;
-  location: string;
-  desc: string;
+  data: any;
+  children?: React.ReactNode;
 }
 
-const detail = (props: Props) => {
+const detail = ({ data, children }: Props) => {
   return (
     <div className="grid grid-cols-2 mx-auto max-w-7xl my-28 text-[#41444B]">
-      <div>{props.children}</div>
-      <div className="py-6 pl-12 pr-40">
-        <div className="font-bold mb-5">{props.pt}</div>
+      <div>
+        <Image
+          src={data.picture1}
+          unoptimized
+          height={100}
+          width={100}
+          className="w-full object-cover"
+          alt=""
+        />
+        <div className="grid grid-cols-2 gap-3 my-3">
+          <Image
+            src={data.picture2}
+            unoptimized
+            height={100}
+            width={100}
+            className="w-full h-72 object-cover"
+            alt=""
+          />
+          <Image
+            src={data.picture3}
+            unoptimized
+            height={100}
+            width={100}
+            className="w-full h-72 object-cover"
+            alt=""
+          />
+          <Image
+            src={data.picture4}
+            unoptimized
+            height={100}
+            width={100}
+            className="w-full h-72 object-cover"
+            alt=""
+          />
+          <Image
+            src={data.picture5}
+            unoptimized
+            height={100}
+            width={100}
+            className="w-full h-72 object-cover"
+            alt=""
+          />
+        </div>
+        <div>{children}</div>
+      </div>
+      <div className="pl-12 pr-40">
+        <div className="font-bold mb-5">{data.title}</div>
 
-        <div className="my-3">{props.title}</div>
+        <div className="my-3">{data.nickname}</div>
         <div className="flex items-center mb-3 font-bold">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -29,9 +71,9 @@ const detail = (props: Props) => {
               clipRule="evenodd"
             />
           </svg>
-          {props.location}
+          {data.location}
         </div>
-        <div>{props.desc}</div>
+        <div>{data.desc}</div>
       </div>
     </div>
   );

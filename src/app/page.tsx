@@ -24,9 +24,9 @@ export default function Home() {
           </button>
         </div>
 
-        <div>
+        {/* <div>
           <CarouselComponent />
-        </div>
+        </div> */}
 
       </section>
       <section className="relative flex justify-center">

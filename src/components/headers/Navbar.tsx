@@ -41,7 +41,13 @@ const Navbar = () => {
                     >
                       Tentang Kami
                     </Link>
-                    <WaterDowpdown title="Waste Water Technology" />
+                    <Link
+                      className="text-[#41444B] dark:text-white hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md font-medium"
+                      href="/waste_water_technology"
+                    >
+                      Waste Water Technology
+                    </Link>
+                    {/* <WaterDowpdown title="Waste Water Technology" /> */}
                     <ProducDropDown title="Product" />
                     <Link
                       className="text-[#41444B] hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md font-medium"

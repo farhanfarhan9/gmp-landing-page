@@ -16,7 +16,7 @@ const Product = ({ data }: { data: any }) => {
           alt=""
         />
       </div>
-      <div className="flex flex-col justify-center">
+      <div className="flex flex-col justify-center pl-10">
         <div className="mb-5 font-bold">{data.title}</div>
         <div>{data.text}</div>
         {expand && (

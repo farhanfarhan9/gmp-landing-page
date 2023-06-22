@@ -44,7 +44,7 @@ function SubSubMenu({ title }: Props) {
             />
           </svg>
         </Menu.Button>
-        <Menu.Items className="absolute bg-slate-50 top-0 z-20 px-2 py-3 flex flex-col space-y-3 w-36" style={{marginLeft:"154px"}}>
+        <Menu.Items className="absolute bg-slate-50 top-0 z-20 px-2 py-3 flex flex-col space-y-3 w-44" style={{marginLeft:"154px"}}>
           {links.map((link, index) => (
             <div key={index}>
               <Menu.Item key={link.href} as={Fragment}>

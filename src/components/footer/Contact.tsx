@@ -3,7 +3,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div>
+    <div id="contact">
       <div className="grid grid-cols-2 border-t-8 border-blue-800">
         <div className="pl-28 pr-52 bg-green-800 py-12">
           <div
@@ -123,29 +123,29 @@ const Contact = () => {
             <div className="flex space-x-2 ml-2 items-center">
               <Image
                 unoptimized
-                width={40}
-                height={40}
+                width={30}
+                height={30}
                 src="/twitter.svg"
                 alt=""
               />
               <Image
                 unoptimized
-                width={40}
-                height={40}
+                width={30}
+                height={30}
                 src="/facebook.svg"
                 alt=""
               />
               <Image
                 unoptimized
-                width={40}
-                height={40}
+                width={30}
+                height={30}
                 src="/linkedin.svg"
                 alt=""
               />
               <Image
                 unoptimized
-                width={40}
-                height={40}
+                width={30}
+                height={30}
                 src="/youtube.svg"
                 alt=""
               />

@@ -9,9 +9,9 @@ interface Props {
 }
 function ProducDropDown({ title }: Props) {
   return (
-    <div className="relative">
+    <div className="relative ">
       <Menu>
-        <Menu.Button className="flex items-center">
+        <Menu.Button className="flex items-center text-[#41444B] dark:text-white hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md ">
           {title}{" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +28,7 @@ function ProducDropDown({ title }: Props) {
             />
           </svg>
         </Menu.Button>
-        <Menu.Items className="absolute bg-slate-50 z-20 px-2 mt-10 py-3 flex flex-col space-y-3 w-44 ">
+        <Menu.Items className="absolute bg-slate-50 z-20 px-2 mt-8 py-3 flex flex-col space-y-3 w-44 ">
           <div>
             <Menu.Item as={Fragment}>
               <SubMenu title="Machineries" />

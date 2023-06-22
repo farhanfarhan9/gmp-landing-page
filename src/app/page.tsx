@@ -1,4 +1,5 @@
 import CarouselComponent from "@/components/home/CarouselComponent";
+import Expand from "@/components/home/Expand";
 import Section1 from "@/components/home/Section1";
 import Image from "next/image";
 import Link from "next/link";
@@ -24,122 +25,56 @@ export default function Home() {
           </button>
         </div>
 
-        {/* <div>
-          <CarouselComponent />
-        </div> */}
-
-      </section>
-      <section className="relative flex justify-center">
-        <div className="w-2/5 relative">
-          <Image
-            unoptimized
-            width={100}
-            height={100}
-            src="/background2.png"
-            alt="background2"
-            className="w-full"
-          />
-          <div className="absolute left-0 right-0 top-0 bottom-0">
-            <div className="flex h-full justify-center items-center">
-              <div className="flex flex-col text-white px-16">
-                <div className="font-bold pts-40">Service Kami</div>
-                <p>
-                  Satria Nusa has integrated internal capabilities in the fields
-                  of mechatronic, civil and chemical engineering for quality
-                  assurance. Our experts are spread across Sumatra Island and
-                  Java Island to serve the following:
-                </p>
-              </div>
-            </div>
+        <div className="flex">
+          <div className="flex items-center">
+            <Image
+              unoptimized
+              width={100}
+              height={100}
+              src="/foto2.png"
+              alt="foto2"
+              className="w-72"
+            />
           </div>
-        </div>
-        <div className="w-1/5 relative overflow-hidden">
-          <Image
-            unoptimized
-            width={100}
-            height={100}
-            src="/bg3.png"
-            alt="background2"
-            className="h-full w-full"
-          />
-          <div className="absolute left-0 right-0 top-0 bottom-0 bg-blue-600 opacity-50"></div>
-          <div className="absolute left-0 right-0 top-0 bottom-0">
-            <div className="flex h-full justify-center items-center">
-              <div className="flex flex-col text-white px-16">
-                <div className="font-bold pts-40">
-                  Water & Wastewater Technology
-                </div>
-                <p>
-                  PT. SATRIA NUSA ENJINERING (SNE) adalah sebuah perusahaan
-                  teknik yang berada dibawah naungan Satria Elektrik Group.
-                </p>
-              </div>
-            </div>
+          <div className="flex items-center ml-3">
+            <Image
+              unoptimized
+              width={100}
+              height={100}
+              src="/foto1.png"
+              alt="foto1"
+              className="w-96"
+            />
           </div>
-        </div>
-        <div className="w-1/5 relative overflow-hidden">
-          <Image
-            unoptimized
-            width={100}
-            height={100}
-            src="/bg4.png"
-            alt="background2"
-            className="h-full w-full"
-          />
-          <div className="absolute left-0 right-0 top-0 bottom-0 bg-green-600 opacity-50"></div>
-          <div className="absolute left-0 right-0 top-0 bottom-0">
-            <div className="flex h-full justify-center items-center">
-              <div className="flex flex-col text-white px-16">
-                <div className="font-bold pts-40">Civil & Fabrications</div>
-                <p>
-                  SNE memiliki kapabilitas internal untuk konstruksi sipil dan
-                  mekanikal. Dengan pengalaman selama 11 tahun, SNE sudah
-                  terlibat dalam berbagai konstruksi industri di seluruh
-                  Indonesia.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="w-1/5 relative overflow-hidden">
-          <Image
-            unoptimized
-            width={100}
-            height={100}
-            src="/bg5.png"
-            alt="background2"
-            className="h-full w-full"
-          />
-          <div className="absolute left-0 right-0 top-0 bottom-0 bg-amber-600 opacity-50"></div>
-          <div className="absolute left-0 right-0 top-0 bottom-0">
-            <div className="flex h-full justify-center items-center">
-              <div className="flex flex-col text-white px-16">
-                <div className="font-bold pts-40">Mechanical & Electrical</div>
-                <p>
-                  Lahir dari Satria Elektrik Group, SNE memberikan solusi
-                  terintegrasi untuk klien untuk menyelesaikan masalah limbah
-                  untuk industri.
-                </p>
-              </div>
-            </div>
+          <div className="flex items-center ml-3">
+            <Image
+              unoptimized
+              width={100}
+              height={100}
+              src="/foto3.png"
+              alt="foto2"
+              className="w-72"
+            />
           </div>
         </div>
       </section>
+      <Expand />
       <section className="flex justify-center py-12" id="portofolio">
         <div className="flex flex-col max-w-7xl">
           <div className="text-center uppercase pts-40">project Portofolio</div>
-          <p className="text-center my-3">
-            orem ipsum dolor sit amet, consectetur adipiscing elit. Donec libero
-            nibh, pulvinar imperdiet porttitor eu, vulputate scelerisque nunc.
-            Pellentesque eu nisl sed metus elementum ultrices. Morbi a libero
-            massa. Etiam non diam sit amet sapien sagittis hendrerit. Nulla eu
-            consectetur eros. Maecenas imperdiet sit amet libero et vehicula.
+          <p className="text-center mt-3 mb-10">
+            Kami bangga telah menjadi mitra yang dipercaya oleh berbagai
+            perusahaan di Indonesia untuk memenuhi kebutuhan mereka dalam
+            pengolahan air limbah. Dengan pengetahuan mendalam, pengalaman yang
+            kaya, dan komitmen kami terhadap kualitas dan keberlanjutan, kami
+            terus berinovasi untuk menjawab tantangan baru dalam industri
+            pengolahan air limbah.
           </p>
           <Image
             unoptimized
             width={100}
             height={100}
-            className="w-full"
+            className="w-full my-5"
             src="/indonesia.png"
             alt=""
           />

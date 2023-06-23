@@ -40,6 +40,13 @@ const page = () => {
       text: "Sistem dewatering yang paling umum serta sangat rendah opex dan capex adalah filter press.",
       text2: "",
     },
+    {
+      title: "Wet Scrubber",
+      image: "/img/produk/produk6.png",
+      image2: "",
+      text: "Wet Scrubber adalah sistem untuk mengurangi/menghilangkan polutant udara dari pabrik anda. Scubber kami juga sangat customized dan dapat menargetkan secara spesifik polutant yang akan dipisahkan dari emisi asap pabrik anda.",
+      text2: "",
+    },
   ];
   return (
     <>

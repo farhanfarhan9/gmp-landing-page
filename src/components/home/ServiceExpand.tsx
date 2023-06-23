@@ -35,7 +35,7 @@ const ServiceExpand = ({
           className={`absolute left-0 right-0 top-0 bottom-0 opacity-50 ${data.color}`}
         ></div>
         <div className="absolute left-0 right-0 top-0 bottom-0">
-          <div className={`flex h-full justify-center ${data.with != "w-2/5" ? "items-start mt-28" : "items-center"}`}>
+          <div className={`flex h-full justify-center items-center `}>
             <div className="flex flex-col text-white px-10 ">
               <div className="font-bold text-3xl pb-5">{data.title}</div>
               <p>{data.desc}</p>

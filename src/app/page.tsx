@@ -1,3 +1,4 @@
+import About from "@/components/home/About";
 import CarouselComponent from "@/components/home/CarouselComponent";
 import Expand from "@/components/home/Expand";
 import Section1 from "@/components/home/Section1";
@@ -9,56 +10,7 @@ export default function Home() {
   return (
     <>
       <Section1 />
-      <section className="grid grid-cols-2 gap-3 py-28 items-center" id="about">
-        <div className="md:pl-36 md:pr-12">
-          <div className="font-bold text-4xl">ABOUT US</div>
-          <div className="mt-6">
-            <span className="font-bold">Satria Nusa</span> didirikan oleh
-            engineer yang sudah berpengalaman di industri manufaktur dengan
-            jejaring teknisi dan workshop di Jawa dan Sumatra.
-          </div>
-          <div className="mt-7">
-            <span className="font-bold">Satria Nusa</span> Satria Nusa merupakan
-            salah satu perusahaan teknik dengan ekosistem industri yang terpadu.
-          </div>
-          <button className="px-11 py-4 text-white bg-green-700 mt-7">
-            Learn more
-          </button>
-        </div>
-
-        <div className="flex">
-          <div className="flex items-center">
-            <Image
-              unoptimized
-              width={100}
-              height={100}
-              src="/foto2.png"
-              alt="foto2"
-              className="w-72"
-            />
-          </div>
-          <div className="flex items-center ml-3">
-            <Image
-              unoptimized
-              width={100}
-              height={100}
-              src="/foto1.png"
-              alt="foto1"
-              className="w-96"
-            />
-          </div>
-          <div className="flex items-center ml-3">
-            <Image
-              unoptimized
-              width={100}
-              height={100}
-              src="/foto3.png"
-              alt="foto2"
-              className="w-72"
-            />
-          </div>
-        </div>
-      </section>
+      <About />
       <Expand />
       <section className="flex justify-center py-12" id="portofolio">
         <div className="flex flex-col max-w-7xl">

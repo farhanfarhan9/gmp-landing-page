@@ -48,7 +48,7 @@ const Expand = () => {
     );
   };
   return (
-    <div className="relative flex justify-center">
+    <div className="relative flex justify-center" id="service">
       {data.map((val) => (
         <ServiceExpand key={val.id} data={val} updatebyid={updateWithById} />
       ))}

@@ -40,7 +40,7 @@ const Section1 = () => {
 
   return (
     <>
-      <section className="relative">
+      <section className="relative" id='impact'>
         <Image
           width={100}
           height={100}
@@ -62,9 +62,7 @@ const Section1 = () => {
                     from Reliable Engineering
                   </div>
 
-                  <button className="bg-[#196DB6] px-11 py-4 mt-8">
-                    Learn More
-                  </button>
+                 
                 </div>
               </div>
             </div>

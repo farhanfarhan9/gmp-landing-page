@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import ButtonPrimary from "../buttons/ButtonPrimary";
 
 const Product = ({ data }: { data: any }) => {
   const [expand, setexpand] = useState(false);

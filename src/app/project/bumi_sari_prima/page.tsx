@@ -4,7 +4,7 @@ import Banner from "@/components/page/banner";
 
 const bumi_sati_prima = () => {
   const data = {
-    title: "PT. Bumi Sati Prima",
+    title: "PT. Bumi Sari Prima",
     path: "Home / Project Portofolio / Company Details",
     image: "/img/project/bspbanner.jpg",
     nickname: "All-purpose Flour Mill",

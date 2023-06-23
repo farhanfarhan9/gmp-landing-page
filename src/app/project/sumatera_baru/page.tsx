@@ -8,7 +8,7 @@ const mark_dynamic_indonesia = () => {
     title: "PT. Sumatera Baru",
     path: "Home / Project Portofolio / Company Details",
     image: "/img/project/sb1.jpg",
-    nickname: "Glove Mold Factory",
+    nickname: "Coconut Flour Mill",
     location: "Tanjung Morawa",
     desc: "Upgrade clarifier and water re-use 30 tonnes to 100 tonnes wastewater",
     picture1: "/img/project/sb1.jpg",

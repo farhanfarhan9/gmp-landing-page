@@ -65,7 +65,7 @@ function Projects() {
           </a>
         </div>
         <div className="bg-green-800 text-white px-16 py-8">
-          <div className="font-semibold my-2 pts-24">PT. Bumi Sati Prima</div>
+          <div className="font-semibold my-2 pts-24">PT. Bumi Sari Prima</div>
           <div className="my-1">All-purpose Flour Mill</div>
           <div className="flex items-center space-x-2">
             <span>
@@ -85,7 +85,7 @@ function Projects() {
             <span> Siantar </span>
           </div>
           <p>Capacity: 200 tonnes per day</p>
-          <Link href="/project/bumi_sati_prima">
+          <Link href="/project/bumi_sari_prima">
             <button className="bg-white text-green-800 font-semibold px-11 py-4 mt-7">
               See Details
             </button>
@@ -200,7 +200,7 @@ function Projects() {
             <span> Lahat, Sumatera Selatan</span>
           </div>
           <p>Oil-Water System (OWS) Implemtation</p>
-          <a href="/project/banjarsari">
+          <a href="#">
             <button className="bg-white text-green-800 font-semibold px-11 py-4 mt-7">
               See Details
             </button>
@@ -222,7 +222,7 @@ function Projects() {
             <span> Tangerang</span>
           </div>
           <p>Wastewater Treatment Plant</p>
-          <Link href="/project/mayora_indah_tbk">
+          <Link href="#">
             <button className="bg-white text-green-800 font-semibold px-11 py-4 mt-7">
               See Details
             </button>

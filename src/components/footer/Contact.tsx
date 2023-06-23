@@ -46,11 +46,22 @@ const Contact = () => {
         <div className="flex relative font-semibold">
           <div className="capitalize ml-16 mt-14">
             <div className=" text-blue-800 mb-3 pts-24">Quick Links</div>
-            <div className="mb-3">Out impact</div>
-            <div className="mb-3">About</div>
-            <div className="mb-3">our services</div>
-            <div className="mb-3">our portofolio</div>
-            <div className="mb-3">contacts</div>
+
+            <div className="mb-3 hover:underline">
+              <a href="/#impact">OurImpact</a>
+            </div>
+            <div className="mb-3 hover:underline">
+              <a href="/#about">About</a>
+            </div>
+            <div className="mb-3 hover:underline">
+              <a href="/#service">Our Services</a>
+            </div>
+            <div className="mb-3 hover:underline">
+              <a href="/#portofolio">Our Portofolio</a>
+            </div>
+            <div className="mb-3 hover:underline">
+              <a href="/#contact">Contact</a>
+            </div>
           </div>
           <div className="ml-16 mt-14">
             <div className="capitalize text-blue-800 mb-3 pts-24">
@@ -78,7 +89,12 @@ const Contact = () => {
               </div>
               <div className="flex">
                 <div className="w-6 h-6"></div>
-                <div className="ml-3 font-bold">satria-nusa.co.id</div>
+                <a
+                  href="mailto:sales@satrianusa.group"
+                  className="ml-3 font-bold"
+                >
+                  satria-nusa.co.id
+                </a>
               </div>
             </div>
             <div className="mt-4">
@@ -103,7 +119,13 @@ const Contact = () => {
               </div>
               <div className="flex">
                 <div className="w-6 h-6"></div>
-                <div className="ml-3 font-bold">08623121212121</div>
+                <a
+                  href="https://api.whatsapp.com/send?phone=081534617975"
+                  target="__blank"
+                  className="ml-3 font-bold"
+                >
+                  08623121212121
+                </a>
               </div>
             </div>
           </div>

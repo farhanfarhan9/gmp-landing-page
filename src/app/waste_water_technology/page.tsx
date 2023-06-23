@@ -12,13 +12,13 @@ const page = () => {
       text2:
         "<p>Keunggulan Sistem MBR vs Sistem Conventional:</p> <ol> <li>Output quality yang sangat jernih dan konsisten</li> <li>Waktu tinggal sludge yang tinggi tanpa kekhawatiran akan masalah di pengendapan (karena clarifier tidak diperlukan)</li> <li>Sludge production yang rendah</li> <li>Waktu start-up yang sangat singkat</li> <li>Area yang dibutuhkan sangat kecil (karena clarifier tidak diperlukan)</li> <li>Penggunaan kimia yang sangat rendah (karena clarifier tidak diperlukan)</li> <li>Operasional Cost yang sangat rendah (automasi yang sangat tinggi)</li> <li>Capital Cost yang rendah (karena clarifier tidak diperlukan).</li> </ol>",
     },
-    {
-      title: "Moving Bed Biofilm Reactor (MBBR)",
-      image: "/img/product/product2.png",
-      image2: "",
-      text: "Moving bed biofilm reactor (MBBR) merupakan solusi dari permasalahan kapasitas limbah yang bertambah akan tetapi ada kendala untuk melakukan penambahan unit bangunan. MBBR ini termasuk dalam kelompok attached growth reactor, yaitu reaktor dimana mikrobiologi tumbuh di permukaan media tertentu kemudian membentuk lapisan film yang berfungsi sebagai semacam filter untuk air limbah.",
-      text2: "",
-    },
+    // {
+    //   title: "Moving Bed Biofilm Reactor (MBBR)",
+    //   image: "/img/product/product2.png",
+    //   image2: "",
+    //   text: "Moving bed biofilm reactor (MBBR) merupakan solusi dari permasalahan kapasitas limbah yang bertambah akan tetapi ada kendala untuk melakukan penambahan unit bangunan. MBBR ini termasuk dalam kelompok attached growth reactor, yaitu reaktor dimana mikrobiologi tumbuh di permukaan media tertentu kemudian membentuk lapisan film yang berfungsi sebagai semacam filter untuk air limbah.",
+    //   text2: "",
+    // },
     {
       title: "Reverse Osmosis",
       image: "/img/product/product3.png",

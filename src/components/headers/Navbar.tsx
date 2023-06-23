@@ -43,13 +43,20 @@ const Navbar = () => {
                     </Link>
 
                     {/* <WaterDowpdown title="Waste Water Technology" /> */}
-                    <ProducDropDown title="Product" />
+                    {/* <ProducDropDown title="Product" /> */}
                     <Link
                       className="text-[#41444B] dark:text-white hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md "
                       href="/waste_water_technology"
                     >
                       Waste Water Technology
                     </Link>
+                    <Link
+                      className="text-[#41444B] dark:text-white hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md "
+                      href="/products"
+                    >
+                      Product
+                    </Link>
+
                     <Link
                       className="text-[#41444B] hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md "
                       href="/#contact"

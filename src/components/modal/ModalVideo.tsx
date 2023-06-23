@@ -51,9 +51,9 @@ export default function ModalVideo({
                 <Dialog.Panel className="transform  text-left align-middle shadow-xl transition-all">
                   <div className="flex justify-center mx-auto">
                     <iframe
-                      width="800"
-                      height="415"
-                      src="https://www.youtube.com/embed/tHjkRdEL1VM"
+                      width="1000"
+                      height="615"
+                      src="https://www.youtube.com/embed/sTeyKG8nsjs"
                       title="YouTube video player"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     ></iframe>

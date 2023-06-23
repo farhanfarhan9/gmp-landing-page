@@ -12,19 +12,12 @@ const page = () => {
       text2:
         "<p>Keunggulan Sistem MBR vs Sistem Conventional:</p> <ol> <li>Output quality yang sangat jernih dan konsisten</li> <li>Waktu tinggal sludge yang tinggi tanpa kekhawatiran akan masalah di pengendapan (karena clarifier tidak diperlukan)</li> <li>Sludge production yang rendah</li> <li>Waktu start-up yang sangat singkat</li> <li>Area yang dibutuhkan sangat kecil (karena clarifier tidak diperlukan)</li> <li>Penggunaan kimia yang sangat rendah (karena clarifier tidak diperlukan)</li> <li>Operasional Cost yang sangat rendah (automasi yang sangat tinggi)</li> <li>Capital Cost yang rendah (karena clarifier tidak diperlukan).</li> </ol>",
     },
-    // {
-    //   title: "Moving Bed Biofilm Reactor (MBBR)",
-    //   image: "/img/product/product2.png",
-    //   image2: "",
-    //   text: "Moving bed biofilm reactor (MBBR) merupakan solusi dari permasalahan kapasitas limbah yang bertambah akan tetapi ada kendala untuk melakukan penambahan unit bangunan. MBBR ini termasuk dalam kelompok attached growth reactor, yaitu reaktor dimana mikrobiologi tumbuh di permukaan media tertentu kemudian membentuk lapisan film yang berfungsi sebagai semacam filter untuk air limbah.",
-    //   text2: "",
-    // },
     {
       title: "Reverse Osmosis",
       image: "/img/product/product3.png",
       image2: "",
       text: "Reverse Osmosis adalah suatu metode penyaringan yang dapat menyaring berbagai molekul besar dan ion-ion dari suatu larutan dengan cara memberi tekanan pada larutan ketika larutan itu berada di salah satu sisi membran seleksi (lapisan penyaring).",
-      text2: "",
+      text2: "<p>Proses tersebut menjadikan zat terlarut terendap di lapisan yang dialiri tekanan sehingga zat pelarut murni bisa mengalir ke lapisan berikutnya. Membran seleksi itu harus bersifat selektif atau bisa memilah yang artinya bisa dilewati zat pelarutnya (atau bagian lebih kecil dari larutan) tetapi tidak bisa dilewati zat terlarut seperti molekul berukuran besar dan ion-ion.</p> <p>Osmosis adalah sebuah fenomena alam yang terjadi dalam sel makhluk hidup dimana molekul pelarut (biasanya air) akan mengalir dari daerah berkonsentrasi rendah ke daerah Berkonsentrasi tinggi melalui sebuah membran semipermeabel. Membran semipermeabel ini menunjuk ke membran sel atau membran apa pun yang memiliki struktur yang mirip atau bagian dari membran sel. Gerakan dari pelarut berlanjut sampai sebuah konsentrasi yang seimbang tercapai di kedua sisi membran.</p> <p>Reverse osmosis adalah sebuah proses pemaksaan sebuah terlarut dari sebuah daerah konsentrasi terlarut tinggi melalui sebuah membran ke sebuah daerah terlarut rendah dengan menggunakan sebuah tekanan melebihi tekanan osmotik. Dalam istilah lebih mudah, reverse osmosis adalah mendorong sebuah larutan melalui filter yang menangkap zat terlarut dari satu sisi dan membiarkan pendapatan pelarut murni dari sisi satunya.</p> <p>Untuk mendapatkan air tawar dari air laut bisa dilakukan dengan cara Reverse Osmosis, suatu proses penyaringan air laut dengan menggunakan tekanan dialirkan melalui suatu membran saring. Sistem ini disebut SWRO (Seawater Reverse Osmosis) dan banyak digunakan pada kapal laut atau instalasi air bersih di pantai dengan bahan baku air laut.</p>",
     },
     {
       title: "Dissolved Air Flotation",

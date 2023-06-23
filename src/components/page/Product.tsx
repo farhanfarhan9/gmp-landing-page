@@ -31,7 +31,7 @@ const Product = ({ data }: { data: any }) => {
           </div>
         )}
         <div>
-          <ButtonPrimary>{expand ? "Read less" : "Read More"}</ButtonPrimary>
+          {/* <ButtonPrimary>{expand ? "Read less" : "Read More"}</ButtonPrimary> */}
           <button
             onClick={() => {
               setexpand(!expand);

@@ -1,6 +1,7 @@
 import React from "react";
 import Banner from "@/components/page/banner";
 import Product from "@/components/page/Product";
+import ProductSecondary from "@/components/page/ProductSecondary";
 
 const page = () => {
   const machineries = [
@@ -48,6 +49,24 @@ const page = () => {
       text2: "",
     },
   ];
+
+  const bacteria = [
+    {
+      title: "Wet Scrubber",
+      image: "/img/produk/bakteri1.png",
+    },
+    {
+      title: "Bacteria - Anaerob",
+      image: "/img/produk/bakteri2.png",
+    },
+  ];
+  const clotes = [
+    {
+      title: "Filter Clothes",
+      image: "/img/produk/clotes1.png",
+    },
+    
+  ];
   return (
     <>
       <Banner title="Product" path="Home / Products" image="/bg3.png" />
@@ -55,6 +74,22 @@ const page = () => {
         <div className="font-bold text-blue-800 pts-24">Machineries</div>
         {machineries.map((data, index) => (
           <Product key={index} data={data} />
+        ))}
+      </div>
+      <div className="mx-auto max-w-7xl my-14">
+        <div className="font-bold text-blue-800 pts-24">
+          Consumable - Bacteria
+        </div>
+        {bacteria.map((data, index) => (
+          <ProductSecondary key={index} data={data} />
+        ))}
+      </div>
+      <div className="mx-auto max-w-7xl my-14">
+        <div className="font-bold text-blue-800 pts-24">
+        Consumable - Filter Clotes
+        </div>
+        {clotes.map((data, index) => (
+          <ProductSecondary key={index} data={data} />
         ))}
       </div>
     </>

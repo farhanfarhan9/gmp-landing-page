@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import Banner from "@/components/page/banner";
 import BlueView from "@/components/project/BlueView";

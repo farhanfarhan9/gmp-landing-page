@@ -15,7 +15,7 @@ const sri_makmur_abadi = () => {
     picture3: "/img/project/sma3.jpg",
     picture4: "/img/project/sma4.jpg",
     picture5: "/img/project/sma5.jpg",
-    video: "CKe3Kzbi-Ao"
+    video: "CKe3Kzbi-Ao",
   };
   return (
     <>

@@ -111,8 +111,8 @@ function Projects() {
           image="/img/project/pictureporto11.jpg"
           nickname="Flour Factory"
           location="Cikande, Banten"
-          desc="WWTP System MBR (Membrane Bio Reactor"
-          url="#"
+          desc="WWTP System MBR (Membrane Bio Reactor)"
+          url="/project/pahala_sukses_bersama"
         />
       </div>
     </>

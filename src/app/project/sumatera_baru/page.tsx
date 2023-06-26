@@ -1,7 +1,6 @@
 import React from "react";
 import Detail from "@/components/project/detail";
 import Banner from "@/components/page/banner";
-import Image from "next/image";
 
 const mark_dynamic_indonesia = () => {
   const data = {
@@ -16,6 +15,7 @@ const mark_dynamic_indonesia = () => {
     picture3: "/img/project/sb3.jpg",
     picture4: "/img/project/sb4.jpg",
     picture5: "/img/project/sb5.jpg",
+    video: "jlZW3SrOUW0"
   };
   return (
     <>

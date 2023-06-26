@@ -60,6 +60,7 @@ const detail = ({ data }: Props) => {
               src={`https://www.youtube.com/embed/${data.video}`}
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
             ></iframe>
           </div>
         )}
@@ -67,7 +68,7 @@ const detail = ({ data }: Props) => {
       <div className="md:pl-12 pr-40">
         <div className="font-bold mb-5">{data.title}</div>
         <div className="my-3">{data.nickname}</div>
-        <div className="flex items-center my-20 font-bold">
+        <div className="flex items-center my-4 font-bold">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"

@@ -75,8 +75,8 @@ function Projects() {
           image="/img/project/pictureporto7.jpg"
           nickname="Coconut Flour Factory"
           location="Air Batu, Asahan"
-          desc="Kapasitas air limbah 100 ton air limbah per hari"
-          url="#"
+          desc="Wastewater capacity of 100 tons of wastewater per day"
+          url="/project/sri_makmur_abadi"
         />
 
         <GreenView
@@ -84,7 +84,7 @@ function Projects() {
           image="/img/project/pictureporto8.jpg"
           nickname="Palm Oil Factory"
           location="Jambi"
-          desc="Pengurangi pendangkalan dan Improving Anaerobic dan Aerobic"
+          desc="Reducing siltation and Improving Anaerobic and Aerobic"
           url="#"
         />
 
@@ -96,7 +96,24 @@ function Projects() {
           desc="Implementasi Sewage Treatment Plant"
           url="#"
         />
-        
+
+        <GreenView
+          title="PT. Kilang Mie Gunung Mas"
+          image="/img/project/pictureporto10.jpg"
+          nickname="Noodle Factory"
+          location="Tanjung Morawa, Sumut"
+          desc="Pergantian Media Filter dan Pompa"
+          url="#"
+        />
+
+        <BlueView
+          title="PT. Pahala Sukses Bersama"
+          image="/img/project/pictureporto11.jpg"
+          nickname="Flour Factory"
+          location="Cikande, Banten"
+          desc="WWTP System MBR (Membrane Bio Reactor)"
+          url="/project/pahala_sukses_bersama"
+        />
       </div>
     </>
   );

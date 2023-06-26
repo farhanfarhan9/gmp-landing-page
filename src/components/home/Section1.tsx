@@ -71,7 +71,7 @@ const Section1 = () => {
         <div className="absolute bottom-0 right-0 left-0 border-t-4 bg-blue-800 bg-opacity-50 border-blue-900 text-white">
           <div className="h-full flex justify-center py-5">
             <span>
-              <div className="pts-40 text-2">Our Impact</div>
+              <div className="pts-40 text-2 underline">Our Impact</div>
               <div className="pts-48 flex">
                 Conserved Water :
                 <div className="flex">
@@ -79,7 +79,7 @@ const Section1 = () => {
                     {value.toLocaleString(undefined, { minimumFractionDigits: 3 })}
                   </div>
                   <div className="text-superscript">
-                    m<sup>2</sup>
+                    m<sup>3</sup>
                   </div>
                 </div>
               </div>

@@ -28,7 +28,7 @@ export default function Home() {
             width={100}
             height={100}
             className="w-full my-5"
-            src="/indonesia.png"
+            src="/map.png"
             alt=""
           />
         </div>

@@ -19,8 +19,10 @@ const About = () => {
 
         <AboutLearnMore />
       </div>
-
-      <Carousel />
+      
+      <div className="w-full h-64 flex items-center justify-center relative">
+        <Carousel />
+      </div>
     </section>
   );
 };

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import AboutLearnMore from "./AboutLearnMore";
+import Carousel from "@/components/home/CarouselComponent";
 
 const About = () => {
   return (
@@ -19,39 +20,8 @@ const About = () => {
 
         <AboutLearnMore />
       </div>
-
-      <div className="flex">
-        <div className="flex items-center">
-          <Image
-            unoptimized
-            width={100}
-            height={100}
-            src="/foto2.png"
-            alt="foto2"
-            className="w-72"
-          />
-        </div>
-        <div className="flex items-center ml-3">
-          <Image
-            unoptimized
-            width={100}
-            height={100}
-            src="/foto1.png"
-            alt="foto1"
-            className="w-96"
-          />
-        </div>
-        <div className="flex items-center ml-3">
-          <Image
-            unoptimized
-            width={100}
-            height={100}
-            src="/foto3.png"
-            alt="foto2"
-            className="w-72"
-          />
-        </div>
-      </div>
+      
+      <Carousel />
     </section>
   );
 };

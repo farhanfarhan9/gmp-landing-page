@@ -16,7 +16,7 @@ const GreenView = ({ title, image, nickname, location, desc, url }: Props) => {
       <div className="bg-green-800 text-white px-16 py-8">
         <div className="font-semibold my-2 pts-24">{title}</div>
         <div className="my-1">{nickname}</div>
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center space-x-2 py-2">
           <span>
             <svg
               xmlns="http://www.w3.org/2000/svg"

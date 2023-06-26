@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import AboutLearnMore from "./AboutLearnMore";
 import Carousel from "@/components/home/CarouselComponent";
@@ -20,7 +19,7 @@ const About = () => {
 
         <AboutLearnMore />
       </div>
-      
+
       <Carousel />
     </section>
   );

@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div id="contact">
       <div className="grid grid-cols-1 md:grid-cols-2  border-t-8 border-blue-800">
-        <div className="pl-28 pr-52 bg-green-800 py-12">
+        <div className="pl-4 md:pl-28 pr-5 md:pr-52 bg-green-800 py-12">
           <div className="uppercase font-bold text-white mb-5 pts-40">
             Contact now
           </div>
@@ -43,8 +43,8 @@ const Contact = () => {
             </div>
           </form>
         </div>
-        <div className="flex flex-col md:flex-row relative font-semibold">
-          <div className="capitalize ml-16 mt-14">
+        <div className="flex relative font-semibold">
+          <div className="capitalize ml-5 md:ml-16 mt-14">
             <div className=" text-blue-800 mb-3 pts-24">Quick Links</div>
 
             <div className="mb-3 hover:underline">
@@ -63,7 +63,7 @@ const Contact = () => {
               <a href="/#contact">Contact</a>
             </div>
           </div>
-          <div className="ml-16 mt-14">
+          <div className="ml-10 h-80 md:ml-16 mt-14">
             <div className="capitalize text-blue-800 mb-3 pts-24">
               Hubungi kami
             </div>

@@ -7,7 +7,7 @@ import { Transition } from "@headlessui/react";
 const Product = ({ data }: { data: any }) => {
   const [expand, setexpand] = useState(false);
   return (
-    <div className="grid grid-cols-2 py-10 ">
+    <div className="grid grid-cols-1 md:grid-cols-2 py-10 ">
       <div>
         <Image
           className="w-full"
@@ -18,7 +18,7 @@ const Product = ({ data }: { data: any }) => {
           alt=""
         />
       </div>
-      <div className="flex flex-col justify-center pl-10 ">
+      <div className="flex flex-col justify-center pl-10 mt-5 md:mt-0">
         <div className="mb-5 font-bold">{data.title}</div>
         <div>{data.text}</div>
         <Transition

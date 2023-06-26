@@ -67,7 +67,7 @@ const detail = ({ data }: Props) => {
       <div className="md:pl-12 pr-40">
         <div className="font-bold mb-5">{data.title}</div>
         <div className="my-3">{data.nickname}</div>
-        <div className="flex items-center mb-3 font-bold">
+        <div className="flex items-center my-20 font-bold">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"

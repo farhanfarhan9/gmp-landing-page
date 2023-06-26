@@ -114,6 +114,41 @@ function Projects() {
           desc="WWTP System MBR (Membrane Bio Reactor)"
           url="/project/pahala_sukses_bersama"
         />
+
+        <GreenView
+          title="CV. Aroma"
+          image="/img/project/pictureporto12.jpeg"
+          nickname="Refinery Oil ilam"
+          location="KIM, Medan"
+          desc="Wastewater capacity of 10 tons of water waste per day"
+          url="#"
+        />
+
+        <BlueView
+          title="PT. Gunung Mas Giok Lie"
+          image="/img/project/pictureporto13.jpeg"
+          nickname="Dry Noodle Factory"
+          location="Tanjong Morawa, Sumut"
+          desc="Wastewater capacity of 5 tons of water waste per day"
+          url="#"
+        />
+        <GreenView
+          title="Astra Group"
+          image="/img/project/pictureporto14.jpeg"
+          nickname="Palm Oil Factory"
+          location="Jakarta Timur, Jakarta"
+          desc="Reduction of siltation and Improving Anaerobic and Aerobic"
+          url="#"
+        />
+
+        <BlueView
+          title="PT. Buana Wirasubur Sakti"
+          image="/img/project/pictureporto15.jpeg"
+          nickname="Palm Oil Factory"
+          location="Kalimantan Timut"
+          desc="Wastewater capacity of 5 tons of water waste per day"
+          url="#"
+        />
       </div>
     </>
   );

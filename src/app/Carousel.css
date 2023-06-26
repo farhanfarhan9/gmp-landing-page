@@ -1,52 +1,62 @@
-.carousel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.slider-container {
-  display: flex;
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
   overflow: hidden;
 }
 
-.slide {
-  flex-shrink: 0;
-  width: 33.33%;
-  height: auto;
-  transition: transform 0.3s ease, opacity 0.3s ease; /* Menambahkan transisi untuk properti opacity */
-  opacity: 0.5;
+.carousel-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
 }
 
-.slide.active {
-  opacity: 1;
-  transform: translateX(0%) scale(1.2); /* Menggunakan translateX untuk transisi horizontal */
-  z-index: 999;
+.carousel-item {
+  flex: 0 0 100%;
 }
 
-.prev-button,
-.next-button {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #ddd;
-  border: none;
-  cursor: pointer;
-  position: relative;
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.arrow {
+.carousel-button {
   position: absolute;
   top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
   left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 20px;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  z-index: 1;
 }
 
-.next-button {
-  margin-left: 10px;
+.indicator {
+  width: 10px;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
 }
 
-.prev-button:hover,
-.next-button:hover {
-  background-color: #ccc;
+.indicator.active {
+  background-color: #333;
 }

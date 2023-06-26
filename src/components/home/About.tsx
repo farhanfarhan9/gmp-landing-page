@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import AboutLearnMore from "./AboutLearnMore";
 import Carousel from "@/components/home/CarouselComponent";
@@ -21,7 +20,9 @@ const About = () => {
         <AboutLearnMore />
       </div>
       
-      <Carousel />
+      <div className="w-full h-64 flex items-center justify-center relative">
+        <Carousel />
+      </div>
     </section>
   );
 };

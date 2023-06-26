@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
+import ButtonPrimary from "../buttons/ButtonPrimary";
 
 const Product = ({ data }: { data: any }) => {
   const [expand, setexpand] = useState(false);
@@ -30,15 +31,21 @@ const Product = ({ data }: { data: any }) => {
           </div>
         )}
         <div>
-          {/* <ButtonPrimary>{expand ? "Read less" : "Read More"}</ButtonPrimary> */}
-          <button
+          <span
+            onClick={() => {
+              setexpand(!expand);
+            }}
+          >
+            <ButtonPrimary>{expand ? "Read less" : "Read More"}</ButtonPrimary>
+          </span>
+          {/* <button
             onClick={() => {
               setexpand(!expand);
             }}
             className="bg-green-800 text-white font-semibold px-11 py-4 mt-7"
           >
             {expand ? "Read less" : "Read More"}
-          </button>
+          </button> */}
         </div>
       </div>
     </div>

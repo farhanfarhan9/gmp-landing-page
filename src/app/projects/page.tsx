@@ -1,243 +1,102 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import Banner from "@/components/page/banner";
+import BlueView from "@/components/project/BlueView";
+import GreenView from "@/components/project/GreenView";
 
 function Projects() {
   return (
     <>
-      <section className="relative">
-        <Image
-          width={100}
-          height={100}
-          unoptimized
-          className="w-full"
-          src="/portobackground.png"
-          alt=""
+      <Banner
+        title="Project Portofolio"
+        path="Home / Project Portofolio"
+        image="/img/project/bannerproject.jpg"
+      />
+
+      <div className=" my-24 max-w-7xl mx-auto">
+        <BlueView
+          title="PT. Mark Dynamics Indonesia, Tbk."
+          nickname="Glove Mold Factory"
+          location="Tanjung"
+          image="/pictureporto.png"
+          desc="Upgrade clarifier and water re-use 30 tonnes to 100 tonnes
+            wastewater"
+          url="/project/mark_dynamics_indonesia"
         />
-        <div className="absolute top-0 bottom-0 right-0 left-0">
-          <div className="h-full container max-w-4xl flex flex-col justify-center mx-auto text-white">
-            <div className="font-bold pts-40">Project Portofolio</div>
-            <div>Home / Project Portofolio</div>
-          </div>
-        </div>
-      </section>
-      <div className="grid grid-cols-2 my-24 max-w-7xl mx-auto">
-        <div>
-          <Image
-            unoptimized
-            width={100}
-            height={100}
-            className="w-full"
-            src="/pictureporto.png"
-            alt=""
-          />
-        </div>
-        <div className="bg-blue-800 text-white px-16 py-8">
-          <div className="font-semibold my-2 pts-24">
-            PT. Mark Dynamics Indonesia, Tbk.
-          </div>
-          <div className="my-1">Glove Mold Factory</div>
-          <div className="flex items-center space-x-2">
-            <span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                className="w-6 h-6"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
-                  clipRule="evenodd"
-                />
-              </svg>{" "}
-            </span>
-            <span> Tanjung</span>
-          </div>
-          <p>
-            Upgrade clarifier and water re-use 30 tonnes to 100 tonnes
-            wastewater
-          </p>
-          <a href="/project/mark_dynamics_indonesia">
-            <button className="bg-white text-green-800 font-semibold px-11 py-4 mt-7">
-              See Details
-            </button>
-          </a>
-        </div>
-        <div className="bg-green-800 text-white px-16 py-8">
-          <div className="font-semibold my-2 pts-24">PT. Bumi Sari Prima</div>
-          <div className="my-1">All-purpose Flour Mill</div>
-          <div className="flex items-center space-x-2">
-            <span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                className="w-6 h-6"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
-                  clipRule="evenodd"
-                />
-              </svg>{" "}
-            </span>
-            <span> Siantar </span>
-          </div>
-          <p>Capacity: 200 tonnes per day</p>
-          <Link href="/project/bumi_sari_prima">
-            <button className="bg-white text-green-800 font-semibold px-11 py-4 mt-7">
-              See Details
-            </button>
-          </Link>
-        </div>
-        <div>
-          <Image
-            unoptimized
-            width={100}
-            height={100}
-            className="w-full"
-            src="/pictureporto2.png"
-            alt=""
-          />
-        </div>
-        <div>
-          <Image
-            unoptimized
-            width={100}
-            height={100}
-            className="w-full"
-            src="/pictureporto3.png"
-            alt=""
-          />
-        </div>
-        <div className="bg-blue-800 text-white px-16 py-8">
-          <div className="font-semibold my-2 pts-24">
-            PT. Indowangi Nusajaya
-          </div>
-          <div className="my-1">Patchouli Oil Refinery</div>
-          <div className="flex items-center space-x-2">
-            <span>
-              <Image
-                unoptimized
-                width={100}
-                height={100}
-                className="w-full"
-                src="/location.svg"
-                alt=""
-              />{" "}
-            </span>
-            <span> KIM, Medan</span>
-          </div>
-          <p>
-            Upgrade clarifier and water re-use 30 tonnes to 100 tonnes
-            wastewater
-          </p>
-          <Link href="/project/indowangi_nusajaya">
-            <button className="bg-white text-green-800 font-semibold px-11 py-4 mt-7">
-              See Details
-            </button>
-          </Link>
-        </div>
-        <div className="bg-green-800 text-white px-16 py-8">
-          <div className="font-semibold my-2 pts-24">PT. Sumatera Baru</div>
-          <div className="my-1">Coconut Flour Mill</div>
-          <div className="flex items-center space-x-2">
-            <span>
-              <Image
-                unoptimized
-                width={100}
-                height={100}
-                className="w-full"
-                src="/location.svg"
-                alt=""
-              />{" "}
-            </span>
-            <span>Tanjung Balai, Asahan</span>
-          </div>
-          <p>Capacity: 100 tonnes wastewater per day</p>
-          <a href="/project/sumatera_baru">
-            <button className="bg-white text-green-800 font-semibold px-11 py-4 mt-7">
-              See Details
-            </button>
-          </a>
-        </div>
-        <div>
-          <Image
-            unoptimized
-            width={100}
-            height={100}
-            className="w-full"
-            src="/pictureporto4.png"
-            alt=""
-          />
-        </div>
-        <div>
-          <Image
-            unoptimized
-            width={100}
-            height={100}
-            className="w-full"
-            src="/pictureporto5.png"
-            alt=""
-          />
-        </div>
-        <div className="bg-blue-800 text-white px-16 py-8">
-          <div className="font-semibold my-2 pts-24">
-            PLTU Banjarsari 2x 135 MW
-          </div>
-          <div className="flex items-center space-x-2">
-            <span>
-              <Image
-                unoptimized
-                width={100}
-                height={100}
-                className="w-full"
-                src="/location.svg"
-                alt=""
-              />{" "}
-            </span>
-            <span> Lahat, Sumatera Selatan</span>
-          </div>
-          <p>Oil-Water System (OWS) Implemtation</p>
-          <a href="#">
-            <button className="bg-white text-green-800 font-semibold px-11 py-4 mt-7">
-              See Details
-            </button>
-          </a>
-        </div>
-        <div className="bg-green-800 text-white px-16 py-8">
-          <div className="font-semibold my-2 pts-24">PT. Mayora Indah Tbk</div>
-          <div className="flex items-center space-x-2">
-            <span>
-              <Image
-                unoptimized
-                width={100}
-                height={100}
-                className="w-full"
-                src="/location.svg"
-                alt=""
-              />{" "}
-            </span>
-            <span> Tangerang</span>
-          </div>
-          <p>Wastewater Treatment Plant</p>
-          <Link href="#">
-            <button className="bg-white text-green-800 font-semibold px-11 py-4 mt-7">
-              See Details
-            </button>
-          </Link>
-        </div>
-        <div>
-          <Image
-            width={100}
-            height={100}
-            unoptimized
-            className="w-full"
-            src="/pictureporto6.png"
-            alt=""
-          />
-        </div>
+
+        <GreenView
+          title="PT. Bumi Sari Prima"
+          image="/pictureporto2.png"
+          nickname="All-purpose Flour Mill"
+          location="Siantar"
+          desc="Capacity: 200 tonnes per day"
+          url="/project/bumi_sari_prima"
+        />
+
+        <BlueView
+          title="PT. Indowangi Nusajaya"
+          image="/pictureporto3.png"
+          nickname="Patchouli Oil Refinery"
+          location="KIM, Medan"
+          desc="Upgrade clarifier and water re-use 30 tonnes to 100 tonnes wastewater"
+          url="/project/indowangi_nusajaya"
+        />
+
+        <GreenView
+          title="PT. Sumatera Baru"
+          image="/pictureporto4.png"
+          nickname="Coconut Flour Mill"
+          location="Tanjung Balai, Asahan"
+          desc="Capacity: 200 tonnes per day"
+          url="/project/sumatera_baru"
+        />
+
+        <BlueView
+          title="PLTU Banjarsari 2x 135 MW"
+          image="/pictureporto5.png"
+          nickname=""
+          location="Lahat, Sumatera Selatan"
+          desc="Oil-Water System (OWS) Implemtation"
+          url="#"
+        />
+
+        <GreenView
+          title="PT. Mayora Indah Tbk"
+          image="/pictureporto6.png"
+          nickname=""
+          location="Tangerang"
+          desc="Wastewater Treatment Plant"
+          url="#"
+        />
+
+        <BlueView
+          title="PT. Sri Makmur Abadi"
+          image="/img/project/pictureporto7.jpg"
+          nickname="Coconut Flour Factory"
+          location="Air Batu, Asahan"
+          desc="Kapasitas air limbah 100 ton air limbah per hari"
+          url="#"
+        />
+
+        <GreenView
+          title="PT. Angso Duo Sawit"
+          image="/img/project/pictureporto8.jpg"
+          nickname="Palm Oil Factory"
+          location="Jambi"
+          desc="Pengurangi pendangkalan dan Improving Anaerobic dan Aerobic"
+          url="#"
+        />
+
+        <BlueView
+          title="PT. Toba Pulp Lestari Tbk."
+          image="/img/project/pictureporto9.jpg"
+          nickname=""
+          location="Toba Samosir, Sumatera Utara"
+          desc="Implementasi Sewage Treatment Plant"
+          url="#"
+        />
+        
       </div>
     </>
   );

@@ -29,18 +29,18 @@ const Navbar = () => {
               <div className="flex items-center ml-4 md:ml-6">
                 <div className="hidden md:block">
                   <div className="flex items-baseline ml-10 space-x-4">
-                    <Link
+                    <a
                       className="text-[#41444B] hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md "
                       href="/#"
                     >
                       Home
-                    </Link>
-                    <Link
+                    </a>
+                    <a
                       className="text-[#41444B] dark:text-white hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md "
                       href="/#about"
                     >
                       Tentang Kami
-                    </Link>
+                    </a>
 
                     {/* <WaterDowpdown title="Waste Water Technology" /> */}
                     {/* <ProducDropDown title="Product" /> */}
@@ -57,20 +57,20 @@ const Navbar = () => {
                       Product
                     </Link>
 
-                    <Link
+                    <a
                       className="text-[#41444B] hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md "
                       href="/#contact"
                     >
                       Kontak Kami
-                    </Link>
-                    <div className="flex shadow-md rounded-lg overflow-hidden">
+                    </a>
+                    {/* <div className="flex shadow-md rounded-lg overflow-hidden">
                       <div className="text-green-800 bg-slate-200 px-3 py-1">
                         EN
                       </div>
                       <div className="bg-green-800 text-white px-3 py-1">
                         IN
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -103,19 +103,19 @@ const Navbar = () => {
               className="text-gray-800 dark:text-white block px-3 py-2 rounded-md text-base font-medium"
               href="/#"
             >
-              Gallery
+              Tentang Kami
             </Link>
             <Link
               className="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               href="/#"
             >
-              Content
+              Waste Water Technology
             </Link>
             <Link
               className="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-              href="/#"
+              href="/products"
             >
-              Contact
+              product
             </Link>
           </div>
         </div>

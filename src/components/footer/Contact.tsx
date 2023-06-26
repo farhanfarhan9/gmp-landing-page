@@ -4,7 +4,7 @@ import React from "react";
 const Contact = () => {
   return (
     <div id="contact">
-      <div className="grid grid-cols-2 border-t-8 border-blue-800">
+      <div className="grid grid-cols-1 md:grid-cols-2  border-t-8 border-blue-800">
         <div className="pl-28 pr-52 bg-green-800 py-12">
           <div className="uppercase font-bold text-white mb-5 pts-40">
             Contact now
@@ -43,12 +43,12 @@ const Contact = () => {
             </div>
           </form>
         </div>
-        <div className="flex relative font-semibold">
+        <div className="flex flex-col md:flex-row relative font-semibold">
           <div className="capitalize ml-16 mt-14">
             <div className=" text-blue-800 mb-3 pts-24">Quick Links</div>
 
             <div className="mb-3 hover:underline">
-              <a href="/#impact">OurImpact</a>
+              <a href="/#impact">Our Impact</a>
             </div>
             <div className="mb-3 hover:underline">
               <a href="/#about">About</a>
@@ -93,7 +93,7 @@ const Contact = () => {
                   href="mailto:sales@satrianusa.group"
                   className="ml-3 font-bold"
                 >
-                  satria-nusa.co.id
+                  sales@satrianusa.group
                 </a>
               </div>
             </div>
@@ -124,17 +124,17 @@ const Contact = () => {
                   target="__blank"
                   className="ml-3 font-bold"
                 >
-                  08623121212121
+                  +6281534617975
                 </a>
               </div>
             </div>
           </div>
-          <div className="absolute bottom-0 right-0 left-0 h-24 bg-blue-800 flex justify-center items-center text-white text-base">
+          <div className="absolute bottom-0 right-0 left-0 h-24 bg-blue-800 flex justify-center items-center text-white">
             <div>
               Satria Nusa Enjinering © All rights reserved Copyrights 2023
             </div>
             <div className="flex space-x-2 ml-2 items-center">
-              <Image
+              {/* <Image
                 unoptimized
                 width={30}
                 height={30}
@@ -147,21 +147,29 @@ const Contact = () => {
                 height={30}
                 src="/facebook.svg"
                 alt=""
-              />
-              <Image
-                unoptimized
-                width={30}
-                height={30}
-                src="/linkedin.svg"
-                alt=""
-              />
-              <Image
-                unoptimized
-                width={30}
-                height={30}
-                src="/youtube.svg"
-                alt=""
-              />
+              /> */}
+              <a
+                href="https://www.linkedin.com/company/satrianusaenjinering/"
+                target="__blank"
+                className="hover:text-gray-400"
+              >
+                <Image
+                  unoptimized
+                  width={30}
+                  height={30}
+                  src="/linkedin.svg"
+                  alt=""
+                />
+              </a>
+              <a href="https://www.youtube.com/channel/UCN7PlA7IMadLYzOWtnzmAOg">
+                <Image
+                  unoptimized
+                  width={30}
+                  height={30}
+                  src="/youtube.svg"
+                  alt=""
+                />
+              </a>
             </div>
           </div>
         </div>

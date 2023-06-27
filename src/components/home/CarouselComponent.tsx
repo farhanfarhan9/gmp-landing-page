@@ -7,18 +7,28 @@ const CarouselComponent = () => {
   const carouselItems = [
     {
       id: 1,
-      image: "/foto1.png",
+      image: "/carousel/1a.jpg",
       altText: "Image 1",
     },
     {
       id: 2,
-      image: "/foto2.png",
+      image: "/carousel/1b.jpg",
       altText: "Image 2",
     },
     {
       id: 3,
-      image: "/foto3.png",
+      image: "/carousel/1c.jpg",
       altText: "Image 3",
+    },
+    {
+      id: 4,
+      image: "/carousel/1d.jpg",
+      altText: "Image 4",
+    },
+    {
+      id: 5,
+      image: "/carousel/1e.jpg",
+      altText: "Image 5",
     },
   ];
 

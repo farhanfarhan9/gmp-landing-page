@@ -38,9 +38,9 @@ const AboutLearnMore = () => {
         leave="transition-opacity duration-200"
         leaveFrom="opacity-100"
         leaveTo="opacity-0"
-        className="mt-5"
+        className="mt-5 text-[#41444B]"
       >
-        <p className="mb-7 mt-6">
+        <p className="mb-7 mt-6 ">
           PT. Satria Nusa Enjinering (Satria Nusa) merupakan perusahaan teknik
           yang didirikan dengan pengalaman lebih dari 30 tahun di sektor
           manufakturing dan pertambangan. Rekam jejak Satria Nusa dibuktikan
@@ -51,7 +51,7 @@ const AboutLearnMore = () => {
           disiplin. Sehingga Satria Nusa, tidak hanya menjual unit, tetapi
           menjadi mitra dari pelanggan kami untuk investasi yang optimal.
         </p>
-        <p className="mb-7">
+        <p className="mb-7 ">
           Bermodalkan pengalaman dan kepercayaan ini, kami didukung oleh para
           pemilik pabrik, akademisi dan principals untuk mengembangkan solusi
           limbah industri dan domestik. Satria Nusa berhasil mengolah limbah

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import ContactNow from "./ContactNow";
 
 const Contact = () => {
   return (
@@ -10,7 +11,7 @@ const Contact = () => {
             Contact now
           </div>
           <div className="my-6 h-1 bg-white w-16"></div>
-          <form>
+          {/* <form>
             <div className="mb-9">
               <input
                 type="text"
@@ -41,7 +42,8 @@ const Contact = () => {
                 Submit
               </button>
             </div>
-          </form>
+          </form> */}
+          <ContactNow />
         </div>
         <div className="flex relative font-semibold">
           <div className="capitalize ml-5 md:ml-16 mt-14">

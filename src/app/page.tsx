@@ -2,6 +2,7 @@ import About from "@/components/home/About";
 import Expand from "@/components/home/Expand";
 import Section1 from "@/components/home/Section1";
 import ModalVideo from "@/components/modal/ModalVideo";
+import Marquee from "react-fast-marquee";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -41,7 +42,6 @@ export default function Home() {
               height={100}
               className="w-full"
               src="/porto1.png"
-              style={{ height: "720px" }}
               alt=""
             />
           </div>
@@ -123,42 +123,70 @@ export default function Home() {
         <div className="uppercase font-bold text-center mt-14 pts-40">
           our Product & Partner
         </div>
-        <div className="flex justify-center space-x-9 py-12 mb-36 items-center">
-          <Image
-            unoptimized
-            width={100}
-            height={100}
-            src="/smi.png"
-            className="h-16"
-            alt=""
-          />
-          <Image
-            unoptimized
-            width={100}
-            height={100}
-            className="h-16"
-            src="/aquahelix-mbr-pump.png"
-            alt=""
-          />
-          <Image
-            unoptimized
-            width={100}
-            height={100}
-            src="/aquahelix.png"
-            alt=""
-          />
-          <Image unoptimized width={100} height={100} src="/teco.png" alt="" />
-          <Image unoptimized width={100} height={100} src="/nadic.png" alt="" />
-          <Image unoptimized width={100} height={100} src="/seg.png" alt="" />
-          <Image unoptimized width={100} height={100} src="/yuema.png" alt="" />
-          <Image
-            unoptimized
-            width={100}
-            height={100}
-            src="/transm.png"
-            alt=""
-          />
-        </div>
+        <span className="w-1/2 mx-auto mb-36">
+          <Marquee speed={100}>
+            <div className="flex justify-center space-x-9 py-12 items-center mx-5">
+              <Image
+                unoptimized
+                width={100}
+                height={100}
+                src="/smi.png"
+                className="h-16"
+                alt=""
+              />
+              <Image
+                unoptimized
+                width={100}
+                height={100}
+                className="h-16"
+                src="/aquahelix-mbr-pump.png"
+                alt=""
+              />
+              <Image
+                unoptimized
+                width={100}
+                height={100}
+                src="/aquahelix.png"
+                alt=""
+              />
+              <Image
+                unoptimized
+                width={100}
+                height={100}
+                src="/teco.png"
+                alt=""
+              />
+              <Image
+                unoptimized
+                width={100}
+                height={100}
+                src="/nadic.png"
+                alt=""
+              />
+              <Image
+                unoptimized
+                width={100}
+                height={100}
+                src="/seg.png"
+                alt=""
+              />
+              <Image
+                unoptimized
+                width={100}
+                height={100}
+                src="/yuema.png"
+                alt=""
+              />
+              <Image
+                unoptimized
+                width={100}
+                height={100}
+                src="/transm.png"
+                alt=""
+              />
+            </div>
+          </Marquee>
+        </span>
       </section>
     </>
   );

@@ -147,6 +147,52 @@ function Projects() {
           desc="Wastewater capacity of 5 tons of water waste per day"
           url="#"
         />
+
+        <GreenView
+          title="PT. Sawit Jaya Makmur Sentosa"
+          image="/img/project/ptsawit.jpeg"
+          nickname="Palm Oil Factory"
+          location="Langkat, Sumut"
+          desc="Reduction of siltation and Improving Anaerobic and Aerobic"
+          url="#"
+        />
+
+        <BlueView
+          title="PT. Raja Voltama Electric"
+          image="/img/project/rve.jpeg"
+          nickname=""
+          location="Muara Enim, Sumsel"
+          desc="Normalisasi Oily Water Separator (OWS) System"
+          url="#"
+        />
+
+        <GreenView
+          title="PT. Rumah Sakit Umum Kasih Permata"
+          image="/img/project/rsukp.jpeg"
+          nickname=""
+          location="Batubara, Sumut"
+          desc="Instalasi Pengolahan Air Limbah (IPAL)"
+          url="#"
+        />
+
+        <BlueView
+          title="PT. Palarudhibi Teguh Makmur"
+          image="/img/project/ptm.jpeg"
+          nickname=""
+          location="Medan"
+          desc="Submersible Pump Relay Replacement"
+          url="#"
+        />
+
+        <GreenView
+          title="PT. Sumber Jaya Industri Oleo"
+          image="/img/project/sumberjaya.jpeg"
+          nickname="Palm Oil Factory"
+          location="Pelintung Dumai, Riau"
+          desc="Waswater Treatment Plant - Equipments and Panel"
+          url="#"
+        />
+
       </div>
     </>
   );

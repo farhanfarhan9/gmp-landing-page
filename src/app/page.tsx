@@ -1,5 +1,4 @@
 import About from "@/components/home/About";
-import CarouselComponent from "@/components/home/CarouselComponent";
 import Expand from "@/components/home/Expand";
 import Section1 from "@/components/home/Section1";
 import ModalVideo from "@/components/modal/ModalVideo";

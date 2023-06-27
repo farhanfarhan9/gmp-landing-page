@@ -1,6 +1,7 @@
 import React from "react";
 import AboutLearnMore from "./AboutLearnMore";
 import Carousel from "@/components/home/CarouselComponent";
+import NewCarousel from "./NewCarousel";
 
 const About = () => {
   return (
@@ -21,7 +22,8 @@ const About = () => {
       </div>
       
       <div className="w-full h-64 flex items-center justify-center relative">
-        <Carousel />
+        {/* <Carousel /> */}
+        <NewCarousel />
       </div>
     </section>
   );

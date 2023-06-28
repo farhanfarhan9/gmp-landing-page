@@ -48,29 +48,20 @@ const Section1 = () => {
           alt=""
         />
         <div className="absolute top-0 bottom-0 right-0 left-0">
-          <div className="h-full">
-            <div className="h-full">
-              <div className="text-white h-full flex items-center max-w-7xl mx-auto">
-                <div className="-mt-36">
-                  <div
-                    className="font-bold pts-80"
-                    style={{ lineHeight: "84px" }}
-                  >
-                    Sustainability Starts <br />
-                    from Reliable Engineering
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className="h-full flex items-center justify-start text-white ml-8">
+            <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-10">
+              Sustainability Starts <br />
+              from Reliable Engineering
+            </h1>
           </div>
         </div>
         <div className="absolute bottom-0 right-0 left-0 border-t-4 bg-blue-800 bg-opacity-50 border-blue-900 text-white">
-          <div className="h-full flex justify-center py-5">
+          <div className="h-full flex ml-8 justify-center py-5">
             <span>
-              <div className="pts-40 text-2 underline">Our Impact</div>
-              <div className="pts-48 flex">
-                Conserved Water :
-                <div className="flex">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl underline">Our Impact</h2>
+              <div className="flex items-center justify-start text-xl md:text-2xl lg:text-3xl xl:text-4xl">
+                Conserved Water:
+                <div className="flex items-center">
                   <div className="bg-stone-100 bg-opacity-40 rounded-xl px-3 py-1 mx-2 font-mono">
                     {value.toLocaleString(undefined, {
                       minimumFractionDigits: 3,

@@ -1,8 +1,10 @@
 "use client";
 import { Transition } from "@headlessui/react";
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const AboutLearnMore = () => {
+  const { t } = useTranslation();
   const [show, setshow] = useState(false);
   return (
     <>
@@ -50,7 +52,7 @@ const AboutLearnMore = () => {
         }}
         className="px-11 py-4 text-white bg-green-700 mt-7"
       >
-        Learn more
+        {t("learn_more")}
       </button>
     </>
   );

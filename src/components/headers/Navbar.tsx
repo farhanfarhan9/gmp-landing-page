@@ -2,6 +2,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
+import LanguageSwitcher from "./LanguageSwitcher";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -9,6 +11,7 @@ const Navbar = () => {
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
+  const { t } = useTranslation();
 
   return (
       <nav className="bg-white dark:bg-gray-800">
@@ -35,32 +38,33 @@ const Navbar = () => {
                     className="text-[#41444B] hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md"
                     href="/#"
                   >
-                    Home
+                    {t("home")}
                   </a>
                   <a
                     className="text-[#41444B] dark:text-white hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md"
                     href="/#about"
                   >
-                    Tentang Kami
+                    {t("about_us")}
                   </a>
                   <Link
                     className="text-[#41444B] dark:text-white hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md"
                     href="/waste_water_technology"
                   >
-                    Waste Water Technology
+                    {t("wastewater_tech")}
                   </Link>
                   <Link
                     className="text-[#41444B] dark:text-white hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md"
                     href="/products"
                   >
-                    Product
+                    {t("product")}
                   </Link>
                   <a
                     className="text-[#41444B] hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md"
                     href="/#contact"
                   >
-                    Kontak Kami
+                    {t("contact_us")}
                   </a>
+                  <LanguageSwitcher/>
                 </div>
               </div>
             </div>
@@ -110,6 +114,7 @@ const Navbar = () => {
               >
                 Product
               </Link>
+              <LanguageSwitcher/>
             </div>
           </div>
         )}

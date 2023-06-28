@@ -1,11 +1,13 @@
 "use client";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const millisecondsPerDay = 24 * 60 * 60 * 1000;
 const additionalValuePerDay = 4090;
 
 const Section1 = () => {
+  const { t } = useTranslation();
   const [value, setValue] = useState(0);
 
   useEffect(() => {
@@ -50,17 +52,17 @@ const Section1 = () => {
         <div className="absolute top-0 bottom-0 right-0 left-0">
           <div className="h-full flex items-center justify-start text-white ml-8">
             <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-10">
-              Sustainability Starts <br />
-              from Reliable Engineering
+              {t("headline")} <br />
+              {t("subheadline")}
             </h1>
           </div>
         </div>
         <div className="absolute bottom-0 right-0 left-0 border-t-4 bg-blue-800 bg-opacity-50 border-blue-900 text-white">
           <div className="h-full flex ml-8 justify-center py-5">
             <span>
-              <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl underline">Our Impact</h2>
+              <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl underline">{t("our_impact")}:</h2>
               <div className="flex items-center justify-start text-xl md:text-2xl lg:text-3xl xl:text-4xl">
-                Conserved Water:
+                {t("conserved_water")}:
                 <div className="flex items-center">
                   <div className="bg-stone-100 bg-opacity-40 rounded-xl px-3 py-1 mx-2 font-mono">
                     {value.toLocaleString(undefined, {

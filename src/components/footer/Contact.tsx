@@ -93,7 +93,7 @@ const Contact = () => {
                 <div className="w-6 h-6"></div>
                 <a
                   href="mailto:sales@satrianusa.group"
-                  className="ml-3 font-bold"
+                  className="ml-3 font-bold text-base md:text-lg"
                 >
                   sales@satrianusa.group
                 </a>
@@ -124,7 +124,7 @@ const Contact = () => {
                 <a
                   href="https://api.whatsapp.com/send?phone=081534617975"
                   target="__blank"
-                  className="ml-3 font-bold"
+                  className="ml-3 font-bold text-base md:text-lg"
                 >
                   +6281534617975
                 </a>

@@ -48,11 +48,15 @@ const Section1 = () => {
           alt=""
         />
         <div className="absolute top-0 bottom-0 right-0 left-0">
-          <div className="h-full flex items-center justify-start text-white ml-8">
-            <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-10">
-              Sustainability Starts <br />
-              from Reliable Engineering
-            </h1>
+          <div className="h-full">
+            <div className="h-full">
+              <div className="text-white h-full text-4xl md:text-5xl lg:text-6xl xl:text-7xl  flex items-center max-w-7xl mx-auto">
+                <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-10">
+                  Sustainability Starts <br />
+                  from Reliable Engineering
+                </h1>
+              </div>
+            </div>
           </div>
         </div>
         <div className="absolute bottom-0 right-0 left-0 border-t-4 bg-blue-800 bg-opacity-50 border-blue-900 text-white">

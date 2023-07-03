@@ -48,8 +48,8 @@ const Section1 = () => {
           alt=""
         />
         <div className="absolute top-0 bottom-0 right-0 left-0">
-          <div className="h-full flex items-center justify-start text-white ml-8">
-            <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-10">
+          <div className="h-full flex items-center justify-start text-white max-w-7xl">
+            <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl mx-auto">
               Sustainability Starts <br />
               from Reliable Engineering
             </h1>

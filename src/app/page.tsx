@@ -52,7 +52,7 @@ export default function Home() {
                 width={100}
                 height={100}
                 className="w-full"
-                src="/porto2.png"
+                src="/porto2new.png"
                 alt=""
               />
             </div>
@@ -105,7 +105,7 @@ export default function Home() {
               width={100}
               height={100}
               className="w-full"
-              src="/porto4.png"
+              src="/porto4new.png"
               style={{ height: "720px" }}
               alt=""
             />

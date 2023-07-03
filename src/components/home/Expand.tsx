@@ -15,7 +15,7 @@ const Expand = () => {
     {
       id: 2,
       title: "Waste Technology & Environment",
-      bg: "/bg3.png",
+      bg: "/bg2.png",
       desc: "Satria Nusa Enjinering merupakan perusahaan pengelolaan air limbah nasional yang berhasil menerapkan terknologi mutakhir dalam water and wastewater technology.",
       color: "bg-blue-800",
       with: "w-1/5",
@@ -23,7 +23,7 @@ const Expand = () => {
     {
       id: 3,
       title: "Civil & Fabrications",
-      bg: "/bg4.png",
+      bg: "/bg3.png",
       desc: "SNE memiliki kapabilitas internal untuk konstruksi sipil dan mekanikal. Dengan pengalaman lebih dari 10 tahun, SNE sudah terlibat dalam berbagai konstruksi untuk keperluan industri di seluruh Indonesia.",
       color: "bg-green-800",
       with: "w-1/5",
@@ -31,7 +31,7 @@ const Expand = () => {
     {
       id: 4,
       title: "Mechanical & Electrical",
-      bg: "/bg5.png",
+      bg: "/bg4.png",
       desc: "SNE melalui Satria Elektrik yang telah memiliki pengalaman lebih dari 40 tahun di bidang elektromotor dan gearmotor telah membantu banyak industri dalam mencapai efisiensi daya.",
       color: "bg-amber-800",
       with: "w-1/5",

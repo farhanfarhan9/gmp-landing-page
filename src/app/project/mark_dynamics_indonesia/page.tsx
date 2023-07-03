@@ -17,7 +17,7 @@ const mark_dynamic_indonesia = () => {
     picture4: "/img/project/mdi4.jpg",
     picture5: "/img/project/mdi5.jpg",
     videopicture: "",
-    video: "BhhUBdMsnCA",
+    video: "",
   };
   return (
     <>

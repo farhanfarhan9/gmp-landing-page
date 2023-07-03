@@ -5,7 +5,7 @@ import NewCarousel from "./NewCarousel";
 
 const About = () => {
   return (
-    <section className="grid grid-cols-2 gap-3 py-28 items-center" id="about">
+    <section className="grid grid-cols-1 md:grid-cols-2 gap-3 py-28 mx-4 md:mx-0 items-center" id="about">
       <div className="md:pl-36 md:pr-12">
         <div className="font-bold text-4xl">ABOUT US</div>
         <div className="mt-6">

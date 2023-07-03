@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import ServiceExpand from "./ServiceExpand";
+import ServiceExpandMobile from "./ServiceExpandMobile";
 
 const Expand = () => {
   const databasic = [
@@ -48,10 +49,17 @@ const Expand = () => {
     );
   };
   return (
-    <div className="relative flex justify-center" id="service">
-      {data.map((val) => (
-        <ServiceExpand key={val.id} data={val} updatebyid={updateWithById} />
-      ))}
+    <div id="service">
+      <div className="relative hidden xl:flex justify-center">
+        {data.map((val) => (
+          <ServiceExpand key={val.id} data={val} updatebyid={updateWithById} />
+        ))}
+      </div>
+      <div className="relative xl:hidden flex-row mx-4 justify-center">
+        {data.map((val) => (
+          <ServiceExpandMobile key={val.id} data={val} />
+        ))}
+      </div>
     </div>
   );
 };

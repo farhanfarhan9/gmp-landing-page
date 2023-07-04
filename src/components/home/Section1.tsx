@@ -1,6 +1,6 @@
 "use client"
 import React from "react";
-import ImageFade from'./ImageFade.jsx';
+import ImageFade from './ImageFade.jsx';
 
 const millisecondsPerDay = 24 * 60 * 60 * 1000;
 const additionalValuePerDay = 4090;
@@ -52,16 +52,16 @@ class Section1 extends React.Component<Section1Props, Section1State> {
   render() {
     const { value } = this.state;
 
-    if(window) {
+    if (window) {
       const isMobile = window.innerWidth <= 768; // Specifies whether the current view is a mobile view
-  
+
       if (isMobile) {
         // Code for mobile view
         return <MobileView value={value} />;
       } else {
         // Code for desktop view
         return <DesktopView value={value} />;
-      }  
+      }
     }
   }
 }
@@ -73,11 +73,11 @@ class MobileView extends React.Component<{ value: number }> {
       imageHeight: 0,
     };
   }
-  
+
   render() {
     return (
       <section className="relative" id="impact">
-        <ImageFade images={["/img/home/impactfoto_mobile.png","/img/home/impactfoto2_mobile.png"]}/>
+        <ImageFade images={["/img/home/impactfoto_mobile.png", "/img/home/impactfoto2_mobile.png"]} />
         <div className="absolute top-0 bottom-0 right-0 left-0">
           <div className="h-full flex items-center justify-start text-white max-w-7xl">
             <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl ml-8">
@@ -113,10 +113,10 @@ class DesktopView extends React.Component<{ value: number }> {
   render() {
     return (
       <section className="relative" id="impact">
-        <ImageFade images={["/img/home/impactfoto.png","/img/home/impactfoto2.png"]}/>
+        <ImageFade images={["/img/home/impactfoto.png", "/img/home/impactfoto2.png"]} />
         <div className="absolute top-0 bottom-0 right-0 left-0">
           <div className="h-full flex items-center justify-start text-white max-w-7xl">
-            <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl mx-auto">
+            <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl mx-auto" style={{ lineHeight: '1.2' }}>
               Sustainability Starts <br />
               from Reliable Engineering
             </h1>

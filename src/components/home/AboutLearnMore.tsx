@@ -17,12 +17,7 @@ const AboutLearnMore = () => {
         className="mt-5 text-[#41444B]"
       >
         <p className="mb-7 mt-6 ">
-          PT. Satria Nusa Enjinering (Satria Nusa) merupakan perusahaan teknik
-          yang didirikan dengan pengalaman lebih dari 30 tahun di sektor
-          manufakturing dan pertambangan. Rekam jejak Satria Nusa dibuktikan
-          dengan kepercayaan dari Teco, Ebara, Torishima dan Tsurumi untuk
-          membantu pelanggan mereka di seluruh Indonesia untuk penggunaan yang
-          tepat mutu dan tepat biaya. Jasa ini terbukti hanya dapat dilakukan
+          Jasa ini terbukti hanya dapat dilakukan
           oleh Satria Nusa dengan pengalaman dan kapabilitas teknik yang lintas
           disiplin. Sehingga Satria Nusa, tidak hanya menjual unit, tetapi
           menjadi mitra dari pelanggan kami untuk investasi yang optimal.
@@ -50,7 +45,7 @@ const AboutLearnMore = () => {
         }}
         className="px-11 py-4 text-white bg-green-700 mt-7"
       >
-        Learn more
+        {show ? 'Read Less' : 'Read More'}
       </button>
     </>
   );

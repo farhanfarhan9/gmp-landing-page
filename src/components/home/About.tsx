@@ -9,13 +9,7 @@ const About = () => {
       <div className="md:pl-36 md:pr-12">
         <div className="font-bold text-4xl">ABOUT US</div>
         <div className="mt-6">
-          <span className="font-bold">Satria Nusa</span> didirikan oleh engineer
-          yang sudah berpengalaman di industri manufaktur dengan jejaring
-          teknisi dan workshop di Jawa dan Sumatra.
-        </div>
-        <div className="mt-7">
-          <span className="font-bold">Satria Nusa</span> merupakan salah satu
-          perusahaan teknik dengan ekosistem industri yang terpadu.
+          <span className="font-bold">PT. Satria Nusa Enjinering (Satria Nusa)</span> merupakan perusahaan teknik yang didirikan dengan pengalaman lebih dari 30 tahun di sektor manufakturing dan pertambangan. Rekam jejak Satria Nusa dibuktikan dengan kepercayaan dari Teco, Ebara, Torishima dan Tsurumi untuk membantu pelanggan mereka di seluruh Indonesia untuk penggunaan yang tepat mutu dan tepat biaya.
         </div>
 
         <AboutLearnMore />

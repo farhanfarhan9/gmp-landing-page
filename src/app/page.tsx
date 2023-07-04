@@ -14,7 +14,9 @@ export default function Home() {
       <Expand />
       <section className="flex justify-center py-12" id="portofolio">
         <div className="flex flex-col max-w-7xl">
-          <div className="text-center uppercase pts-40">project Portofolio</div>
+          <div className="uppercase font-bold text-center mt-14 pts-40">
+            project Portofolio
+          </div>
           <p className="text-center mt-3 mb-10">
             Kami bangga telah menjadi mitra yang dipercaya oleh berbagai
             perusahaan di Indonesia untuk memenuhi kebutuhan mereka dalam
@@ -121,7 +123,7 @@ export default function Home() {
       </section>
       <section className="flex flex-col justify-center">
         <div className="uppercase font-bold text-center mt-14 pts-40">
-          our Product & Partner
+          our Products & Partners
         </div>
         <span className="w-5/6 md:w-1/2 mx-auto mb-36">
           <Marquee speed={100}>

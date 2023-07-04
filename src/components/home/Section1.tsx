@@ -52,13 +52,13 @@ class Section1 extends React.Component<Section1Props, Section1State> {
   render() {
     const { value } = this.state;
 
-    if (window) {
+    if (typeof window !== 'undefined') {
       const isMobile = window.innerWidth <= 768; // Specifies whether the current view is a mobile view
 
       if (isMobile) {
         // Code for mobile view
         return <MobileView value={value} />;
-      } else {
+      } else { 
         // Code for desktop view
         return <DesktopView value={value} />;
       }

@@ -14,7 +14,7 @@ const Navbar = () => {
       <nav className="bg-white dark:bg-gray-800">
         <div className="mx-auto max-w-7xl">
           <div className="flex items-center justify-between h-16" style={{ height: "100px" }}>
-            <div className="flex items-center">
+            <div className="sm:ml-0 ml-8 flex items-center">
               <Link href="/">
                 <span className="flex-shrink-0">
                   <Image
@@ -64,7 +64,7 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
-            <div className="flex -mr-2 md:hidden">
+            <div className="flex mr-2 md:hidden">
               <button
                 className="text-gray-800 dark:text-white hover:text-gray-300 inline-flex items-center justify-center p-2 rounded-md focus:outline-none"
                 onClick={toggleMobileMenu}

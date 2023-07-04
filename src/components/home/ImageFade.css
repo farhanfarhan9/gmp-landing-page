@@ -1,0 +1,17 @@
+.image-container {
+    position: relative;
+}
+
+.fade-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+
+.fade-img.active {
+    opacity: 1;
+}

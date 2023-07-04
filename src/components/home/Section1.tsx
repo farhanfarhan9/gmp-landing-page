@@ -129,9 +129,9 @@ class DesktopView extends React.Component<{ value: number }> {
         <div className="absolute bottom-0 right-0 left-0 border-t-4 bg-blue-800 bg-opacity-50 border-blue-900 text-white">
           <div className="h-full flex ml-8 justify-center py-2 md:py-5">
             <span>
-              <h2 className="text-2xl md:text-3xl lg:text-3xl xl:text-4xl underline">Our Impact</h2>
-              <div className="flex items-center justify-start text-xl md:text-2xl lg:text-4xl xl:text-5xl">
-                Conserved Water:
+              <h2 className="text-2xl md:text-xl lg:text-2xl xl:text-3xl underline font-semibold">Our Impact</h2>
+              <div className="flex items-center justify-start text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold ">
+                Conserved Water : &nbsp;
                 <div className="flex items-center">
                   <div className="bg-stone-100 bg-opacity-40 rounded-xl px-3 py-1 mx-2 font-mono">
                     {this.props.value.toLocaleString(undefined, { minimumFractionDigits: 3 })}

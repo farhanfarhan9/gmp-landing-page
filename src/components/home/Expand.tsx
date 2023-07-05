@@ -55,7 +55,7 @@ const Expand = () => {
           <ServiceExpand key={val.id} data={val} updatebyid={updateWithById} />
         ))}
       </div>
-      <div className="relative xl:hidden flex-row mx-4 justify-center">
+      <div className="relative xl:hidden flex-row justify-center">
         {data.map((val) => (
           <ServiceExpandMobile key={val.id} data={val} />
         ))}

@@ -36,8 +36,8 @@ const ServiceExpandMobile = ({
         <div className="absolute left-0 right-0 top-0 bottom-0">
           <div className={`flex h-full justify-center items-center `}>
             <div className="flex flex-col text-white px-10 ">
-              <div className="font-bold text-3xl pb-5">{data.title}</div>
-              <p>{data.desc}</p>
+              <div className="font-bold text-3xl md:text-4xl lg:text-4xl xl:text-4xl pb-5">{data.title}</div>
+              <p className="text-base md:text-lg lg:text-xl xl:text-2xl">{data.desc}</p>
               
             </div>
           </div>

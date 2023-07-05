@@ -5,68 +5,36 @@ import ContactNow from "./ContactNow";
 const Contact = () => {
   return (
     <div id="contact">
-      <div className="grid grid-cols-1 md:grid-cols-2  border-t-8 border-blue-800">
+      <div className="grid grid-cols-1 md:grid-cols-2 border-t-8 border-blue-800">
         <div className="pl-4 xl:pl-28 pr-5 md:pr-11 xl:pr-52 bg-green-800 py-12">
-          <div className="uppercase font-bold text-white mb-5 pts-40">
+          <div className="uppercase font-bold text-white mb-5 pts-30 text-2xl md:text-3xl lg:text-4xl">
             Contact now
           </div>
           <div className="my-6 h-1 bg-white w-16"></div>
-          {/* <form>
-            <div className="mb-9">
-              <input
-                type="text"
-                name="name"
-                placeholder="Name"
-                className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-              />
-            </div>
-            <div className="mb-9">
-              <input
-                type="text"
-                name="surname"
-                placeholder="Surname"
-                className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-              />
-            </div>
-            <div className="mb-9">
-              <input
-                type="email"
-                name="email"
-                placeholder="Email"
-                className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-              />
-            </div>
-            <div className="mb-9"></div>
-            <div>
-              <button className="w-full hover:shadow-form rounded-md bg-green-800 border-4 py-3 px-8 text-base font-semibold text-white outline-none">
-                Submit
-              </button>
-            </div>
-          </form> */}
           <ContactNow />
         </div>
         <div className="flex flex-col lg:flex-row relative font-semibold">
           <div className="capitalize ml-5 md:ml-16 mt-14">
-            <div className=" text-blue-800 mb-3 pts-24">Quick Links</div>
+            <div className="text-blue-800 mb-3 pts-24 text-base md:text-lg lg:text-xl">Quick Links</div>
 
-            <div className="mb-3 hover:underline">
+            <div className="mb-2 hover:underline text-base md:text-lg lg:text-xl">
               <a href="/#impact">Our Impact</a>
             </div>
-            <div className="mb-3 hover:underline">
+            <div className="mb-2 hover:underline text-base md:text-lg lg:text-xl">
               <a href="/#about">About</a>
             </div>
-            <div className="mb-3 hover:underline">
+            <div className="mb-2 hover:underline text-base md:text-lg lg:text-xl">
               <a href="/#service">Our Services</a>
             </div>
-            <div className="mb-3 hover:underline">
+            <div className="mb-2 hover:underline text-base md:text-lg lg:text-xl">
               <a href="/#portofolio">Our Portofolio</a>
             </div>
-            <div className="mb-3 hover:underline">
+            <div className="mb-2 hover:underline text-base md:text-lg lg:text-xl">
               <a href="/#contact">Contact</a>
             </div>
           </div>
           <div className="h-80 ml-5 md:ml-16 mt-14">
-            <div className="capitalize text-blue-800 mb-3 pts-24">
+            <div className="capitalize text-blue-800 mb-3 pts-24 text-base md:text-lg lg:text-xl">
               Hubungi kami
             </div>
             <div>
@@ -87,7 +55,7 @@ const Contact = () => {
                     />
                   </svg>
                 </div>
-                <div className="ml-3">Email</div>
+                <div className="ml-3 text-base md:text-lg lg:text-xl">Email</div>
               </div>
               <div className="flex">
                 <div className="w-6 h-6"></div>
@@ -117,7 +85,7 @@ const Contact = () => {
                     />
                   </svg>
                 </div>
-                <div className="ml-3">Satria access</div>
+                <div className="ml-3 text-base md:text-lg lg:text-xl">Satria access</div>
               </div>
               <div className="flex">
                 <div className="w-6 h-6"></div>
@@ -132,24 +100,10 @@ const Contact = () => {
             </div>
           </div>
           <div className="absolute bottom-0 right-0 left-0 h-24 bg-blue-800 flex justify-center items-center text-white">
-            <div>
+            <div className="text-base md:text-lg lg:text-xl ml-4">
               Satria Nusa Enjinering © All rights reserved Copyrights 2023
             </div>
-            <div className="flex space-x-2 ml-2 items-center">
-              {/* <Image
-                unoptimized
-                width={30}
-                height={30}
-                src="/twitter.svg"
-                alt=""
-              />
-              <Image
-                unoptimized
-                width={30}
-                height={30}
-                src="/facebook.svg"
-                alt=""
-              /> */}
+            <div className="flex space-x-2 ml-2 items-center mx-4">
               <a
                 href="https://www.linkedin.com/company/satrianusaenjinering/"
                 target="__blank"

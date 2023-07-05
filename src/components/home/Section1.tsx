@@ -6,6 +6,7 @@ const millisecondsPerDay = 24 * 60 * 60 * 1000;
 const additionalValuePerDay = 4090;
 
 interface Section1State {
+  isClient: boolean,
   value: number;
 }
 
@@ -17,11 +18,13 @@ class Section1 extends React.Component<Section1Props, Section1State> {
   constructor(props: Section1Props) {
     super(props);
     this.state = {
+      isClient: false,
       value: 0,
     };
   }
 
   componentDidMount() {
+    this.setState({ isClient: true });
     if (typeof window !== 'undefined') {
       const startDate = new Date("06/21/2023 00:00:00");
       const currentDate = new Date();
@@ -48,25 +51,25 @@ class Section1 extends React.Component<Section1Props, Section1State> {
   }
 
   componentWillUnmount() {
-    if (typeof window !== 'undefined') {
-      clearInterval(this.interval);
-    }
+    clearInterval(this.interval);
   }
 
   render() {
-    const { value } = this.state;
+    const { isClient, value } = this.state;
 
-    // if (typeof window !== 'undefined') {
-      const isMobile = window.innerWidth <= 768; // Specifies whether the current view is a mobile view
-
-      if (isMobile) {
-        // Code for mobile view
-        return <MobileView value={value} />;
-      } else {
-        // Code for desktop view
-        return <DesktopView value={value} />;
-      }
-    // }
+    return (
+      <>
+        {isClient && (
+          <>
+            {typeof window !== 'undefined' && window.innerWidth >= 768 ? (
+                <DesktopView value={value} />
+            ) : (
+                <MobileView value={value} />
+            )}
+          </>
+        )}
+      </>
+    );
   }
 }
 

@@ -100,7 +100,7 @@ const Navbar = () => {
               </a>
               <Link
                 className="text-gray-500 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                href="/waste_water_teknologi"
+                href="/waste_water_technology"
               >
                 Waste Water Technology
               </Link>

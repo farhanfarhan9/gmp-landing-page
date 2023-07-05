@@ -20,7 +20,7 @@ const About = () => {
         <AboutLearnMore />
       </div>
       
-      <div className="w-full flex items-center justify-center relative">
+      <div className="w-full flex items-center justify-center relative mb-4">
         <NewCarousel />
 
       </div>

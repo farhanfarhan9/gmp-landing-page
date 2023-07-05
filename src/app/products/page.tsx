@@ -72,13 +72,13 @@ const page = () => {
     <>
       <Banner title="Product" path="Home / Products" image="/bg3.png" />
       <div className="mx-auto max-w-7xl my-14">
-        <div className="font-bold text-blue-800 pts-24">Machineries</div>
+        <div className="font-bold text-blue-800 pts-24 px-4">Machineries</div>
         {machineries.map((data, index) => (
           <Product key={index} data={data} />
         ))}
       </div>
       <div className="mx-auto max-w-7xl my-14">
-        <div className="font-bold text-blue-800 pts-24">
+        <div className="font-bold text-blue-800 pts-24 px-4">
           Consumable - Bacteria
         </div>
         {bacteria.map((data, index) => (
@@ -86,7 +86,7 @@ const page = () => {
         ))}
       </div>
       <div className="mx-auto max-w-7xl my-14">
-        <div className="font-bold text-blue-800 pts-24">
+        <div className="font-bold text-blue-800 pts-24 px-4">
           Consumable - Filter Clotes
         </div>
         {clotes.map((data, index) => (

@@ -18,22 +18,22 @@ const Product = ({ data }: { data: any }) => {
           alt=""
         />
       </div>
-      <div className="flex flex-col justify-center pl-10 mt-5 md:mt-0">
+      <div className="flex flex-col justify-center px-10 mt-5 md:mt-0">
         <div className="mb-5 font-bold">{data.title}</div>
-        <div>{data.text}</div>
+        <div className="text-base md:text-lg lg:text-xl xl:text-1xl">{data.text}</div>
         <Transition
           show={expand}
           enter="transition-opacity duration-200"
-        enterFrom="opacity-0"
-        enterTo="opacity-100"
-        leave="transition-opacity duration-200"
-        leaveFrom="opacity-100"
-        leaveTo="opacity-0"
+          enterFrom="opacity-0"
+          enterTo="opacity-100"
+          leave="transition-opacity duration-200"
+          leaveFrom="opacity-100"
+          leaveTo="opacity-0"
         >
           <div
             className="prose pts-20 text-black "
             dangerouslySetInnerHTML={{
-              __html: "<div>" + data.text2 + "</div>",
+              __html: "<div class='text-base md:text-lg lg:text-xl xl:text-1xl'>" + data.text2 + "</div>",
             }}
           />
         </Transition>
@@ -44,9 +44,9 @@ const Product = ({ data }: { data: any }) => {
                 setexpand(!expand);
               }}
             >
-              <ButtonPrimary>
+              <button className="px-11 py-4 text-white bg-green-700 mt-7 text-base md:text-lg lg:text-xl xl:text-2xl">
                 {expand ? "Read less" : "Read More"}
-              </ButtonPrimary>
+              </button>
             </span>
           )}
 

@@ -11,7 +11,9 @@ export default function Home() {
     <>
       <Section1 />
       <About />
+      <section  id="our-service-section">
       <Expand />
+      </section>
       <section className="flex justify-center py-12" id="portofolio">
         <div className="flex flex-col max-w-7xl mx-4">
           <div className="uppercase font-bold text-center mt-7 text-3xl md:text-4xl lg:text-5xl">
@@ -36,13 +38,6 @@ export default function Home() {
         </div>
       </section>
       <OurProject/>
-      <section className="flex justify-center my-4">
-        <Link href="/projects">
-          <button className="bg-green-700 text-white px-11 py-4 mt-8 text-base md:text-lg lg:text-xl">
-            See Other Project
-          </button>
-        </Link>
-      </section>
       <section className="flex flex-col justify-center">
         <div className="uppercase font-bold text-center mt-14 text-3xl md:text-4xl lg:text-5xl">
           our Products & Partners

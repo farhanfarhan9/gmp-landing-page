@@ -70,7 +70,7 @@ const page = () => {
   ];
   return (
     <>
-      <Banner title="Product" path="Home / Products" image="/bg3.png" />
+      <Banner title="Our Products" path="Home / Products" image="/bg3.png" />
       <div className="mx-auto max-w-7xl my-14">
         <div className="font-bold text-blue-800 pts-24 px-4">Machineries</div>
         {machineries.map((data, index) => (

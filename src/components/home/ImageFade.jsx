@@ -10,7 +10,7 @@ import Image from "next/image";
 class ImageFade extends React.Component {
   state = {
     index: 0,
-    imageHeight: 0,
+    imageHeight: 760
   };
 
   static propTypes = {
@@ -20,6 +20,7 @@ class ImageFade extends React.Component {
   imageRef = React.createRef();
 
   componentDidMount() {
+
     this.interval = setInterval(() => {
       this.setState((prevState) => ({
         index: (prevState.index + 1) % this.props.images.length,
@@ -28,8 +29,22 @@ class ImageFade extends React.Component {
 
     const imageElement = this.imageRef.current;
     imageElement.onload = () => {
+      const fragment = window.location.hash;
+
+      if (fragment) {
+        const element = document.getElementById(fragment.slice(1));
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+      
       const height = imageElement.offsetHeight;
-      this.setState({ imageHeight: height });
+
+      if(height===0) {
+        this.setState({ imageHeight: 760 });
+      } else {
+        this.setState({ imageHeight: height });
+      }
     };
   }
 

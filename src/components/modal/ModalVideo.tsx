@@ -53,7 +53,7 @@ export default function ModalVideo({
                     <iframe
                       width="1000"
                       height="615"
-                      src="https://www.youtube.com/embed/sTeyKG8nsjs"
+                      src="https://www.youtube.com/embed/CKe3Kzbi-Ao"
                       title="YouTube video player"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     ></iframe>

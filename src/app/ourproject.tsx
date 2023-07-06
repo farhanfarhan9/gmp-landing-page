@@ -38,9 +38,6 @@ function OurProject() {
                                     alt=""
                                 />
                                 <div className="absolute left-0 right-0 top-0 bottom-0 bg-blue-600 opacity-30"></div>
-                                <div className="absolute top-12 right-0 left-0 text-center text-white pts-24">
-                                    PT. Toba pulp LESTARI
-                                </div>
                                 <div className="absolute top-0 bottom-0 right-0 left-0">
                                     <div className="flex justify-center h-full items-center">
                                         <button className="hover:scale-110">

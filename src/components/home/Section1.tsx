@@ -1,75 +1,143 @@
-"use client";
-import Image from "next/image";
-import { useEffect, useState } from "react";
+"use client"
+import React from "react";
+import ImageFade from './ImageFade.jsx';
 
 const millisecondsPerDay = 24 * 60 * 60 * 1000;
 const additionalValuePerDay = 4090;
 
-const Section1 = () => {
-  const [value, setValue] = useState(0);
+interface Section1State {
+  isClient: boolean,
+  value: number;
+}
 
-  useEffect(() => {
-    const startDate = new Date("06/21/2023 00:00:00");
-    const currentDate = new Date();
-    const elapsedTime = currentDate.getTime() - startDate.getTime();
-    const totalDays = Math.floor(elapsedTime / millisecondsPerDay);
-    const additionalValue = totalDays * additionalValuePerDay;
+interface Section1Props { }
 
-    const storedValue = localStorage.getItem("counterValue");
+class Section1 extends React.Component<Section1Props, Section1State> {
+  private interval: NodeJS.Timeout | undefined;
 
-    if (storedValue) {
-      setValue(parseFloat(storedValue));
-    } else {
-      setValue(1783605 + additionalValue);
-    }
-
-    const interval = setInterval(() => {
-      setValue((prevValue) => {
-        const newValue = prevValue + additionalValuePerDay / millisecondsPerDay;
-        localStorage.setItem("counterValue", newValue.toString());
-        return newValue;
-      });
-    }, 1);
-
-    return () => {
-      clearInterval(interval);
+  constructor(props: Section1Props) {
+    super(props);
+    this.state = {
+      isClient: false,
+      value: 0,
     };
-  }, []);
+  }
 
-  return (
-    <>
+  componentDidMount() {
+    this.setState({ isClient: true });
+    if (typeof window !== 'undefined') {
+      const startDate = new Date("06/21/2023 00:00:00");
+      const currentDate = new Date();
+      const elapsedTime = currentDate.getTime() - startDate.getTime();
+      const totalDays = Math.floor(elapsedTime / millisecondsPerDay);
+      const additionalValue = totalDays * additionalValuePerDay;
+
+      const storedValue = localStorage.getItem("counterValue");
+
+      if (storedValue) {
+        this.setState({ value: parseFloat(storedValue) });
+      } else {
+        this.setState({ value: 1783605 + additionalValue });
+      }
+
+      this.interval = setInterval(() => {
+        this.setState((prevState) => {
+          const newValue = prevState.value + additionalValuePerDay / millisecondsPerDay;
+          localStorage.setItem("counterValue", newValue.toString());
+          return { value: newValue };
+        });
+      }, 1);
+    }
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+
+  render() {
+    const { isClient, value } = this.state;
+
+    return (
+      <>
+        {isClient && (
+          <>
+            {typeof window !== 'undefined' && window.innerWidth >= 768 ? (
+                <DesktopView value={value} />
+            ) : (
+                <MobileView value={value} />
+            )}
+          </>
+        )}
+      </>
+    );
+  }
+}
+
+class MobileView extends React.Component<{ value: number }> {
+  constructor(props: { value: number; } | Readonly<{ value: number; }>) {
+    super(props);
+    this.state = {
+      imageHeight: 0,
+    };
+  }
+
+  render() {
+    return (
       <section className="relative" id="impact">
-        <Image
-          width={100}
-          height={100}
-          unoptimized
-          src="/img/home/impactfoto.png"
-          className="w-full"
-          alt=""
-        />
+        <ImageFade images={["/img/home/impactfoto_mobile.png", "/img/home/impactfoto2_mobile.png"]} />
         <div className="absolute top-0 bottom-0 right-0 left-0">
-          <div className="h-full">
-            <div className="h-full">
-              <div className="text-white h-full text-4xl md:text-5xl lg:text-6xl xl:text-7xl  flex items-center max-w-7xl mx-auto">
-                <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-10">
-                  Sustainability Starts <br />
-                  from Reliable Engineering
-                </h1>
-              </div>
-            </div>
+          <div className="h-full flex items-center justify-start text-white max-w-7xl">
+            <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl ml-8" style={{ lineHeight: '1.2' }}>
+              Sustainability <br />Starts from <br />
+              Reliable Engineering
+            </h1>
           </div>
         </div>
         <div className="absolute bottom-0 right-0 left-0 border-t-4 bg-blue-800 bg-opacity-50 border-blue-900 text-white">
-          <div className="h-full flex ml-8 justify-center py-5">
+          <div className="h-full justify-center flex py-4 md:py-5">
             <span>
-              <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl underline">Our Impact</h2>
-              <div className="flex items-center justify-start text-xl md:text-2xl lg:text-3xl xl:text-4xl">
+              <h2 className="text-xl md:text-2xl lg:text-2xl xl:text-3xl underline">Our Impact</h2>
+              <div className="flex items-center justify-start text-xl md:text-2xl lg:text-4xl xl:text-5xl">
                 Conserved Water:
+              </div>
+              <div className="flex items-center">
+                <div className="bg-stone-100 bg-opacity-40 rounded-xl px-3 py-1 font-mono">
+                  {this.props.value.toLocaleString(undefined, { minimumFractionDigits: 3 })}
+                </div>
+                <div className="text-superscript">
+                  m<sup>3</sup>
+                </div>
+              </div>
+            </span>
+          </div>
+        </div>
+      </section>
+    );
+  }
+}
+
+class DesktopView extends React.Component<{ value: number }> {
+  render() {
+    return (
+      <section className="relative" id="impact">
+        <ImageFade images={["/img/home/impactfoto.png", "/img/home/impactfoto2.png"]} />
+        <div className="absolute top-0 bottom-0 right-0 left-0">
+          <div className="h-full flex items-center justify-start text-white max-w-7xl">
+            <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl mx-auto" style={{ lineHeight: '1.2' }}>
+              Sustainability Starts <br />
+              from Reliable Engineering
+            </h1>
+          </div>
+        </div>
+        <div className="absolute bottom-0 right-0 left-0 border-t-4 bg-blue-800 bg-opacity-50 border-blue-900 text-white">
+          <div className="h-full flex justify-center py-2 md:py-5">
+            <span>
+              <h2 className="text-2xl md:text-xl lg:text-2xl xl:text-3xl underline font-semibold">Our Impact</h2>
+              <div className="flex items-center justify-start text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold ">
+                Conserved Water : &nbsp;
                 <div className="flex items-center">
                   <div className="bg-stone-100 bg-opacity-40 rounded-xl px-3 py-1 mx-2 font-mono">
-                    {value.toLocaleString(undefined, {
-                      minimumFractionDigits: 3,
-                    })}
+                    {this.props.value.toLocaleString(undefined, { minimumFractionDigits: 3 })}
                   </div>
                   <div className="text-superscript">
                     m<sup>3</sup>
@@ -80,8 +148,8 @@ const Section1 = () => {
           </div>
         </div>
       </section>
-    </>
-  );
-};
+    );
+  }
+}
 
 export default Section1;

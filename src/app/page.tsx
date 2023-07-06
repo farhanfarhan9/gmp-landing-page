@@ -1,10 +1,10 @@
 import About from "@/components/home/About";
 import Expand from "@/components/home/Expand";
 import Section1 from "@/components/home/Section1";
-import ModalVideo from "@/components/modal/ModalVideo";
 import Marquee from "react-fast-marquee";
 import Image from "next/image";
 import Link from "next/link";
+import OurProject from "./ourproject";
 
 export default function Home() {
   return (
@@ -13,9 +13,11 @@ export default function Home() {
       <About />
       <Expand />
       <section className="flex justify-center py-12" id="portofolio">
-        <div className="flex flex-col max-w-7xl">
-          <div className="text-center uppercase pts-40">project Portofolio</div>
-          <p className="text-center mt-3 mb-10">
+        <div className="flex flex-col max-w-7xl mx-4">
+          <div className="uppercase font-bold text-center mt-7 text-3xl md:text-4xl lg:text-5xl">
+            project Portofolio
+          </div>
+          <p className="text-center mt-8 mb-10 text-base md:text-lg lg:text-xl">
             Kami bangga telah menjadi mitra yang dipercaya oleh berbagai
             perusahaan di Indonesia untuk memenuhi kebutuhan mereka dalam
             pengolahan air limbah. Dengan pengetahuan mendalam, pengalaman yang
@@ -33,97 +35,19 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-3 gap-4">
-          <div>
-            <Image
-              unoptimized
-              width={100}
-              height={100}
-              className="w-full"
-              src="/porto1.png"
-              alt=""
-            />
-          </div>
-          <div className="grid grid-rows-2 gap-4">
-            <div className="">
-              <Image
-                unoptimized
-                width={100}
-                height={100}
-                className="w-full"
-                src="/porto2.png"
-                alt=""
-              />
-            </div>
-            <div className="relative">
-              <Image
-                unoptimized
-                width={100}
-                height={100}
-                className="w-full"
-                src="/porto3.png"
-                alt=""
-              />
-              <div className="absolute left-0 right-0 top-0 bottom-0 bg-blue-600 opacity-30"></div>
-              <div className="absolute top-12 right-0 left-0 text-center text-white pts-24">
-                PT. Toba pulp LESTARI
-              </div>
-              <div className="absolute top-0 bottom-0 right-0 left-0">
-                <div className="flex justify-center h-full items-center">
-                  <button className="hover:scale-110">
-                    <ModalVideo>
-                      <svg
-                        width="100"
-                        height="100"
-                        viewBox="0 0 125 125"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <g clipPath="url(#clip0_97_745)">
-                          <rect width="125" height="125" fill="white" />
-                          <path
-                            d="M84.9844 61.9707C88.3145 64.0117 88.3145 68.8457 84.9844 70.8867L47.1719 93.2305C43.7344 95.2715 39.4375 92.8008 39.4375 88.7188V44.0312C39.4375 39.627 44.0566 37.8008 47.1719 39.627L84.9844 61.9707Z"
-                            fill="#0E6A37"
-                          />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_97_745">
-                            <rect width="125" height="125" fill="white" />
-                          </clipPath>
-                        </defs>
-                      </svg>
-                    </ModalVideo>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <Image
-              unoptimized
-              width={100}
-              height={100}
-              className="w-full"
-              src="/porto4.png"
-              style={{ height: "720px" }}
-              alt=""
-            />
-          </div>
-        </div>
-      </section>
+      <OurProject/>
       <section className="flex justify-center my-4">
         <Link href="/projects">
-          <button className="bg-green-700 text-white px-11 py-4 mt-8">
+          <button className="bg-green-700 text-white px-11 py-4 mt-8 text-base md:text-lg lg:text-xl">
             See Other Project
           </button>
         </Link>
       </section>
       <section className="flex flex-col justify-center">
-        <div className="uppercase font-bold text-center mt-14 pts-40">
-          our Product & Partner
+        <div className="uppercase font-bold text-center mt-14 text-3xl md:text-4xl lg:text-5xl">
+          our Products & Partners
         </div>
-        <span className="w-1/2 mx-auto mb-36">
+        <span className="w-5/6 md:w-1/2 mx-auto mb-36">
           <Marquee speed={100}>
             <div className="flex justify-center space-x-9 py-12 items-center mx-5">
               <Image

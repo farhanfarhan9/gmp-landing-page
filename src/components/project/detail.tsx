@@ -7,7 +7,7 @@ interface Props {
 
 const detail = ({ data }: Props) => {
   return (
-    <div className="flex flex-col-reverse md:grid md:grid-cols-2 md: mx-auto max-w-7xl my-28 text-[#41444B]">
+    <div className="flex flex-col-reverse md:grid md:grid-cols-2 md: max-w-7xl my-28 text-[#41444B] mx-4">
       <div>
         <Image
           src={data.picture1}
@@ -66,8 +66,8 @@ const detail = ({ data }: Props) => {
         )}
       </div>
       <div className="md:pl-12 pr-40">
-        <div className="font-bold mb-5">{data.title}</div>
-        <div className="my-3">{data.nickname}</div>
+        <div className="font-bold text-lg mb-5">{data.title}</div>
+        <div className="my-3 text-sm">{data.nickname}</div>
         <div className="flex items-center my-4 font-bold">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -81,9 +81,10 @@ const detail = ({ data }: Props) => {
               clipRule="evenodd"
             />
           </svg>
-          {data.location}
+          <span className="text-sm">{data.location}</span>
         </div>
-        <div>{data.desc}</div>
+        <div className="hidden lg:block">{data.desc}</div>
+        <div className="lg:hidden text-sm">{data.desc}</div>
       </div>
     </div>
   );

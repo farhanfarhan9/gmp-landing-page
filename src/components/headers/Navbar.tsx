@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
+import Translator from '@/utils/Translator';
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -35,37 +36,37 @@ const Navbar = () => {
                     className="text-[#41444B] hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md"
                     href="/#"
                   >
-                    Home
+                    {Translator.t('home')}
                   </a>
                   <a
                     className="text-[#41444B] dark:text-white hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md"
                     href="/#about"
                   >
-                    Tentang Kami
+                    {Translator.t('about-us')}
                   </a>
                   <a
                     className="text-[#41444B] dark:text-white hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md"
                     href="/#our-service-section"
                   >
-                    Our Services
+                    {Translator.t('our-services')}
                   </a>
                   <Link
                     className="text-[#41444B] dark:text-white hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md"
                     href="/waste_water_technology"
                   >
-                    Waste Water Technology
+                    {Translator.t('waste-water-technology')}
                   </Link>
                   <Link
                     className="text-[#41444B] dark:text-white hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md"
                     href="/products"
                   >
-                    Our Products
+                    {Translator.t('our-products')}
                   </Link>
                   <a
                     className="text-[#41444B] hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md"
                     href="/#contact"
                   >
-                    Kontak Kami
+                    {Translator.t('contact-us')}
                   </a>
                 </div>
               </div>

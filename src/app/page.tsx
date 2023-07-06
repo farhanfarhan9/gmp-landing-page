@@ -3,8 +3,8 @@ import Expand from "@/components/home/Expand";
 import Section1 from "@/components/home/Section1";
 import Marquee from "react-fast-marquee";
 import Image from "next/image";
-import Link from "next/link";
 import OurProject from "./ourproject";
+import Translator from '../utils/Translator';
 
 export default function Home() {
   return (

@@ -11,7 +11,9 @@ export default function Home() {
     <>
       <Section1 />
       <About />
+      <section  id="our-service-section">
       <Expand />
+      </section>
       <section className="flex justify-center py-12" id="portofolio">
         <div className="flex flex-col max-w-7xl mx-4">
           <div className="uppercase font-bold text-center mt-7 text-3xl md:text-4xl lg:text-5xl">

@@ -43,6 +43,12 @@ const Navbar = () => {
                   >
                     Tentang Kami
                   </a>
+                  <a
+                    className="text-[#41444B] dark:text-white hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md"
+                    href="/#our-service-section"
+                  >
+                    Our Services
+                  </a>
                   <Link
                     className="text-[#41444B] dark:text-white hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md"
                     href="/waste_water_technology"
@@ -53,7 +59,7 @@ const Navbar = () => {
                     className="text-[#41444B] dark:text-white hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md"
                     href="/products"
                   >
-                    Product
+                    Our Products
                   </Link>
                   <a
                     className="text-[#41444B] hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md"
@@ -98,6 +104,12 @@ const Navbar = () => {
               >
                 Tentang Kami
               </a>
+              <a
+                className="text-gray-500 hover:text-gray-800 dark:text-white block px-3 py-2 rounded-md text-base font-medium"
+                href="/#our-service-section"
+              >
+                Our Services
+              </a>
               <Link
                 className="text-gray-500 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 href="/waste_water_technology"
@@ -108,7 +120,7 @@ const Navbar = () => {
                 className="text-gray-500 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 href="/products"
               >
-                Product
+                Our Products
               </Link>
             </div>
           </div>

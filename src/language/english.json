@@ -2,9 +2,11 @@
     "welcome": "Welcome to our website!",
     "thanks": "Thank you for visiting us",
     "home": "Home",
-    "about-us": "About us",
+    "about-us": "About Us",
     "our-services": "Our Services",
-    "waste-water-technology": "Wastewater technology",
+    "waste-water-technology": "Wastewater Technology",
     "our-products": "Our Products",
-    "contact-us": "Contact us"
+    "contact-us": "Contact Us",
+    "our-impact": "Our Impact",
+    "conserved-water": "Conserved Water"
 }

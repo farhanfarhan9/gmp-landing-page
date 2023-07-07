@@ -47,18 +47,21 @@ class Translator {
 
     static gotoUrl(subUrl) {
         if (typeof window !== 'undefined') {
-            const url = new URL(window.location.href.replace(/#.*$/, ''));
-            const langQueryParam = url.searchParams.get('lang');
-            const urlWithoutLangParam = url.href.replace(/(\?|&)lang=[^&]+/, '');
+            const urlParams = new URLSearchParams(window.location.search);
+            const lang = urlParams.get('lang');
 
-            // Menambahkan parameter lang ke URL tanpa lang parameter
-            const langParam = langQueryParam ? `lang=${langQueryParam}` : '';
-            const updatedURL = `${urlWithoutLangParam}${subUrl}${langParam ? `?${langParam}` : ''}`;
+            if (subUrl === '') {
+                var url = document.location.href;
+                var baseUrl = url.substring(0, url.indexOf("/", 8));
+                return baseUrl;
+            }
 
-            return updatedURL;
-        } else {
-            return subUrl;
+            if (lang) {
+                subUrl += `?lang=${lang}`;
+            }
         }
+
+        return subUrl;
     }
 }
 

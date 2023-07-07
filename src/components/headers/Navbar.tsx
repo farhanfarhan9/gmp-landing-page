@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import Translator from '@/utils/Translator';
 import LanguageSwitcher from "./LanguageSwitcher";
 
-import { useSearchParams } from 'next/navigation'
+import { useSearchParams } from 'next/navigation';
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -40,7 +40,7 @@ const Navbar = () => {
                 <div className="flex items-baseline ml-10 space-x-4">
                   <a
                     className="text-lg text-[#41444B] hover:text-gray-800 dark:hover:text-white px-2 py-1 rounded-md"
-                    href={Translator.generateUrlId('#')}
+                    href={Translator.gotoUrl('')}
                   >
                     {Translator.t('home', lang)}
                   </a>
@@ -102,7 +102,7 @@ const Navbar = () => {
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <a
                 className="text-gray-500 hover:text-gray-800 dark:hover:text-white block px-2 py-1 rounded-md text-base font-medium"
-                href={Translator.generateUrlId('#')}
+                href={Translator.gotoUrl('')}
               >
                 {Translator.t('home', lang)}
               </a>

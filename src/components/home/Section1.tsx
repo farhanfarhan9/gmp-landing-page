@@ -1,30 +1,20 @@
 "use client"
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ImageFade from './ImageFade.jsx';
+import { useSearchParams } from 'next/navigation';
+import Translator from '@/utils/Translator';
 
 const millisecondsPerDay = 24 * 60 * 60 * 1000;
 const additionalValuePerDay = 4090;
 
-interface Section1State {
-  isClient: boolean,
-  value: number;
-}
+const Section1 = () => {
+  const [isClient, setIsClient] = useState(false);
+  const [value, setValue] = useState(0);
+  const searchParams = useSearchParams();
+  const lang = searchParams.get('lang') || undefined;
 
-interface Section1Props { }
-
-class Section1 extends React.Component<Section1Props, Section1State> {
-  private interval: NodeJS.Timeout | undefined;
-
-  constructor(props: Section1Props) {
-    super(props);
-    this.state = {
-      isClient: false,
-      value: 0,
-    };
-  }
-
-  componentDidMount() {
-    this.setState({ isClient: true });
+  useEffect(() => {
+    setIsClient(true);
     if (typeof window !== 'undefined') {
       const startDate = new Date("06/21/2023 00:00:00");
       const currentDate = new Date();
@@ -35,45 +25,43 @@ class Section1 extends React.Component<Section1Props, Section1State> {
       const storedValue = localStorage.getItem("counterValue");
 
       if (storedValue) {
-        this.setState({ value: parseFloat(storedValue) });
+        setValue(parseFloat(storedValue));
       } else {
-        this.setState({ value: 1783605 + additionalValue });
+        setValue(1783605 + additionalValue);
       }
 
-      this.interval = setInterval(() => {
-        this.setState((prevState) => {
-          const newValue = prevState.value + additionalValuePerDay / millisecondsPerDay;
+      const interval = setInterval(() => {
+        setValue((prevValue) => {
+          const newValue = prevValue + additionalValuePerDay / millisecondsPerDay;
           localStorage.setItem("counterValue", newValue.toString());
-          return { value: newValue };
+          return newValue;
         });
       }, 1);
+
+      return () => {
+        clearInterval(interval);
+      };
     }
-  }
+  }, []);
 
-  componentWillUnmount() {
-    clearInterval(this.interval);
-  }
+  const props = { value, lang };
 
-  render() {
-    const { isClient, value } = this.state;
+  return (
+    <>
+      {isClient && (
+        <>
+          {typeof window !== 'undefined' && window.innerWidth >= 768 ? (
+              <DesktopView {...props} />
+          ) : (
+              <MobileView {...props} />
+          )}
+        </>
+      )}
+    </>
+  );
+};
 
-    return (
-      <>
-        {isClient && (
-          <>
-            {typeof window !== 'undefined' && window.innerWidth >= 768 ? (
-                <DesktopView value={value} />
-            ) : (
-                <MobileView value={value} />
-            )}
-          </>
-        )}
-      </>
-    );
-  }
-}
-
-class MobileView extends React.Component<{ value: number }> {
+class MobileView extends React.Component<{ value: number; lang?: string }> {
   constructor(props: { value: number; } | Readonly<{ value: number; }>) {
     super(props);
     this.state = {
@@ -96,9 +84,9 @@ class MobileView extends React.Component<{ value: number }> {
         <div className="absolute bottom-0 right-0 left-0 border-t-4 bg-blue-800 bg-opacity-50 border-blue-900 text-white">
           <div className="h-full justify-center flex py-4 md:py-5">
             <span>
-              <h2 className="text-xl md:text-2xl lg:text-2xl xl:text-3xl underline">Our Impact</h2>
+              <h2 className="text-xl md:text-2xl lg:text-2xl xl:text-3xl underline">{Translator.t('our-impact', this.props.lang)}</h2>
               <div className="flex items-center justify-start text-xl md:text-2xl lg:text-4xl xl:text-5xl">
-                Conserved Water:
+                {Translator.t('conserved-water', this.props.lang)}
               </div>
               <div className="flex items-center">
                 <div className="bg-stone-100 bg-opacity-40 rounded-xl px-3 py-1 font-mono">
@@ -116,7 +104,7 @@ class MobileView extends React.Component<{ value: number }> {
   }
 }
 
-class DesktopView extends React.Component<{ value: number }> {
+class DesktopView extends React.Component<{ value: number; lang?: string }> {
   render() {
     return (
       <section className="relative" id="impact">
@@ -132,9 +120,9 @@ class DesktopView extends React.Component<{ value: number }> {
         <div className="absolute bottom-0 right-0 left-0 border-t-4 bg-blue-800 bg-opacity-50 border-blue-900 text-white">
           <div className="h-full flex justify-center py-2 md:py-5">
             <span>
-              <h2 className="text-2xl md:text-xl lg:text-2xl xl:text-3xl underline font-semibold">Our Impact</h2>
+              <h2 className="text-2xl md:text-xl lg:text-2xl xl:text-3xl underline font-semibold">{Translator.t('our-impact', this.props.lang)}</h2>
               <div className="flex items-center justify-start text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold ">
-                Conserved Water : &nbsp;
+                {Translator.t('conserved-water', this.props.lang)}: &nbsp;
                 <div className="flex items-center">
                   <div className="bg-stone-100 bg-opacity-40 rounded-xl px-3 py-1 mx-2 font-mono">
                     {this.props.value.toLocaleString(undefined, { minimumFractionDigits: 3 })}

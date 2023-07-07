@@ -4,11 +4,10 @@ import Indonesian from '../language/indonesia.json';
 class Translator {
     static dictionaries = {
         'en': English,
-        'id': Indonesian,
+        'in': Indonesian,
     };
 
-    static t(key) {
-        const language = 'en';
+    static t(key, language = 'in') {
         const dict = Translator.dictionaries[language];
         if (!dict) {
             console.warn(`No dictionary for language: ${language}`);
@@ -22,6 +21,44 @@ class Translator {
         }
 
         return translation;
+    }
+
+    static getLanguageFromQueryParam() {
+        if (typeof window !== 'undefined') {
+            const queryParams = new URLSearchParams(window.location.search);
+            const langParam = queryParams.get('lang');
+
+            if (langParam) {
+                return langParam;
+            }
+        }
+
+        return 'in'; // Default language is 'in' if langParam is not present
+    }
+
+    static generateUrlId(urlId) {
+        if (typeof window !== 'undefined') {
+            const url = new URL(window.location.href.replace(/#.*$/, ''));
+            return url + urlId;
+        } else {
+            return urlId;
+        }
+    }
+
+    static gotoUrl(subUrl) {
+        if (typeof window !== 'undefined') {
+            const url = new URL(window.location.href.replace(/#.*$/, ''));
+            const langQueryParam = url.searchParams.get('lang');
+            const urlWithoutLangParam = url.href.replace(/(\?|&)lang=[^&]+/, '');
+
+            // Menambahkan parameter lang ke URL tanpa lang parameter
+            const langParam = langQueryParam ? `lang=${langQueryParam}` : '';
+            const updatedURL = `${urlWithoutLangParam}${subUrl}${langParam ? `?${langParam}` : ''}`;
+
+            return updatedURL;
+        } else {
+            return subUrl;
+        }
     }
 }
 

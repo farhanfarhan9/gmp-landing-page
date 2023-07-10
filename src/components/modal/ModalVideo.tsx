@@ -4,8 +4,10 @@ import React, { Fragment, useState } from "react";
 
 export default function ModalVideo({
   children,
+  videoUrl
 }: {
   children: React.ReactNode;
+  videoUrl: string;
 }) {
   let [isOpen, setIsOpen] = useState(false);
 
@@ -53,7 +55,7 @@ export default function ModalVideo({
                     <iframe
                       width="1000"
                       height="615"
-                      src="https://www.youtube.com/embed/CKe3Kzbi-Ao"
+                      src={videoUrl}
                       title="YouTube video player"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     ></iframe>

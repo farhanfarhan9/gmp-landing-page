@@ -2,38 +2,42 @@
 import React, { useState } from "react";
 import ServiceExpand from "./ServiceExpand";
 import ServiceExpandMobile from "./ServiceExpandMobile";
+import Translator from '@/utils/Translator';
+import { useSearchParams } from 'next/navigation';
 
 const Expand = () => {
+  const searchParams = useSearchParams();
+  const lang = searchParams.get('lang') || undefined;
   const databasic = [
     {
       id: 1,
-      title: "Service Kami",
+      title: Translator.t('our-service-title', lang),
       bg: "/bg1.png",
-      desc: "Satria Nusa Enjinering memiliki komitmen untuk mendukung pertumbuhan industri dengan menjaga keseimbangan lingkungan. Dengan pengalaman electro-mechanical, civil dan chemical engineering, kami memberikan tingkat keberhasilan sempurna kepada klien kami dalam hal pengelolaan air limbah produksi (wastewater treatment) dan air limbah domestik (sewage treatment).",
+      desc: Translator.t('our-service-desc', lang),
       color: "bg-black",
       with: "w-2/5",
     },
     {
       id: 2,
-      title: "Waste Technology & Environment",
+      title: Translator.t('waste-technology-env-title', lang),
       bg: "/bg2.png",
-      desc: "Satria Nusa Enjinering merupakan perusahaan pengelolaan air limbah nasional yang berhasil menerapkan terknologi mutakhir dalam water and wastewater technology.",
+      desc: Translator.t('waste-technology-env-desc', lang),
       color: "bg-blue-800",
       with: "w-1/5",
     },
     {
       id: 3,
-      title: "Civil & Fabrications",
+      title: Translator.t('civil-fabrication-title', lang),
       bg: "/bg3.png",
-      desc: "SNE memiliki kapabilitas internal untuk konstruksi sipil dan mekanikal. Dengan pengalaman lebih dari 10 tahun, SNE sudah terlibat dalam berbagai konstruksi untuk keperluan industri di seluruh Indonesia.",
+      desc: Translator.t('civil-fabrication-desc', lang),
       color: "bg-green-800",
       with: "w-1/5",
     },
     {
       id: 4,
-      title: "Mechanical & Electrical",
+      title: Translator.t('mechanical-electrical-title', lang),
       bg: "/bg4.png",
-      desc: "SNE melalui Satria Elektrik yang telah memiliki pengalaman lebih dari 40 tahun di bidang elektromotor dan gearmotor telah membantu banyak industri dalam mencapai efisiensi daya.",
+      desc: Translator.t('mechanical-electrical-desc', lang),
       color: "bg-amber-800",
       with: "w-1/5",
     },

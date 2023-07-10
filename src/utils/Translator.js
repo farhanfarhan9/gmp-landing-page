@@ -53,7 +53,12 @@ class Translator {
             if (subUrl === '') {
                 var url = document.location.href;
                 var baseUrl = url.substring(0, url.indexOf("/", 8));
-                return baseUrl;
+
+                if (lang) {
+                    subUrl += `?lang=${lang}`;
+                }
+                
+                return "baseUrl";
             }
 
             if (lang) {

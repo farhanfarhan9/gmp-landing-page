@@ -3,8 +3,13 @@ import Image from "next/image";
 import React, { useState } from "react";
 import ButtonPrimary from "../buttons/ButtonPrimary";
 import { Transition } from "@headlessui/react";
+import Translator from '@/utils/Translator';
+import { useSearchParams } from 'next/navigation';
 
 const Product = ({ data }: { data: any }) => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const searchParams = useSearchParams();
+  const lang = searchParams.get('lang') || undefined;
   const [expand, setexpand] = useState(false);
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 py-10 ">
@@ -45,7 +50,7 @@ const Product = ({ data }: { data: any }) => {
               }}
             >
               <button className="px-11 py-4 text-white bg-green-700 mt-7 text-base md:text-lg lg:text-xl xl:text-2xl">
-                {expand ? "Read less" : "Read More"}
+                {expand ? Translator.t('read-less', lang) : Translator.t('read-more', lang)}
               </button>
             </span>
           )}

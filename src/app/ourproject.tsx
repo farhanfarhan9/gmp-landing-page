@@ -42,7 +42,7 @@ function OurProject() {
                                     <div className="absolute top-0 bottom-0 right-0 left-0">
                                         <div className="flex justify-center h-full items-center">
                                             <button className="hover:scale-110">
-                                                <ModalVideo videoUrl="https://www.youtube.com/embed/ytiGiOTF2u4">
+                                                <ModalVideo videoUrl="https://www.youtube.com/embed/CzEVDupsta0">
                                                     <svg
                                                         width="100"
                                                         height="100"
@@ -151,14 +151,14 @@ function OurProject() {
                                     width={100}
                                     height={100}
                                     className="w-full"
-                                    src="/porto41_mobile.png"
+                                    src="/porto312_mobile.png"
                                     alt=""
                                 />
                                 <div className="absolute left-0 right-0 top-0 bottom-0 bg-blue-600 opacity-30"></div>
                                 <div className="absolute top-0 bottom-0 right-0 left-0">
                                     <div className="flex justify-center h-full items-center">
                                         <button className="hover:scale-110">
-                                            <ModalVideo videoUrl="https://www.youtube.com/embed/ytiGiOTF2u4">
+                                            <ModalVideo videoUrl="https://www.youtube.com/embed/CzEVDupsta0">
                                                 <svg
                                                     width="100"
                                                     height="100"
@@ -210,7 +210,7 @@ function OurProject() {
                                         width={100}
                                         height={100}
                                         className="w-full"
-                                        src="/porto3.png"
+                                        src="/porto33.png"
                                         alt=""
                                     />
                                     <div className="absolute left-0 right-0 top-0 bottom-0 bg-blue-600 opacity-30"></div>

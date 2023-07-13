@@ -38,31 +38,28 @@ function OurProject() {
                                         src="/porto31.png"
                                         alt=""
                                     />
-                                    <div className="absolute left-0 right-0 top-0 bottom-0 bg-blue-600 opacity-30"></div>
+                                    {/* <div className="absolute left-0 right-0 top-0 bottom-0 bg-blue-600 opacity-30"></div> */}
                                     <div className="absolute top-0 bottom-0 right-0 left-0">
                                         <div className="flex justify-center h-full items-center">
                                             <button className="hover:scale-110">
                                                 <ModalVideo videoUrl="https://www.youtube.com/embed/CzEVDupsta0">
-                                                    <svg
-                                                        width="100"
-                                                        height="100"
-                                                        viewBox="0 0 125 125"
-                                                        fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                    >
-                                                        <g clipPath="url(#clip0_97_745)">
-                                                            <rect width="125" height="125" fill="white" />
-                                                            <path
-                                                                d="M84.9844 61.9707C88.3145 64.0117 88.3145 68.8457 84.9844 70.8867L47.1719 93.2305C43.7344 95.2715 39.4375 92.8008 39.4375 88.7188V44.0312C39.4375 39.627 44.0566 37.8008 47.1719 39.627L84.9844 61.9707Z"
-                                                                fill="#0E6A37"
-                                                            />
+                                                    <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_205_110)">
+                                                            <mask id="mask0_205_110" style={{ maskType: "luminance" }} maskUnits="userSpaceOnUse" x="0" y="0" width="75" height="75">
+                                                                <path d="M75 0H0V75H75V0Z" fill="white" />
+                                                            </mask>
+                                                            <g mask="url(#mask0_205_110)">
+                                                                <path d="M75 0H0V75H75V0Z" fill="white" />
+                                                                <path d="M50.9907 37.1824C52.9888 38.407 52.9888 41.3074 50.9907 42.532L28.3032 55.9383C26.2407 57.1629 23.6626 55.6805 23.6626 53.2313V26.4187C23.6626 23.7762 26.4341 22.6805 28.3032 23.7762L50.9907 37.1824Z" fill="#0E6A37" />
+                                                            </g>
                                                         </g>
                                                         <defs>
-                                                            <clipPath id="clip0_97_745">
-                                                                <rect width="125" height="125" fill="white" />
+                                                            <clipPath id="clip0_205_110">
+                                                                <rect width="75" height="75" fill="white" />
                                                             </clipPath>
                                                         </defs>
                                                     </svg>
+
                                                 </ModalVideo>
                                             </button>
                                         </div>
@@ -115,31 +112,28 @@ function OurProject() {
                                     src="/porto4_mobile.png"
                                     alt=""
                                 />
-                                <div className="absolute left-0 right-0 top-0 bottom-0 bg-blue-600 opacity-30"></div>
+                                {/* <div className="absolute left-0 right-0 top-0 bottom-0 bg-blue-600 opacity-30"></div> */}
                                 <div className="absolute top-0 bottom-0 right-0 left-0">
                                     <div className="flex justify-center h-full items-center">
                                         <button className="hover:scale-110">
                                             <ModalVideo videoUrl="https://www.youtube.com/embed/i9hKwHR4Mx0">
-                                                <svg
-                                                    width="100"
-                                                    height="100"
-                                                    viewBox="0 0 125 125"
-                                                    fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                >
-                                                    <g clipPath="url(#clip0_97_745)">
-                                                        <rect width="125" height="125" fill="white" />
-                                                        <path
-                                                            d="M84.9844 61.9707C88.3145 64.0117 88.3145 68.8457 84.9844 70.8867L47.1719 93.2305C43.7344 95.2715 39.4375 92.8008 39.4375 88.7188V44.0312C39.4375 39.627 44.0566 37.8008 47.1719 39.627L84.9844 61.9707Z"
-                                                            fill="#0E6A37"
-                                                        />
+                                                <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_205_110)">
+                                                        <mask id="mask0_205_110" style={{ maskType: "luminance" }} maskUnits="userSpaceOnUse" x="0" y="0" width="75" height="75">
+                                                            <path d="M75 0H0V75H75V0Z" fill="white" />
+                                                        </mask>
+                                                        <g mask="url(#mask0_205_110)">
+                                                            <path d="M75 0H0V75H75V0Z" fill="white" />
+                                                            <path d="M50.9907 37.1824C52.9888 38.407 52.9888 41.3074 50.9907 42.532L28.3032 55.9383C26.2407 57.1629 23.6626 55.6805 23.6626 53.2313V26.4187C23.6626 23.7762 26.4341 22.6805 28.3032 23.7762L50.9907 37.1824Z" fill="#0E6A37" />
+                                                        </g>
                                                     </g>
                                                     <defs>
-                                                        <clipPath id="clip0_97_745">
-                                                            <rect width="125" height="125" fill="white" />
+                                                        <clipPath id="clip0_205_110">
+                                                            <rect width="75" height="75" fill="white" />
                                                         </clipPath>
                                                     </defs>
                                                 </svg>
+
                                             </ModalVideo>
                                         </button>
                                     </div>
@@ -154,31 +148,28 @@ function OurProject() {
                                     src="/porto312_mobile.png"
                                     alt=""
                                 />
-                                <div className="absolute left-0 right-0 top-0 bottom-0 bg-blue-600 opacity-30"></div>
+                                {/* <div className="absolute left-0 right-0 top-0 bottom-0 bg-blue-600 opacity-30"></div> */}
                                 <div className="absolute top-0 bottom-0 right-0 left-0">
                                     <div className="flex justify-center h-full items-center">
                                         <button className="hover:scale-110">
                                             <ModalVideo videoUrl="https://www.youtube.com/embed/CzEVDupsta0">
-                                                <svg
-                                                    width="100"
-                                                    height="100"
-                                                    viewBox="0 0 125 125"
-                                                    fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                >
-                                                    <g clipPath="url(#clip0_97_745)">
-                                                        <rect width="125" height="125" fill="white" />
-                                                        <path
-                                                            d="M84.9844 61.9707C88.3145 64.0117 88.3145 68.8457 84.9844 70.8867L47.1719 93.2305C43.7344 95.2715 39.4375 92.8008 39.4375 88.7188V44.0312C39.4375 39.627 44.0566 37.8008 47.1719 39.627L84.9844 61.9707Z"
-                                                            fill="#0E6A37"
-                                                        />
+                                                <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_205_110)">
+                                                        <mask id="mask0_205_110" style={{ maskType: "luminance" }} maskUnits="userSpaceOnUse" x="0" y="0" width="75" height="75">
+                                                            <path d="M75 0H0V75H75V0Z" fill="white" />
+                                                        </mask>
+                                                        <g mask="url(#mask0_205_110)">
+                                                            <path d="M75 0H0V75H75V0Z" fill="white" />
+                                                            <path d="M50.9907 37.1824C52.9888 38.407 52.9888 41.3074 50.9907 42.532L28.3032 55.9383C26.2407 57.1629 23.6626 55.6805 23.6626 53.2313V26.4187C23.6626 23.7762 26.4341 22.6805 28.3032 23.7762L50.9907 37.1824Z" fill="#0E6A37" />
+                                                        </g>
                                                     </g>
                                                     <defs>
-                                                        <clipPath id="clip0_97_745">
-                                                            <rect width="125" height="125" fill="white" />
+                                                        <clipPath id="clip0_205_110">
+                                                            <rect width="75" height="75" fill="white" />
                                                         </clipPath>
                                                     </defs>
                                                 </svg>
+
                                             </ModalVideo>
                                         </button>
                                     </div>
@@ -213,31 +204,28 @@ function OurProject() {
                                         src="/porto33.png"
                                         alt=""
                                     />
-                                    <div className="absolute left-0 right-0 top-0 bottom-0 bg-blue-600 opacity-30"></div>
+                                    {/* <div className="absolute left-0 right-0 top-0 bottom-0 bg-blue-600 opacity-30"></div> */}
                                     <div className="absolute top-0 bottom-0 right-0 left-0">
                                         <div className="flex justify-center h-full items-center">
                                             <button className="hover:scale-110">
                                                 <ModalVideo videoUrl="https://www.youtube.com/embed/i9hKwHR4Mx0">
-                                                    <svg
-                                                        width="100"
-                                                        height="100"
-                                                        viewBox="0 0 125 125"
-                                                        fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                    >
-                                                        <g clipPath="url(#clip0_97_745)">
-                                                            <rect width="125" height="125" fill="white" />
-                                                            <path
-                                                                d="M84.9844 61.9707C88.3145 64.0117 88.3145 68.8457 84.9844 70.8867L47.1719 93.2305C43.7344 95.2715 39.4375 92.8008 39.4375 88.7188V44.0312C39.4375 39.627 44.0566 37.8008 47.1719 39.627L84.9844 61.9707Z"
-                                                                fill="#0E6A37"
-                                                            />
+                                                    <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_205_110)">
+                                                            <mask id="mask0_205_110" style={{ maskType: "luminance" }} maskUnits="userSpaceOnUse" x="0" y="0" width="75" height="75">
+                                                                <path d="M75 0H0V75H75V0Z" fill="white" />
+                                                            </mask>
+                                                            <g mask="url(#mask0_205_110)">
+                                                                <path d="M75 0H0V75H75V0Z" fill="white" />
+                                                                <path d="M50.9907 37.1824C52.9888 38.407 52.9888 41.3074 50.9907 42.532L28.3032 55.9383C26.2407 57.1629 23.6626 55.6805 23.6626 53.2313V26.4187C23.6626 23.7762 26.4341 22.6805 28.3032 23.7762L50.9907 37.1824Z" fill="#0E6A37" />
+                                                            </g>
                                                         </g>
                                                         <defs>
-                                                            <clipPath id="clip0_97_745">
-                                                                <rect width="125" height="125" fill="white" />
+                                                            <clipPath id="clip0_205_110">
+                                                                <rect width="75" height="75" fill="white" />
                                                             </clipPath>
                                                         </defs>
                                                     </svg>
+
                                                 </ModalVideo>
                                             </button>
                                         </div>

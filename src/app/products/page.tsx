@@ -60,11 +60,11 @@ const page = () => {
 
   const bacteria = [
     {
-      title: "Wet Scrubber",
+      title: "Aerobic -  Compound Bacteria",
       image: "/img/produk/bakteri1.png",
     },
     {
-      title: "Bacteria - Anaerob",
+      title: "Anaerobic -  Compound Bacteria",
       image: "/img/produk/bakteri2.png",
     },
   ];

@@ -46,13 +46,13 @@ const Navbar = () => {
                   </a>
                   <a
                     className="text-lg text-[#41444B] hover:text-gray-800 dark:hover:text-white px-2 py-1 rounded-md"
-                    href={Translator.generateUrlId('#about')}
+                    href={Translator.gotoUrl('/#about')}
                   >
                     {Translator.t('about-us', lang)}
                   </a>
                   <a
                     className="text-lg text-[#41444B] hover:text-gray-800 dark:hover:text-white px-2 py-1 rounded-md"
-                    href={Translator.generateUrlId('#our-service-section')}
+                    href={Translator.gotoUrl('/#our-service-section')}
                   >
                     {Translator.t('our-services', lang)}
                   </a>
@@ -70,7 +70,7 @@ const Navbar = () => {
                   </Link>
                   <a
                     className="text-lg text-[#41444B] hover:text-gray-800 dark:hover:text-white px-2 py-1 rounded-md"
-                    href={Translator.generateUrlId('#contact')}
+                    href={Translator.gotoUrl('/#contact')}
                   >
                     {Translator.t('contact-us', lang)}
                   </a>
@@ -108,13 +108,13 @@ const Navbar = () => {
               </a>
               <a
                 className="text-gray-500 hover:text-gray-800 dark:text-white block px-2 py-1 rounded-md text-base font-medium"
-                href={Translator.generateUrlId('#about')}
+                href={Translator.gotoUrl('/#about')}
               >
                 {Translator.t('about-us', lang)}
               </a>
               <a
                 className="text-gray-500 hover:text-gray-800 dark:text-white block px-2 py-1 rounded-md text-base font-medium"
-                href={Translator.generateUrlId('#our-service-section')}
+                href={Translator.gotoUrl('/#our-service-section')}
               >
                 {Translator.t('our-services', lang)}
               </a>

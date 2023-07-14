@@ -18,15 +18,15 @@ export default class Example extends Component {
   slides = [
     {
       key: uuidv4(),
-      content: <img src="/carousel/1a.jpg" alt="1" />,
+      content: <img src="/carousel/1e.jpg" alt="1" />,
     },
     {
       key: uuidv4(),
-      content: <img src="/carousel/1b.jpg" alt="2" />,
+      content: <img src="/carousel/1c.jpg" alt="2" />,
     },
     {
       key: uuidv4(),
-      content: <img src="/carousel/1c.jpg" alt="3" />,
+      content: <img src="/carousel/1b.jpg" alt="3" />,
     },
     {
       key: uuidv4(),
@@ -34,7 +34,11 @@ export default class Example extends Component {
     },
     {
       key: uuidv4(),
-      content: <img src="/carousel/1e.jpg" alt="5" />,
+      content: <img src="/carousel/1f.jpg" alt="5" />,
+    },
+    {
+      key: uuidv4(),
+      content: <img src="/carousel/1g.jpg" alt="5" />,
     },
   ].map((slide, index) => {
     return { ...slide, onClick: () => this.setState({ goToSlide: index }) };

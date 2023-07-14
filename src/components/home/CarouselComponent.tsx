@@ -11,17 +11,17 @@ const CarouselComponent = () => {
   const carouselItems = [
     {
       id: 1,
-      image: "/carousel/1a.jpg",
+      image: "/carousel/1e.jpg",
       altText: "Image 1",
     },
     {
       id: 2,
-      image: "/carousel/1b.jpg",
+      image: "/carousel/1c.jpg",
       altText: "Image 2",
     },
     {
       id: 3,
-      image: "/carousel/1c.jpg",
+      image: "/carousel/1b.jpg",
       altText: "Image 3",
     },
     {
@@ -31,8 +31,13 @@ const CarouselComponent = () => {
     },
     {
       id: 5,
-      image: "/carousel/1e.jpg",
+      image: "/carousel/1f.jpg",
       altText: "Image 5",
+    },
+    {
+      id: 6,
+      image: "/carousel/1g.jpg",
+      altText: "Image 6",
     },
   ];
 

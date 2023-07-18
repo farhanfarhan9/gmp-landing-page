@@ -1,3 +1,5 @@
+import url from 'url';
+import querystring from 'query-string';
 import English from '../language/english.json';
 import Indonesian from '../language/indonesia.json';
 
@@ -45,29 +47,24 @@ class Translator {
         }
     }
 
-    static gotoUrl(subUrl) {
-        if (typeof window !== 'undefined') {
-            const urlParams = new URLSearchParams(window.location.search);
-            const lang = urlParams.get('lang');
-
-            if (subUrl === '') {
-                var url = document.location.href;
-                var baseUrl = url.substring(0, url.indexOf("/", 8));
-
-                if (lang) {
-                    subUrl += `?lang=${lang}`;
-                }
-                
-                return "baseUrl";
-            }
-
+    // Menggunakan kata kunci "function" untuk mendefinisikan metode static gotoUrl dan menambahkan tipe data pengembalian yang jelas
+    static gotoUrl(subUrl, lang) {
+        if (subUrl.includes('#')) {
             if (lang) {
-                subUrl += `?lang=${lang}`;
+                return `/?lang=${lang}${subUrl}`;
+            } else {
+                return `/${subUrl}`;
             }
+        }
+
+        // jika 'lang' tersedia, Anda bisa menggunakannya di sini
+        if (lang) {
+            subUrl += `?lang=${lang}`;
         }
 
         return subUrl;
     }
+
 }
 
 export default Translator;

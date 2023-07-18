@@ -44,7 +44,7 @@ function OurProject() {
                                             <button className="hover:scale-110">
                                                 <ModalVideo videoUrl="https://www.youtube.com/embed/CzEVDupsta0">
                                                     <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <g clip-path="url(#clip0_205_110)">
+                                                        <g clipPath="url(#clip0_205_110)">
                                                             <mask id="mask0_205_110" style={{ maskType: "luminance" }} maskUnits="userSpaceOnUse" x="0" y="0" width="75" height="75">
                                                                 <path d="M75 0H0V75H75V0Z" fill="white" />
                                                             </mask>
@@ -118,7 +118,7 @@ function OurProject() {
                                         <button className="hover:scale-110">
                                             <ModalVideo videoUrl="https://www.youtube.com/embed/i9hKwHR4Mx0">
                                                 <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <g clip-path="url(#clip0_205_110)">
+                                                    <g clipPath="url(#clip0_205_110)">
                                                         <mask id="mask0_205_110" style={{ maskType: "luminance" }} maskUnits="userSpaceOnUse" x="0" y="0" width="75" height="75">
                                                             <path d="M75 0H0V75H75V0Z" fill="white" />
                                                         </mask>
@@ -154,7 +154,7 @@ function OurProject() {
                                         <button className="hover:scale-110">
                                             <ModalVideo videoUrl="https://www.youtube.com/embed/CzEVDupsta0">
                                                 <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <g clip-path="url(#clip0_205_110)">
+                                                    <g clipPath="url(#clip0_205_110)">
                                                         <mask id="mask0_205_110" style={{ maskType: "luminance" }} maskUnits="userSpaceOnUse" x="0" y="0" width="75" height="75">
                                                             <path d="M75 0H0V75H75V0Z" fill="white" />
                                                         </mask>
@@ -210,7 +210,7 @@ function OurProject() {
                                             <button className="hover:scale-110">
                                                 <ModalVideo videoUrl="https://www.youtube.com/embed/i9hKwHR4Mx0">
                                                     <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <g clip-path="url(#clip0_205_110)">
+                                                        <g clipPath="url(#clip0_205_110)">
                                                             <mask id="mask0_205_110" style={{ maskType: "luminance" }} maskUnits="userSpaceOnUse" x="0" y="0" width="75" height="75">
                                                                 <path d="M75 0H0V75H75V0Z" fill="white" />
                                                             </mask>

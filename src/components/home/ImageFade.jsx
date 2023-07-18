@@ -25,7 +25,7 @@ class ImageFade extends React.Component {
       this.setState((prevState) => ({
         index: (prevState.index + 1) % this.props.images.length,
       }));
-    }, 3000);
+    }, 4000);
 
     const imageElement = this.imageRef.current;
     imageElement.onload = () => {

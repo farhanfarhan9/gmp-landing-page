@@ -40,37 +40,37 @@ const Navbar = () => {
                 <div className="flex items-baseline ml-10 space-x-4">
                   <a
                     className="text-lg text-[#41444B] hover:text-gray-800 dark:hover:text-white px-2 py-1 rounded-md"
-                    href={Translator.gotoUrl('/')}
+                    href={Translator.gotoUrl('/', lang)}
                   >
                     {Translator.t('home', lang)}
                   </a>
                   <a
                     className="text-lg text-[#41444B] hover:text-gray-800 dark:hover:text-white px-2 py-1 rounded-md"
-                    href={Translator.gotoUrl('/#about')}
+                    href={Translator.gotoUrl('#about', lang)}
                   >
                     {Translator.t('about-us', lang)}
                   </a>
                   <a
                     className="text-lg text-[#41444B] hover:text-gray-800 dark:hover:text-white px-2 py-1 rounded-md"
-                    href={Translator.gotoUrl('/#our-service-section')}
+                    href={Translator.gotoUrl('#our-service-section', lang)}
                   >
                     {Translator.t('our-services', lang)}
                   </a>
                   <Link
                     className="text-lg text-[#41444B] hover:text-gray-800 dark:hover:text-white px-2 py-1 rounded-md"
-                    href={Translator.gotoUrl('waste_water_technology')}
+                    href={Translator.gotoUrl('/waste_water_technology', lang)}
                   >
                     {Translator.t('waste-water-technology', lang)}
                   </Link>
                   <Link
                     className="text-lg text-[#41444B] hover:text-gray-800 dark:hover:text-white px-2 py-1 rounded-md"
-                    href={Translator.gotoUrl('products')}
+                    href={Translator.gotoUrl('/products', lang)}
                   >
                     {Translator.t('our-products', lang)}
                   </Link>
                   <a
                     className="text-lg text-[#41444B] hover:text-gray-800 dark:hover:text-white px-2 py-1 rounded-md"
-                    href={Translator.gotoUrl('/#contact')}
+                    href={Translator.gotoUrl('#contact', lang)}
                   >
                     {Translator.t('contact-us', lang)}
                   </a>
@@ -102,31 +102,31 @@ const Navbar = () => {
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <a
                 className="text-gray-500 hover:text-gray-800 dark:hover:text-white block px-2 py-1 rounded-md text-base font-medium"
-                href={Translator.gotoUrl('/')}
+                href={Translator.gotoUrl('/', lang)}
               >
                 {Translator.t('home', lang)}
               </a>
               <a
                 className="text-gray-500 hover:text-gray-800 dark:text-white block px-2 py-1 rounded-md text-base font-medium"
-                href={Translator.gotoUrl('/#about')}
+                href={Translator.gotoUrl('#about', lang)}
               >
                 {Translator.t('about-us', lang)}
               </a>
               <a
                 className="text-gray-500 hover:text-gray-800 dark:text-white block px-2 py-1 rounded-md text-base font-medium"
-                href={Translator.gotoUrl('/#our-service-section')}
+                href={Translator.gotoUrl('#our-service-section', lang)}
               >
                 {Translator.t('our-services', lang)}
               </a>
               <Link
                 className="text-gray-500 hover:text-gray-800 dark:hover:text-white block px-2 py-1 rounded-md text-base font-medium"
-                href={Translator.gotoUrl('waste_water_technology')}
+                href={Translator.gotoUrl('/waste_water_technology', lang)}
               >
                 {Translator.t('waste-water-technology', lang)}
               </Link>
               <Link
                 className="text-gray-500 hover:text-gray-800 dark:hover:text-white block px-2 py-1 rounded-md text-base font-medium"
-                href={Translator.gotoUrl('products')}
+                href={Translator.gotoUrl('/products', lang)}
               >
                 {Translator.t('our-products', lang)}
               </Link>

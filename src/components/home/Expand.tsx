@@ -34,6 +34,19 @@ const Expand = () => {
       title: "Mechanical & Electrical",
       bg: "/bg4.png",
       desc: "SNE melalui Satria Elektrik yang telah memiliki pengalaman lebih dari 40 tahun di bidang elektromotor dan gearmotor telah membantu banyak industri dalam mencapai efisiensi daya.",
+      color: "bg-[#967E40]",
+      with: "w-1/5",
+    },
+    {
+      id: 5,
+      title: "Perizinan Lingkungan",
+      bg: "/bg6.jpg",
+      desc: `<ul>
+        <li>AMDAL & UKL-UPL</li>
+        <li>DELH & DPLH</li>
+        <li>PERSETUJUAN TEKNIS (Air Limbah, Emisi, LB3)</li>
+        <li>PROPER</li>
+      </ul>`,
       color: "bg-amber-800",
       with: "w-1/5",
     },

@@ -2,55 +2,50 @@
 import React, { useState } from "react";
 import ServiceExpand from "./ServiceExpand";
 import ServiceExpandMobile from "./ServiceExpandMobile";
-import Translator from '@/utils/Translator';
-import { useSearchParams } from 'next/navigation';
+import Translator from "@/utils/Translator";
+import { useSearchParams } from "next/navigation";
 
 const Expand = () => {
   const searchParams = useSearchParams();
-  const lang = searchParams.get('lang') || undefined;
+  const lang = searchParams.get("lang") || undefined;
   const databasic = [
     {
       id: 1,
-      title: Translator.t('our-service-title', lang),
+      title: Translator.t("our-service-title", lang),
       bg: "/bg1.png",
-      desc: Translator.t('our-service-desc', lang),
+      desc: Translator.t("our-service-desc", lang),
       color: "bg-black",
       with: "w-2/5",
     },
     {
       id: 2,
-      title: Translator.t('waste-technology-env-title', lang),
+      title: Translator.t("waste-technology-env-title", lang),
       bg: "/bg2.png",
-      desc: Translator.t('waste-technology-env-desc', lang),
+      desc: Translator.t("waste-technology-env-desc", lang),
       color: "bg-blue-800",
       with: "w-1/5",
     },
     {
       id: 3,
-      title: Translator.t('civil-fabrication-title', lang),
+      title: Translator.t("civil-fabrication-title", lang),
       bg: "/bg3.png",
-      desc: Translator.t('civil-fabrication-desc', lang),
+      desc: Translator.t("civil-fabrication-desc", lang),
       color: "bg-green-800",
       with: "w-1/5",
     },
     {
       id: 4,
-      title: Translator.t('mechanical-electrical-title', lang),
+      title: Translator.t("mechanical-electrical-title", lang),
       bg: "/bg4.png",
-      desc: Translator.t('mechanical-electrical-desc', lang),
+      desc: Translator.t("mechanical-electrical-desc", lang),
       color: "bg-[#967E40]",
       with: "w-1/5",
     },
     {
       id: 5,
-      title: "Perizinan Lingkungan",
+      title: Translator.t("environmental-licensing-title", lang),
       bg: "/bg6.jpg",
-      desc: `<ul>
-        <li>AMDAL & UKL-UPL</li>
-        <li>DELH & DPLH</li>
-        <li>PERSETUJUAN TEKNIS (Air Limbah, Emisi, LB3)</li>
-        <li>PROPER</li>
-      </ul>`,
+      desc: Translator.t("environmental-licensing-desc", lang),
       color: "bg-amber-800",
       with: "w-1/5",
     },

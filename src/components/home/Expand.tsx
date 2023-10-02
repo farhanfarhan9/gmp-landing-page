@@ -38,6 +38,19 @@ const Expand = () => {
       title: Translator.t('mechanical-electrical-title', lang),
       bg: "/bg4.png",
       desc: Translator.t('mechanical-electrical-desc', lang),
+      color: "bg-[#967E40]",
+      with: "w-1/5",
+    },
+    {
+      id: 5,
+      title: "Perizinan Lingkungan",
+      bg: "/bg6.jpg",
+      desc: `<ul>
+        <li>AMDAL & UKL-UPL</li>
+        <li>DELH & DPLH</li>
+        <li>PERSETUJUAN TEKNIS (Air Limbah, Emisi, LB3)</li>
+        <li>PROPER</li>
+      </ul>`,
       color: "bg-amber-800",
       with: "w-1/5",
     },

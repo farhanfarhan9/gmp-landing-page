@@ -38,7 +38,12 @@ const ServiceExpand = ({
           <div className={`flex h-full justify-center items-center `}>
             <div className="flex flex-col text-white px-10 ">
               <div className="font-bold text-3xl pb-5">{data.title}</div>
-              <p>{data.desc}</p>
+              <div
+                className="prose text-white text-lg list list-disc"
+                dangerouslySetInnerHTML={{
+                  __html: data.desc,
+                }}
+              ></div>
               {data.with != "w-2/5" && (
                 <div
                   className="absolute bottom-5 right-5 p-3 bg-gray-100 text-gray-600 hover:bg-gray-200 cursor-pointer"

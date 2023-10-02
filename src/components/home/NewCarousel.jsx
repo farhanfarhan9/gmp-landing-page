@@ -1,18 +1,18 @@
 "use client";
 import React, { Component } from "react";
 import loadable from "@loadable/component";
-const Carousel = loadable(() => import("react-spring-3d-carousel"))
+const Carousel = loadable(() => import("react-spring-3d-carousel"));
 // import Carousel from "react-spring-3d-carousel";
 import { v4 as uuidv4 } from "uuid";
 import { config } from "react-spring";
 
 export default class Example extends Component {
   state = {
-    goToSlide: 0,
+    goToSlide: 1,
     offsetRadius: 2,
     showNavigation: true,
     enableSwipe: true,
-    config: config.gentle,
+    config: config.slow,
   };
 
   slides = [
@@ -30,7 +30,13 @@ export default class Example extends Component {
     },
     {
       key: uuidv4(),
-      content: <img src="/carousel/1d.jpg" alt="4" />,
+      content: (
+        <img
+          src="/carousel/1d.jpg"
+          className="rounded-md shadow-md h-full"
+          alt="4"
+        />
+      ),
     },
     {
       key: uuidv4(),
@@ -46,9 +52,7 @@ export default class Example extends Component {
 
   render() {
     return (
-      <div
-        style={{ width: "80%", height: "500px", margin: "0 auto" }}
-      >
+      <div className="w-full h-[295px] lg:h-[700px] carousel-wrap ">
         <Carousel
           slides={this.slides}
           goToSlide={this.state.goToSlide}

@@ -5,26 +5,26 @@ import Section1 from "@/components/home/Section1";
 import Marquee from "react-fast-marquee";
 import Image from "next/image";
 import OurProject from "./ourproject";
-import Translator from '@/utils/Translator';
-import { useSearchParams } from 'next/navigation';
+import Translator from "@/utils/Translator";
+import { useSearchParams } from "next/navigation";
 
 export default function Home() {
   const searchParams = useSearchParams();
-  const lang = searchParams.get('lang') || undefined;
+  const lang = searchParams.get("lang") || undefined;
   return (
     <>
       <Section1 />
       <About />
-      <section  id="our-service-section">
-      <Expand />
+      <section id="our-service-section">
+        <Expand />
       </section>
       <section className="flex justify-center py-12" id="portofolio">
         <div className="flex flex-col max-w-7xl mx-4">
           <div className="uppercase font-bold text-center mt-7 text-3xl md:text-4xl lg:text-5xl">
-            {Translator.t('project-portofolio-title', lang)}
+            {Translator.t("project-portofolio-title", lang)}
           </div>
           <p className="text-center mt-8 mb-10 text-base md:text-lg lg:text-xl">
-            {Translator.t('project-portofolio-desc', lang)}
+            {Translator.t("project-portofolio-desc", lang)}
           </p>
           <Image
             unoptimized
@@ -36,10 +36,10 @@ export default function Home() {
           />
         </div>
       </section>
-      <OurProject/>
+      <OurProject />
       <section className="flex flex-col justify-center">
         <div className="uppercase font-bold text-center mt-14 text-3xl md:text-4xl lg:text-5xl">
-          {Translator.t('our-products-partners', lang)}
+          {Translator.t("our-products-partners", lang)}
         </div>
         <span className="w-5/6 md:w-1/2 mx-auto lg:mb-36">
           <Marquee speed={100}>

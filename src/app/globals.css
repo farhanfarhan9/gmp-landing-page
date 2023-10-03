@@ -25,3 +25,23 @@
 html {
   scroll-behavior: smooth;
 }
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  height: -webkit-max-content !important;
+  height: -moz-max-content !important;
+  height: max-content !important;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  max-height: 700px;
+}

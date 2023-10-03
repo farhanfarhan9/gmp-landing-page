@@ -28,10 +28,7 @@ const slides = [
     key: 4,
     src: "/carousel/1d.jpg",
   },
-  {
-    key: 7,
-    src: "/carousel/1h.jpg",
-  },
+
   {
     key: 5,
     src: "/carousel/1f.jpg",
@@ -39,6 +36,10 @@ const slides = [
   {
     key: 6,
     src: "/carousel/1g.jpg",
+  },
+  {
+    key: 7,
+    src: "/carousel/1h.jpg",
   },
 ];
 

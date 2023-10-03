@@ -46,6 +46,7 @@ export default function SwiperCarousel() {
       initialSlide={0}
       centeredSlides={true}
       slidesPerView={2}
+      slideToClickedSlide
       coverflowEffect={{
         rotate: 0,
         stretch: 0,

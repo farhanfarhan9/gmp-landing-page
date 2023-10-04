@@ -1,41 +1,46 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import ContactNow from "./ContactNow";
+import Translator from '@/utils/Translator';
+import { useSearchParams } from 'next/navigation';
 
 const Contact = () => {
+  const searchParams = useSearchParams();
+  const lang = searchParams.get('lang') || undefined;
   return (
     <div id="contact">
       <div className="grid grid-cols-1 md:grid-cols-2 border-t-8 border-blue-800">
         <div className="pl-4 xl:pl-28 pr-5 md:pr-11 xl:pr-52 bg-green-800 py-12">
           <div className="uppercase font-bold text-white mb-5 pts-30 text-2xl md:text-3xl lg:text-4xl">
-            Contact now
+            {Translator.t('contact-now', lang)}
           </div>
           <div className="my-6 h-1 bg-white w-16"></div>
           <ContactNow />
         </div>
         <div className="flex flex-col lg:flex-row relative font-semibold">
           <div className="capitalize ml-5 md:ml-16 mt-14">
-            <div className="text-blue-800 mb-3 pts-24 text-base md:text-lg lg:text-xl">Quick Links</div>
+            <div className="text-blue-800 mb-3 pts-24 text-base md:text-lg lg:text-xl">{Translator.t('quick-links', lang)}</div>
 
             <div className="mb-2 hover:underline text-base md:text-lg lg:text-xl">
-              <a href="/#impact">Our Impact</a>
+              <a href="/#impact">{Translator.t('our-impact', lang)}</a>
             </div>
             <div className="mb-2 hover:underline text-base md:text-lg lg:text-xl">
-              <a href="/#about">About</a>
+              <a href="/#about">{Translator.t('about-us', lang)}</a>
             </div>
             <div className="mb-2 hover:underline text-base md:text-lg lg:text-xl">
-              <a href="/#service">Our Services</a>
+              <a href="/#service">{Translator.t('our-services', lang)}</a>
             </div>
             <div className="mb-2 hover:underline text-base md:text-lg lg:text-xl">
-              <a href="/#portofolio">Our Portofolio</a>
+              <a href="/#portofolio">{Translator.t('our-porofolio', lang)}</a>
             </div>
             <div className="mb-2 hover:underline text-base md:text-lg lg:text-xl">
-              <a href="/#contact">Contact</a>
+              <a href="/#contact">{Translator.t('contact', lang)}</a>
             </div>
           </div>
           <div className="h-80 ml-5 md:ml-16 mt-14">
             <div className="capitalize text-blue-800 mb-3 pts-24 text-base md:text-lg lg:text-xl">
-              Hubungi kami
+              {Translator.t('contact-us', lang)}
             </div>
             <div>
               <div className="flex">

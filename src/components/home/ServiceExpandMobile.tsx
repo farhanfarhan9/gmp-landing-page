@@ -10,12 +10,7 @@ interface Service {
   with: string;
 }
 
-const ServiceExpandMobile = ({
-  data,
-}: {
-  data: Service;
- 
-}) => {
+const ServiceExpandMobile = ({ data }: { data: Service }) => {
   return (
     <>
       <div
@@ -36,9 +31,15 @@ const ServiceExpandMobile = ({
         <div className="absolute left-0 right-0 top-0 bottom-0">
           <div className={`flex h-full justify-center items-center `}>
             <div className="flex flex-col text-white px-10 ">
-              <div className="font-bold text-3xl md:text-4xl lg:text-4xl xl:text-4xl pb-5">{data.title}</div>
-              <p className="text-base md:text-lg lg:text-xl xl:text-2xl">{data.desc}</p>
-              
+              <div className="font-bold text-3xl md:text-4xl lg:text-4xl xl:text-4xl pb-5">
+                {data.title}
+              </div>
+              <div
+                className="prose text-white text-lg list list-disc"
+                dangerouslySetInnerHTML={{
+                  __html: data.desc,
+                }}
+              ></div>
             </div>
           </div>
         </div>

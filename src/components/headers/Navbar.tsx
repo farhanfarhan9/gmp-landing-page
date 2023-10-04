@@ -2,9 +2,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
+import Translator from '@/utils/Translator';
+import LanguageSwitcher from "./LanguageSwitcher";
+
+import { useSearchParams } from 'next/navigation';
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  
+  const searchParams = useSearchParams();
+  const lang = searchParams.get('lang') || undefined;
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
@@ -32,41 +39,42 @@ const Navbar = () => {
               <div className="flex items-center ml-4 md:ml-6">
                 <div className="flex items-baseline ml-10 space-x-4">
                   <a
-                    className="text-[#41444B] hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md"
-                    href="/#"
+                    className="text-lg text-[#41444B] hover:text-gray-800 dark:hover:text-white px-2 py-1 rounded-md"
+                    href={Translator.gotoUrl('/', lang)}
                   >
-                    Home
+                    {Translator.t('home', lang)}
                   </a>
                   <a
-                    className="text-[#41444B] dark:text-white hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md"
-                    href="/#about"
+                    className="text-lg text-[#41444B] hover:text-gray-800 dark:hover:text-white px-2 py-1 rounded-md"
+                    href={Translator.gotoUrl('#about', lang)}
                   >
-                    Tentang Kami
+                    {Translator.t('about-us', lang)}
                   </a>
                   <a
-                    className="text-[#41444B] dark:text-white hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md"
-                    href="/#our-service-section"
+                    className="text-lg text-[#41444B] hover:text-gray-800 dark:hover:text-white px-2 py-1 rounded-md"
+                    href={Translator.gotoUrl('#our-service-section', lang)}
                   >
-                    Our Services
+                    {Translator.t('our-services', lang)}
                   </a>
                   <Link
-                    className="text-[#41444B] dark:text-white hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md"
-                    href="/waste_water_technology"
+                    className="text-lg text-[#41444B] hover:text-gray-800 dark:hover:text-white px-2 py-1 rounded-md"
+                    href={Translator.gotoUrl('/waste_water_technology', lang)}
                   >
-                    Waste Water Technology
+                    {Translator.t('waste-water-technology', lang)}
                   </Link>
                   <Link
-                    className="text-[#41444B] dark:text-white hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md"
-                    href="/products"
+                    className="text-lg text-[#41444B] hover:text-gray-800 dark:hover:text-white px-2 py-1 rounded-md"
+                    href={Translator.gotoUrl('/products', lang)}
                   >
-                    Our Products
+                    {Translator.t('our-products', lang)}
                   </Link>
                   <a
-                    className="text-[#41444B] hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md"
-                    href="/#contact"
+                    className="text-lg text-[#41444B] hover:text-gray-800 dark:hover:text-white px-2 py-1 rounded-md"
+                    href={Translator.gotoUrl('#contact', lang)}
                   >
-                    Kontak Kami
+                    {Translator.t('contact-us', lang)}
                   </a>
+                  <LanguageSwitcher/>
                 </div>
               </div>
             </div>
@@ -93,35 +101,36 @@ const Navbar = () => {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <a
-                className="text-gray-500 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                href="/#"
+                className="text-gray-500 hover:text-gray-800 dark:hover:text-white block px-2 py-1 rounded-md text-base font-medium"
+                href={Translator.gotoUrl('/', lang)}
               >
-                Home
+                {Translator.t('home', lang)}
               </a>
               <a
-                className="text-gray-500 hover:text-gray-800 dark:text-white block px-3 py-2 rounded-md text-base font-medium"
-                href="/#about"
+                className="text-gray-500 hover:text-gray-800 dark:text-white block px-2 py-1 rounded-md text-base font-medium"
+                href={Translator.gotoUrl('#about', lang)}
               >
-                Tentang Kami
+                {Translator.t('about-us', lang)}
               </a>
               <a
-                className="text-gray-500 hover:text-gray-800 dark:text-white block px-3 py-2 rounded-md text-base font-medium"
-                href="/#our-service-section"
+                className="text-gray-500 hover:text-gray-800 dark:text-white block px-2 py-1 rounded-md text-base font-medium"
+                href={Translator.gotoUrl('#our-service-section', lang)}
               >
-                Our Services
+                {Translator.t('our-services', lang)}
               </a>
               <Link
-                className="text-gray-500 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                href="/waste_water_technology"
+                className="text-gray-500 hover:text-gray-800 dark:hover:text-white block px-2 py-1 rounded-md text-base font-medium"
+                href={Translator.gotoUrl('/waste_water_technology', lang)}
               >
-                Waste Water Technology
+                {Translator.t('waste-water-technology', lang)}
               </Link>
               <Link
-                className="text-gray-500 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                href="/products"
+                className="text-gray-500 hover:text-gray-800 dark:hover:text-white block px-2 py-1 rounded-md text-base font-medium"
+                href={Translator.gotoUrl('/products', lang)}
               >
-                Our Products
+                {Translator.t('our-products', lang)}
               </Link>
+              <LanguageSwitcher/>
             </div>
           </div>
         )}

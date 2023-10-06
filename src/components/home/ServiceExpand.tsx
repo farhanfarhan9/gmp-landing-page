@@ -10,6 +10,10 @@ interface Service {
   with: string;
 }
 
+function truncate(str: string, length: number) {
+  return str.length > length ? str.substring(0, length) + "..." : str;
+}
+
 const ServiceExpand = ({
   data,
   updatebyid,
@@ -20,8 +24,11 @@ const ServiceExpand = ({
   return (
     <>
       <div
-        className={`${data.with} transition-all duration-200 relative overflow-hidden`}
+        className={`${data.with} transition-all duration-300 relative overflow-hidden`}
         style={{ height: "600px" }}
+        onMouseEnter={() => {
+          updatebyid(data.id, "w-2/5");
+        }}
       >
         <Image
           unoptimized
@@ -41,16 +48,12 @@ const ServiceExpand = ({
               <div
                 className="prose text-white text-lg list list-disc"
                 dangerouslySetInnerHTML={{
-                  __html: data.desc,
+                  __html:
+                    data.with == "w-2/5" ? data.desc : truncate(data.desc, 165),
                 }}
               ></div>
               {data.with != "w-2/5" && (
-                <div
-                  className="absolute bottom-5 right-5 p-3 bg-gray-100 text-gray-600 hover:bg-gray-200 cursor-pointer"
-                  onClick={() => {
-                    updatebyid(data.id, "w-2/5");
-                  }}
-                >
+                <div className="absolute bottom-5 right-5 p-3 bg-gray-100 text-gray-600 hover:bg-gray-200 cursor-pointer">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"

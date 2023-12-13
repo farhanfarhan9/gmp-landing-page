@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
-import { useSwipeable } from 'react-swipeable';
+import { useSwipeable } from "react-swipeable";
 import "@/app/Carousel.css";
 
 const CarouselComponent = () => {
@@ -39,6 +39,11 @@ const CarouselComponent = () => {
       image: "/carousel/1g.jpg",
       altText: "Image 6",
     },
+    {
+      id: 7,
+      image: "/carousel/1i.jpg",
+      altText: "Image 7",
+    },
   ];
 
   const handlers = useSwipeable({
@@ -50,7 +55,7 @@ const CarouselComponent = () => {
       eventData.event.preventDefault();
       handlePrev();
     },
-    trackMouse: true
+    trackMouse: true,
   });
 
   useEffect(() => {
@@ -68,7 +73,6 @@ const CarouselComponent = () => {
       clearInterval(timer); // Clear the timer when the component unmounts
     };
   }, []);
-
 
   const handlePrev = () => {
     setActiveIndex((prevIndex) => {
@@ -89,14 +93,31 @@ const CarouselComponent = () => {
   };
 
   return (
-    <div className="carousel-container" {...handlers} style={{height: `${imageHeight}px`}}>
+    <div
+      className="carousel-container"
+      {...handlers}
+      style={{ height: `${imageHeight}px` }}
+    >
       <div
         className="carousel-wrapper"
         style={{ transform: `translateX(-${activeIndex * 100}%)` }}
       >
         {carouselItems.map((item, index) => (
           <div className="carousel-item" key={item.id}>
-            <Image unoptimized ref={index === activeIndex ? imageRef : null} height={100} width={100} src={item.image} alt={item.altText} className="carousel-image" onLoad={() => {  if (imageRef.current) { setImageHeight(imageRef.current.clientHeight); } }} />
+            <Image
+              unoptimized
+              ref={index === activeIndex ? imageRef : null}
+              height={100}
+              width={100}
+              src={item.image}
+              alt={item.altText}
+              className="carousel-image"
+              onLoad={() => {
+                if (imageRef.current) {
+                  setImageHeight(imageRef.current.clientHeight);
+                }
+              }}
+            />
           </div>
         ))}
       </div>

@@ -41,6 +41,10 @@ const slides = [
     key: 7,
     src: "/carousel/1h.jpg",
   },
+  {
+    key: 7,
+    src: "/carousel/1i.jpg",
+  },
 ];
 
 export default function SwiperCarousel() {

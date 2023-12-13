@@ -46,6 +46,10 @@ export default class Example extends Component {
       key: uuidv4(),
       content: <img src="/carousel/1g.jpg" alt="5" />,
     },
+    {
+      key: uuidv4(),
+      content: <img src="/carousel/1i.jpg" alt="5" />,
+    },
   ].map((slide, index) => {
     return { ...slide, onClick: () => this.setState({ goToSlide: index }) };
   });

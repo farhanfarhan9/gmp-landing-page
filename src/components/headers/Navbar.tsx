@@ -28,11 +28,11 @@ const Navbar = () => {
             <Link href="/">
               <span className="flex-shrink-0">
                 <Image
-                  width={176}
+                  width={236}
                   height={48}
                   unoptimized
                   className=""
-                  src="/logo.png"
+                  src="/logo_k3.png"
                   alt="Workflow"
                 />
               </span>

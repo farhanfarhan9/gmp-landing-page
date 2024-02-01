@@ -78,6 +78,13 @@ export default function Home() {
                 unoptimized
                 width={100}
                 height={100}
+                src="/sge.png"
+                alt=""
+              />
+              <Image
+                unoptimized
+                width={100}
+                height={100}
                 src="/nadic.png"
                 alt=""
               />

@@ -2,9 +2,14 @@
 
 import React from "react";
 import Image from "next/image";
+import Translator from "@/utils/Translator";
 import ProjectCarousel from "@/components/ProjectCarousel";
+import { useSearchParams } from "next/navigation";
 
 const page = () => {
+  const searchParams = useSearchParams();
+  const lang = searchParams.get("lang") || undefined;
+
   return (
     <div>
       <div className="relative">
@@ -26,14 +31,10 @@ const page = () => {
         <div className="py-20">
           <div className="w-1/2 mx-auto text-center">
             <h1 className="text-[#0E4F94] font-bold text-5xl">
-              Recent Clients and Projects
+              {Translator.t("recent-client", lang)}
             </h1>
             <p className="mt-5 text-base">
-              We are proud to have been a trusted partner by various companies
-              in Indonesia to fulfill their needs in wastewater treatment. With
-              our in-depth knowledge, rich experience & commitment to quality &
-              sustainability, we continue to innovate to answer new challenges
-              in the wastewater treatment industry.
+              {Translator.t("recent-client-desc", lang)}
             </p>
             <div className="container">
               <div className="grid w-full grid-cols-1 gap-5 mt-10 md:grid-cols-2 lg:grid-cols-3 ">
@@ -45,8 +46,15 @@ const page = () => {
                     src="/img/project/recent_project/palm_oil.png"
                     alt=""
                   />
-                  <p className="absolute text-3xl font-medium text-left text-white top-5 left-5">Palm Oil Mill</p>
-                  <a href="#" className="text-base px-4 py-2 bg-[#0E4F94] text-white rounded-full absolute left-5 bottom-5 hover:bg-[#0A3A6E]">View More</a>
+                  <p className="absolute mr-2 text-3xl font-medium text-left text-white top-5 left-5">
+                    {Translator.t("palm-oil", lang)}
+                  </p>
+                  <a
+                    href="#"
+                    className="text-base px-4 py-2 bg-[#0E4F94] text-white rounded-full absolute left-5 bottom-5 hover:bg-[#0A3A6E]"
+                  >
+                    {Translator.t("view-more", lang)}
+                  </a>
                 </div>
                 <div className="relative">
                   <Image
@@ -56,8 +64,15 @@ const page = () => {
                     src="/img/project/recent_project/fnb.png"
                     alt=""
                   />
-                  <p className="absolute text-3xl font-medium text-left text-white top-5 left-5">Food & Beverages Factory</p>
-                  <a href="#" className="text-base px-4 py-2 bg-[#0E4F94] text-white rounded-full absolute left-5 bottom-5 hover:bg-[#0A3A6E]">View More</a>
+                  <p className="absolute text-3xl font-medium text-left text-white top-5 left-5">
+                    {Translator.t("fnb", lang)}
+                  </p>
+                  <a
+                    href="#"
+                    className="text-base px-4 py-2 bg-[#0E4F94] text-white rounded-full absolute left-5 bottom-5 hover:bg-[#0A3A6E]"
+                  >
+                    {Translator.t("view-more", lang)}
+                  </a>
                 </div>
                 <div className="relative">
                   <Image
@@ -67,8 +82,15 @@ const page = () => {
                     src="/img/project/recent_project/hospital.png"
                     alt=""
                   />
-                  <p className="absolute text-3xl font-medium text-left text-white top-5 left-5">Hospital</p>
-                  <a href="#" className="text-base px-4 py-2 bg-[#0E4F94] text-white rounded-full absolute left-5 bottom-5 hover:bg-[#0A3A6E]">View More</a>
+                  <p className="absolute text-3xl font-medium text-left text-white top-5 left-5">
+                    {Translator.t("hospital", lang)}
+                  </p>
+                  <a
+                    href="#"
+                    className="text-base px-4 py-2 bg-[#0E4F94] text-white rounded-full absolute left-5 bottom-5 hover:bg-[#0A3A6E]"
+                  >
+                    {Translator.t("view-more", lang)}
+                  </a>
                 </div>
                 <div className="relative">
                   <Image
@@ -78,8 +100,15 @@ const page = () => {
                     src="/img/project/recent_project/power_plant.png"
                     alt=""
                   />
-                  <p className="absolute text-3xl font-medium text-left text-white top-5 left-5">Power Plant</p>
-                  <a href="#" className="text-base px-4 py-2 bg-[#0E4F94] text-white rounded-full absolute left-5 bottom-5 hover:bg-[#0A3A6E]">View More</a>
+                  <p className="absolute text-3xl font-medium text-left text-white top-5 left-5">
+                    {Translator.t("pp", lang)}
+                  </p>
+                  <a
+                    href="#"
+                    className="text-base px-4 py-2 bg-[#0E4F94] text-white rounded-full absolute left-5 bottom-5 hover:bg-[#0A3A6E]"
+                  >
+                    {Translator.t("view-more", lang)}
+                  </a>
                 </div>
                 <div className="relative">
                   <Image
@@ -89,8 +118,15 @@ const page = () => {
                     src="/img/project/recent_project/shopping.png"
                     alt=""
                   />
-                  <p className="absolute text-3xl font-medium text-left text-white top-5 left-5">Shopping Center</p>
-                  <a href="#" className="text-base px-4 py-2 bg-[#0E4F94] text-white rounded-full absolute left-5 bottom-5 hover:bg-[#0A3A6E]">View More</a>
+                  <p className="absolute text-3xl font-medium text-left text-white top-5 left-5">
+                    {Translator.t("sc", lang)}
+                  </p>
+                  <a
+                    href="#"
+                    className="text-base px-4 py-2 bg-[#0E4F94] text-white rounded-full absolute left-5 bottom-5 hover:bg-[#0A3A6E]"
+                  >
+                    {Translator.t("view-more", lang)}
+                  </a>
                 </div>
                 <div className="relative">
                   <Image
@@ -100,8 +136,15 @@ const page = () => {
                     src="/img/project/recent_project/goods.png"
                     alt=""
                   />
-                  <p className="absolute text-3xl font-medium text-left text-white top-5 left-5">Goods Factory</p>
-                  <a href="#" className="text-base px-4 py-2 bg-[#0E4F94] text-white rounded-full absolute left-5 bottom-5 hover:bg-[#0A3A6E]">View More</a>
+                  <p className="absolute text-3xl font-medium text-left text-white top-5 left-5">
+                    {Translator.t("gf", lang)}
+                  </p>
+                  <a
+                    href="#"
+                    className="text-base px-4 py-2 bg-[#0E4F94] text-white rounded-full absolute left-5 bottom-5 hover:bg-[#0A3A6E]"
+                  >
+                    {Translator.t("view-more", lang)}
+                  </a>
                 </div>
               </div>
             </div>

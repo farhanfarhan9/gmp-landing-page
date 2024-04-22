@@ -1,13 +1,16 @@
+"use client";
 import React from "react";
 import Impact from "./Impact";
 import About from "./About";
+import Image from "next/image";
 
 function Journey() {
   return (
-    <div className="relative">
+    <div className="relative bg-[#EDF2F5]">
+      <Image className="absolute top-28 opacity-10" src="/img/home/journeybg.png" alt="" width={400} height={300} />
       <Impact />
-      <div className="flex py-60">
-        <div className="mx-auto max-w-7xl">
+      <div className="flex py-60 relative mx-auto max-w-7xl">
+        <div className="">
           <div className="text-[#0E4F94] text-5xl font-bold">
             A Journey to <br /> Grow Together
           </div>
@@ -30,6 +33,9 @@ function Journey() {
           <button className="text-white bg-[#0E4F94] py-3 px-3 mt-8 rounded-3xl">
             Learn More
           </button>
+        </div>
+        <div className="w-[400px]">
+          <About />
         </div>
       </div>
     </div>

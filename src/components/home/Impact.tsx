@@ -11,6 +11,7 @@ const Impact = () => {
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang") || undefined;
   const [value, setValue] = useState(0);
+
   useEffect(() => {
     if (typeof window !== "undefined") {
       const startDate = new Date("06/21/2023 00:00:00");
@@ -43,7 +44,7 @@ const Impact = () => {
   }, []);
   return (
     <div
-      className="mx-auto w-[800px] bg-opacity-50 p-10 -mt-28 absolute top-0 left-1/2 -translate-x-1/2 rounded-2xl overflow-hidden bg-left bg-cover"
+      className="mx-auto w-[800px] bg-opacity-50 p-10 -mt-28 absolute top-0 left-1/2 -translate-x-1/2 rounded-2xl overflow-hidden bg-left bg-cover shadow-md"
       style={{ backgroundImage: 'url("/img/home/bg-impact.webp")' }}
     >
       <div className="absolute top-0 left-0 bottom-0 right-0 bg-white opacity-50"></div>
@@ -68,10 +69,12 @@ const Impact = () => {
             <Image src="/img/home/impact2.png" alt="" width={60} height={100} />
             <div>
               <div className="text-[#0E4F94] font-bold text-3xl">
-                <div className="flex gap-3">
-                  {value.toLocaleString(undefined, {
-                    minimumFractionDigits: 3,
-                  })}
+                <div className="flex gap-1">
+                  <div className="w-[230px]">
+                    {value.toLocaleString(undefined, {
+                      minimumFractionDigits: 3,
+                    })}
+                  </div>
                   <div className="text-superscript">
                     m<sup>3</sup>
                   </div>

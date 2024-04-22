@@ -5,6 +5,7 @@ import Image from "next/image";
 import Translator from "@/utils/Translator";
 import ProjectCarousel from "@/components/ProjectCarousel";
 import { useSearchParams } from "next/navigation";
+import Link from "next/link";
 
 const page = () => {
   const searchParams = useSearchParams();
@@ -49,12 +50,12 @@ const page = () => {
                 <p className="absolute mr-2 text-3xl font-medium text-left text-white top-10 left-10">
                   {Translator.t("palm-oil", lang)}
                 </p>
-                <a
-                  href="#"
+                <Link
+                href="/project/palm-oil-mill"
                   className="text-base px-4 py-2 bg-[#0E4F94] text-white rounded-full absolute left-10 bottom-10 hover:bg-[#0A3A6E]"
                 >
                   {Translator.t("view-more", lang)}
-                </a>
+                </Link>
               </div>
               <div className="relative">
                 <Image
@@ -67,12 +68,12 @@ const page = () => {
                 <p className="absolute text-3xl font-medium text-left text-white top-10 left-10">
                   {Translator.t("fnb", lang)}
                 </p>
-                <a
-                  href="#"
+                <Link
+                href="/project/food-and-beverages-factory"
                   className="text-base px-4 py-2 bg-[#0E4F94] text-white rounded-full absolute left-10 bottom-10 hover:bg-[#0A3A6E]"
                 >
                   {Translator.t("view-more", lang)}
-                </a>
+                </Link>
               </div>
               <div className="relative">
                 <Image
@@ -85,12 +86,12 @@ const page = () => {
                 <p className="absolute text-3xl font-medium text-left text-white top-10 left-10">
                   {Translator.t("hospital", lang)}
                 </p>
-                <a
-                  href="#"
+                <Link
+                href="/project/hospital"
                   className="text-base px-4 py-2 bg-[#0E4F94] text-white rounded-full absolute left-10 bottom-10 hover:bg-[#0A3A6E]"
                 >
                   {Translator.t("view-more", lang)}
-                </a>
+                </Link>
               </div>
               <div className="relative">
                 <Image
@@ -103,12 +104,12 @@ const page = () => {
                 <p className="absolute text-3xl font-medium text-left text-white top-10 left-10">
                   {Translator.t("pp", lang)}
                 </p>
-                <a
-                  href="#"
+                <Link
+                href="/project/power-plant"
                   className="text-base px-4 py-2 bg-[#0E4F94] text-white rounded-full absolute left-10 bottom-10 hover:bg-[#0A3A6E]"
                 >
                   {Translator.t("view-more", lang)}
-                </a>
+                </Link>
               </div>
               <div className="relative">
                 <Image
@@ -121,12 +122,12 @@ const page = () => {
                 <p className="absolute text-3xl font-medium text-left text-white top-10 left-10">
                   {Translator.t("sc", lang)}
                 </p>
-                <a
-                  href="#"
+                <Link
+                href="/project/shopping-center"
                   className="text-base px-4 py-2 bg-[#0E4F94] text-white rounded-full absolute left-10 bottom-10 hover:bg-[#0A3A6E]"
                 >
                   {Translator.t("view-more", lang)}
-                </a>
+                </Link>
               </div>
               <div className="relative">
                 <Image
@@ -139,12 +140,12 @@ const page = () => {
                 <p className="absolute text-3xl font-medium text-left text-white top-5 left-5">
                   {Translator.t("gf", lang)}
                 </p>
-                <a
-                  href="#"
+                <Link
+                href="/project/goods-factory"
                   className="text-base px-4 py-2 bg-[#0E4F94] text-white rounded-full absolute left-10 bottom-10 hover:bg-[#0A3A6E]"
                 >
                   {Translator.t("view-more", lang)}
-                </a>
+                </Link>
               </div>
             </div>
           </div>

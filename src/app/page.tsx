@@ -21,11 +21,11 @@ export default function Home() {
         <Expand />
       </section>
       <section className="flex justify-center py-12" id="portofolio">
-        <div className="flex flex-col max-w-7xl mx-4">
-          <div className="uppercase font-bold text-center mt-7 text-3xl md:text-4xl lg:text-5xl">
+        <div className="flex flex-col mx-4 max-w-7xl">
+          <div className="text-3xl font-bold text-center uppercase mt-7 md:text-4xl lg:text-5xl">
             {Translator.t("project-portofolio-title", lang)}
           </div>
-          <p className="text-center mt-8 mb-10 text-base md:text-lg lg:text-xl">
+          <p className="mt-8 mb-10 text-base text-center md:text-lg lg:text-xl">
             {Translator.t("project-portofolio-desc", lang)}
           </p>
           <Image
@@ -40,12 +40,12 @@ export default function Home() {
       </section>
       <OurProject />
       <section className="flex flex-col justify-center">
-        <div className="uppercase font-bold text-center mt-14 text-3xl md:text-4xl lg:text-5xl">
+        <div className="text-3xl font-bold text-center uppercase mt-14 md:text-4xl lg:text-5xl">
           {Translator.t("our-products-partners", lang)}
         </div>
-        <span className="w-5/6 md:w-1/2 mx-auto lg:mb-36">
+        <span className="w-5/6 mx-auto md:w-1/2 lg:mb-36">
           <Marquee speed={100}>
-            <div className="flex justify-center space-x-9 py-12 items-center mx-5">
+            <div className="flex items-center justify-center py-12 mx-5 space-x-9">
               <Image
                 unoptimized
                 width={100}

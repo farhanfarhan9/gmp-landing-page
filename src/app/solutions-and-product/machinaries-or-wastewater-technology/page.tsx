@@ -5,6 +5,7 @@ import Image from "next/image";
 import Translator from "@/utils/Translator";
 import ProjectCarousel from "@/components/ProjectCarousel";
 import { useSearchParams } from "next/navigation";
+import Link from "next/link";
 
 const page = () => {
   const searchParams = useSearchParams();
@@ -21,7 +22,7 @@ const page = () => {
           src="/img/solutions-and-product/banner.png"
           alt=""
         />
-        <h1 className="absolute w-1/2 mx-20 text-5xl font-bold text-white translate-y-32 top-10">
+        <h1 className="absolute top-0 w-1/2 mx-20 text-2xl font-bold text-white translate-y-10 md:translate-y-20 xl:translate-y-32 lg:translate-y-10 sm:text-3xl md:text-5xl lg:top-10">
           {Translator.t("machinaries-title", lang)}
         </h1>
         <div className="py-20">
@@ -32,7 +33,7 @@ const page = () => {
             height={600}
             alt=""
           />
-          <div className="w-1/2 mx-auto text-center">
+          <div className="relative z-50 w-2/3 mx-auto text-center lg:w-1/2">
             <h1 className="text-[#0E4F94] font-bold text-5xl">
               {Translator.t("machinaries-title", lang)}
             </h1>
@@ -40,9 +41,12 @@ const page = () => {
               {Translator.t("machinaries-desc", lang)}
             </p>
           </div>
-          <div className="container z-10 mx-auto">
-            <div className="grid w-full grid-cols-1 gap-20 mt-10 md:grid-cols-2 lg:grid-cols-3 ">
-              <div className="">
+          <div className="container z-50 px-10 mx-auto">
+            <div className="grid w-full grid-cols-1 gap-20 mt-10 md:grid-cols-2 xl:grid-cols-3 ">
+              <Link
+                href="/solutions-and-product/machinaries-or-wastewater-technology/membrane-bio-reactor"
+                className="relative"
+              >
                 <Image
                   width={100}
                   height={100}
@@ -51,10 +55,13 @@ const page = () => {
                   alt=""
                 />
                 <p className="mt-2 text-xl font-medium text-center">
-                Membrane Bio Reactor (MBR)
+                  Membrane Bio Reactor (MBR)
                 </p>
-              </div>
-              <div className="">
+              </Link>
+              <Link
+                href="/solutions-and-product/machinaries-or-wastewater-technology/reverse-osmosis"
+                className="relative"
+              >
                 <Image
                   width={100}
                   height={100}
@@ -63,10 +70,13 @@ const page = () => {
                   alt=""
                 />
                 <p className="mt-2 text-xl font-medium text-center">
-                Reverse Osmosis
+                  Reverse Osmosis
                 </p>
-              </div>
-              <div className="">
+              </Link>
+              <Link
+                href="/solutions-and-product/machinaries-or-wastewater-technology/dissolved-air-flotation"
+                className="relative"
+              >
                 <Image
                   width={100}
                   height={100}
@@ -75,10 +85,13 @@ const page = () => {
                   alt=""
                 />
                 <p className="mt-2 text-xl font-medium text-center">
-                Dissolved Air Flotation
+                  Dissolved Air Flotation
                 </p>
-              </div>
-              <div className="">
+              </Link>
+              <Link
+                href="/solutions-and-product/machinaries-or-wastewater-technology/aquahelix-surface-aerator"
+                className="relative"
+              >
                 <Image
                   width={100}
                   height={100}
@@ -87,10 +100,13 @@ const page = () => {
                   alt=""
                 />
                 <p className="mt-2 text-xl font-medium text-center">
-                Aquahelix Surface Aerator
+                  Aquahelix Surface Aerator
                 </p>
-              </div>
-              <div className="">
+              </Link>
+              <Link
+                href="/solutions-and-product/machinaries-or-wastewater-technology/filter-press"
+                className="relative"
+              >
                 <Image
                   width={100}
                   height={100}
@@ -99,10 +115,13 @@ const page = () => {
                   alt=""
                 />
                 <p className="mt-2 text-xl font-medium text-center">
-                Filter Press
+                  Filter Press
                 </p>
-              </div>
-              <div className="">
+              </Link>
+              <Link
+                href="/solutions-and-product/machinaries-or-wastewater-technology/wet-scrubber"
+                className="relative"
+              >
                 <Image
                   width={100}
                   height={100}
@@ -111,10 +130,13 @@ const page = () => {
                   alt=""
                 />
                 <p className="mt-2 text-xl font-medium text-center">
-                Wet Scrubber
+                  Wet Scrubber
                 </p>
-              </div>
-              <div className="">
+              </Link>
+              <Link
+                href="/solutions-and-product/machinaries-or-wastewater-technology/lamella-clarifier-tank"
+                className="relative"
+              >
                 <Image
                   width={100}
                   height={100}
@@ -123,9 +145,9 @@ const page = () => {
                   alt=""
                 />
                 <p className="mt-2 text-xl font-medium text-center">
-                Lamella Clarifier Tank
+                  Lamella Clarifier Tank
                 </p>
-              </div>
+              </Link>
             </div>
           </div>
         </div>

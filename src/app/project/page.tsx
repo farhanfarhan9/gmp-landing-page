@@ -24,11 +24,11 @@ const page = () => {
         <h1 className="absolute top-0 w-1/2 mx-20 text-2xl font-bold text-white translate-y-10 md:translate-y-20 xl:translate-y-32 lg:translate-y-10 sm:text-3xl md:text-5xl lg:top-10">
           Project
         </h1>
-        <div className="bg-[#EDF2F5] py-5 lg:py-20">
+        <div className="bg-[#EDF2F5] py-5 px-5 lg:py-20">
           <ProjectCarousel />
         </div>
         <div className="py-20">
-          <div className="relative z-50 w-2/3 mx-auto text-center lg:w-1/2">
+          <div className="relative w-2/3 mx-auto text-center lg:w-1/2">
             <h1 className="text-[#0E4F94] font-bold text-5xl">
               {Translator.t("recent-client", lang)}
             </h1>

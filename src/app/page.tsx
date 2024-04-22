@@ -1,20 +1,22 @@
 "use client";
 import About from "@/components/home/About";
 import Expand from "@/components/home/Expand";
-import Section1 from "@/components/home/Section1";
+import Hero from "@/components/home/Hero";
 import Marquee from "react-fast-marquee";
 import Image from "next/image";
 import OurProject from "./ourproject";
 import Translator from "@/utils/Translator";
 import { useSearchParams } from "next/navigation";
+import Impact from "@/components/home/Impact";
+import Journey from "@/components/home/Journey";
 
 export default function Home() {
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang") || undefined;
   return (
     <>
-      <Section1 />
-      <About />
+      <Hero />
+      <Journey />
       <section id="our-service-section">
         <Expand />
       </section>

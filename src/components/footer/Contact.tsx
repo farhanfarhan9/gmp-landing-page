@@ -85,7 +85,7 @@ const Contact = () => {
           </div>
           <div className="w-full md:w-1/5 pt-10 md:pt-0">
             <div className="font-bold">
-              <a href="#">Information</a>
+              <div>Information</div>
             </div>
             <div className="mt-5">
               <a href="#">Terms & Condition</a>

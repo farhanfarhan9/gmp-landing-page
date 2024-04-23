@@ -126,34 +126,34 @@ const Navbar = () => {
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <a
-              className="text-gray-500 hover:text-gray-800 dark:hover:text-white block px-2 py-1 rounded-md text-base font-medium"
-              href={Translator.gotoUrl("/", lang)}
-            >
-              {Translator.t("home", lang)}
-            </a>
-            <a
               className="text-gray-500 hover:text-gray-800 dark:text-white block px-2 py-1 rounded-md text-base font-medium"
-              href={Translator.gotoUrl("#about", lang)}
+              href="/about-us"
             >
               {Translator.t("about-us", lang)}
             </a>
             <a
               className="text-gray-500 hover:text-gray-800 dark:text-white block px-2 py-1 rounded-md text-base font-medium"
-              href={Translator.gotoUrl("#our-service-section", lang)}
+              href="/project"
             >
-              {Translator.t("our-services", lang)}
+              Projects
             </a>
             <Link
               className="text-gray-500 hover:text-gray-800 dark:hover:text-white block px-2 py-1 rounded-md text-base font-medium"
-              href={Translator.gotoUrl("/waste_water_technology", lang)}
+              href="/solutions-and-product/machinaries-or-wastewater-technology"
             >
-              {Translator.t("waste-water-technology", lang)}
+              Machinaries / Wastewater Technology
             </Link>
             <Link
               className="text-gray-500 hover:text-gray-800 dark:hover:text-white block px-2 py-1 rounded-md text-base font-medium"
-              href={Translator.gotoUrl("/products", lang)}
+              href="/bluewave"
             >
-              {Translator.t("our-products", lang)}
+              Bluewave Industries
+            </Link>
+            <Link
+              className="text-gray-500 hover:text-gray-800 dark:hover:text-white block px-2 py-1 rounded-md text-base font-medium"
+              href="/bacteria"
+            >
+              Bacteria
             </Link>
             <LanguageSwitcher />
           </div>

@@ -181,7 +181,7 @@ const foodAndBeveragesFactory = () => {
 
             <div className="mt-10">
               <div className="text-[#0E4F94] uppercase font-extrabold text-3xl">
-                PT. NUASA PEDAS MAKMUR
+                PT. NUANSA PEDAS MAKMUR
               </div>
               <div className=" uppercase font-extrabold text-xl mt-5">
                 Packaged Food Processing

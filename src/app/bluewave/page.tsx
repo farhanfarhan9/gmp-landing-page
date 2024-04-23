@@ -26,14 +26,14 @@ function page() {
               <p className="font-medium">Login As</p>
               <div className="flex mt-5 space-x-5">
                 <Link
-                  href="https://www.google.com/"
+                  href="JavaScript:void(0)"
                   target="_blank"
                   className="px-6 py-2 border-2 border-[#0E4F94] rounded-full text-medium bg-[#0E4F94] text-white hover:bg-[#0C3E77]"
                 >
                   Client
                 </Link>
                 <Link
-                  href="https://www.google.com/"
+                  href="https://app.satrianusa.group/login"
                   target="_blank"
                   className="px-6 py-2 border-2 border-[#0E4F94] rounded-full text-medium bg-white text-[#0E4F94] hover:bg-[#f0f0f0]"
                 >

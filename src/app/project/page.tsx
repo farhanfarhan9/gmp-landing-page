@@ -38,7 +38,7 @@ const page = () => {
             </p>
           </div>
           <div className="container mx-auto">
-            <div className="grid w-full grid-cols-1 gap-5 mt-10 md:grid-cols-2 lg:grid-cols-3 ">
+            <div className="grid w-full grid-cols-1 gap-20 mt-10 md:grid-cols-2 lg:grid-cols-3 ">
               <div className="relative">
                 <Image
                   width={100}

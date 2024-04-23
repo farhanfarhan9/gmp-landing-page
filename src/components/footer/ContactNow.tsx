@@ -11,11 +11,11 @@ const ContactNow = () => {
     e.preventDefault();
     const text = `Saya ingin meminta Company Profile perusahaan Anda. Bisakah Anda mengirimkannya kepada saya melalui WhatsApp? Saya tertarik untuk mempelajari lebih lanjut tentang perusahaan Anda.\n\nTerima kasih sebelumnya!\n\nSalam, ${name}`;
     const message = encodeURIComponent(text);
-    const url = "https://api.whatsapp.com/send?phone=081534617975&text=" + message
+    const url = "https://api.whatsapp.com/send?phone=&text=" + message;
     // router.push(
-      
+
     // );
-    window.open(url, '__blank')
+    window.open(url, "__blank");
   }
   return (
     <>

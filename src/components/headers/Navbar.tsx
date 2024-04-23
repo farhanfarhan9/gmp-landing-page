@@ -4,6 +4,8 @@ import Link from "next/link";
 import React, { useState } from "react";
 import Translator from "@/utils/Translator";
 import LanguageSwitcher from "./LanguageSwitcher";
+import Dropdown from "@/components/Dropdown/Dropdown";
+import DropdownImage from "@/components/Dropdown/DropdownImage";
 
 import { useSearchParams } from "next/navigation";
 
@@ -17,9 +19,44 @@ const Navbar = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
 
+  const options = [
+    {
+      text: "Machinaries / Wastewater Technology",
+      url: "/solutions-and-product/machinaries-or-wastewater-technology",
+    },
+    { text: "Bluewave Industries", url: "/bluewave" },
+    { text: "Bacteria", url: "/bacteria" },
+  ];
+  const options_company = [
+    {
+      image: "/img/company-navbar/nadic.png",
+      url: "javascript:void(0);",
+    },
+    {
+      image: "/img/company-navbar/nat.png",
+      url: "javascript:void(0);",
+    },
+    {
+      image: "/img/company-navbar/seg.png",
+      url: "javascript:void(0);",
+    },
+    {
+      image: "/img/company-navbar/smi.png",
+      url: "javascript:void(0);",
+    },
+    {
+      image: "/img/company-navbar/sge.png",
+      url: "javascript:void(0);",
+    },
+    {
+      image: "/img/company-navbar/bluewave.png",
+      url: "javascript:void(0);",
+    },
+  ];
+
   return (
     <nav className="bg-white dark:bg-gray-800">
-      <div className="mx-auto max-w-7xl">
+      <div className="mx-auto max-w-7xl font-semibold">
         <div
           className="flex items-center justify-between h-16"
           style={{ height: "100px" }}
@@ -43,35 +80,26 @@ const Navbar = () => {
               <div className="flex items-baseline ml-10 space-x-4">
                 <a
                   className="text-lg text-[#41444B] hover:text-gray-800 dark:hover:text-white px-2 py-1 rounded-md"
-                  href={Translator.gotoUrl("/", lang)}
+                  href="/about-us"
                 >
-                  {Translator.t("home", lang)}
-                </a>
-                <a
-                  className="text-lg text-[#41444B] hover:text-gray-800 dark:hover:text-white px-2 py-1 rounded-md"
-                  href={Translator.gotoUrl("#our-service-section", lang)}
-                >
-                  {Translator.t("our-services", lang)}
+                  {Translator.t("about-us", lang)}
                 </a>
                 <Link
                   className="text-lg text-[#41444B] hover:text-gray-800 dark:hover:text-white px-2 py-1 rounded-md"
-                  href={Translator.gotoUrl("/waste_water_technology", lang)}
+                  href={Translator.gotoUrl("/project", lang)}
                 >
-                  {Translator.t("waste-water-technology", lang)}
+                  Projects
                 </Link>
-                <Link
-                  className="text-lg text-[#41444B] hover:text-gray-800 dark:hover:text-white px-2 py-1 rounded-md"
-                  href={Translator.gotoUrl("/products", lang)}
-                >
-                  {Translator.t("our-products", lang)}
-                </Link>
-                <a
-                  className="text-lg text-[#41444B] hover:text-gray-800 dark:hover:text-white px-2 py-1 rounded-md"
-                  href={Translator.gotoUrl("#contact", lang)}
-                >
-                  {Translator.t("contact-us", lang)}
-                </a>
+                <div>
+                  <Dropdown options={options} title="Solutions & Products" />
+                </div>
                 <LanguageSwitcher />
+                <div>
+                  <DropdownImage
+                    options={options_company}
+                    title="Satria Nusa Group"
+                  />
+                </div>
               </div>
             </div>
           </div>

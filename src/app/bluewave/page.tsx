@@ -14,7 +14,7 @@ function page() {
         <div className="flex flex-col items-center justify-center w-full bg-gradient-to-b from-neutral-50 to-[#0E4F94] relative">
           <div className="z-50 flex flex-col items-center justify-center mt-20 space-y-10">
             <h1 className="font-bold text-6xl text-[#0E4F94] w-4/5 md:w-4/5 text-center">
-              Access Electromechanical Performance at Wastewater Treatment Plant
+              {Translator.t("bluewave-title", lang)}
             </h1>
             <p className="w-4/5 text-base text-center md:w-3/4 lg:w-2/4">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia

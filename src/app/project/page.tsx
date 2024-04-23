@@ -39,7 +39,7 @@ const page = () => {
                 {Translator.t("water-crisis-desc", lang)}
               </p>
             </div>
-            <div className="relative w-2/5">
+            <div className="relative z-10 w-2/5">
               <Image
                 src="/img/project/video/vd1.svg"
                 alt="Carousel picture"
@@ -47,10 +47,10 @@ const page = () => {
                 height={150}
                 className="w-full rounded-md shadow-md"
               />
-              <div className="absolute top-0 bottom-0 left-0 right-0">
+              <div className="absolute top-0 bottom-0 left-0 right-0 z-50">
                 <div className="flex items-center justify-center h-full">
                   <button className="hover:scale-110">
-                    <ModalVideo videoUrl="https://www.youtube.com/embed/sTeyKG8nsjs">
+                    <ModalVideo videoUrl="https://www.youtube.com/embed/AqIioQfDU0A">
                       <svg
                         width="40"
                         height="36"
@@ -75,15 +75,15 @@ const page = () => {
                 </div>
               </div>
             </div>
-            {/* <div className="absolute">
+            <div className="absolute top-0 right-0 z-0 translate-x-40 -translate-y-20">
             <Image
                 src="/img/project/video/pattern1.svg"
                 alt="Carousel picture"
                 width={150}
                 height={150}
-                className="w-full rounded-md shadow-md"
+                className="w-full rounded-md "
               />
-            </div> */}
+            </div>
           </div>
           <div className="relative w-2/3 mx-auto mt-20 text-center lg:w-1/2">
             <h1 className="text-[#0E4F94] font-bold text-5xl">

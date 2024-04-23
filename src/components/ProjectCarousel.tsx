@@ -62,7 +62,7 @@ export default function ProjectCarousel() {
             alt="Carousel picture"
             width={150}
             height={150}
-            className="rounded-md shadow-md"
+            className=""
           />
           <div className="absolute top-0 bottom-0 left-0 right-0">
             <div className="flex items-center justify-center h-full">

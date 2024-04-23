@@ -45,7 +45,7 @@ const serviceData = [
     alt: "waste",
     title: "Environmental Permitting",
     desc: (
-      <ul className="list-disc">
+      <ul className="list-disc ml-8">
         <li>AMDAL & UKL-UPL</li>
         <li>DELH & DPLH</li>
         <li>PERSETUJUAN TEKNIS (Air Limbah, Emisi, LB3)</li>

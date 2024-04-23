@@ -28,14 +28,14 @@ function page() {
                 <Link
                   href="JavaScript:void(0)"
                   target="_blank"
-                  className="px-6 py-2 border-2 border-[#0E4F94] rounded-full text-medium bg-[#0E4F94] text-white hover:bg-[#0C3E77]"
+                  className="px-10 py-2 border-2 border-[#0E4F94] rounded-full text-base text-semibold bg-[#0E4F94] text-white hover:bg-[#0C3E77]"
                 >
                   Client
                 </Link>
                 <Link
                   href="https://app.satrianusa.group/login"
                   target="_blank"
-                  className="px-6 py-2 border-2 border-[#0E4F94] rounded-full text-medium bg-white text-[#0E4F94] hover:bg-[#f0f0f0]"
+                  className="px-10 py-2 border-2 border-[#0E4F94] rounded-full text-base text-semibold bg-white text-[#0E4F94] hover:bg-[#f0f0f0]"
                 >
                   Staff
                 </Link>

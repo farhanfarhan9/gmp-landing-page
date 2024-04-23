@@ -70,7 +70,7 @@ const Impact = () => {
             <div>
               <div className="text-[#0E4F94] font-bold text-3xl">
                 <div className="flex gap-1">
-                  <div className="w-[230px]">
+                  <div className="w-[220px]">
                     {value.toLocaleString(undefined, {
                       minimumFractionDigits: 3,
                     })}

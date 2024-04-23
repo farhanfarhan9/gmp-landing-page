@@ -5,44 +5,80 @@ import React from "react";
 function OurParner() {
   const parner = [
     {
-      img: "/img/partner/avg.png",
+      img: "/img/partner/aquahelix_logo 1.png",
       alt: "avg",
     },
     {
-      img: "/img/partner/sony.png",
+      img: "/img/partner/teco_logo 1.png",
       alt: "sony",
     },
     {
-      img: "/img/partner/sony.png",
+      img: "/img/partner/tranmax 1.png",
       alt: "sony",
     },
     {
-      img: "/img/partner/sony.png",
+      img: "/img/partner/tsurumi.png",
       alt: "sony",
     },
     {
-      img: "/img/partner/fujifilm.png",
+      img: "/img/partner/Cakoeda.png",
       alt: "sony",
     },
     {
-      img: "/img/partner/kpmg.png",
+      img: "/img/partner/speck 1.png",
       alt: "kpmg",
     },
     {
-      img: "/img/partner/sony.png",
+      img: "/img/partner/abb 1.png",
       alt: "sony",
     },
     {
-      img: "/img/partner/sony.png",
+      img: "/img/partner/hydracell 1.png",
       alt: "sony",
     },
     {
-      img: "/img/partner/daikin.png",
+      img: "/img/partner/APP Kenji.png",
+      alt: "daikin",
+    },
+    {
+      img: "/img/partner/image 40.png",
+      alt: "daikin",
+    },
+    {
+      img: "/img/partner/pentair (1).png",
+      alt: "daikin",
+    },
+    {
+      img: "/img/partner/metering.png",
+      alt: "daikin",
+    },
+    {
+      img: "/img/partner/futsu.png",
+      alt: "daikin",
+    },
+    {
+      img: "/img/partner/Ki-deb.png",
+      alt: "daikin",
+    },
+    {
+      img: "/img/partner/elektrim.png",
+      alt: "daikin",
+    },
+    {
+      img: "/img/partner/Yuema logo 1.png",
+      alt: "daikin",
+    },
+    {
+      img: "/img/partner/toshirama.png",
+      alt: "daikin",
+    },
+    {
+      img: "/img/partner/ebara.png",
       alt: "daikin",
     },
   ];
   return (
-    <div className="px-16 py-20 mx-auto max-w-7xl my-10 flex justify-between items-center">
+    <div className="px-16 py-20 mx-auto max-w-7xl my-10 flex justify-between">
       <div>
         <div className="text-4xl font-bold text-[#0E4F94]">Our Partner</div>
         <p className="mt-7 max-w-2xl">
@@ -52,7 +88,7 @@ function OurParner() {
           vision and mission.
         </p>
       </div>
-      <div className="grid grid-cols-3 gap-10 items-center">
+      <div className="grid grid-cols-5 gap-10 items-center">
         {parner.map((item, index) => (
           <Image
             key={index}

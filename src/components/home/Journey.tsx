@@ -29,7 +29,7 @@ function Journey() {
             to collect and analyze data continuously for quality and
             cost-effective system design.
           </p>
-          <button className="text-white bg-[#0E4F94] py-3 px-3 mt-8 rounded-3xl">
+          <button className="text-white bg-[#0E4F94] py-2 px-4 mt-8 rounded-3xl">
             Learn More
           </button>
         </div>

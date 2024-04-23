@@ -4,7 +4,7 @@ import React from "react";
 function Advantages() {
   return (
     <div className="relative text-base">
-      <div className="flex w-[2000px] max-w-7xl absolute top-0 left-1/2 -translate-x-1/2 -mt-40 rounded-3xl shadow-md overflow-hidden">
+      <div className="flex w-[2000px] max-w-7xl absolute top-0 left-1/2 -translate-x-1/2 -mt-36 rounded-3xl shadow-md overflow-hidden">
         <div className="w-1/2 bg-[#EDF2F5] py-10 px-12">
           <div className="flex items-center justify-center gap-3">
             <Image

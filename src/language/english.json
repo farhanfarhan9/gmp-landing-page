@@ -116,5 +116,7 @@
     "bluewave-title": "Access Electromechanical Performance at Wastewater Treatment Plant",
     "login-as": "Login As",
     "client": "Client",
-    "staff": "Staff"
+    "staff": "Staff",
+    "water-crisis": "Water Crisis",
+    "water-crisis-desc": "Relationship between industrial wastewater management and urban drinking water quality degradation."
 }

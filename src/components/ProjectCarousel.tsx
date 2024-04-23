@@ -11,28 +11,28 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 const slides = [
   {
     key: 1,
-    src: "/img/project/video/Yt1.png",
+    src: "/img/project/video/Yt1.svg",
     link: "https://www.youtube.com/embed/blXNITtzSjM",
   },
   {
     key: 2,
-    src: "/img/project/video/Yt2.png",
+    src: "/img/project/video/Yt2.svg",
     link: "https://www.youtube.com/embed/i9hKwHR4Mx0",
   },
   {
     key: 3,
-    src: "/img/project/video/Yt3.png",
+    src: "/img/project/video/Yt3.svg",
     link: "https://www.youtube.com/embed/R-O6PHVEHBo",
   },
   {
     key: 4,
-    src: "/img/project/video/Yt4.png",
+    src: "/img/project/video/Yt4.svg",
     link: "https://www.youtube.com/embed/sTeyKG8nsjs",
   },
 
   {
     key: 5,
-    src: "/img/project/video/Yt5.png",
+    src: "/img/project/video/Yt5.svg",
     link: "https://www.youtube.com/embed/O25XOOdO91E",
   },
 ];

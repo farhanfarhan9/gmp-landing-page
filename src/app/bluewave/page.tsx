@@ -10,45 +10,65 @@ function page() {
   const lang = searchParams.get("lang") || undefined;
   return (
     <>
-      <div className="flex flex-col items-center justify-center w-full bg-gradient-to-b from-neutral-50 to-[#0E4F94] ">
-        <div className="flex flex-col items-center justify-center mt-20 space-y-10">
-          <h1 className="font-bold text-6xl text-[#0E4F94] w-4/5 md:w-4/5 text-center">
-            Access Electromechanical Performance at Wastewater Treatment Plant
-          </h1>
-          <p className="w-4/5 text-base text-center md:w-3/4 lg:w-2/4">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
-            quisquam eaque ipsa aut? Deserunt error aspernatur quaerat
-            voluptatum est, eos commodi adipisci, velit illum maxime vel ducimus
-            voluptatibus, aut exercitationem?
-          </p>
-          <div className="flex flex-col items-center justify-center">
-            <p className="font-medium">Login As</p>
-            <div className="flex mt-5 space-x-5">
-              <Link
-                href="https://www.google.com/"
-                target="_blank"
-                className="px-6 py-2 border-2 border-[#0E4F94] rounded-full text-medium bg-[#0E4F94] text-white hover:bg-[#0C3E77]"
-              >
-                Client
-              </Link>
-              <Link
-                href="https://www.google.com/"
-                target="_blank"
-                className="px-6 py-2 border-2 border-[#0E4F94] rounded-full text-medium bg-white text-[#0E4F94] hover:bg-[#f0f0f0]"
-              >
-                Staff
-              </Link>
+      <div className="relative">
+        <div className="flex flex-col items-center justify-center w-full bg-gradient-to-b from-neutral-50 to-[#0E4F94] relative">
+          <div className="z-50 flex flex-col items-center justify-center mt-20 space-y-10">
+            <h1 className="font-bold text-6xl text-[#0E4F94] w-4/5 md:w-4/5 text-center">
+              Access Electromechanical Performance at Wastewater Treatment Plant
+            </h1>
+            <p className="w-4/5 text-base text-center md:w-3/4 lg:w-2/4">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
+              quisquam eaque ipsa aut? Deserunt error aspernatur quaerat
+              voluptatum est, eos commodi adipisci, velit illum maxime vel
+              ducimus voluptatibus, aut exercitationem?
+            </p>
+            <div className="flex flex-col items-center justify-center">
+              <p className="font-medium">Login As</p>
+              <div className="flex mt-5 space-x-5">
+                <Link
+                  href="https://www.google.com/"
+                  target="_blank"
+                  className="px-6 py-2 border-2 border-[#0E4F94] rounded-full text-medium bg-[#0E4F94] text-white hover:bg-[#0C3E77]"
+                >
+                  Client
+                </Link>
+                <Link
+                  href="https://www.google.com/"
+                  target="_blank"
+                  className="px-6 py-2 border-2 border-[#0E4F94] rounded-full text-medium bg-white text-[#0E4F94] hover:bg-[#f0f0f0]"
+                >
+                  Staff
+                </Link>
+              </div>
             </div>
           </div>
+          <div className="absolute top-0 left-0 z-0">
+            <Image
+              className="z-0"
+              src="/img/bluewave/patern.png"
+              width={900}
+              height={600}
+              alt=""
+            />
+          </div>
+          <div className="absolute right-0 z-0 bottom-20">
+            <Image
+              className="z-0"
+              src="/img/bluewave/patern2.png"
+              width={900}
+              height={600}
+              alt=""
+            />
+          </div>
+          <Image
+            src="/img/bluewave/banner.png"
+            unoptimized
+            className="z-50 object-cover max-w-xl mt-10 -my-40 md:max-w-2xl lg:max-w-4xl xl:max-w-7xl "
+            alt=""
+            width={1920}
+            height={1080}
+          />
         </div>
-        <Image
-          src="/img/bluewave/banner.png"
-          unoptimized
-          className="z-50 object-cover max-w-xl mt-10 -my-40 md:max-w-2xl lg:max-w-4xl xl:max-w-7xl "
-          alt=""
-          width={1920}
-          height={1080}
-        />
       </div>
       <div className="relative">
         <div className="absolute z-0 flex justify-end w-full">

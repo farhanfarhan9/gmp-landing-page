@@ -8,25 +8,50 @@ const serviceData = [
     img: "/img/home/service1.png",
     alt: "waste",
     title: "Waste Technology & Environment",
-    desc: "Satria Nusa Engineering is a national wastewater management company that has successfully implemented the latest technology in water and wastewater technology.",
+    desc: (
+      <div>
+        Satria Nusa Engineering is a national wastewater management company that
+        has successfully implemented the latest technology in water and
+        wastewater technology.
+      </div>
+    ),
   },
   {
     img: "/img/home/service2.png",
     alt: "waste",
     title: "Civil & Fabrication",
-    desc: "Satria Nusa Engineering has internal capabilities for civil and mechanical construction. With more than 10 years of experience, Satria Nusa has been involved in various constructions for industrial purposes throughout Indonesia.",
+    desc: (
+      <div>
+        Satria Nusa Engineering has internal capabilities for civil and
+        mechanical construction. With more than 10 years of experience, Satria
+        Nusa has been involved in various constructions for industrial purposes
+        throughout Indonesia.
+      </div>
+    ),
   },
   {
-    img: "/img/home/service1.png",
+    img: "/img/home/service3.png",
     alt: "waste",
     title: "Mechanical & Electrical",
-    desc: "Satria Nusa Enjinering through Satria Guna Elektrik, also a panel maker for integrated solutions.",
+    desc: (
+      <div>
+        Satria Nusa Enjinering through Satria Guna Elektrik, also a panel maker
+        for integrated solutions.
+      </div>
+    ),
   },
   {
-    img: "/img/home/service1.png",
+    img: "/img/home/service4.png",
     alt: "waste",
     title: "Environmental Permitting",
-    desc: "Waste Technology & Environment",
+    desc: (
+      <ul className="list-disc">
+        <li>AMDAL & UKL-UPL</li>
+        <li>DELH & DPLH</li>
+        <li>PERSETUJUAN TEKNIS (Air Limbah, Emisi, LB3)</li>
+        <li>PROPER</li>
+      </ul>
+    ),
   },
 ];
 
@@ -46,25 +71,33 @@ function OurService() {
       </p>
       <div className="flex justify-center py-3 text-3xl mt-7 mx-auto max-w-7xl">
         <div
-          className={`text-center pb-5 border-b-4 px-14 cursor-pointer ${activeservice === 0 && "font-bold text-[#0E4F94]"} ${activeservice >= 0 && "border-[#0E4F94]"}`}
+          className={`text-center pb-5 border-b-4 px-14 cursor-pointer ${
+            activeservice === 0 && "font-bold text-[#0E4F94]"
+          } ${activeservice >= 0 && "border-[#0E4F94]"}`}
           onClick={() => setactiveservice(0)}
         >
           Waste Technology <br />& Environment
         </div>
         <div
-          className={`text-center pb-5 border-b-4 px-14 cursor-pointer ${activeservice === 1 && "font-bold text-[#0E4F94]"} ${activeservice >= 1 && "border-[#0E4F94]"}`}
+          className={`text-center pb-5 border-b-4 px-14 cursor-pointer ${
+            activeservice === 1 && "font-bold text-[#0E4F94]"
+          } ${activeservice >= 1 && "border-[#0E4F94]"}`}
           onClick={() => setactiveservice(1)}
         >
           Civil & <br /> Fabrication
         </div>
         <div
-          className={`text-center pb-5 border-b-4 px-14 cursor-pointer ${activeservice === 2 && "font-bold text-[#0E4F94]"} ${activeservice >= 2 && "border-[#0E4F94]"}`}
+          className={`text-center pb-5 border-b-4 px-14 cursor-pointer ${
+            activeservice === 2 && "font-bold text-[#0E4F94]"
+          } ${activeservice >= 2 && "border-[#0E4F94]"}`}
           onClick={() => setactiveservice(2)}
         >
           Mechanical & <br /> Electrical
         </div>
         <div
-          className={`text-center pb-5 border-b-4 px-14 cursor-pointer ${activeservice === 3 && "font-bold text-[#0E4F94]"} ${activeservice >= 3 && "border-[#0E4F94]"}`}
+          className={`text-center pb-5 border-b-4 px-14 cursor-pointer ${
+            activeservice === 3 && "font-bold text-[#0E4F94]"
+          } ${activeservice >= 3 && "border-[#0E4F94]"}`}
           onClick={() => setactiveservice(3)}
         >
           Environmental <br /> Permitting

@@ -18,15 +18,16 @@ function CompanyProfile() {
             Company Profile
           </div>
           <p className="mt-7 max-w-3xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-            malesuada elit nec quam interdum, non suscipit lorem varius. Sed ac
-            volutpat elit. Morbi egestas, orci eget vulputate feugiat, magna
-            lectus luctus lectus, id bibendum lacus tortor accumsan nulla. Morbi
-            ut consequat tortor.
+            Download our Company Profile to learn more about our company,
+            including our vision and mission, project portfolio and
+            certifications.
           </p>
         </div>
         <div>
-          <a href="/docs/Compro SNE 2024.pdf" className="bg-[#24AD69] hover:bg-green-700 text-[15px] text-white py-2 px-4 rounded-full">
+          <a
+            href="/docs/Compro SNE 2024.pdf"
+            className="bg-[#24AD69] hover:bg-green-700 text-[15px] text-white py-2 px-4 rounded-full"
+          >
             Download
           </a>
         </div>

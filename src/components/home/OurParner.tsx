@@ -44,13 +44,12 @@ function OurParner() {
   return (
     <div className="px-16 py-20 mx-auto max-w-7xl my-10 flex justify-between items-center">
       <div>
-        <div className="text-4xl font-bold text-[#0E4F94]">
-          Our Partner & Client
-        </div>
+        <div className="text-4xl font-bold text-[#0E4F94]">Our Partner</div>
         <p className="mt-7 max-w-2xl">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-          molestie turpis vel erat malesuada, nec hendrerit ligula accumsan.
-          Curabitur non nibh consectetur, maximus sapien non, bibendum nibh.
+          These companies, with their respective expertise and strengths, come
+          together to create better experiences and more innovative solutions
+          for you and bring unique aspects and experiences that complement our
+          vision and mission.
         </p>
       </div>
       <div className="grid grid-cols-3 gap-10 items-center">

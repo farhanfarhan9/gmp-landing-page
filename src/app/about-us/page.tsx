@@ -1,6 +1,7 @@
 import Advantages from "@/components/aboutus/Advantages";
 import CompanyJourney from "@/components/aboutus/CompanyJourney";
 import TeamProfile from "@/components/aboutus/TeamProfile";
+import Expand from "@/components/home/Expand";
 import Image from "next/image";
 import React from "react";
 
@@ -33,9 +34,9 @@ function AboutUs() {
       />
       <div className="mx-auto max-w-7xl mt-10 mb-64">
         <div className="text-5xl font-bold text-[#0E4F94] text-center">
-          About Us
+        Stepping into the Future from <br />Experience to Innovation
         </div>
-        <div className="mt-7">
+        <div className="mt-7 text-base">
           <div>
             With the success of building SNE into a National Engineering
             Company. The company is committed to continuously improve internally

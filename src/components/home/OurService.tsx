@@ -62,7 +62,7 @@ function OurService() {
       <div className="text-5xl font-bold text-[#0E4F94] text-center">
         Our Services
       </div>
-      <p className="text-center mx-auto w-[880px] mt-7">
+      <p className="text-center mx-auto w-[880px] mt-7 text-base">
         Satria Nusa Engineering is committed to supporting industrial growth by
         maintaining environmental balance. With electro-mechanical, civil &
         chemical engineering experience, we provide a perfect level of success
@@ -118,7 +118,7 @@ function OurService() {
             <div className="text-3xl text-[#0E4F94] font-bold">
               {serviceData[activeservice].title}
             </div>
-            <div className="mt-7">{serviceData[activeservice].desc}</div>
+            <div className="mt-7 text-base">{serviceData[activeservice].desc}</div>
           </div>
         </div>
       )}

@@ -17,7 +17,7 @@ function CompanyProfile() {
           <div className="text-4xl font-bold text-[#0E4F94]">
             Company Profile
           </div>
-          <p className="mt-7 max-w-3xl">
+          <p className="mt-7 max-w-3xl text-base">
             Download our Company Profile to learn more about our company,
             including our vision and mission, project portfolio and
             certifications.

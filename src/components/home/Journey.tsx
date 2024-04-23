@@ -9,7 +9,7 @@ function Journey() {
       <Image className="absolute top-28 opacity-10" src="/img/home/journeybg.png" alt="" width={400} height={300} />
       <Impact />
       <div className="flex pt-60 pb-32 relative mx-auto max-w-7xl">
-        <div className="">
+        <div className="text-base">
           <div className="text-[#0E4F94] text-5xl font-bold">
             A Journey to <br /> Grow Together
           </div>
@@ -29,7 +29,7 @@ function Journey() {
             to collect and analyze data continuously for quality and
             cost-effective system design.
           </p>
-          <button className="text-white bg-[#0E4F94] py-3 px-3 mt-8 rounded-3xl">
+          <button className="text-white bg-[#0E4F94] py-2 px-4 mt-8 rounded-3xl">
             Learn More
           </button>
         </div>

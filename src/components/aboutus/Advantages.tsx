@@ -3,9 +3,9 @@ import React from "react";
 
 function Advantages() {
   return (
-    <div className="relative">
-      <div className="flex w-[2000px] max-w-7xl absolute top-0 left-1/2 -translate-x-1/2 -mt-40 rounded-3xl shadow-md overflow-hidden">
-        <div className="w-1/2 bg-[#EDF2F5] p-10">
+    <div className="relative text-base">
+      <div className="flex w-[2000px] max-w-7xl absolute top-0 left-1/2 -translate-x-1/2 -mt-36 rounded-3xl shadow-md overflow-hidden">
+        <div className="w-1/2 bg-[#EDF2F5] py-10 px-12">
           <div className="flex items-center justify-center gap-3">
             <Image
               src={"/img/icons/vision.png"}
@@ -15,37 +15,37 @@ function Advantages() {
             />
             <div className="text-4xl text-[#0E4F94] font-bold">Vision</div>
           </div>
-          <div className="mt-3">
-            A national integrated engineering company that provides the right
-            quality and right cost solutions for the advancement of Indonesian
-            industry.
+          <div className="mt-5">
+            Leading wastewater engineering company with complete set of
+            operational capabilities nationwide for water conservations, reuse,
+            and renewable energy.
           </div>
         </div>
-        <div className="w-1/2 bg-[#DFF5FF] p-10">
+        <div className="w-1/2 bg-[#DFF5FF] py-10 px-12">
           <div className="flex items-center justify-center gap-3">
-            <Image src={"/img/icons/mission.png"} width={50} height={50} alt={""} />
-            <div className="text-4xl text-[#0E4F94] font-bold">
-              Mission
-            </div>
+            <Image
+              src={"/img/icons/mission.png"}
+              width={50}
+              height={50}
+              alt={""}
+            />
+            <div className="text-4xl text-[#0E4F94] font-bold">Mission</div>
           </div>
-          <div className="mt-3">
+          <div className="mt-5">
             <ul className="list-disc">
-              <li>Prioritizing Technology Research and Development.</li>
               <li>
-                Building internal engineering capabilities with a
-                customer-oriented spirit.
+                Research and Development on wastewater technology that is
+                directed to renewable energy.
               </li>
               <li>
-                Always listen and always understand the needs of the industry in
-                the field.
+                Production facilities and tech partnerships on membrane
+                technologies.
               </li>
               <li>
-                Building a network of service centers, logistics and technicians
+                Deployment of AIoT for data-driven wastewater management system.
               </li>
-              <li>
-                throughout Indonesia. Absolute engineering and safety standards
-                compliance.
-              </li>
+              <li>Engineering Excellence and Compliances.</li>
+              <li>Network of technicians nationwide.</li>
             </ul>
           </div>
         </div>

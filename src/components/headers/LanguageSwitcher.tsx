@@ -51,7 +51,7 @@ const LanguageSwitcher = () => {
           style={{ cursor: "pointer", maxWidth: "150px" }}
         >
           <div className="mr-1 text-sm flex align-middle items-center">ENG</div>
-          <div className="px-1 bg-white my-1 rounded-full shadow-xl">A</div>
+          <div className="w-6 h-6  bg-white my-1 rounded-full shadow-xl"></div>
         </div>
       )}
       {languageView === "in" && (
@@ -60,7 +60,7 @@ const LanguageSwitcher = () => {
           onClick={() => handleLanguageSwitch("in")}
           style={{ cursor: "pointer", maxWidth: "150px" }}
         >
-          <div className="px-1 bg-white my-1 rounded-full shadow-xl">A</div>
+          <div className="w-6 h-6  bg-white my-1 rounded-full shadow-xl"></div>
           <div className="ml-1 text-sm flex align-middle items-center">IDN</div>
         </div>
       )}

@@ -17,7 +17,7 @@ function Journey() {
             Starting with experience in the electro-mechanical field since the
             1990s and civil construction in 2011, PT Satria Nusa Enjinering
             (SNE) was established with the aim of providing reliable water and
-            wastewater management solutions for Indonesia's manufacturing
+            wastewater management solutions for Indonesia&apos;s manufacturing
             industry
           </p>
           <p className="mt-7">
@@ -33,7 +33,7 @@ function Journey() {
             Learn More
           </button>
         </div>
-        <div className="w-[400px]">
+        <div className="w-[500px]">
           <About />
         </div>
       </div>

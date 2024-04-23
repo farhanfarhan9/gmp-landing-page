@@ -31,7 +31,7 @@ const About = () => {
         <AboutLearnMore searchParams={searchParams} />
       </div> */}
 
-      <div className="w-full md:w-4/5 lg:w-1/2 mx-auto">
+      <div className="w-full mx-auto">
         <div className="flex justify-center">
           <div className="w-full flex items-center justify-center relative mb-4 mt-4">
             {/* <NewCarousel /> */}

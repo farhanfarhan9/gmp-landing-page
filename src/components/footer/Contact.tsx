@@ -44,10 +44,10 @@ const Contact = () => {
                   unoptimized
                   className=""
                   src="/img/footer/wa.png"
-                  alt="Workflow"
+                  alt="WhatsApp Logo"
                 />
               </div>
-              <div>+6281534617975</div>
+              <a href="tel:+6281534617975">+6281534617975</a>
             </div>
             <div className="flex mt-3">
               <div className="mr-2">
@@ -57,10 +57,12 @@ const Contact = () => {
                   unoptimized
                   className=""
                   src="/img/footer/email.png"
-                  alt="Workflow"
+                  alt="Email Logo"
                 />
               </div>
-              project@satrianusa.group
+              <a href="mailto:project@satrianusa.group">
+                project@satrianusa.group
+              </a>
             </div>
           </div>
           <div className="w-full md:w-1/5 pt-10 md:pt-0">
@@ -130,6 +132,34 @@ const Contact = () => {
 
         <div className="w-full flex justify-center my-10">
           <div className="max-w-7xl flex w-full font-semibold justify-end">
+            <a
+              href="https://www.youtube.com/@SatriaNusaEnjinering-wk4xl"
+              target="_BLANK"
+              className="mr-5"
+            >
+              <Image
+                width={25}
+                height={25}
+                unoptimized
+                className=""
+                src="/img/footer/youtube.png"
+                alt="Workflow"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/satrianusaenjinering"
+              target="_BLANK"
+              className="mr-20"
+            >
+              <Image
+                width={25}
+                height={25}
+                unoptimized
+                className=""
+                src="/img/footer/linkedin.png"
+                alt="Workflow"
+              />
+            </a>
             <div>
               Satria Nusa Enjinering © All rights reserved Copyrights 2024
             </div>

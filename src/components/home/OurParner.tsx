@@ -1,8 +1,12 @@
 "use client";
+import Translator from "@/utils/Translator";
 import Image from "next/image";
+import { useSearchParams } from "next/navigation";
 import React from "react";
 
 function OurParner() {
+  const searchParams = useSearchParams();
+  const lang = searchParams.get("lang") || undefined;
   const parner = [
     {
       img: "/img/partner/aquahelix_logo 1.png",
@@ -82,10 +86,7 @@ function OurParner() {
       <div>
         <div className="text-4xl font-bold text-[#0E4F94]">Our Partner</div>
         <p className="mt-7 max-w-2xl">
-          These companies, with their respective expertise and strengths, come
-          together to create better experiences and more innovative solutions
-          for you and bring unique aspects and experiences that complement our
-          vision and mission.
+          {Translator.t("our-partner-desc", lang)}
         </p>
       </div>
       <div className="grid grid-cols-5 gap-10 items-center">

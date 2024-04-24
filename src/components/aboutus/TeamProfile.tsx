@@ -37,7 +37,7 @@ const ProfileData = [
   },
   {
     name: "Antony Simon, B.Sc., M.Kom.",
-    role: "Opertational Director",
+    role: "Operatational Director",
     image: "/img/about/antony.png",
     desc: (
       <div>

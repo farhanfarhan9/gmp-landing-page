@@ -50,7 +50,7 @@ const Impact = () => {
       <div className="absolute top-0 left-0 bottom-0 right-0 bg-white opacity-50"></div>
       <div className="relative">
         <div className="text-[#0E4F94] text-5xl font-bold text-center">
-          Our Impact
+        {Translator.t("our-impact", lang)}
         </div>
         <div className="flex mt-5 mx-9 justify-between">
           <div className="flex items-center gap-3">

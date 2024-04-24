@@ -13,7 +13,7 @@ const page = () => {
   const lang = searchParams.get("lang") || undefined;
 
   return (
-    <div>
+    <div className="">
       <div className="relative">
         <Image
           unoptimized
@@ -23,14 +23,16 @@ const page = () => {
           src="/img/project/banner.png"
           alt=""
         />
-        <h1 className="absolute top-0 w-1/2 mx-20 text-2xl font-bold text-white translate-y-10 md:translate-y-20 xl:translate-y-32 lg:translate-y-10 sm:text-3xl md:text-5xl lg:top-10">
-          Project
-        </h1>
+        <div className="mx-auto max-w-7xl">
+          <h1 className="absolute top-0 w-1/2 text-2xl font-bold text-white translate-y-10 md:translate-y-20 xl:translate-y-32 lg:translate-y-10 sm:text-3xl md:text-5xl lg:top-10">
+            {Translator.t("project-reference", lang)}
+          </h1>
+        </div>
         <div className="bg-[#EDF2F5] py-5 px-5 lg:py-20">
           <ProjectCarousel />
         </div>
         <div className="py-20">
-          <div className="container relative flex flex-col mx-auto lg:flex-row">
+          <div className="relative flex flex-col mx-auto max-w-7xl lg:flex-row">
             <div className="w-full my-auto lg:w-3/5">
               <h1 className="text-5xl text-[#0E4F94] font-bold">
                 {Translator.t("water-crisis", lang)}:
@@ -76,7 +78,7 @@ const page = () => {
               </div>
             </div>
             <div className="absolute top-0 right-0 z-0 translate-x-40 -translate-y-20">
-            <Image
+              <Image
                 src="/img/project/video/pattern1.svg"
                 alt="Carousel picture"
                 width={150}
@@ -85,7 +87,7 @@ const page = () => {
               />
             </div>
           </div>
-          <div className="relative w-2/3 mx-auto mt-20 text-center lg:w-1/2">
+          <div className="relative w-2/3 mx-auto mt-20 text-center max-w-7xl lg:w-1/2">
             <h1 className="text-[#0E4F94] font-bold text-5xl">
               {Translator.t("recent-client", lang)}
             </h1>
@@ -93,7 +95,7 @@ const page = () => {
               {Translator.t("recent-client-desc", lang)}
             </p>
           </div>
-          <div className="container mx-auto">
+          <div className="mx-auto max-w-7xl">
             <div className="grid w-full grid-cols-1 gap-20 mt-10 md:grid-cols-2 lg:grid-cols-3 ">
               <div className="relative">
                 <Image

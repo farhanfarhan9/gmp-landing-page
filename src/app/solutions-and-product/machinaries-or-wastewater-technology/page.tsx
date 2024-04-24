@@ -22,9 +22,11 @@ const page = () => {
           src="/img/solutions-and-product/banner.png"
           alt=""
         />
-        <h1 className="absolute top-0 w-1/2 mx-20 text-2xl font-bold text-white translate-y-10 md:translate-y-20 xl:translate-y-32 lg:translate-y-10 sm:text-3xl md:text-5xl lg:top-10">
-          {Translator.t("machinaries-title", lang)}
-        </h1>
+        <div className="mx-auto max-w-7xl">
+          <h1 className="absolute top-0 w-1/2 text-2xl font-bold text-white translate-y-10 md:translate-y-20 xl:translate-y-32 lg:translate-y-10 sm:text-3xl md:text-5xl lg:top-10">
+            {Translator.t("machinaries-title", lang)}
+          </h1>
+        </div>
         <div className="py-20">
           <Image
             className="absolute right-0 z-0"
@@ -33,7 +35,7 @@ const page = () => {
             height={600}
             alt=""
           />
-          <div className="relative z-50 w-2/3 mx-auto text-center lg:w-1/2">
+          <div className="relative z-50 w-2/3 mx-auto text-center max-w-7xl lg:w-1/2">
             <h1 className="text-[#0E4F94] font-bold text-5xl">
               {Translator.t("machinaries-title", lang)}
             </h1>
@@ -41,7 +43,7 @@ const page = () => {
               {Translator.t("machinaries-desc", lang)}
             </p>
           </div>
-          <div className="container z-50 px-10 mx-auto">
+          <div className="z-50 px-10 mx-auto max-w-7xl">
             <div className="grid w-full grid-cols-1 gap-20 mt-10 md:grid-cols-2 xl:grid-cols-3 ">
               <Link
                 href="/solutions-and-product/machinaries-or-wastewater-technology/membrane-bio-reactor"

@@ -60,26 +60,17 @@ function Advantages() {
         <div className="text-white grid grid-cols-2 gap-7 mt-10 max-w-7xl mx-auto">
           <div>
             <ul className="list-disc">
-              <li>Led by experts in the waste water sector.</li>
-              <li>
-                Experienced in the industrial and machinery fields for more than
-                30 years.
-              </li>
-              <li>Has a special waste processing laboratory.</li>
-              <li>
-                We guarantee that all projects achieve quality standards in
-                accordance with government regulations.
-              </li>
+              <li>{Translator.t("advantages-1", lang)}</li>
+              <li>{Translator.t("advantages-2", lang)}</li>
+              <li>{Translator.t("advantages-3", lang)}</li>
+              <li>{Translator.t("advantages-4", lang)}</li>
             </ul>
           </div>
           <div>
             <ul className="list-disc">
-              <li>Distributor of electromechanical equipment and pumps.</li>
-              <li>Customer satisfaction as a priority.</li>
-              <li>
-                Our products and services combine the advantages of the latest
-                technology with a deep understanding of your needs.
-              </li>
+              <li>{Translator.t("advantages-5", lang)}</li>
+              <li>{Translator.t("advantages-6", lang)}</li>
+              <li>{Translator.t("advantages-7", lang)}</li>
             </ul>
           </div>
         </div>

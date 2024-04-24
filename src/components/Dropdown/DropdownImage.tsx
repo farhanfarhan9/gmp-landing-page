@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { useState } from "react";
 
 const DropdownImage = ({
@@ -41,7 +42,7 @@ const DropdownImage = ({
           {options.map((option, index) => (
             <React.Fragment key={option.url}>
               <div className="p-3 flex items-center space-x-2 w-full justify-center">
-                <img src={option.image} alt={option.url} className="" />
+                <img src={option.image} alt={option.url} />
                 <a
                   href={option.url}
                   onClick={() => handleOptionClick(option.url)}

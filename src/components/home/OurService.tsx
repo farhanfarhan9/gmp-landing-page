@@ -5,62 +5,55 @@ import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 
-const serviceData = [
-  {
-    img: "/img/home/service1.png",
-    alt: "waste",
-    title: "Waste Technology & Environment",
-    desc: (
-      <div>
-        Satria Nusa Engineering is a national wastewater management company that
-        has successfully implemented the latest technology in water and
-        wastewater technology.
-      </div>
-    ),
-  },
-  {
-    img: "/img/home/service2.png",
-    alt: "waste",
-    title: "Civil & Fabrication",
-    desc: (
-      <div>
-        Satria Nusa Engineering has internal capabilities for civil and
-        mechanical construction. With more than 10 years of experience, Satria
-        Nusa has been involved in various constructions for industrial purposes
-        throughout Indonesia.
-      </div>
-    ),
-  },
-  {
-    img: "/img/home/service3.png",
-    alt: "waste",
-    title: "Mechanical & Electrical",
-    desc: (
-      <div>
-        Satria Nusa Enjinering through Satria Guna Elektrik, also a panel maker
-        for integrated solutions.
-      </div>
-    ),
-  },
-  {
-    img: "/img/home/service4.png",
-    alt: "waste",
-    title: "Environmental Permitting",
-    desc: (
-      <ul className="list-disc ml-8">
-        <li>AMDAL & UKL-UPL</li>
-        <li>DELH & DPLH</li>
-        <li>PERSETUJUAN TEKNIS (Air Limbah, Emisi, LB3)</li>
-        <li>PROPER</li>
-      </ul>
-    ),
-  },
-];
-
 function OurService() {
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang") || undefined;
   const [activeservice, setactiveservice] = useState(0);
+  const serviceData = [
+    {
+      img: "/img/home/service1.png",
+      alt: "waste",
+      title: Translator.t("service-title-1", lang),
+      desc: (
+        <div>
+          {Translator.t("service-1-desc", lang)}
+        </div>
+      ),
+    },
+    {
+      img: "/img/home/service2.png",
+      alt: "waste",
+      title: Translator.t("service-title-2", lang),
+      desc: (
+        <div>
+          {Translator.t("service-2-desc", lang)}
+        </div>
+      ),
+    },
+    {
+      img: "/img/home/service3.png",
+      alt: "waste",
+      title: Translator.t("service-title-3", lang),
+      desc: (
+        <div>
+          {Translator.t("service-3-desc", lang)}
+        </div>
+      ),
+    },
+    {
+      img: "/img/home/service4.png",
+      alt: "waste",
+      title: Translator.t("service-title-4", lang),
+      desc: (
+        <ul className="list-disc ml-8">
+          <li>AMDAL & UKL-UPL</li>
+          <li>DELH & DPLH</li>
+          <li>PERSETUJUAN TEKNIS (Air Limbah, Emisi, LB3)</li>
+          <li>PROPER</li>
+        </ul>
+      ),
+    },
+  ];
   return (
     <div className="py-10 mt-10">
       <div className="text-5xl font-bold text-[#0E4F94] text-center">
@@ -76,7 +69,7 @@ function OurService() {
           } ${activeservice >= 0 && "border-[#0E4F94]"}`}
           onClick={() => setactiveservice(0)}
         >
-          Waste Technology <br />& Environment
+          {Translator.t("service-title-1", lang)}
         </div>
         <div
           className={`text-center pb-5 border-b-4 px-14 cursor-pointer ${
@@ -84,7 +77,7 @@ function OurService() {
           } ${activeservice >= 1 && "border-[#0E4F94]"}`}
           onClick={() => setactiveservice(1)}
         >
-          Civil & <br /> Fabrication
+          {Translator.t("service-title-2", lang)}
         </div>
         <div
           className={`text-center pb-5 border-b-4 px-14 cursor-pointer ${
@@ -92,7 +85,7 @@ function OurService() {
           } ${activeservice >= 2 && "border-[#0E4F94]"}`}
           onClick={() => setactiveservice(2)}
         >
-          Mechanical & <br /> Electrical
+          {Translator.t("service-title-3", lang)}
         </div>
         <div
           className={`text-center pb-5 border-b-4 px-14 cursor-pointer ${
@@ -100,7 +93,7 @@ function OurService() {
           } ${activeservice >= 3 && "border-[#0E4F94]"}`}
           onClick={() => setactiveservice(3)}
         >
-          Environmental <br /> Permitting
+          {Translator.t("service-title-4", lang)}
         </div>
       </div>
 
@@ -118,7 +111,9 @@ function OurService() {
             <div className="text-3xl text-[#0E4F94] font-bold">
               {serviceData[activeservice].title}
             </div>
-            <div className="mt-7 text-base">{serviceData[activeservice].desc}</div>
+            <div className="mt-7 text-base">
+              {serviceData[activeservice].desc}
+            </div>
           </div>
         </div>
       )}

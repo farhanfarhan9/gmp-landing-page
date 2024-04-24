@@ -64,14 +64,10 @@ function OurService() {
   return (
     <div className="py-10 mt-10">
       <div className="text-5xl font-bold text-[#0E4F94] text-center">
-        {Translator.t("our-services", lang)}
+        {Translator.t("our-service-title", lang)}
       </div>
       <p className="text-center mx-auto w-[880px] mt-7 text-base">
-        Satria Nusa Engineering is committed to supporting industrial growth by
-        maintaining environmental balance. With electro-mechanical, civil &
-        chemical engineering experience, we provide a perfect level of success
-        to our clients in terms of managing production wastewater (wastewater
-        treatment) & domestic wastewater (sewage treatment).
+        {Translator.t("our-service-desc", lang)}
       </p>
       <div className="flex justify-center py-3 text-3xl mt-7 mx-auto max-w-7xl">
         <div

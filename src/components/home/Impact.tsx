@@ -44,7 +44,7 @@ const Impact = () => {
     }
   }, []);
   return (
-    <div className="-mt-28 absolute top-0 left-1/2 -translate-x-1/2 w-[800px] ">
+    <div className="-mt-28 absolute top-0 left-1/2 -translate-x-1/2 w-[800px]">
       <div
         className="bg-opacity-50 p-5 relative rounded-2xl overflow-hidden bg-left bg-cover shadow-md"
         style={{ backgroundImage: 'url("/img/home/bg-impact.webp")' }}
@@ -55,7 +55,7 @@ const Impact = () => {
             {Translator.t("our-impact", lang)}
           </div>
           <div className="flex mt-5 mx-9 justify-between">
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-5">
               <Image
                 src="/img/home/impact1.png"
                 alt=""
@@ -64,10 +64,10 @@ const Impact = () => {
               />
               <div>
                 <div className="text-[#0E4F94] font-bold text-3xl">29+</div>
-                <div className="mt-3">{Translator.t("projects", lang)}</div>
+                <div className="mt-3 font-bold">{Translator.t("projects", lang)}</div>
               </div>
             </div>
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-5">
               <Image
                 src="/img/home/impact2.png"
                 alt=""
@@ -87,7 +87,7 @@ const Impact = () => {
                     </div>
                   </div>
                 </div>
-                <div className="mt-3">
+                <div className="mt-3 font-bold">
                   {Translator.t("conserved-water", lang)}
                 </div>
               </div>

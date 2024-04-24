@@ -46,8 +46,8 @@ const Machineries = () => {
           <div className="z-50 px-10 mx-auto max-w-7xl">
             <div className="grid w-full grid-cols-1 gap-20 mt-10 md:grid-cols-2 xl:grid-cols-3 ">
               <Link
-                href="/membrane-bio-reactor"
-                className="relative flex flex-col items-center justify-end"
+                href="/solutions-and-product/machinaries-or-wastewater-technology/membrane-bio-reactor"
+                className="relative"
               >
                 <Image
                   width={100}
@@ -61,8 +61,8 @@ const Machineries = () => {
                 </p>
               </Link>
               <Link
-                href="/reverse-osmosis"
-                className="relative flex flex-col items-center justify-end"
+                href="/solutions-and-product/machinaries-or-wastewater-technology/reverse-osmosis"
+                className="relative"
               >
                 <Image
                   width={100}
@@ -76,8 +76,8 @@ const Machineries = () => {
                 </p>
               </Link>
               <Link
-                href="/dissolved-air-flotation"
-                className="relative flex flex-col items-center justify-end"
+                href="/solutions-and-product/machinaries-or-wastewater-technology/dissolved-air-flotation"
+                className="relative"
               >
                 <Image
                   width={100}
@@ -91,8 +91,8 @@ const Machineries = () => {
                 </p>
               </Link>
               <Link
-                href="/aquahelix-surface-aerator"
-                className="relative flex flex-col items-center justify-end"
+                href="/solutions-and-product/machinaries-or-wastewater-technology/aquahelix-surface-aerator"
+                className="relative"
               >
                 <Image
                   width={100}
@@ -106,8 +106,8 @@ const Machineries = () => {
                 </p>
               </Link>
               <Link
-                href="/filter-press"
-                className="relative flex flex-col items-center justify-end"
+                href="/solutions-and-product/machinaries-or-wastewater-technology/filter-press"
+                className="relative"
               >
                 <Image
                   width={100}
@@ -121,8 +121,8 @@ const Machineries = () => {
                 </p>
               </Link>
               <Link
-                href="/wet-scrubber"
-                className="relative flex flex-col items-center justify-end"
+                href="/solutions-and-product/machinaries-or-wastewater-technology/wet-scrubber"
+                className="relative"
               >
                 <Image
                   width={100}
@@ -136,8 +136,8 @@ const Machineries = () => {
                 </p>
               </Link>
               <Link
-                href="/lamella-clarifier-tank"
-                className="relative flex flex-col items-center justify-end"
+                href="/solutions-and-product/machinaries-or-wastewater-technology/lamella-clarifier-tank"
+                className="relative"
               >
                 <Image
                   width={100}

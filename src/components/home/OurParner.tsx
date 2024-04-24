@@ -6,75 +6,75 @@ function OurParner() {
   const parner = [
     {
       img: "/img/partner/aquahelix_logo 1.png",
-      alt: "avg",
+      alt: "aquahelix",
     },
     {
       img: "/img/partner/teco_logo 1.png",
-      alt: "sony",
+      alt: "teco",
     },
     {
       img: "/img/partner/tranmax 1.png",
-      alt: "sony",
+      alt: "tranmax",
     },
     {
       img: "/img/partner/tsurumi.png",
-      alt: "sony",
+      alt: "tsurumi",
     },
     {
       img: "/img/partner/Cakoeda.png",
-      alt: "sony",
+      alt: "cokoeda",
     },
     {
       img: "/img/partner/speck 1.png",
-      alt: "kpmg",
+      alt: "speck",
     },
     {
       img: "/img/partner/abb 1.png",
-      alt: "sony",
+      alt: "abb",
     },
     {
       img: "/img/partner/hydracell 1.png",
-      alt: "sony",
+      alt: "hydracell",
     },
     {
       img: "/img/partner/APP Kenji.png",
-      alt: "daikin",
+      alt: "APP Kenji",
     },
     {
       img: "/img/partner/image 40.png",
-      alt: "daikin",
+      alt: "image 40",
     },
     {
       img: "/img/partner/pentair (1).png",
-      alt: "daikin",
+      alt: "pentair",
     },
     {
       img: "/img/partner/metering.png",
-      alt: "daikin",
+      alt: "metering",
     },
     {
       img: "/img/partner/futsu.png",
-      alt: "daikin",
+      alt: "futsu",
     },
     {
       img: "/img/partner/Ki-deb.png",
-      alt: "daikin",
+      alt: "Ki-deb",
     },
     {
       img: "/img/partner/elektrim.png",
-      alt: "daikin",
+      alt: "elektrim",
     },
     {
       img: "/img/partner/Yuema logo 1.png",
-      alt: "daikin",
+      alt: "Yuema",
     },
     {
       img: "/img/partner/toshirama.png",
-      alt: "daikin",
+      alt: "toshirama",
     },
     {
       img: "/img/partner/ebara.png",
-      alt: "daikin",
+      alt: "ebara",
     },
   ];
   return (

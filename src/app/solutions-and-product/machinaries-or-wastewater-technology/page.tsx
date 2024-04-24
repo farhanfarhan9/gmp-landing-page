@@ -7,7 +7,7 @@ import ProjectCarousel from "@/components/ProjectCarousel";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 
-const page = () => {
+const Machineries = () => {
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang") || undefined;
 
@@ -158,4 +158,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Machineries;

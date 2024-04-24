@@ -8,7 +8,7 @@ import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import ModalVideo from "@/components/modal/ModalVideo";
 
-const page = () => {
+const Project = () => {
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang") || undefined;
 
@@ -213,4 +213,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Project;

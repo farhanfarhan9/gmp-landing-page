@@ -84,7 +84,7 @@ function OurParner() {
   return (
     <div className="px-16 py-20 mx-auto max-w-7xl my-10 flex justify-between">
       <div>
-        <div className="text-4xl font-bold text-[#0E4F94]">Our Partner</div>
+        <div className="text-4xl font-bold text-[#0E4F94]">{Translator.t("our-partner-title", lang)}</div>
         <p className="mt-7 max-w-2xl">
           {Translator.t("our-partner-desc", lang)}
         </p>

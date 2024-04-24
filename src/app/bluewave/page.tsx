@@ -26,13 +26,12 @@ function Bluewave() {
                 {Translator.t("bluewave-title", lang)}
               </h1>
               <p className="w-4/5 text-base mt-14">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-                veniam laudantium maiores odio vitae est animi aut, nam et
-                deleniti obcaecati a in possimus quisquam fugit quas molestiae.
-                Aliquid, nemo.
+                {Translator.t("bluewave-desc", lang)}
               </p>
               <div className="flex mt-16 space-x-12">
-                <p className="my-auto font-medium">{Translator.t("login-as", lang)}:</p>
+                <p className="my-auto font-medium">
+                  {Translator.t("login-as", lang)}:
+                </p>
                 <div className="flex space-x-5">
                   <Link
                     href="https://bluewave.industries"

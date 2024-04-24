@@ -1,9 +1,12 @@
 "use client";
 import Translator from "@/utils/Translator";
 import Image from "next/image";
+import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 
-function OurService({ lang }: { lang: string }) {
+function OurService() {
+  const searchParams = useSearchParams();
+  const lang = searchParams.get("lang") || undefined;
   const [activeservice, setactiveservice] = useState(0);
   const serviceData = [
     {

@@ -1,7 +1,11 @@
+"use client";
 import Translator from "@/utils/Translator";
 import Image from "next/image";
+import { useSearchParams } from "next/navigation";
 
-function OurParner({ lang }: { lang: string }) {
+function OurParner() {
+  const searchParams = useSearchParams();
+  const lang = searchParams.get("lang") || undefined;
   const parner = [
     {
       img: "/img/partner/aquahelix_logo 1.png",

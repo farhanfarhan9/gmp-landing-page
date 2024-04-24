@@ -21,7 +21,7 @@ const Navbar = () => {
 
   const options = [
     {
-      text: "Machinaries / Wastewater Technology",
+      text: "Machineries / Wastewater Technology",
       url: "/solutions-and-product/machinaries-or-wastewater-technology",
     },
     { text: "Bluewave Industries", url: "/bluewave" },
@@ -141,7 +141,7 @@ const Navbar = () => {
               className="text-gray-500 hover:text-gray-800 dark:hover:text-white block px-2 py-1 rounded-md text-base font-medium"
               href="/solutions-and-product/machinaries-or-wastewater-technology"
             >
-              Machinaries / Wastewater Technology
+              Machineries / Wastewater Technology
             </Link>
             <Link
               className="text-gray-500 hover:text-gray-800 dark:hover:text-white block px-2 py-1 rounded-md text-base font-medium"

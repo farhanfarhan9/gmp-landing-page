@@ -22,7 +22,7 @@ const Navbar = () => {
   const options = [
     {
       text: "Machineries / Wastewater Technology",
-      url: "/solutions-and-product/machinaries-or-wastewater-technology",
+      url: "/machinaries-or-wastewater-technology",
     },
     { text: "Bluewave Industries", url: "/bluewave" },
     { text: "Bacteria", url: "/bacteria" },
@@ -139,7 +139,7 @@ const Navbar = () => {
             </a>
             <Link
               className="text-gray-500 hover:text-gray-800 dark:hover:text-white block px-2 py-1 rounded-md text-base font-medium"
-              href="/solutions-and-product/machinaries-or-wastewater-technology"
+              href="/machinaries-or-wastewater-technology"
             >
               {Translator.t("machinaries-title", lang)}
             </Link>

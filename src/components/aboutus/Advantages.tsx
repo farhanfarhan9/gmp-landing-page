@@ -1,7 +1,12 @@
+"use client";
+import Translator from "@/utils/Translator";
 import Image from "next/image";
+import { useSearchParams } from "next/navigation";
 import React from "react";
 
 function Advantages() {
+  const searchParams = useSearchParams();
+  const lang = searchParams.get("lang") || undefined;
   return (
     <div className="relative text-base">
       <div className="flex w-[2000px] max-w-7xl absolute top-0 left-1/2 -translate-x-1/2 -mt-36 rounded-3xl shadow-md overflow-hidden">
@@ -13,7 +18,7 @@ function Advantages() {
               height={50}
               alt=""
             />
-            <div className="text-4xl text-[#0E4F94] font-bold">Vision</div>
+            <div className="text-4xl text-[#0E4F94] font-bold">{Translator.t("vision", lang)}</div>
           </div>
           <div className="mt-5">
             Leading wastewater engineering company with complete set of
@@ -29,7 +34,7 @@ function Advantages() {
               height={50}
               alt={""}
             />
-            <div className="text-4xl text-[#0E4F94] font-bold">Mission</div>
+            <div className="text-4xl text-[#0E4F94] font-bold">{Translator.t("mission", lang)}</div>
           </div>
           <div className="mt-5">
             <ul className="list-disc">

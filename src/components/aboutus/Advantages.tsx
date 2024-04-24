@@ -1,7 +1,12 @@
+"use client";
+import Translator from "@/utils/Translator";
 import Image from "next/image";
+import { useSearchParams } from "next/navigation";
 import React from "react";
 
 function Advantages() {
+  const searchParams = useSearchParams();
+  const lang = searchParams.get("lang") || undefined;
   return (
     <div className="relative text-base">
       <div className="flex w-[2000px] max-w-7xl absolute top-0 left-1/2 -translate-x-1/2 -mt-36 rounded-3xl shadow-md overflow-hidden">
@@ -13,13 +18,11 @@ function Advantages() {
               height={50}
               alt=""
             />
-            <div className="text-4xl text-[#0E4F94] font-bold">Vision</div>
+            <div className="text-4xl text-[#0E4F94] font-bold">
+              {Translator.t("vision", lang)}
+            </div>
           </div>
-          <div className="mt-5">
-            Leading wastewater engineering company with complete set of
-            operational capabilities nationwide for water conservations, reuse,
-            and renewable energy.
-          </div>
+          <div className="mt-5">{Translator.t("vision-desc", lang)}</div>
         </div>
         <div className="w-1/2 bg-[#DFF5FF] py-10 px-12">
           <div className="flex items-center justify-center gap-3">
@@ -29,23 +32,17 @@ function Advantages() {
               height={50}
               alt={""}
             />
-            <div className="text-4xl text-[#0E4F94] font-bold">Mission</div>
+            <div className="text-4xl text-[#0E4F94] font-bold">
+              {Translator.t("mission", lang)}
+            </div>
           </div>
           <div className="mt-5">
             <ul className="list-disc">
-              <li>
-                Research and Development on wastewater technology that is
-                directed to renewable energy.
-              </li>
-              <li>
-                Production facilities and tech partnerships on membrane
-                technologies.
-              </li>
-              <li>
-                Deployment of AIoT for data-driven wastewater management system.
-              </li>
-              <li>Engineering Excellence and Compliances.</li>
-              <li>Network of technicians nationwide.</li>
+              <li>{Translator.t("mission-1", lang)}</li>
+              <li>{Translator.t("mission-2", lang)}</li>
+              <li>{Translator.t("mission-3", lang)}</li>
+              <li>{Translator.t("mission-4", lang)}</li>
+              <li>{Translator.t("mission-5", lang)}</li>
             </ul>
           </div>
         </div>
@@ -58,7 +55,7 @@ function Advantages() {
       />
       <div className="absolute top-1/2 bottom-0 right-0 left-0">
         <div className="text-5xl font-bold text-white text-center">
-          Our Advantages
+          {Translator.t("our-advantages", lang)}
         </div>
         <div className="text-white grid grid-cols-2 gap-7 mt-10 max-w-7xl mx-auto">
           <div>

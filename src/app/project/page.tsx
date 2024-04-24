@@ -30,8 +30,8 @@ const page = () => {
           <ProjectCarousel />
         </div>
         <div className="py-20">
-          <div className="container relative flex mx-auto">
-            <div className="w-3/5 my-auto">
+          <div className="container relative flex flex-col mx-auto lg:flex-row">
+            <div className="w-full my-auto lg:w-3/5">
               <h1 className="text-5xl text-[#0E4F94] font-bold">
                 {Translator.t("water-crisis", lang)}:
               </h1>
@@ -39,7 +39,7 @@ const page = () => {
                 {Translator.t("water-crisis-desc", lang)}
               </p>
             </div>
-            <div className="relative z-10 w-2/5">
+            <div className="relative z-10 w-full mt-5 lg:w-2/5 lg:mt-0">
               <Image
                 src="/img/project/video/vd1.svg"
                 alt="Carousel picture"

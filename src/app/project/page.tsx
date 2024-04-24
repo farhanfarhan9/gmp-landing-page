@@ -6,6 +6,7 @@ import Translator from "@/utils/Translator";
 import ProjectCarousel from "@/components/ProjectCarousel";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
+import ModalVideo from "@/components/modal/ModalVideo";
 
 const page = () => {
   const searchParams = useSearchParams();
@@ -29,7 +30,62 @@ const page = () => {
           <ProjectCarousel />
         </div>
         <div className="py-20">
-          <div className="relative w-2/3 mx-auto text-center lg:w-1/2">
+          <div className="container relative flex flex-col mx-auto lg:flex-row">
+            <div className="w-full my-auto lg:w-3/5">
+              <h1 className="text-5xl text-[#0E4F94] font-bold">
+                {Translator.t("water-crisis", lang)}:
+              </h1>
+              <p className="mt-5 text-3xl">
+                {Translator.t("water-crisis-desc", lang)}
+              </p>
+            </div>
+            <div className="relative z-10 w-full mt-5 lg:w-2/5 lg:mt-0">
+              <Image
+                src="/img/project/video/vd1.svg"
+                alt="Carousel picture"
+                width={150}
+                height={150}
+                className="w-full rounded-md shadow-md"
+              />
+              <div className="absolute top-0 bottom-0 left-0 right-0 z-50">
+                <div className="flex items-center justify-center h-full">
+                  <button className="hover:scale-110">
+                    <ModalVideo videoUrl="https://www.youtube.com/embed/AqIioQfDU0A">
+                      <svg
+                        width="40"
+                        height="36"
+                        viewBox="0 0 40 36"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <ellipse
+                          cx="19.2477"
+                          cy="18.1152"
+                          rx="17.2443"
+                          ry="17.3618"
+                          fill="white"
+                        />
+                        <path
+                          d="M25.6092 15.9306L22.4008 13.0804L17.1729 8.4361C16.0655 7.46673 14.1763 8.1612 14.1763 9.55014V18.5638V26.6804C14.1763 28.0694 16.0655 28.7639 17.1729 27.78L25.6092 20.2855C26.961 19.0991 26.961 17.1315 25.6092 15.9306Z"
+                          fill="#0E4F94"
+                        />
+                      </svg>
+                    </ModalVideo>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="absolute top-0 right-0 z-0 translate-x-40 -translate-y-20">
+            <Image
+                src="/img/project/video/pattern1.svg"
+                alt="Carousel picture"
+                width={150}
+                height={150}
+                className="w-full rounded-md "
+              />
+            </div>
+          </div>
+          <div className="relative w-2/3 mx-auto mt-20 text-center lg:w-1/2">
             <h1 className="text-[#0E4F94] font-bold text-5xl">
               {Translator.t("recent-client", lang)}
             </h1>
@@ -51,7 +107,7 @@ const page = () => {
                   {Translator.t("palm-oil", lang)}
                 </p>
                 <Link
-                href="/project/palm-oil-mill"
+                  href="/project/palm-oil-mill"
                   className="text-base px-4 py-2 bg-[#0E4F94] text-white rounded-full absolute left-10 bottom-10 hover:bg-[#0A3A6E]"
                 >
                   {Translator.t("view-more", lang)}
@@ -69,7 +125,7 @@ const page = () => {
                   {Translator.t("fnb", lang)}
                 </p>
                 <Link
-                href="/project/food-and-beverages-factory"
+                  href="/project/food-and-beverages-factory"
                   className="text-base px-4 py-2 bg-[#0E4F94] text-white rounded-full absolute left-10 bottom-10 hover:bg-[#0A3A6E]"
                 >
                   {Translator.t("view-more", lang)}
@@ -87,7 +143,7 @@ const page = () => {
                   {Translator.t("hospital", lang)}
                 </p>
                 <Link
-                href="/project/hospital"
+                  href="/project/hospital"
                   className="text-base px-4 py-2 bg-[#0E4F94] text-white rounded-full absolute left-10 bottom-10 hover:bg-[#0A3A6E]"
                 >
                   {Translator.t("view-more", lang)}
@@ -105,7 +161,7 @@ const page = () => {
                   {Translator.t("pp", lang)}
                 </p>
                 <Link
-                href="/project/power-plant"
+                  href="/project/power-plant"
                   className="text-base px-4 py-2 bg-[#0E4F94] text-white rounded-full absolute left-10 bottom-10 hover:bg-[#0A3A6E]"
                 >
                   {Translator.t("view-more", lang)}
@@ -123,7 +179,7 @@ const page = () => {
                   {Translator.t("sc", lang)}
                 </p>
                 <Link
-                href="/project/shopping-center"
+                  href="/project/shopping-center"
                   className="text-base px-4 py-2 bg-[#0E4F94] text-white rounded-full absolute left-10 bottom-10 hover:bg-[#0A3A6E]"
                 >
                   {Translator.t("view-more", lang)}
@@ -141,7 +197,7 @@ const page = () => {
                   {Translator.t("gf", lang)}
                 </p>
                 <Link
-                href="/project/goods-factory"
+                  href="/project/goods-factory"
                   className="text-base px-4 py-2 bg-[#0E4F94] text-white rounded-full absolute left-10 bottom-10 hover:bg-[#0A3A6E]"
                 >
                   {Translator.t("view-more", lang)}

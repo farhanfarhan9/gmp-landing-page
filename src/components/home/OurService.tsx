@@ -1,44 +1,28 @@
 "use client";
-
 import Translator from "@/utils/Translator";
 import Image from "next/image";
-import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 
-function OurService() {
-  const searchParams = useSearchParams();
-  const lang = searchParams.get("lang") || undefined;
+function OurService({ lang }: { lang: string }) {
   const [activeservice, setactiveservice] = useState(0);
   const serviceData = [
     {
       img: "/img/home/service1.png",
       alt: "waste",
       title: Translator.t("service-title-1", lang),
-      desc: (
-        <div>
-          {Translator.t("service-1-desc", lang)}
-        </div>
-      ),
+      desc: <div>{Translator.t("service-1-desc", lang)}</div>,
     },
     {
       img: "/img/home/service2.png",
       alt: "waste",
       title: Translator.t("service-title-2", lang),
-      desc: (
-        <div>
-          {Translator.t("service-2-desc", lang)}
-        </div>
-      ),
+      desc: <div>{Translator.t("service-2-desc", lang)}</div>,
     },
     {
       img: "/img/home/service3.png",
       alt: "waste",
       title: Translator.t("service-title-3", lang),
-      desc: (
-        <div>
-          {Translator.t("service-3-desc", lang)}
-        </div>
-      ),
+      desc: <div>{Translator.t("service-3-desc", lang)}</div>,
     },
     {
       img: "/img/home/service4.png",

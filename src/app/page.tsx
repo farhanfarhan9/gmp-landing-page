@@ -5,15 +5,17 @@ import CompanyProfile from "@/components/home/CompanyProfile";
 import OurParner from "@/components/home/OurParner";
 import OurService from "@/components/home/OurService";
 
-export default function Home() {
+export default function HomePage({ searchParams }: { searchParams: any }) {
+  const lang = searchParams.lang ?? undefined;
+
   return (
     <>
       <Hero />
-      <Journey />
-      <OurService />
+      <Journey lang={lang} />
+      <OurService lang={lang} />
       <ProjectMap />
-      <CompanyProfile />
-      <OurParner />
+      <CompanyProfile lang={lang} />
+      <OurParner lang={lang} />
     </>
   );
 }

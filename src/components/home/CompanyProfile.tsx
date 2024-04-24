@@ -1,11 +1,7 @@
-"use client";
 import Translator from "@/utils/Translator";
 import Image from "next/image";
-import { useSearchParams } from "next/navigation";
 
-function CompanyProfile() {
-  const searchParams = useSearchParams();
-  const lang = searchParams.get("lang") || undefined;
+function CompanyProfile({ lang }: { lang: string }) {
   return (
     <div className="mx-auto max-w-7xl rounded-3xl border-8 px-16 py-20 my-7 bg-gradient-to-b from-[#DFF5FF] to-white relative overflow-hidden mt-10">
       <Image

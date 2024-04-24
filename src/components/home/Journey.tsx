@@ -6,9 +6,9 @@ import Translator from "@/utils/Translator";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 
-function Journey() {
-  const searchParams = useSearchParams();
-  const lang = searchParams.get("lang") || undefined;
+function Journey({ lang }: { lang: string }) {
+  console.log(lang);
+  
   return (
     <div className="relative bg-[#EDF2F5]">
       <Image

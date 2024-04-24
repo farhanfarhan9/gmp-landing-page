@@ -16,6 +16,8 @@
   "satria-nusa-desc-4": "Satria Nusa dipimpin oleh Bapak Feli Zulhendri Msc yang merupakan wastewater engineer dari Illnois Institute of Technology, Chicago, USA. Beliau juga mempublikasikan jurnal teknis berjudul “Evaluation of the Capability of Advanced Treatment Process to Redyce Ultimate BOD and Provide a Self-sustaining Effluent with Respect to Dissolved Oxygen”.",
   "read-less": "Sembunyikan",
   "read-more": "Tampilkan Semua",
+  "our-service-title": "Layanan Kami",
+  "our-service-desc": "Satria Nusa Enjinering memiliki komitmen untuk mendukung pertumbuhan industri dengan menjaga keseimbangan lingkungan. Dengan pengalaman electro-mechanical, civil dan chemical engineering, kami memberikan tingkat keberhasilan sempurna kepada klien kami dalam hal pengelolaan air limbah produksi (wastewater treatment) dan air limbah domestik (sewage treatment).",
   "hero-1": "Keberlanjutan Dimulai",
   "hero-2": "Dari Teknik yang Handal",
   "company-profile-title": "Profil Perusahaan",
@@ -23,8 +25,6 @@
   "our-partner-title": "Parner Kami",
   "our-partner-desc": "Perusahaan-perusahaan ini, dengan keahlian dan kekuatan masing-masing, bersatu untuk menciptakan pengalaman yang lebih baik dan solusi yang lebih inovatif untuk Anda dan membawa aspek-aspek dan pengalaman unik yang melengkapi visi dan misi kami.",
   "download": "Unduh",
-  "our-service-title": "Layanan Kami",
-  "our-service-desc": "Satria Nusa Enjinering memiliki komitmen untuk mendukung pertumbuhan industri dengan menjaga keseimbangan lingkungan. Dengan pengalaman electro-mechanical, civil dan chemical engineering, kami memberikan tingkat keberhasilan sempurna kepada klien kami dalam hal pengelolaan air limbah produksi (wastewater treatment) dan air limbah domestik (sewage treatment).",
   "waste-technology-env-title": "Teknologi Limbah & Lingkungan",
   "waste-technology-env-desc": "Satria Nusa Enjinering merupakan perusahaan pengelolaan air limbah nasional yang berhasil menerapkan terknologi mutakhir dalam water and wastewater technology.",
   "civil-fabrication-title": "Sipil & Fabrikasi",
@@ -125,5 +125,6 @@
   "client": "Klien",
   "staff": "Staf",
   "water-crisis": "Krisis Air",
-  "water-crisis-desc": "Hubungan antara pengelolaan air limbah industri dan penurunan kualitas air minum perkotaan."
+  "water-crisis-desc": "Hubungan antara pengelolaan air limbah industri dan penurunan kualitas air minum perkotaan.",
+  "project-reference": "Proyek dan referensi kami"
 }

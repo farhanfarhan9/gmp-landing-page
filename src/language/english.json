@@ -125,5 +125,6 @@
   "client": "Client",
   "staff": "Staff",
   "water-crisis": "Water Crisis",
-  "water-crisis-desc": "Relationship between industrial wastewater management and urban drinking water quality degradation."
+  "water-crisis-desc": "Relationship between industrial wastewater management and urban drinking water quality degradation.",
+  "project-reference": "Our projects and reference"
 }

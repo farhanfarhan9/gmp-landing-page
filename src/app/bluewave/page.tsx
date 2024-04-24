@@ -12,7 +12,7 @@ function page() {
     <>
       <div className="">
         <div className="flex flex-col items-center justify-center w-full bg-white bg-gradient-to-b">
-          <div className="container relative z-50 flex flex-col gap-10 my-20 space-y-10 lg:flex-row">
+          <div className="relative z-50 flex flex-col gap-10 my-20 space-y-10 max-w-7xl lg:flex-row">
             <div className="w-full xl:w-3/5">
               <Image
                 src="/img/bluewave/bluewave-logo.png"
@@ -35,7 +35,7 @@ function page() {
                 <p className="my-auto font-medium">{Translator.t("login-as", lang)}:</p>
                 <div className="flex space-x-5">
                   <Link
-                    href="JavaScript:void(0)"
+                    href="https://bluewave.industries"
                     target="_blank"
                     className="px-10 py-2 border-2 border-[#0E4F94] rounded-full text-base text-semibold bg-[#0E4F94] text-white hover:bg-[#0C3E77]"
                   >

@@ -9,7 +9,7 @@ function Bacteria() {
   const lang = searchParams.get("lang") || undefined;
   return (
     <>
-      <div className="flex w-full justify-center bg-[#EDF2F5]">
+      <div className="flex max-w-7-xl justify-center bg-[#EDF2F5]">
         <Image
           src="/img/bacteria/bacteria.png"
           unoptimized

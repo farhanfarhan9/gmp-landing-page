@@ -5,7 +5,7 @@ import React from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 
-function page() {
+function Bluewave() {
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang") || undefined;
   return (
@@ -78,4 +78,4 @@ function page() {
   );
 }
 
-export default page;
+export default Bluewave;

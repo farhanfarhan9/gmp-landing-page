@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 import { useSearchParams } from "next/navigation";
 
-function page() {
+function Bacteria() {
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang") || undefined;
   return (
@@ -121,4 +121,4 @@ function page() {
   );
 }
 
-export default page;
+export default Bacteria;

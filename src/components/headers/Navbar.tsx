@@ -61,7 +61,7 @@ const Navbar = () => {
           className="flex items-center justify-between h-16"
           style={{ height: "100px" }}
         >
-          <div className="sm:ml-0 ml-8 flex items-center">
+          <div className="sm:ml-0 ml-8 flex items-center align-middle">
             <Link href="/">
               <span className="flex-shrink-0">
                 <Image
@@ -77,7 +77,7 @@ const Navbar = () => {
           </div>
           <div className="hidden md:block">
             <div className="flex items-center ml-4 md:ml-6">
-              <div className="flex items-baseline ml-10 space-x-4">
+              <div className="flex ml-10 space-x-4 align-middle">
                 <a
                   className="text-lg text-[#41444B] hover:text-gray-800 dark:hover:text-white px-2 py-1 rounded-md"
                   href="/about-us"
@@ -88,7 +88,7 @@ const Navbar = () => {
                   className="text-lg text-[#41444B] hover:text-gray-800 dark:hover:text-white px-2 py-1 rounded-md"
                   href={Translator.gotoUrl("/project", lang)}
                 >
-                  Projects
+                  {Translator.t("project", lang)}
                 </Link>
                 <div>
                   <Dropdown options={options} title="Solutions & Products" />
@@ -135,13 +135,13 @@ const Navbar = () => {
               className="text-gray-500 hover:text-gray-800 dark:text-white block px-2 py-1 rounded-md text-base font-medium"
               href="/project"
             >
-              Projects
+              {Translator.t("project", lang)}
             </a>
             <Link
               className="text-gray-500 hover:text-gray-800 dark:hover:text-white block px-2 py-1 rounded-md text-base font-medium"
               href="/solutions-and-product/machinaries-or-wastewater-technology"
             >
-              Machineries / Wastewater Technology
+              {Translator.t("machinaries-title", lang)}
             </Link>
             <Link
               className="text-gray-500 hover:text-gray-800 dark:hover:text-white block px-2 py-1 rounded-md text-base font-medium"

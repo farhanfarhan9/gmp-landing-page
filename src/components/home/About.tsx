@@ -1,15 +1,7 @@
 "use client";
-import React from "react";
-import AboutLearnMore from "./AboutLearnMore";
-import Translator from "@/utils/Translator";
-import NewCarousel from "./NewCarousel";
-import { useSearchParams } from "next/navigation";
-import Carousel from "@/components/home/CarouselComponent";
 import SwiperCarousel from "../SwiperCarousel";
 
 const About = () => {
-  const searchParams = useSearchParams();
-  const lang = searchParams.get("lang") || undefined;
   return (
     <section
       className="flex justify-center mt-10 mb-4 md:mb-10 px-5 xl:px-10 md:mx-0 items-center"

@@ -1,11 +1,9 @@
 "use client";
-
-import React from "react";
 import Translator from "@/utils/Translator";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 
-const shoppingCenter = () => {
+const ShoppingCenter = () => {
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang") || undefined;
 
@@ -31,8 +29,7 @@ const shoppingCenter = () => {
             }}
           >
             <h1 style={{ color: "white" }} className="text-5xl font-extrabold">
-                              {Translator.t("sc", lang)}
-
+              {Translator.t("sc", lang)}
             </h1>
           </div>
         </div>
@@ -43,8 +40,7 @@ const shoppingCenter = () => {
                 PT. PALARUDHIBI TEGUH MAKMUR
               </div>
               <div className="mt-5 text-xl font-extrabold uppercase ">
-                                {Translator.t("sc", lang)}
-
+                {Translator.t("sc", lang)}
               </div>
               <div className="mt-5 text-base">Medan</div>
               <div className="mt-8 text-base">
@@ -59,4 +55,4 @@ const shoppingCenter = () => {
   );
 };
 
-export default shoppingCenter;
+export default ShoppingCenter;

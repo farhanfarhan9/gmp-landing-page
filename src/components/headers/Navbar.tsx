@@ -61,8 +61,8 @@ const Navbar = () => {
           className="flex items-center justify-between h-16"
           style={{ height: "100px" }}
         >
-          <div className="flex items-center align-middle">
-            <Link href="/">
+          <div className="sm:ml-0 ml-8 flex items-center align-middle">
+            <Link href={Translator.gotoUrl("/", lang)}>
               <span className="flex-shrink-0">
                 <Image
                   width={236}

@@ -54,4 +54,4 @@ const shoppingCenter = () => {
   );
 };
 
-export default ShoppingCenter;
+export default shoppingCenter;

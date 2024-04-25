@@ -32,7 +32,7 @@ function ImpactEquivalent({ total }: { total: number }) {
               <div>
                 <div className="text-[#0E4F94] font-bold text-3xl">
                   {(total / 1000).toLocaleString(undefined, {
-                    minimumFractionDigits: 3,
+                    maximumFractionDigits: 0,
                   })}
                 </div>
                 <div className="mt-3 font-bold">Households</div>
@@ -77,7 +77,7 @@ function ImpactEquivalent({ total }: { total: number }) {
               <div>
                 <div className="text-[#0E4F94] font-bold text-3xl">
                   {((total / 1000) * 5).toLocaleString(undefined, {
-                    minimumFractionDigits: 3,
+                    maximumFractionDigits: 0,
                   })}
                 </div>
                 <div className="mt-3 font-bold">People</div>

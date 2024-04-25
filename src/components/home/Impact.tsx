@@ -77,9 +77,9 @@ const Impact = () => {
               <div>
                 <div className="text-[#0E4F94] font-bold text-3xl">
                   <div className="flex gap-1">
-                    <div className="w-[200px]">
+                    <div className="w-[190px]">
                       {value.toLocaleString(undefined, {
-                        minimumFractionDigits: 3,
+                        minimumFractionDigits: 2, maximumFractionDigits: 2,
                       })}
                     </div>
                     <div className="text-superscript">

@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import Translator from "@/utils/Translator";
-const goodsFactory = () => {
+const GoodsFactory = () => {
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang") || undefined;
   return (
@@ -81,4 +81,4 @@ const goodsFactory = () => {
   );
 };
 
-export default goodsFactory;
+export default GoodsFactory;

@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import Translator from "@/utils/Translator";
 
-const foodAndBeveragesFactory = () => {
+const FoodAndBeveragesFactory = () => {
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang") || undefined;
   return (
@@ -200,4 +200,4 @@ const foodAndBeveragesFactory = () => {
   );
 };
 
-export default foodAndBeveragesFactory;
+export default FoodAndBeveragesFactory;

@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import Translator from "@/utils/Translator";
 
-const hospital = () => {
+const Hospital = () => {
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang") || undefined;
   return (
@@ -56,4 +56,4 @@ const hospital = () => {
   );
 };
 
-export default hospital;
+export default Hospital;

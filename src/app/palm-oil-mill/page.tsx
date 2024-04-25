@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import Translator from "@/utils/Translator";
 
-const plamOilMill = () => {
+const PlamOilMill = () => {
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang") || undefined;
   return (
@@ -154,4 +154,4 @@ const plamOilMill = () => {
   );
 };
 
-export default plamOilMill;
+export default PlamOilMill;

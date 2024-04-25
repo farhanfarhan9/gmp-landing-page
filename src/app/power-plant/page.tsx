@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import Translator from "@/utils/Translator";
 
-const powerPlant = () => {
+const PowerPlant = () => {
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang") || undefined;
   return (
@@ -94,4 +94,4 @@ const powerPlant = () => {
   );
 };
 
-export default powerPlant;
+export default PowerPlant;

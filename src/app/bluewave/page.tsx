@@ -10,10 +10,10 @@ function Bluewave() {
   const lang = searchParams.get("lang") || undefined;
   return (
     <>
-      <div className="">
+      <div className="overflow-x-hidden">
         <div className="flex flex-col items-center justify-center w-full bg-white bg-gradient-to-b">
-          <div className="relative z-50 flex flex-col gap-10 my-20 space-y-10 max-w-7xl lg:flex-row">
-            <div className="w-full xl:w-3/5">
+          <div className="relative z-50 flex flex-col gap-10 my-20 space-y-10 max-w-7xl lg:flex-row lg:justify-between">
+            <div className="w-52 xl:w-3/5">
               <Image
                 src="/img/bluewave/bluewave-logo.png"
                 unoptimized
@@ -22,17 +22,17 @@ function Bluewave() {
                 width={1920}
                 height={1080}
               />
-              <h1 className="font-bold text-6xl text-[#0E4F94] mt-20 w-4/5 md:w-4/5">
+              <h1 className="font-bold text-4xl md:text-6xl text-[#0E4F94] mt-20 w-full lg:w-4/5">
                 {Translator.t("bluewave-title", lang)}
               </h1>
-              <p className="w-4/5 text-base mt-14">
+              <p className="w-full text-base lg:w-4/5 mt-14">
                 {Translator.t("bluewave-desc", lang)}
               </p>
-              <div className="flex mt-16 space-x-12">
+              <div className="flex flex-col mt-16 space-x-12 lg:flex-row">
                 <p className="my-auto font-medium">
                   {Translator.t("login-as", lang)}:
                 </p>
-                <div className="flex space-x-5">
+                <div className="flex mt-5 space-x-5 lg:mt-0">
                   <Link
                     href="https://bluewave.industries"
                     target="_blank"
@@ -50,7 +50,7 @@ function Bluewave() {
                 </div>
               </div>
             </div>
-            <div className="z-50 w-full my-auto xl:w-2/5 ">
+            <div className="z-50 justify-end w-full my-auto lg:w-2/5 ">
               <Image
                 src="/img/bluewave/banner.png"
                 unoptimized

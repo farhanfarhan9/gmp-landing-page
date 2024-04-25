@@ -23,7 +23,7 @@ const Machineries = () => {
           alt=""
         />
         <div className="mx-auto max-w-7xl">
-          <h1 className="absolute top-0 w-1/2 text-2xl font-bold text-white translate-y-10 md:translate-y-20 xl:translate-y-32 lg:translate-y-10 sm:text-3xl md:text-5xl lg:top-10">
+          <h1 className="absolute top-0 w-full text-xl font-bold text-white translate-y-5 md:w-1/2 md:translate-y-20 xl:translate-y-32 lg:translate-y-10 sm:text-3xl md:text-5xl lg:top-10">
             {Translator.t("machinaries-title", lang)}
           </h1>
         </div>

@@ -13,7 +13,7 @@ const Project = () => {
   const lang = searchParams.get("lang") || undefined;
 
   return (
-    <div className="">
+    <div className="overflow-x-hidden ">
       <div className="relative">
         <Image
           unoptimized
@@ -24,7 +24,7 @@ const Project = () => {
           alt=""
         />
         <div className="mx-auto max-w-7xl">
-          <h1 className="absolute top-0 w-1/2 text-2xl font-bold text-white translate-y-10 md:translate-y-20 xl:translate-y-32 lg:translate-y-10 sm:text-3xl md:text-5xl lg:top-10">
+          <h1 className="absolute top-0 w-1/2 text-xl font-bold text-white translate-y-5 md:translate-y-20 xl:translate-y-32 lg:translate-y-10 sm:text-3xl md:text-5xl lg:top-10">
             {Translator.t("project-reference", lang)}
           </h1>
         </div>

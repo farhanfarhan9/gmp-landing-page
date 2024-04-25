@@ -3,8 +3,11 @@
 import React from "react";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
+import Translator from "@/utils/Translator";
 
 const plamOilMill = () => {
+  const searchParams = useSearchParams();
+  const lang = searchParams.get("lang") || undefined;
   return (
     <div>
       <div className="relative">
@@ -27,7 +30,7 @@ const plamOilMill = () => {
             }}
           >
             <h1 style={{ color: "white" }} className="text-5xl font-extrabold">
-              Palm Oil Mill
+              {Translator.t("palm-oil", lang)}
             </h1>
           </div>
         </div>

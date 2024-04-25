@@ -3,10 +3,9 @@ import Translator from "@/utils/Translator";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 
-const ShoppingCenter = () => {
+const shoppingCenter = () => {
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang") || undefined;
-
   return (
     <div>
       <div className="relative">
@@ -55,4 +54,4 @@ const ShoppingCenter = () => {
   );
 };
 
-export default ShoppingCenter;
+export default shoppingCenter;

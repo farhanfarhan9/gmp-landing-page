@@ -3,8 +3,11 @@
 import React from "react";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
+import Translator from "@/utils/Translator";
 
 const foodAndBeveragesFactory = () => {
+  const searchParams = useSearchParams();
+  const lang = searchParams.get("lang") || undefined;
   return (
     <div>
       <div className="relative">
@@ -27,7 +30,7 @@ const foodAndBeveragesFactory = () => {
             }}
           >
             <h1 style={{ color: "white" }} className="text-5xl font-extrabold">
-              Food & Beverages Factory
+              {Translator.t("fnb", lang)}
             </h1>
           </div>
         </div>

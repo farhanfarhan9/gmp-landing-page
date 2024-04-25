@@ -24,7 +24,7 @@ const Project = () => {
           alt=""
         />
         <div className="mx-auto max-w-7xl">
-          <h1 className="absolute top-0 w-1/2 px-5 text-xl font-bold text-white translate-y-5 xl:px-0 lg:px-0 md:translate-y-20 xl:translate-y-32 lg:translate-y-10 sm:text-3xl md:text-5xl lg:top-10">
+          <h1 className="absolute top-0 w-1/2 px-5 text-xl font-bold text-white capitalize translate-y-5 xl:px-0 lg:px-0 md:translate-y-20 xl:translate-y-32 lg:translate-y-10 sm:text-3xl md:text-5xl lg:top-10">
             {Translator.t("project-reference", lang)}
           </h1>
         </div>

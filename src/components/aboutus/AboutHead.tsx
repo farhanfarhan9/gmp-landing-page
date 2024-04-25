@@ -17,7 +17,7 @@ function AboutHead() {
         />
         <div className="absolute top-0 left-0 bottom-0 right-0 flex items-center">
           <div className="w-full mx-auto max-w-7xl text-5xl font-bold text-white capitalize">
-            <div className="max-w-2xl">Satria Nusa Enjinering</div>
+            <div className="max-w-2xl leading-tight">Satria Nusa Enjinering <br />{Translator.t("about-us", lang)}</div>
           </div>
         </div>
       </div>
@@ -33,7 +33,6 @@ function AboutHead() {
         </div>
         <div className="mt-7 text-base">
           <div>{Translator.t("about-us-desc-1", lang)}</div>
-          <div className="mt-7">{Translator.t("about-us-desc-2", lang)}</div>
         </div>
       </div>
     </div>

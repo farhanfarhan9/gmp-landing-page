@@ -3,8 +3,11 @@
 import React from "react";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
+import Translator from "@/utils/Translator";
 
 const powerPlant = () => {
+  const searchParams = useSearchParams();
+  const lang = searchParams.get("lang") || undefined;
   return (
     <div>
       <div className="relative">
@@ -27,7 +30,7 @@ const powerPlant = () => {
             }}
           >
             <h1 style={{ color: "white" }} className="text-5xl font-extrabold">
-              Power Plant
+              {Translator.t("pp", lang)}
             </h1>
           </div>
         </div>

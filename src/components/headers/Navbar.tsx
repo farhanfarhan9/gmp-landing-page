@@ -33,10 +33,6 @@ const Navbar = () => {
       url: "javascript:void(0);",
     },
     {
-      image: "/img/company-navbar/nat.png",
-      url: "javascript:void(0);",
-    },
-    {
       image: "/img/company-navbar/seg.png",
       url: "javascript:void(0);",
     },
@@ -50,6 +46,10 @@ const Navbar = () => {
     },
     {
       image: "/img/company-navbar/bluewave.png",
+      url: "javascript:void(0);",
+    },
+    {
+      image: "/img/company-navbar/utl.png",
       url: "javascript:void(0);",
     },
   ];
@@ -70,6 +70,18 @@ const Navbar = () => {
                   unoptimized
                   className="pl-6 xl:pl-0"
                   src="/logo_k3.png"
+                  alt="Logo"
+                />
+              </span>
+            </Link>
+            <Link href={Translator.gotoUrl("/bluewave", lang)}>
+              <span className="flex-shrink-0">
+                <Image
+                  width={236}
+                  height={48}
+                  unoptimized
+                  className="object-scale-down pl-6 w-36 xl:pl-7"
+                  src="/img/bluewave/bluewave-logo.png"
                   alt="Logo"
                 />
               </span>

@@ -10,13 +10,10 @@ function MachinariesOrWastewaterTechnology() {
   return (
     <>
       <div className="flex w-full justify-center bg-[#EDF2F5]">
-        <Image
+        <img
           src="/img/solutions-and-product/machinaries-or-wastewater-technology/mbr.png"
-          unoptimized
-          className="max-w-7xl object-cover mt-48 -my-40 z-50"
+          className="max-w-7xl w-full object-cover mt-5 xl:mt-48 px-5 xl:px-0 -my-40 z-50"
           alt=""
-          width={1920}
-          height={1080}
         />
       </div>
       <div className="flex w-full justify-end">
@@ -28,7 +25,7 @@ function MachinariesOrWastewaterTechnology() {
           alt=""
         />
       </div>
-      <div className="flex w-full justify-center">
+      <div className="flex w-full justify-center px-5 xl:px-0">
         <div className="max-w-7xl">
           <div className="mt-5">
             <span className="text-[#0E4F94] font-semibold">

@@ -61,22 +61,22 @@ const Navbar = () => {
           className="flex items-center justify-between h-16"
           style={{ height: "100px" }}
         >
-          <div className="sm:ml-0 ml-8 flex items-center align-middle">
+          <div className="flex items-center align-middle">
             <Link href="/">
               <span className="flex-shrink-0">
                 <Image
                   width={236}
                   height={48}
                   unoptimized
-                  className=""
+                  className="pl-6 xl:pl-0"
                   src="/logo_k3.png"
-                  alt="Workflow"
+                  alt="Logo"
                 />
               </span>
             </Link>
           </div>
-          <div className="hidden md:block">
-            <div className="flex items-center ml-4 md:ml-6">
+          <div className="hidden xl:block">
+            <div className="flex items-center ml-4 xl:ml-6">
               <div className="flex ml-10 space-x-4 align-middle">
                 <a
                   className="text-lg text-[#41444B] hover:text-gray-800 dark:hover:text-white px-2 py-1 rounded-md"
@@ -103,7 +103,7 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          <div className="flex mr-2 md:hidden">
+          <div className="flex mr-2 xl:hidden">
             <button
               className="text-gray-800 dark:text-white hover:text-gray-300 inline-flex items-center justify-center p-2 rounded-md focus:outline-none"
               onClick={toggleMobileMenu}
@@ -123,7 +123,7 @@ const Navbar = () => {
         </div>
       </div>
       {mobileMenuOpen && (
-        <div className="md:hidden">
+        <div className="xl:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <a
               className="text-gray-500 hover:text-gray-800 dark:text-white block px-2 py-1 rounded-md text-base font-medium"

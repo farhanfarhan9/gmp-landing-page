@@ -11,7 +11,7 @@ function CompanyJourney() {
       <div className="text-6xl font-bold text-white text-center">
         {Translator.t("company-journey", lang)}
       </div>
-      <div className="max-w-7xl mx-auto mt-12">
+      <div className="max-w-7xl mx-auto mt-20">
         {lang === "en" ? (
           <Image
             src={"/img/about/timeline-en.svg"}

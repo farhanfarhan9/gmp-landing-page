@@ -3,7 +3,7 @@ import Translator from "@/utils/Translator";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 
-const shoppingCenter = () => {
+const ShoppingCenter = () => {
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang") || undefined;
   return (
@@ -54,4 +54,4 @@ const shoppingCenter = () => {
   );
 };
 
-export default shoppingCenter;
+export default ShoppingCenter;

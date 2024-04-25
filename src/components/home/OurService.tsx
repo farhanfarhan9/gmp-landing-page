@@ -35,7 +35,7 @@ function OurService() {
         <ul className="list-disc ml-8">
           <li>AMDAL & UKL-UPL</li>
           <li>DELH & DPLH</li>
-          <li>PERSETUJUAN TEKNIS (Air Limbah, Emisi, LB3)</li>
+          <li>{Translator.t("service-4-desc-3", lang)}</li>
           <li>PROPER</li>
         </ul>
       ),

@@ -64,7 +64,9 @@ const Impact = () => {
               />
               <div>
                 <div className="text-[#0E4F94] font-bold text-3xl">29+</div>
-                <div className="mt-3 font-bold">{Translator.t("projects", lang)}</div>
+                <div className="mt-3 font-bold">
+                  {Translator.t("projects", lang)}
+                </div>
               </div>
             </div>
             <div className="flex items-center gap-5">
@@ -87,9 +89,7 @@ const Impact = () => {
                     </div>
                   </div>
                 </div>
-                <div className="mt-3 font-bold">
-                  {Translator.t("conserved-water", lang)}
-                </div>
+                <div className="mt-3 font-bold">Conserved Water</div>
               </div>
             </div>
           </div>

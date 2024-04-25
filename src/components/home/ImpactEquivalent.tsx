@@ -10,19 +10,19 @@ function ImpactEquivalent({ total }: { total: number }) {
   const lang = searchParams.get("lang") || undefined;
   return (
     <div className="mx-auto w-[800px] relative mt-9 pb-6">
-      <div className="text-[#0E4F94] text-2xl text-center">Equivalent to:</div>
+      <div className="text-[#0E4F94] text-2xl text-center font-semibold">
+        Equivalent to clean water access for:
+      </div>
 
       <div className="mt-5 grid grid-cols-2 gap-8 ">
         <div
-          className="bg-opacity-50 relative p-5 rounded-2xl bg-left bg-cover shadow-md"
+          className="bg-opacity-50 relative px-5 py-9 rounded-2xl bg-left bg-cover shadow-md"
           style={{ backgroundImage: 'url("/img/home/bg-impact.webp")' }}
         >
-          <div className="absolute top-0 left-0 bottom-0 right-0 bg-white opacity-50"></div>
+          <div className="absolute top-0 left-0 bottom-0 right-0 bg-white opacity-50 rounded-2xl"></div>
+
           <div className="relative">
-            <div className="text-2xl font-semibold text-center">
-              Access to Clean Water for:
-            </div>
-            <div className="flex gap-5 mt-5 justify-center items-center">
+            <div className="flex gap-5 justify-center items-center">
               <Image
                 src={"/img/home/home.png"}
                 alt=""
@@ -49,9 +49,9 @@ function ImpactEquivalent({ total }: { total: number }) {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
                 <circle cx="12" cy="12" r="10" />
                 <line x1="12" y1="8" x2="12" y2="12" />
@@ -61,16 +61,13 @@ function ImpactEquivalent({ total }: { total: number }) {
           </div>
         </div>
         <div
-          className="bg-opacity-50 relative p-5 rounded-2xl bg-left bg-cover shadow-md"
+          className="bg-opacity-50 relative px-5 py-9 rounded-2xl bg-left bg-cover shadow-md"
           style={{ backgroundImage: 'url("/img/home/bg-impact.webp")' }}
         >
-          <div className="absolute top-0 left-0 bottom-0 right-0 bg-white opacity-50"></div>
+          <div className="absolute top-0 left-0 bottom-0 right-0 bg-white opacity-50 rounded-2xl"></div>
 
           <div className="relative">
-            <div className="text-2xl font-semibold text-center">
-              Access to Clean Water for:
-            </div>
-            <div className="flex gap-5 mt-5 justify-center items-center">
+            <div className="flex gap-5 justify-center items-center">
               <Image
                 src={"/img/home/people.png"}
                 alt=""
@@ -97,9 +94,9 @@ function ImpactEquivalent({ total }: { total: number }) {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
                 <circle cx="12" cy="12" r="10" />
                 <line x1="12" y1="8" x2="12" y2="12" />

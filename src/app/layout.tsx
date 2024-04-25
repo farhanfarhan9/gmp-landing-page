@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { Inter, Open_Sans } from "next/font/google";
 import Navbar from "@/components/headers/Navbar";
 import Contact from "@/components/footer/Contact";
+import NotSupport from '@/components/mobile/NotSupport';
 
 const inter = Inter({ subsets: ["latin"] });
 const opensans = Open_Sans({ subsets: ["latin"] });
@@ -24,6 +25,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Contact />
+        <NotSupport />
       </body>
     </html>
   );

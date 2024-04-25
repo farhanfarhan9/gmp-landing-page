@@ -195,7 +195,7 @@ const Project = () => {
                   src="/img/project/recent_project/goods.png"
                   alt=""
                 />
-                <p className="absolute text-3xl font-medium text-left text-white top-5 left-5">
+                <p className="absolute text-3xl font-medium text-left text-white top-10 left-10">
                   {Translator.t("gf", lang)}
                 </p>
                 <Link

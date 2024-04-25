@@ -25,7 +25,7 @@ const Navbar = () => {
       url: "/machinaries-or-wastewater-technology",
     },
     { text: "Bluewave Industries", url: "/bluewave" },
-    { text: "Bacteria", url: "/bacteria" },
+    { text: "Consumables", url: "/bacteria" },
   ];
   const options_company = [
     {
@@ -56,12 +56,12 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white dark:bg-gray-800">
-      <div className="mx-auto max-w-7xl font-semibold">
+      <div className="mx-auto font-semibold max-w-7xl">
         <div
           className="flex items-center justify-between h-16"
           style={{ height: "100px" }}
         >
-          <div className="sm:ml-0 ml-8 flex items-center align-middle">
+          <div className="flex items-center ml-8 align-middle sm:ml-0">
             <Link href={Translator.gotoUrl("/", lang)}>
               <span className="flex-shrink-0">
                 <Image
@@ -105,7 +105,7 @@ const Navbar = () => {
           </div>
           <div className="flex mr-2 xl:hidden">
             <button
-              className="text-gray-800 dark:text-white hover:text-gray-300 inline-flex items-center justify-center p-2 rounded-md focus:outline-none"
+              className="inline-flex items-center justify-center p-2 text-gray-800 rounded-md dark:text-white hover:text-gray-300 focus:outline-none"
               onClick={toggleMobileMenu}
             >
               <svg
@@ -126,34 +126,34 @@ const Navbar = () => {
         <div className="xl:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <a
-              className="text-gray-500 hover:text-gray-800 dark:text-white block px-2 py-1 rounded-md text-base font-medium"
+              className="block px-2 py-1 text-base font-medium text-gray-500 rounded-md hover:text-gray-800 dark:text-white"
               href="/about-us"
             >
               {Translator.t("about-us", lang)}
             </a>
             <a
-              className="text-gray-500 hover:text-gray-800 dark:text-white block px-2 py-1 rounded-md text-base font-medium"
+              className="block px-2 py-1 text-base font-medium text-gray-500 rounded-md hover:text-gray-800 dark:text-white"
               href="/project"
             >
               {Translator.t("project", lang)}
             </a>
             <Link
-              className="text-gray-500 hover:text-gray-800 dark:hover:text-white block px-2 py-1 rounded-md text-base font-medium"
+              className="block px-2 py-1 text-base font-medium text-gray-500 rounded-md hover:text-gray-800 dark:hover:text-white"
               href="/machinaries-or-wastewater-technology"
             >
               {Translator.t("machinaries-title", lang)}
             </Link>
             <Link
-              className="text-gray-500 hover:text-gray-800 dark:hover:text-white block px-2 py-1 rounded-md text-base font-medium"
+              className="block px-2 py-1 text-base font-medium text-gray-500 rounded-md hover:text-gray-800 dark:hover:text-white"
               href="/bluewave"
             >
               Bluewave Industries
             </Link>
             <Link
-              className="text-gray-500 hover:text-gray-800 dark:hover:text-white block px-2 py-1 rounded-md text-base font-medium"
+              className="block px-2 py-1 text-base font-medium text-gray-500 rounded-md hover:text-gray-800 dark:hover:text-white"
               href="/bacteria"
             >
-              Bacteria
+              Consumables
             </Link>
             <LanguageSwitcher />
           </div>

@@ -22,12 +22,12 @@ const Machineries = () => {
           src="/img/solutions-and-product/banner.png"
           alt=""
         />
-        <div className="mx-auto max-w-7xl">
+        <div className="px-5 mx-auto max-w-7xl xl:px-0">
           <h1 className="absolute top-0 w-full text-xl font-bold text-white translate-y-5 md:w-1/2 md:translate-y-20 xl:translate-y-32 lg:translate-y-10 sm:text-3xl md:text-5xl lg:top-10">
             {Translator.t("machinaries-title", lang)}
           </h1>
         </div>
-        <div className="py-20">
+        <div className="px-5 py-20 xl:px-0">
           <Image
             className="absolute right-0 z-0"
             src="/img/solutions-and-product/pattern.png"

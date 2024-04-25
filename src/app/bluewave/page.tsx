@@ -12,8 +12,8 @@ function Bluewave() {
     <>
       <div className="overflow-x-hidden">
         <div className="flex flex-col items-center justify-center w-full bg-white bg-gradient-to-b">
-          <div className="relative z-50 flex flex-col gap-10 my-20 space-y-10 max-w-7xl lg:flex-row lg:justify-between">
-            <div className="w-52 xl:w-3/5">
+          <div className="relative z-50 flex flex-col gap-10 px-5 my-20 space-y-10 xl:px-0 max-w-7xl lg:flex-row lg:justify-between">
+            <div className="w-full xl:w-3/5">
               <Image
                 src="/img/bluewave/bluewave-logo.png"
                 unoptimized

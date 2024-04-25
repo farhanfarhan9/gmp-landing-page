@@ -21,11 +21,11 @@ const Navbar = () => {
 
   const options = [
     {
-      text: "Machineries / Wastewater Technology",
+      text: Translator.t("machinaries-title", lang),
       url: "/machinaries-or-wastewater-technology",
     },
-    { text: "Bluewave Industries", url: "/bluewave" },
-    { text: "Consumables", url: "/bacteria" },
+    { text: Translator.t("bluewave-industries", lang), url: "/bluewave" },
+    { text: Translator.t("consumables", lang), url: "/bacteria" },
   ];
   const options_company = [
     {
@@ -103,7 +103,7 @@ const Navbar = () => {
                   {Translator.t("project", lang)}
                 </Link>
                 <div>
-                  <Dropdown options={options} title="Solutions & Products" />
+                  <Dropdown options={options} title={Translator.t("sol-product", lang)} />
                 </div>
                 <LanguageSwitcher />
                 <div>
@@ -159,13 +159,13 @@ const Navbar = () => {
               className="block px-2 py-1 text-base font-medium text-gray-500 rounded-md hover:text-gray-800 dark:hover:text-white"
               href="/bluewave"
             >
-              Bluewave Industries
+              {Translator.t("bluewave-industries", lang)}
             </Link>
             <Link
               className="block px-2 py-1 text-base font-medium text-gray-500 rounded-md hover:text-gray-800 dark:hover:text-white"
               href="/bacteria"
             >
-              Consumables
+              {Translator.t("consumables", lang)}
             </Link>
             <LanguageSwitcher />
           </div>

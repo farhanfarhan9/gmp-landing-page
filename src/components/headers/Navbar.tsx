@@ -80,7 +80,7 @@ const Navbar = () => {
               <div className="flex ml-10 space-x-4 align-middle">
                 <a
                   className="text-lg text-[#41444B] hover:text-gray-800 dark:hover:text-white px-2 py-1 rounded-md"
-                  href="/about-us"
+                  href={Translator.gotoUrl("/about-us", lang)}
                 >
                   {Translator.t("about-us", lang)}
                 </a>

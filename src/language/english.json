@@ -166,5 +166,7 @@
   "profile-anton": "The company is committed to providing world-class engineering standards to all clients. This is reflected in all stages of work and the selection of materials and machine units that are of high quality and cost-effective. Ir. Anton Suherman has over 10 years of experience in the manufacturing industry and works closely with principals in Indonesia as a System Integrator (SI).",
   "profile-joshua-1": "Joshua Alexander Arief, B.Eng (Mechatronics) from UNSW Sydney, Australia, is an experienced automation engineer in various engineering industries in Indonesia and abroad. Providing targeted automation and IoT solutions to bring about efficiency improvements and cost savings. He is also a certified Energy Auditor for ISO 50001.",
   "profile-joshua-2": "He is responsible for Industrial 4.0 initiatives, Smart Plant Maintenance, and the Electrical Automation division.",
-  "project": "Project"
+  "project": "Project",
+  "tooltips-1": "Assuming 5 people per household, each using 200 m3 of water daily, totaling 1,000 m3 of water consumption per household per day.",
+  "tooltips-2": "Assuming each person uses 200 m3 of water per day."
 }

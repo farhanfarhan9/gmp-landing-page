@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import Translator from "@/utils/Translator";
 import { useSearchParams } from "next/navigation";
+import ImpactEquivalent from "./ImpactEquivalent";
 
 const millisecondsPerDay = 24 * 60 * 60 * 1000;
 const additionalValuePerDay = 4090;
@@ -43,50 +44,58 @@ const Impact = () => {
     }
   }, []);
   return (
-    <div
-      className="mx-auto w-[800px] bg-opacity-50 p-10 -mt-28 absolute top-0 left-1/2 -translate-x-1/2 rounded-2xl overflow-hidden bg-left bg-cover shadow-md"
-      style={{ backgroundImage: 'url("/img/home/bg-impact.webp")' }}
-    >
-      <div className="absolute top-0 left-0 bottom-0 right-0 bg-white opacity-50"></div>
-      <div className="relative">
-        <div className="text-[#0E4F94] text-5xl font-bold text-center">
-        {Translator.t("our-impact", lang)}
-        </div>
-        <div className="flex mt-5 mx-9 justify-between">
-          <div className="flex items-center gap-3">
-            <Image
-              src="/img/home/impact1.png"
-              alt=""
-              width={100}
-              height={100}
-            />
-            <div>
-              <div className="text-[#0E4F94] font-bold text-3xl">29+</div>
-              <div className="mt-3">{Translator.t("projects", lang)}</div>
-            </div>
+    <div className="-mt-28 absolute top-0 left-1/2 -translate-x-1/2 w-[800px]">
+      <div
+        className="bg-opacity-50 p-5 relative rounded-2xl overflow-hidden bg-left bg-cover shadow-md"
+        style={{ backgroundImage: 'url("/img/home/bg-impact.webp")' }}
+      >
+        <div className="absolute top-0 left-0 bottom-0 right-0 bg-white opacity-50"></div>
+        <div className="relative">
+          <div className="text-[#0E4F94] text-5xl font-bold text-center">
+            {Translator.t("our-impact", lang)}
           </div>
-          <div className="flex items-center gap-3">
-            <Image src="/img/home/impact2.png" alt="" width={60} height={100} />
-            <div>
-              <div className="text-[#0E4F94] font-bold text-3xl">
-                <div className="flex gap-1">
-                  <div className="w-[200px]">
-                    {value.toLocaleString(undefined, {
-                      minimumFractionDigits: 3,
-                    })}
-                  </div>
-                  <div className="text-superscript">
-                    m<sup>3</sup>
+          <div className="flex mt-5 mx-9 justify-between">
+            <div className="flex items-center gap-5">
+              <Image
+                src="/img/home/impact1.png"
+                alt=""
+                width={100}
+                height={100}
+              />
+              <div>
+                <div className="text-[#0E4F94] font-bold text-3xl">29+</div>
+                <div className="mt-3 font-bold">{Translator.t("projects", lang)}</div>
+              </div>
+            </div>
+            <div className="flex items-center gap-5">
+              <Image
+                src="/img/home/impact2.png"
+                alt=""
+                width={60}
+                height={100}
+              />
+              <div>
+                <div className="text-[#0E4F94] font-bold text-3xl">
+                  <div className="flex gap-1">
+                    <div className="w-[200px]">
+                      {value.toLocaleString(undefined, {
+                        minimumFractionDigits: 3,
+                      })}
+                    </div>
+                    <div className="text-superscript">
+                      m<sup>3</sup>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="mt-3">
-                {Translator.t("conserved-water", lang)}
+                <div className="mt-3 font-bold">
+                  {Translator.t("conserved-water", lang)}
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <ImpactEquivalent total={value} />
     </div>
   );
 };

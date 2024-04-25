@@ -2,7 +2,6 @@
 import Translator from "@/utils/Translator";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
-import React from "react";
 
 function Advantages() {
   const searchParams = useSearchParams();

@@ -22,8 +22,8 @@ const Contact = () => {
   return (
     <div id="contact">
       <div className="w-full flex justify-center">
-        <div className="max-w-7xl md:flex px-5 md:px-0 w-full font-semibold">
-          <div className="w-full md:w-2/5">
+        <div className="max-w-7xl xl:flex px-5 xl:px-0 w-full">
+          <div className="w-full xl:w-2/5">
             <Image
               width={236}
               height={48}
@@ -65,7 +65,7 @@ const Contact = () => {
               </a>
             </div>
           </div>
-          <div className="w-full md:w-1/5 pt-10 md:pt-0">
+          <div className="w-full xl:w-1/5 pt-10 xl:pt-0">
             <div className="font-bold">Quick Links</div>
             <div className="mt-5">
               <a href="/">Home</a>
@@ -83,7 +83,7 @@ const Contact = () => {
               <a href="#">Solutions & Products</a>
             </div>
           </div>
-          <div className="w-full md:w-1/5 pt-10 md:pt-0">
+          <div className="w-full xl:w-1/5 pt-10 xl:pt-0">
             <div className="font-bold">
               <div>Information</div>
             </div>
@@ -94,13 +94,13 @@ const Contact = () => {
               <a href="#">Privacy Policy</a>
             </div>
           </div>
-          <div className="w-full md:w-1/5 pt-10 md:pt-0">
+          <div className="w-full xl:w-1/5 pt-10 xl:pt-0">
             <form onSubmit={hadlesubmit}>
               <div className="font-bold">Send Us Your Email</div>
               <div className="mt-5">
                 <input
                   value={name}
-                  className="border border-black px-3 py-2 w-full rounded-xl"
+                  className="border border-black px-3 py-2 xl:w-full rounded-xl"
                   type="text"
                   placeholder="Full Name"
                   onChange={(e) => setName(e.target.value)}
@@ -109,7 +109,7 @@ const Contact = () => {
               <div className="mt-5">
                 <input
                   value={email}
-                  className="border border-black px-3 py-2 w-full rounded-xl"
+                  className="border border-black px-3 py-2 xl:w-full rounded-xl"
                   type="email"
                   placeholder="Email"
                   onChange={(e) => setEmail(e.target.value)}
@@ -131,7 +131,7 @@ const Contact = () => {
         <hr className="border-[#0E4F94]" />
 
         <div className="w-full flex justify-center my-10">
-          <div className="max-w-7xl flex w-full font-semibold justify-end">
+          <div className="hidden xl:flex max-w-7xl w-full font-semibold justify-end">
             <a
               href="https://www.youtube.com/@SatriaNusaEnjinering-wk4xl"
               target="_BLANK"
@@ -160,8 +160,45 @@ const Contact = () => {
                 alt="Workflow"
               />
             </a>
-            <div>
+            <div className="px-5 xl:px-0">
               Satria Nusa Enjinering © All rights reserved Copyrights 2024
+            </div>
+          </div>
+          <div className="xl:hidden max-w-7xl w-full">
+            <div className="flex gap-5 justify-center">
+              <a
+                href="https://www.youtube.com/@SatriaNusaEnjinering-wk4xl"
+                target="_BLANK"
+                className=""
+              >
+                <Image
+                  width={25}
+                  height={25}
+                  unoptimized
+                  className=""
+                  src="/img/footer/youtube.png"
+                  alt="Workflow"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/satrianusaenjinering"
+                target="_BLANK"
+                className=""
+              >
+                <Image
+                  width={25}
+                  height={25}
+                  unoptimized
+                  className=""
+                  src="/img/footer/linkedin.png"
+                  alt="Workflow"
+                />
+              </a>
+            </div>
+            <div className="flex xl:hidden max-w-7xl w-full font-semibold justify-center mt-5 text-center">
+              <div className="px-5 xl:px-0">
+                Satria Nusa Enjinering © All rights reserved Copyrights 2024
+              </div>
             </div>
           </div>
         </div>

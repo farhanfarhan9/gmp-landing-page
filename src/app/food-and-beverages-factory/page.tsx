@@ -32,7 +32,7 @@ const foodAndBeveragesFactory = () => {
           </div>
         </div>
 
-        <div className="flex w-full justify-center">
+        <div className="flex w-full justify-center px-5 xl:px-0">
           <div className="py-20 w-full max-w-7xl">
             <div>
               <div className="text-[#0E4F94] uppercase font-extrabold text-3xl">

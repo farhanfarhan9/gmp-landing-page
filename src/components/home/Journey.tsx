@@ -22,7 +22,7 @@ function Journey() {
       <Impact />
       <div className="flex pt-[30rem] pb-32 mx-auto max-w-7xl">
         <div className="text-base">
-          <div className="text-[#0E4F94] text-5xl font-bold max-w-md">
+          <div className="text-[#0E4F94] text-5xl font-bold max-w-md capitalize">
             {Translator.t("journey-title", lang)}
           </div>
           <div className="mt-7">{Translator.t("journey-desc-1", lang)}</div>

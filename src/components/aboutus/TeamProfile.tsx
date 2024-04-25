@@ -21,7 +21,7 @@ function TeamProfile() {
     },
     {
       name: "Antony Simon, B.Sc., M.Kom.",
-      role: "Operatational Director",
+      role: "Operational Director",
       image: "/img/about/antony.png",
       desc: (
         <div>

@@ -43,7 +43,7 @@
   "hero-2": "from Reliable Engineering",
   "company-profile-title": "Company Profile",
   "company-profile-desc": "Download our Company Profile to learn more about our company, including our vision and mission, project portfolio and certifications.",
-  "our-partner-title": "Our Partner",
+  "our-partner-title": "Our Partners",
   "our-partner-desc": "These companies, with their respective expertise and strengths, come together to create better experiences and more innovative solutions for you and bring unique aspects and experiences that complement our vision and mission.",
   "download": "Download",
   "our-service-title": "Our Services",
@@ -172,5 +172,6 @@
   "tooltips-2": "Assuming each person uses 200 m3 of water per day.",
   "sol-product": "Solutions & Products",
   "bluewave-industries": "Bluewave Industries",
-  "consumables": "Consumables"
+  "consumables": "Consumables",
+  "company-journey": "Company Journey"
 }

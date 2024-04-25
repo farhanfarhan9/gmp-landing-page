@@ -1,4 +1,5 @@
 "use client";
+import Translator from "@/utils/Translator";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 
@@ -8,7 +9,7 @@ function CompanyJourney() {
   return (
     <div className="bg-[#0E4F94] mb-4 pt-10 pb-16">
       <div className="text-6xl font-bold text-white text-center">
-        Company Journey
+        {Translator.t("company-journey", lang)}
       </div>
       <div className="max-w-7xl mx-auto mt-12">
         {lang === "en" ? (

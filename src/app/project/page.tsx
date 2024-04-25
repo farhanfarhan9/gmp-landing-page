@@ -13,7 +13,7 @@ const Project = () => {
   const lang = searchParams.get("lang") || undefined;
 
   return (
-    <div className="">
+    <div className="overflow-x-hidden ">
       <div className="relative">
         <Image
           unoptimized
@@ -24,15 +24,15 @@ const Project = () => {
           alt=""
         />
         <div className="mx-auto max-w-7xl">
-          <h1 className="absolute top-0 w-1/2 text-2xl font-bold text-white translate-y-10 md:translate-y-20 xl:translate-y-32 lg:translate-y-10 sm:text-3xl md:text-5xl lg:top-10">
+          <h1 className="absolute top-0 w-1/2 px-5 text-xl font-bold text-white translate-y-5 xl:px-0 lg:px-0 md:translate-y-20 xl:translate-y-32 lg:translate-y-10 sm:text-3xl md:text-5xl lg:top-10">
             {Translator.t("project-reference", lang)}
           </h1>
         </div>
-        <div className="bg-[#EDF2F5] py-5 px-5 lg:py-20">
+        <div className="bg-[#EDF2F5] py-5 px-5 xl:px-0 lg:py-20">
           <ProjectCarousel />
         </div>
         <div className="py-20">
-          <div className="relative flex flex-col mx-auto max-w-7xl lg:flex-row">
+          <div className="relative flex flex-col px-5 mx-auto xl:px-0 lg:px-0 max-w-7xl lg:flex-row">
             <div className="w-full my-auto lg:w-3/5">
               <h1 className="text-5xl text-[#0E4F94] font-bold">
                 {Translator.t("water-crisis", lang)}:

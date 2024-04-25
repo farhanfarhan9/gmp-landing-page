@@ -12,12 +12,12 @@ function Bluewave() {
     <>
       <div className="overflow-x-hidden">
         <div className="flex flex-col items-center justify-center w-full bg-white bg-gradient-to-b">
-          <div className="relative z-50 flex flex-col gap-10 px-5 my-20 space-y-10 xl:px-0 max-w-7xl lg:flex-row lg:justify-between">
+          <div className="relative z-30 flex flex-col gap-10 px-5 my-20 space-y-10 xl:px-0 max-w-7xl lg:flex-row lg:justify-between">
             <div className="w-full xl:w-3/5">
               <Image
                 src="/img/bluewave/bluewave-logo.png"
                 unoptimized
-                className="z-50 w-fit"
+                className="z-30 w-fit"
                 alt=""
                 width={1920}
                 height={1080}
@@ -50,7 +50,7 @@ function Bluewave() {
                 </div>
               </div>
             </div>
-            <div className="z-50 justify-end w-full my-auto lg:w-2/5 ">
+            <div className="z-30 justify-end w-full my-auto lg:w-2/5 ">
               <Image
                 src="/img/bluewave/banner.png"
                 unoptimized

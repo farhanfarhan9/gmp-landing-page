@@ -16,7 +16,7 @@ function AboutHead() {
           height={800}
         />
         <div className="absolute top-0 left-0 bottom-0 right-0 flex items-center">
-          <div className="w-full mx-auto max-w-7xl text-5xl font-bold text-white">
+          <div className="w-full mx-auto max-w-7xl text-5xl font-bold text-white capitalize">
             <div className="max-w-2xl">{Translator.t("about-us", lang)}</div>
           </div>
         </div>
@@ -28,7 +28,7 @@ function AboutHead() {
         alt=""
       />
       <div className="mx-auto max-w-7xl mt-16 mb-64">
-        <div className="text-5xl max-w-3xl mx-auto font-bold text-[#0E4F94] text-center">
+        <div className="text-5xl max-w-3xl mx-auto font-bold text-[#0E4F94] text-center capitalize">
           {Translator.t("about-us-title", lang)}
         </div>
         <div className="mt-7 text-base">

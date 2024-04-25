@@ -43,7 +43,7 @@
   "hero-2": "from Reliable Engineering",
   "company-profile-title": "Company Profile",
   "company-profile-desc": "Download our Company Profile to learn more about our company, including our vision and mission, project portfolio and certifications.",
-  "our-partner-title": "Our Partner",
+  "our-partner-title": "Our Partners",
   "our-partner-desc": "These companies, with their respective expertise and strengths, come together to create better experiences and more innovative solutions for you and bring unique aspects and experiences that complement our vision and mission.",
   "download": "Download",
   "our-service-title": "Our Services",
@@ -119,7 +119,7 @@
   "fnb": "Food & Beverages Factory",
   "hospital": "Hospital",
   "pp": "Power Plant",
-  "sc": "Shopping Center",
+  "sc": "Commercial Bulding",
   "gf": "Goods Factory",
   "machinaries-title": "Machineries / Wastewater Technology",
   "machinaries-desc": "In SNE we fabricate and assemble wastewater machineries locally. This capability allows customization of wastewater solution at the most cost-effective CAPEX. SNE holds patent on wastewater aeration system. This is our commitment to enhance our engineering excellence for our customers.",
@@ -152,7 +152,7 @@
   "trusted-client": "Trusted by Our Client",
   "track-machine": "Track Machine Performance",
   "compe-adv": "Our Competitive Advantages",
-  "bluewave-title": "Access Electromechanical Performance at Wastewater Treatment Plant",
+  "bluewave-title": "Data-driven Waste Water Management System at your Dashboard",
   "login-as": "Login As",
   "client": "Client",
   "staff": "Staff",
@@ -169,5 +169,6 @@
   "profile-joshua-2": "He is responsible for Industrial 4.0 initiatives, Smart Plant Maintenance, and the Electrical Automation division.",
   "project": "Project",
   "tooltips-1": "Assuming 5 people per household, each using 200 m3 of water daily, totaling 1,000 m3 of water consumption per household per day.",
-  "tooltips-2": "Assuming each person uses 200 m3 of water per day."
+  "tooltips-2": "Assuming each person uses 200 m3 of water per day.",
+  "company-journey": "Company Journey"
 }

@@ -8,18 +8,18 @@ function Bacteria() {
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang") || undefined;
   return (
-    <div className="overflow-x-hidden">
+    <div className="relative overflow-x-hidden">
       <div className="flex max-w-7-xl justify-center bg-[#EDF2F5]">
         <Image
           src="/img/bacteria/bacteria.png"
           unoptimized
-          className="z-50 object-cover px-5 mt-48 -my-40"
+          className="z-50 object-cover max-w-3xl px-5 mt-48 -my-40"
           alt=""
           width={1920}
           height={1080}
         />
       </div>
-      <div className="flex justify-end w-full px-5 lg:px-0">
+      <div className="absolute flex justify-end w-full px-5 lg:px-0">
         <Image
           className="z-0"
           src="/img/solutions-and-product/pattern.png"
@@ -28,7 +28,7 @@ function Bacteria() {
           alt=""
         />
       </div>
-      <div className="flex justify-center w-full px-5 lg:px-0">
+      <div className="flex justify-center w-full px-5 mt-40 lg:px-0">
         <div className="text-base max-w-7xl">
           <div className="mt-5">
             <span className="text-[#0E4F94] text-4xl font-semibold">

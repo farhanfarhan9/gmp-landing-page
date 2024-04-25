@@ -1,9 +1,7 @@
 "use client";
-
-import React from "react";
+import Translator from "@/utils/Translator";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
-import Translator from "@/utils/Translator";
 
 const shoppingCenter = () => {
   const searchParams = useSearchParams();
@@ -34,17 +32,17 @@ const shoppingCenter = () => {
             </h1>
           </div>
         </div>
-        <div className="flex w-full justify-center px-5 xl:px-0">
-          <div className="py-20 w-full max-w-7xl">
+        <div className="flex justify-center w-full px-5 xl:px-0">
+          <div className="w-full py-20 max-w-7xl">
             <div>
               <div className="text-[#0E4F94] uppercase font-extrabold text-3xl">
                 PT. PALARUDHIBI TEGUH MAKMUR
               </div>
-              <div className=" uppercase font-extrabold text-xl mt-5">
-                Shopping Center
+              <div className="mt-5 text-xl font-extrabold uppercase ">
+                {Translator.t("sc", lang)}
               </div>
-              <div className="text-base mt-5">Medan</div>
-              <div className="text-base mt-8">
+              <div className="mt-5 text-base">Medan</div>
+              <div className="mt-8 text-base">
                 Submarsible Pump Relay Changeover
               </div>
             </div>
@@ -56,4 +54,4 @@ const shoppingCenter = () => {
   );
 };
 
-export default shoppingCenter;
+export default ShoppingCenter;

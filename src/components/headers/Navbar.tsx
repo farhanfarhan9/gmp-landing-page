@@ -21,19 +21,15 @@ const Navbar = () => {
 
   const options = [
     {
-      text: "Machineries / Wastewater Technology",
+      text: Translator.t("machinaries-title", lang),
       url: "/machinaries-or-wastewater-technology",
     },
-    { text: "Bluewave Industries", url: "/bluewave" },
-    { text: "Bacteria", url: "/bacteria" },
+    { text: Translator.t("bluewave-industries", lang), url: "/bluewave" },
+    { text: Translator.t("consumables", lang), url: "/bacteria" },
   ];
   const options_company = [
     {
       image: "/img/company-navbar/nadic.png",
-      url: "javascript:void(0);",
-    },
-    {
-      image: "/img/company-navbar/nat.png",
       url: "javascript:void(0);",
     },
     {
@@ -52,16 +48,20 @@ const Navbar = () => {
       image: "/img/company-navbar/bluewave.png",
       url: "javascript:void(0);",
     },
+    {
+      image: "/img/company-navbar/utl.png",
+      url: "javascript:void(0);",
+    },
   ];
 
   return (
     <nav className="bg-white dark:bg-gray-800">
-      <div className="mx-auto max-w-7xl font-semibold">
+      <div className="mx-auto font-semibold max-w-7xl">
         <div
           className="flex items-center justify-between h-16"
           style={{ height: "100px" }}
         >
-          <div className="sm:ml-0 ml-8 flex items-center align-middle">
+          <div className="flex items-center ml-8 align-middle sm:ml-0">
             <Link href={Translator.gotoUrl("/", lang)}>
               <span className="flex-shrink-0">
                 <Image
@@ -70,6 +70,18 @@ const Navbar = () => {
                   unoptimized
                   className="pl-6 xl:pl-0"
                   src="/logo_k3.png"
+                  alt="Logo"
+                />
+              </span>
+            </Link>
+            <Link href={Translator.gotoUrl("/bluewave", lang)}>
+              <span className="flex-shrink-0">
+                <Image
+                  width={236}
+                  height={48}
+                  unoptimized
+                  className="object-scale-down pl-6 w-36 xl:pl-7"
+                  src="/img/bluewave/bluewave-logo.png"
                   alt="Logo"
                 />
               </span>
@@ -91,7 +103,7 @@ const Navbar = () => {
                   {Translator.t("project", lang)}
                 </Link>
                 <div>
-                  <Dropdown options={options} title="Solutions & Products" />
+                  <Dropdown options={options} title={Translator.t("sol-product", lang)} />
                 </div>
                 <LanguageSwitcher />
                 <div>
@@ -105,7 +117,7 @@ const Navbar = () => {
           </div>
           <div className="flex mr-2 xl:hidden">
             <button
-              className="text-gray-800 dark:text-white hover:text-gray-300 inline-flex items-center justify-center p-2 rounded-md focus:outline-none"
+              className="inline-flex items-center justify-center p-2 text-gray-800 rounded-md dark:text-white hover:text-gray-300 focus:outline-none"
               onClick={toggleMobileMenu}
             >
               <svg
@@ -126,34 +138,34 @@ const Navbar = () => {
         <div className="xl:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <a
-              className="text-gray-500 hover:text-gray-800 dark:text-white block px-2 py-1 rounded-md text-base font-medium"
+              className="block px-2 py-1 text-base font-medium text-gray-500 rounded-md hover:text-gray-800 dark:text-white"
               href="/about-us"
             >
               {Translator.t("about-us", lang)}
             </a>
             <a
-              className="text-gray-500 hover:text-gray-800 dark:text-white block px-2 py-1 rounded-md text-base font-medium"
+              className="block px-2 py-1 text-base font-medium text-gray-500 rounded-md hover:text-gray-800 dark:text-white"
               href="/project"
             >
               {Translator.t("project", lang)}
             </a>
             <Link
-              className="text-gray-500 hover:text-gray-800 dark:hover:text-white block px-2 py-1 rounded-md text-base font-medium"
+              className="block px-2 py-1 text-base font-medium text-gray-500 rounded-md hover:text-gray-800 dark:hover:text-white"
               href="/machinaries-or-wastewater-technology"
             >
               {Translator.t("machinaries-title", lang)}
             </Link>
             <Link
-              className="text-gray-500 hover:text-gray-800 dark:hover:text-white block px-2 py-1 rounded-md text-base font-medium"
+              className="block px-2 py-1 text-base font-medium text-gray-500 rounded-md hover:text-gray-800 dark:hover:text-white"
               href="/bluewave"
             >
-              Bluewave Industries
+              {Translator.t("bluewave-industries", lang)}
             </Link>
             <Link
-              className="text-gray-500 hover:text-gray-800 dark:hover:text-white block px-2 py-1 rounded-md text-base font-medium"
+              className="block px-2 py-1 text-base font-medium text-gray-500 rounded-md hover:text-gray-800 dark:hover:text-white"
               href="/bacteria"
             >
-              Bacteria
+              {Translator.t("consumables", lang)}
             </Link>
             <LanguageSwitcher />
           </div>

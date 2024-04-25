@@ -42,7 +42,6 @@ function ImpactEquivalent({ total }: { total: number }) {
           <div className="absolute right-2 bottom-2 z-10">
             <Tooltip content={Translator.t("tooltips-1", lang)}>
               <svg
-                className=" feather feather-alert-circle"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -52,10 +51,11 @@ function ImpactEquivalent({ total }: { total: number }) {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
+                className="feather feather-info text-blue-500 opacity-60 hover:opacity-100"
               >
                 <circle cx="12" cy="12" r="10" />
-                <line x1="12" y1="8" x2="12" y2="12" />
-                <line x1="12" y1="16" x2="12.01" y2="16" />
+                <line x1="12" y1="16" x2="12" y2="12" />
+                <line x1="12" y1="8" x2="12.01" y2="8" />
               </svg>
             </Tooltip>
           </div>
@@ -87,7 +87,6 @@ function ImpactEquivalent({ total }: { total: number }) {
           <div className="absolute right-2 bottom-2 z-10">
             <Tooltip content={Translator.t("tooltips-2", lang)}>
               <svg
-                className=" feather feather-alert-circle"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -97,10 +96,11 @@ function ImpactEquivalent({ total }: { total: number }) {
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
+                className="feather feather-info text-blue-500 opacity-60 hover:opacity-100"
               >
                 <circle cx="12" cy="12" r="10" />
-                <line x1="12" y1="8" x2="12" y2="12" />
-                <line x1="12" y1="16" x2="12.01" y2="16" />
+                <line x1="12" y1="16" x2="12" y2="12" />
+                <line x1="12" y1="8" x2="12.01" y2="8" />
               </svg>
             </Tooltip>
           </div>

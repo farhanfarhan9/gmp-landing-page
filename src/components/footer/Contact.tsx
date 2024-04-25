@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { SyntheticEvent, useState } from "react";
 import Translator from "@/utils/Translator";
 import { useSearchParams } from "next/navigation";
+import Link from "next/link";
 
 const Contact = () => {
   const searchParams = useSearchParams();
@@ -68,19 +69,21 @@ const Contact = () => {
           <div className="w-full xl:w-1/5 pt-10 xl:pt-0">
             <div className="font-bold">Quick Links</div>
             <div className="mt-5">
-              <a href="/">Home</a>
+              <Link href={Translator.gotoUrl("/", lang)}>Home</Link>
             </div>
             <div className="mt-5">
-              <a href="/">Our Impact</a>
+              <Link href={Translator.gotoUrl("/", lang)}>Our Impact</Link>
             </div>
             <div className="mt-5">
-              <a href="/about-us">About Us</a>
+              <Link href={Translator.gotoUrl("/about-us", lang)}>About Us</Link>
             </div>
             <div className="mt-5">
-              <a href="/project">Projects</a>
+              <Link href={Translator.gotoUrl("/project", lang)}>Projects</Link>
             </div>
             <div className="mt-5">
-              <a href="#">Solutions & Products</a>
+              <Link href={Translator.gotoUrl("/project", lang)}>
+                Solutions & Products
+              </Link>
             </div>
           </div>
           <div className="w-full xl:w-1/5 pt-10 xl:pt-0">
@@ -88,10 +91,14 @@ const Contact = () => {
               <div>Information</div>
             </div>
             <div className="mt-5">
-              <a href="#">Terms & Condition</a>
+              <Link href={Translator.gotoUrl("/project", lang)}>
+                Terms & Condition
+              </Link>
             </div>
             <div className="mt-5">
-              <a href="#">Privacy Policy</a>
+              <Link href={Translator.gotoUrl("/project", lang)}>
+                Privacy Policy
+              </Link>
             </div>
           </div>
           <div className="w-full xl:w-1/5 pt-10 xl:pt-0">

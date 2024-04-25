@@ -110,7 +110,7 @@ const Project = () => {
                     {Translator.t("palm-oil", lang)}
                   </p>
                   <Link
-                    href="/palm-oil-mill"
+                    href={Translator.gotoUrl("/palm-oil-mill", lang)}
                     className="text-base px-4 py-2 bg-[#0E4F94] text-white rounded-full absolute left-10 bottom-10 hover:bg-[#0A3A6E]"
                   >
                     {Translator.t("view-more", lang)}
@@ -128,7 +128,10 @@ const Project = () => {
                     {Translator.t("fnb", lang)}
                   </p>
                   <Link
-                    href="/food-and-beverages-factory"
+                    href={Translator.gotoUrl(
+                      "/food-and-beverages-factory",
+                      lang
+                    )}
                     className="text-base px-4 py-2 bg-[#0E4F94] text-white rounded-full absolute left-10 bottom-10 hover:bg-[#0A3A6E]"
                   >
                     {Translator.t("view-more", lang)}
@@ -146,7 +149,7 @@ const Project = () => {
                     {Translator.t("hospital", lang)}
                   </p>
                   <Link
-                    href="/hospital"
+                    href={Translator.gotoUrl("/hospital", lang)}
                     className="text-base px-4 py-2 bg-[#0E4F94] text-white rounded-full absolute left-10 bottom-10 hover:bg-[#0A3A6E]"
                   >
                     {Translator.t("view-more", lang)}
@@ -164,7 +167,7 @@ const Project = () => {
                     {Translator.t("pp", lang)}
                   </p>
                   <Link
-                    href="/power-plant"
+                    href={Translator.gotoUrl("/power-plant", lang)}
                     className="text-base px-4 py-2 bg-[#0E4F94] text-white rounded-full absolute left-10 bottom-10 hover:bg-[#0A3A6E]"
                   >
                     {Translator.t("view-more", lang)}
@@ -182,7 +185,7 @@ const Project = () => {
                     {Translator.t("sc", lang)}
                   </p>
                   <Link
-                    href="/shopping-center"
+                    href={Translator.gotoUrl("/shopping-center", lang)}
                     className="text-base px-4 py-2 bg-[#0E4F94] text-white rounded-full absolute left-10 bottom-10 hover:bg-[#0A3A6E]"
                   >
                     {Translator.t("view-more", lang)}
@@ -200,7 +203,7 @@ const Project = () => {
                     {Translator.t("gf", lang)}
                   </p>
                   <Link
-                    href="/goods-factory"
+                    href={Translator.gotoUrl("/goods-factory", lang)}
                     className="text-base px-4 py-2 bg-[#0E4F94] text-white rounded-full absolute left-10 bottom-10 hover:bg-[#0A3A6E]"
                   >
                     {Translator.t("view-more", lang)}

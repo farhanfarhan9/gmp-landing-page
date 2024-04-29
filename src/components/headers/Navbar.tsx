@@ -22,10 +22,16 @@ const Navbar = () => {
   const options = [
     {
       text: Translator.t("machinaries-title", lang),
-      url: "/machinaries-or-wastewater-technology",
+      url: Translator.gotoUrl("/machinaries-or-wastewater-technology", lang),
     },
-    { text: Translator.t("bluewave-industries", lang), url: "/bluewave" },
-    { text: Translator.t("consumables", lang), url: "/bacteria" },
+    {
+      text: Translator.t("bluewave-industries", lang),
+      url: Translator.gotoUrl("/bluewave", lang),
+    },
+    {
+      text: Translator.t("consumables", lang),
+      url: Translator.gotoUrl("/bacteria", lang),
+    },
   ];
   const options_company = [
     {
@@ -103,7 +109,10 @@ const Navbar = () => {
                   {Translator.t("project", lang)}
                 </Link>
                 <div>
-                  <Dropdown options={options} title={Translator.t("sol-product", lang)} />
+                  <Dropdown
+                    options={options}
+                    title={Translator.t("sol-product", lang)}
+                  />
                 </div>
                 <LanguageSwitcher />
                 <div>

@@ -46,7 +46,7 @@ const Machineries = () => {
           <div className="z-50 px-10 mx-auto max-w-7xl">
             <div className="grid w-full grid-cols-1 gap-20 mt-10 md:grid-cols-2 xl:grid-cols-3 ">
               <Link
-                href="/membrane-bio-reactor"
+                href={Translator.gotoUrl("/membrane-bio-reactor", lang)}
                 className="relative flex flex-col items-center justify-end"
               >
                 <Image
@@ -61,7 +61,7 @@ const Machineries = () => {
                 </p>
               </Link>
               <Link
-                href="/reverse-osmosis"
+                href={Translator.gotoUrl("/reverse-osmosis", lang)}
                 className="relative flex flex-col items-center justify-end"
               >
                 <Image
@@ -76,7 +76,7 @@ const Machineries = () => {
                 </p>
               </Link>
               <Link
-                href="/dissolved-air-flotation"
+                href={Translator.gotoUrl("/dissolved-air-flotation", lang)}
                 className="relative flex flex-col items-center justify-end"
               >
                 <Image
@@ -91,7 +91,7 @@ const Machineries = () => {
                 </p>
               </Link>
               <Link
-                href="/aquahelix-surface-aerator"
+                href={Translator.gotoUrl("/aquahelix-surface-aerator", lang)}
                 className="relative flex flex-col items-center justify-end"
               >
                 <Image
@@ -106,7 +106,7 @@ const Machineries = () => {
                 </p>
               </Link>
               <Link
-                href="/filter-press"
+                href={Translator.gotoUrl("/filter-press", lang)}
                 className="relative flex flex-col items-center justify-end"
               >
                 <Image
@@ -121,7 +121,7 @@ const Machineries = () => {
                 </p>
               </Link>
               <Link
-                href="/wet-scrubber"
+                href={Translator.gotoUrl("/wet-scrubber", lang)}
                 className="relative flex flex-col items-center justify-end"
               >
                 <Image
@@ -136,7 +136,7 @@ const Machineries = () => {
                 </p>
               </Link>
               <Link
-                href="/lamella-clarifier-tank"
+                href={Translator.gotoUrl("/lamella-clarifier-tank", lang)}
                 className="relative flex flex-col items-center justify-end"
               >
                 <Image

@@ -81,14 +81,14 @@ function OurParner() {
     },
   ];
   return (
-    <div className="py-20 mx-auto max-w-7xl my-10 flex justify-between gap-3">
+    <div className="py-20 md:mx-auto mx-4 md:max-w-7xl my-10 flex flex-col md:flex-row justify-between gap-10 md:gap-3">
       <div>
-        <div className="text-4xl font-bold text-[#0E4F94]">{Translator.t("our-partner-title", lang)}</div>
-        <p className="mt-7 max-w-xl">
+        <div className="text-4xl font-bold text-[#0E4F94] text-center md:text-left">{Translator.t("our-partner-title", lang)}</div>
+        <p className="mt-7 max-w-xl text-center md:text-left">
           {Translator.t("our-partner-desc", lang)}
         </p>
       </div>
-      <div className="grid grid-cols-5 gap-10 items-center">
+      <div className="grid grid-cols-4 md:grid-cols-5 gap-10 items-center justify-center">
         {parner.map((item, index) => (
           <Image
             key={index}

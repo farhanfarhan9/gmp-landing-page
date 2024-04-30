@@ -20,7 +20,7 @@ function Journey() {
         height={300}
       />
       <Impact />
-      <div className="md:flex pt-[30rem] pb-32 mx-3 md:mx-auto md:max-w-7xl">
+      <div className="md:flex pt-[30rem] pb-32 mx-4 md:mx-auto md:max-w-7xl">
         <div className="text-base">
           <div className="text-[#0E4F94] text-5xl font-bold max-w-md capitalize">
             {Translator.t("journey-title", lang)}

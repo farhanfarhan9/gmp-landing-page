@@ -11,7 +11,7 @@ function CompanyJourneyMobile() {
       <div className="text-2xl font-bold text-center text-white md:text-5xl">
         {Translator.t("company-journey", lang)}
       </div>
-      <div className="px-12">
+      <div className="px-12 pt-5">
         <ol className="relative border-gray-200 border-s">
           <li className="mb-10 ms-4">
             <div className="absolute w-3 h-3 bg-gray-200 rounded-full scroll-pt-14 mt-1.5 -start-1.5 border border-white"></div>

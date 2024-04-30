@@ -58,9 +58,12 @@ function TeamProfile() {
   const [activeProfile, setactiveProfile] = useState(0);
   return (
     <div className="">
-      <div className="mx-auto max-w-7xl flex min-h-[800px] mt-20">
-        <div className="w-6/12 pr-8">
-          <div className="text-5xl font-bold text-[#0E4F94]">
+      <div className="mx-auto max-w-7xl px-12 md:px-0 flex md:flex-row flex-col min-h-[800px] mt-20 mb-10 md:mb-0">
+        <div className="text-5xl font-bold text-[#0E4F94] block md:hidden">
+          {Translator.t("team-profile", lang)}
+        </div>
+        <div className="order-2 w-full md:w-6/12 md:pr-8 md:order-1">
+          <div className="text-5xl font-bold text-[#0E4F94] md:block hidden">
             {Translator.t("team-profile", lang)}
           </div>
           <div className="text-4xl font-bold text-[#0E4F94] mt-5">
@@ -73,7 +76,7 @@ function TeamProfile() {
             {ProfileData[activeProfile].desc}
           </div>
         </div>
-        <div className="flex w-6/12 gap-2 mt-32">
+        <div className="flex order-1 w-full gap-2 mt-10 mb-10 md:mb-0 md:mt-32 md:w-6/12 md:order-2">
           {ProfileData.map((data, index) => (
             <div
               onClick={() => setactiveProfile(index)}

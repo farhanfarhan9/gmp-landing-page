@@ -41,7 +41,7 @@ const Impact = () => {
     }
   }, []);
   return (
-    <div className="-mt-16 md:-mt-28 absolute top-0 left-1/2 -translate-x-1/2 w-[400px] md:w-[800px]">
+    <div className="-mt-16 md:-mt-28 absolute top-0 left-1/2 -translate-x-1/2 w-[360px] md:w-[800px]">
       <div
         className="bg-opacity-50 p-5 relative rounded-2xl overflow-hidden bg-left bg-cover shadow-md"
         style={{ backgroundImage: 'url("/img/home/bg-impact.webp")' }}

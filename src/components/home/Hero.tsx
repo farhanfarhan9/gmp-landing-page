@@ -18,7 +18,7 @@ const Hero = () => {
       />
       <div className="absolute top-0 left-0 right-0 bottom-0 bg-black opacity-50"></div>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white -mt-10 text-center font-bold leading-snug">
-        <div className="w-[800px] capitalize text-xl md:text-6xl">
+        <div className="w-[280px] md:w-[800px] capitalize text-xl md:text-6xl">
           {Translator.t("hero-1", lang)} <br />{" "}
           <div>{Translator.t("hero-2", lang)}</div>
         </div>

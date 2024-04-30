@@ -58,7 +58,7 @@ function TeamProfile() {
   const [activeProfile, setactiveProfile] = useState(0);
   return (
     <div className="">
-      <div className="mx-auto max-w-7xl px-12 md:px-0 flex md:flex-row flex-col min-h-[800px] mt-20">
+      <div className="mx-auto max-w-7xl px-12 md:px-0 flex md:flex-row flex-col min-h-[800px] mt-20 mb-10 md:mb-0">
         <div className="text-5xl font-bold text-[#0E4F94] block md:hidden">
           {Translator.t("team-profile", lang)}
         </div>

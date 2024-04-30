@@ -48,7 +48,7 @@ const Impact = () => {
       >
         <div className="absolute top-0 left-0 bottom-0 right-0 bg-white opacity-50"></div>
         <div className="relative">
-          <div className="text-[#0E4F94] text-5xl font-bold text-center">
+          <div className="text-[#0E4F94] text-xl md:text-5xl font-bold text-center">
             Our Impact
           </div>
           <div className="flex mt-5 mx-9 justify-between">
@@ -76,7 +76,8 @@ const Impact = () => {
                   <div className="flex gap-1">
                     <div className="w-[190px]">
                       {value.toLocaleString(undefined, {
-                        minimumFractionDigits: 2, maximumFractionDigits: 2,
+                        minimumFractionDigits: 2,
+                        maximumFractionDigits: 2,
                       })}
                     </div>
                     <div className="text-superscript">

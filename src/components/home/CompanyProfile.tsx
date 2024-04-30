@@ -17,7 +17,7 @@ function CompanyProfile() {
       />
       <div className="flex flex-col md:flex-row gap-10 md:gap-3 justify-between items-center relative">
         <div>
-          <div className="text-4xl text-center md:text-left font-bold text-[#0E4F94]">
+          <div className="text-xl md:text-4xl text-center md:text-left font-bold text-[#0E4F94]">
             {Translator.t("company-profile-title", lang)}
           </div>
           <p className="mt-7 text-center md:text-left max-w-3xl text-base">

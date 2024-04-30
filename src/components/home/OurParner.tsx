@@ -88,7 +88,7 @@ function OurParner() {
           {Translator.t("our-partner-desc", lang)}
         </p>
       </div>
-      <div className="grid grid-cols-4 md:grid-cols-5 gap-10 items-center justify-center">
+      <div className="grid grid-cols-4 md:grid-cols-5 gap-6 md:gap-10 items-center justify-center">
         {parner.map((item, index) => (
           <Image
             key={index}

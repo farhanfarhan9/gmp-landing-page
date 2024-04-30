@@ -9,7 +9,7 @@ function ImpactEquivalent({ total }: { total: number }) {
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang") || undefined;
   return (
-    <div className="mx-auto w-[800px] relative mt-9 pb-6">
+    <div className="relative mt-9 pb-6">
       <div className="text-[#0E4F94] text-2xl text-center font-semibold">
         Equivalent to clean water access for:
       </div>

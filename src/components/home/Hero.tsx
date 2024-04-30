@@ -11,7 +11,7 @@ const Hero = () => {
     <section className="relative">
       <Image
         src={"/img/home/hero.png"}
-        className="object-cover h-[400px] md:h-auto"
+        className="object-cover h-[320px] md:h-auto"
         alt=""
         width={2000}
         height={400}

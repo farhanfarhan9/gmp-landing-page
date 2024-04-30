@@ -41,7 +41,7 @@ const Impact = () => {
     }
   }, []);
   return (
-    <div className="-mt-28 absolute top-0 left-1/2 -translate-x-1/2 md:w-[800px]">
+    <div className="-mt-16 md:-mt-28 absolute top-0 left-1/2 -translate-x-1/2 w-[400px] md:w-[800px]">
       <div
         className="bg-opacity-50 p-5 relative rounded-2xl overflow-hidden bg-left bg-cover shadow-md"
         style={{ backgroundImage: 'url("/img/home/bg-impact.webp")' }}
@@ -51,30 +51,32 @@ const Impact = () => {
           <div className="text-[#0E4F94] text-xl md:text-5xl font-bold text-center">
             Our Impact
           </div>
-          <div className="flex mt-5 mx-9 justify-between">
-            <div className="flex items-center gap-5">
+          <div className="flex mt-2 mx-3 md:mt-5 md:mx-9 justify-between">
+            <div className="flex items-center gap-2 md:gap-5">
               <Image
+                className="h-11 w-auto md:h-auto"
                 src="/img/home/impact1.png"
                 alt=""
                 width={100}
                 height={100}
               />
               <div>
-                <div className="text-[#0E4F94] font-bold text-3xl">29+</div>
-                <div className="mt-3 font-bold">Projects</div>
+                <div className="text-[#0E4F94] font-bold text-sm md:text-3xl">29+</div>
+                <div className="mt-3 font-bold text-sm md:text-base">Projects</div>
               </div>
             </div>
-            <div className="flex items-center gap-5">
+            <div className="flex items-center gap-2 md:gap-5">
               <Image
+                className="h-11 w-auto md:h-auto"
                 src="/img/home/impact2.png"
                 alt=""
                 width={60}
                 height={100}
               />
               <div>
-                <div className="text-[#0E4F94] font-bold text-3xl">
+                <div className="text-[#0E4F94] font-bold text-sm md:text-3xl">
                   <div className="flex gap-1">
-                    <div className="w-[190px]">
+                    <div className="w-[90px] md:w-[190px]">
                       {value.toLocaleString(undefined, {
                         minimumFractionDigits: 2,
                         maximumFractionDigits: 2,
@@ -85,7 +87,7 @@ const Impact = () => {
                     </div>
                   </div>
                 </div>
-                <div className="mt-3 font-bold">Conserved Water</div>
+                <div className="mt-3 font-bold text-sm md:text-base">Conserved Water</div>
               </div>
             </div>
           </div>

@@ -25,7 +25,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Contact />
-        {/* <NotSupport /> */}
+        <NotSupport />
       </body>
     </html>
   );

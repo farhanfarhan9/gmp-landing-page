@@ -7,7 +7,7 @@ function CompanyJourneyMobile() {
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang") || undefined;
   return (
-    <div className="bg-[#0E4F94] mb-4 pt-0 md:pt-10 pb-16 relative mt-96">
+    <div className="bg-[#0E4F94] mb-4 pt-10 md:pt-10 pb-16 relative mt-96">
       <div className="text-2xl font-bold text-center text-white md:text-5xl">
         {Translator.t("company-journey", lang)}
       </div>

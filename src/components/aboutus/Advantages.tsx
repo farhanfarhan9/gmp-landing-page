@@ -8,8 +8,8 @@ function Advantages() {
   const lang = searchParams.get("lang") || undefined;
   return (
     <div className="relative text-base">
-      <div className="flex w-[2000px] max-w-7xl absolute top-0 left-1/2 -translate-x-1/2 -mt-36 rounded-3xl shadow-md overflow-hidden">
-        <div className="w-1/2 bg-[#EDF2F5] py-10 px-12">
+      <div className="flex flex-col md:flex-row md:w-[2000px] max-w-7xl md:absolute top-0 left-1/2 md:-translate-x-1/2 md:-mt-36 rounded-3xl shadow-md overflow-hidden">
+        <div className="md:w-1/2 bg-[#EDF2F5] py-10 px-12">
           <div className="flex items-center justify-center gap-3">
             <Image
               src={"/img/icons/vision.png"}
@@ -23,7 +23,7 @@ function Advantages() {
           </div>
           <div className="mt-5">{Translator.t("vision-desc", lang)}</div>
         </div>
-        <div className="w-1/2 bg-[#DFF5FF] py-10 px-12">
+        <div className="md:w-1/2 bg-[#DFF5FF] py-10 px-12">
           <div className="flex items-center justify-center gap-3">
             <Image
               src={"/img/icons/mission.png"}

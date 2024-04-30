@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import Translator from "@/utils/Translator";
 import { useSearchParams } from "next/navigation";
 import ImpactEquivalent from "./ImpactEquivalent";
 
@@ -9,8 +8,6 @@ const millisecondsPerDay = 24 * 60 * 60 * 1000;
 const additionalValuePerDay = 4090;
 
 const Impact = () => {
-  const searchParams = useSearchParams();
-  const lang = searchParams.get("lang") || undefined;
   const [value, setValue] = useState(0);
 
   useEffect(() => {
@@ -44,7 +41,7 @@ const Impact = () => {
     }
   }, []);
   return (
-    <div className="-mt-28 absolute top-0 left-1/2 -translate-x-1/2 w-[800px]">
+    <div className="-mt-28 absolute top-0 left-1/2 -translate-x-1/2 md:w-[800px]">
       <div
         className="bg-opacity-50 p-5 relative rounded-2xl overflow-hidden bg-left bg-cover shadow-md"
         style={{ backgroundImage: 'url("/img/home/bg-impact.webp")' }}

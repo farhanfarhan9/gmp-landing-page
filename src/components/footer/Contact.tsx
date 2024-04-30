@@ -24,7 +24,7 @@ const Contact = () => {
     <div id="contact">
       <div className="w-full flex justify-center">
         <div className="max-w-7xl xl:flex px-5 xl:px-0 w-full">
-          <div className="w-full xl:w-2/5">
+          <div className="w-full xl:w-2/5 flex flex-col items-center md:items-start">
             <Image
               width={236}
               height={48}
@@ -66,7 +66,7 @@ const Contact = () => {
               </a>
             </div>
           </div>
-          <div className="w-full xl:w-1/5 pt-10 xl:pt-0">
+          <div className="w-full xl:w-1/5 pt-10 xl:pt-0 flex flex-col items-center md:items-start">
             <div className="font-bold">Quick Links</div>
             <div className="mt-5">
               <Link href={Translator.gotoUrl("/", lang)}>Home</Link>
@@ -86,7 +86,7 @@ const Contact = () => {
               </Link>
             </div>
           </div>
-          <div className="w-full xl:w-1/5 pt-10 xl:pt-0">
+          <div className="w-full xl:w-1/5 pt-10 xl:pt-0 flex flex-col items-center md:items-start">
             <div className="font-bold">
               <div>Information</div>
             </div>
@@ -101,9 +101,9 @@ const Contact = () => {
               </Link>
             </div>
           </div>
-          <div className="w-full xl:w-1/5 pt-10 xl:pt-0">
+          <div className="w-full xl:w-1/5 pt-10 xl:pt-0 flex flex-col items-center md:items-start">
             <form onSubmit={hadlesubmit}>
-              <div className="font-bold">Send Us Your Email</div>
+              <div className="font-bold text-center md:text-start">Send Us Your Email</div>
               <div className="mt-5">
                 <input
                   value={name}
@@ -122,7 +122,7 @@ const Contact = () => {
                   onChange={(e) => setEmail(e.target.value)}
                 ></input>
               </div>
-              <div className="mt-5">
+              <div className="mt-5 flex justify-center md:justify-start">
                 <button
                   type="submit"
                   className="bg-[#0E4F94] text-white px-6 py-3 rounded-full"

@@ -25,12 +25,11 @@ function CompanyProfile() {
           </p>
         </div>
         <div>
-          <a
-            href="/docs/Compro SNE 2024.pdf"
-            className="bg-[#24AD69] hover:bg-green-700 text-[15px] text-white py-3 px-5 md:py-2 md:px-4 rounded-full"
+          <div
+            className="bg-[#24AD69] hover:bg-green-700 text-[15px] text-white py-3 px-5 md:py-2 md:px-4 rounded-full cursor-pointer"
           >
             {Translator.t("download", lang)}
-          </a>
+          </div>
         </div>
       </div>
     </div>

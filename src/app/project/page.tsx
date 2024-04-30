@@ -92,12 +92,12 @@ const Project = () => {
               <h1 className="text-[#0E4F94] font-bold text-5xl">
                 {Translator.t("recent-client", lang)}
               </h1>
-              <p className="mt-5 text-base">
+              <p className="mt-5 text-lg">
                 {Translator.t("recent-client-desc", lang)}
               </p>
             </div>
             <div className="mx-auto max-w-7xl">
-              <div className="grid w-full grid-cols-1 gap-20 mt-10 md:grid-cols-2 lg:grid-cols-3 ">
+              <div className="grid w-full grid-cols-1 gap-6 mt-10 md:gap-20 md:grid-cols-2 lg:grid-cols-3 ">
                 <div className="relative">
                   <Image
                     width={100}

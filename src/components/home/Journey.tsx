@@ -20,9 +20,9 @@ function Journey() {
         height={300}
       />
       <Impact />
-      <div className="md:flex pt-[30rem] pb-32 mx-4 md:mx-auto md:max-w-7xl">
+      <div className="md:flex pt-80 md:pt-[30rem] pb-32 mx-4 md:mx-auto md:max-w-7xl">
         <div className="text-base">
-          <div className="text-[#0E4F94] text-xl md:text-5xl font-bold mx-auto md:max-w-md max-w-64 capitalize text-center md:text-left">
+          <div className="text-[#0E4F94] text-xl md:text-5xl font-bold mx-auto md:mx-0 md:max-w-md max-w-64 capitalize text-center md:text-left">
             {Translator.t("journey-title", lang)}
           </div>
           <div className="mt-7">{Translator.t("journey-desc-1", lang)}</div>
@@ -36,7 +36,7 @@ function Journey() {
             </Link>
           </div>
         </div>
-        <div className="w-[500px]">
+        <div className="mx-auto md:mx-0 w-[370px] md:w-[500px]">
           <About />
         </div>
       </div>

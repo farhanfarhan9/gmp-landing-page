@@ -10,11 +10,11 @@ function ImpactEquivalent({ total }: { total: number }) {
   const lang = searchParams.get("lang") || undefined;
   return (
     <div className="relative mt-9 pb-6">
-      <div className="text-[#0E4F94] text-2xl text-center font-semibold">
+      <div className="text-[#0E4F94] text-sm md:text-2xl text-center font-semibold">
         Equivalent to clean water access for:
       </div>
 
-      <div className="mt-5 grid grid-cols-2 gap-8 ">
+      <div className="mt-5 grid grid-cols-2 gap-4 md:gap-8 ">
         <div
           className="bg-opacity-50 relative px-5 py-9 rounded-2xl bg-left bg-cover shadow-md"
           style={{ backgroundImage: 'url("/img/home/bg-impact.webp")' }}
@@ -24,18 +24,21 @@ function ImpactEquivalent({ total }: { total: number }) {
           <div className="relative">
             <div className="flex gap-5 justify-center items-center">
               <Image
+                className="h-11 w-auto md:h-auto"
                 src={"/img/home/home.png"}
                 alt=""
                 width={100}
                 height={100}
               />
               <div>
-                <div className="text-[#0E4F94] font-bold text-3xl">
+                <div className="text-[#0E4F94] font-bold text-sm md:text-3xl">
                   {(total / 1000).toLocaleString(undefined, {
                     maximumFractionDigits: 0,
                   })}
                 </div>
-                <div className="mt-3 font-bold">Households</div>
+                <div className="mt-3 font-bold text-sm md:text-base">
+                  Households
+                </div>
               </div>
             </div>
           </div>
@@ -69,18 +72,21 @@ function ImpactEquivalent({ total }: { total: number }) {
           <div className="relative">
             <div className="flex gap-5 justify-center items-center">
               <Image
+                className="h-11 w-auto md:h-auto"
                 src={"/img/home/people.png"}
                 alt=""
                 width={70}
                 height={70}
               />
               <div>
-                <div className="text-[#0E4F94] font-bold text-3xl">
+                <div className="text-[#0E4F94] font-bold text-sm md:text-3xl">
                   {((total / 1000) * 5).toLocaleString(undefined, {
                     maximumFractionDigits: 0,
                   })}
                 </div>
-                <div className="mt-3 font-bold">People</div>
+                <div className="mt-3 font-bold text-sm md:text-base">
+                  People
+                </div>
               </div>
             </div>
           </div>

@@ -8,7 +8,7 @@ function Advantages() {
   const lang = searchParams.get("lang") || undefined;
   return (
     <div className="relative text-base">
-      <div className="flex flex-col md:flex-row md:w-[2000px] max-w-7xl md:absolute top-0 left-1/2 md:-translate-x-1/2 md:-mt-36 rounded-3xl shadow-md overflow-hidden">
+      <div className="flex flex-col md:flex-row md:w-[2000px] max-w-7xl md:absolute top-0 left-1/2 md:-translate-x-1/2 md:-mt-36 rounded-3xl shadow-md overflow-hidden z-10 mb-20 md:mb-0">
         <div className="md:w-1/2 bg-[#EDF2F5] py-10 px-12">
           <div className="flex items-center justify-center gap-3">
             <Image
@@ -46,31 +46,44 @@ function Advantages() {
           </div>
         </div>
       </div>
-      <Image
-        src="/img/about/adventagebg1.png"
-        width={2000}
-        height={800}
-        alt=""
-      />
-      <div className="absolute top-1/2 bottom-0 right-0 left-0">
-        <div className="text-5xl font-bold text-white text-center">
-          {Translator.t("our-advantages", lang)}
+
+      <div className="relative" id="advantage">
+        <div className="z-0 hidden md:block">
+          <Image
+            src="/img/about/adventagebg1.png"
+            width={2000}
+            height={800}
+            alt=""
+          />
         </div>
-        <div className="text-white grid grid-cols-2 gap-7 mt-10 max-w-7xl mx-auto">
-          <div>
-            <ul className="list-disc">
-              <li>{Translator.t("advantages-1", lang)}</li>
-              <li>{Translator.t("advantages-2", lang)}</li>
-              <li>{Translator.t("advantages-3", lang)}</li>
-              <li>{Translator.t("advantages-4", lang)}</li>
-            </ul>
+        <div className="block md:hidden">
+          <Image
+            src="/img/about/adventagebg1.png"
+            width={2000}
+            height={800}
+            alt=""
+          />
+        </div>
+        <div className="absolute bottom-0 left-0 right-0 top-10 md:top-1/2">
+          <div className="pb-10 text-2xl font-bold text-center text-white md:text-5xl md:pb-0">
+            {Translator.t("our-advantages", lang)}
           </div>
-          <div>
-            <ul className="list-disc">
-              <li>{Translator.t("advantages-5", lang)}</li>
-              <li>{Translator.t("advantages-6", lang)}</li>
-              <li>{Translator.t("advantages-7", lang)}</li>
-            </ul>
+          <div className="grid grid-cols-1 gap-4 px-12 pb-10 mx-auto mt-0 text-white bg-[#0E4F94] md:bg-inherit md:mt-10 md:grid-cols-2 md:px-0 md:gap-7 max-w-7xl md:pb-10">
+            <div>
+              <ul className="space-y-3 list-disc">
+                <li>{Translator.t("advantages-1", lang)}</li>
+                <li>{Translator.t("advantages-2", lang)}</li>
+                <li>{Translator.t("advantages-3", lang)}</li>
+                <li>{Translator.t("advantages-4", lang)}</li>
+              </ul>
+            </div>
+            <div>
+              <ul className="space-y-3 list-disc">
+                <li>{Translator.t("advantages-5", lang)}</li>
+                <li>{Translator.t("advantages-6", lang)}</li>
+                <li>{Translator.t("advantages-7", lang)}</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

@@ -16,6 +16,7 @@ function TeamProfile() {
         <div>
           <div>{Translator.t("profile-feli-1", lang)}</div>
           <div className="mt-4">{Translator.t("profile-feli-2", lang)}</div>
+          <div className="mt-4">{Translator.t("profile-feli-3", lang)}</div>
         </div>
       ),
     },
@@ -25,17 +26,20 @@ function TeamProfile() {
       image: "/img/about/antony.png",
       desc: (
         <div>
-          {Translator.t("profile-antony", lang)}
+          <div>{Translator.t("profile-antony-1", lang)}</div>
+          <div className="mt-4">{Translator.t("profile-antony-2", lang)}</div>
+          <div className="mt-4">{Translator.t("profile-antony-3", lang)}</div>
         </div>
       ),
     },
     {
-      name: "Ir. Anton Suherman",
+      name: "Ir. Anton Suherman, B.Eng",
       role: "Technical Director",
       image: "/img/about/anton.png",
       desc: (
         <div>
-          {Translator.t("profile-anton", lang)}
+          <div>{Translator.t("profile-anton-1", lang)}</div>
+          <div className="mt-4">{Translator.t("profile-anton-2", lang)}</div>
         </div>
       ),
     },
@@ -45,12 +49,8 @@ function TeamProfile() {
       image: "/img/about/joshua.png",
       desc: (
         <div>
-          <div>
-            {Translator.t("profile-joshua-1", lang)}
-          </div>
-          <div className="mt-4">
-            {Translator.t("profile-joshua-2", lang)}
-          </div>
+          <div>{Translator.t("profile-joshua-1", lang)}</div>
+          <div className="mt-4">{Translator.t("profile-joshua-2", lang)}</div>
         </div>
       ),
     },
@@ -60,18 +60,20 @@ function TeamProfile() {
     <div className="">
       <div className="mx-auto max-w-7xl flex min-h-[800px] mt-20">
         <div className="w-6/12 pr-8">
-          <div className="text-5xl font-bold text-[#0E4F94]">{Translator.t("team-profile", lang)}</div>
+          <div className="text-5xl font-bold text-[#0E4F94]">
+            {Translator.t("team-profile", lang)}
+          </div>
           <div className="text-4xl font-bold text-[#0E4F94] mt-5">
             {ProfileData[activeProfile].name}
           </div>
-          <div className="font-semibold mt-4">
+          <div className="mt-4 font-semibold">
             {ProfileData[activeProfile].role}
           </div>
-          <div className="mt-7 text-base">
+          <div className="text-base mt-7">
             {ProfileData[activeProfile].desc}
           </div>
         </div>
-        <div className="flex gap-2 w-6/12 mt-32">
+        <div className="flex w-6/12 gap-2 mt-32">
           {ProfileData.map((data, index) => (
             <div
               onClick={() => setactiveProfile(index)}

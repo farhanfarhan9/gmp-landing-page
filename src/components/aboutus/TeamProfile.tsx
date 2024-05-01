@@ -34,7 +34,7 @@ function TeamProfile() {
     },
     {
       name: "Ir. Anton Suherman, B.Eng",
-      role: "Technical Director",
+      role: "Engineering Director",
       image: "/img/about/anton.png",
       desc: (
         <div>
@@ -45,7 +45,7 @@ function TeamProfile() {
     },
     {
       name: "Joshua Alexander Arief B.Eng",
-      role: "Engineering Director",
+      role: "Product Development Director",
       image: "/img/about/joshua.png",
       desc: (
         <div>

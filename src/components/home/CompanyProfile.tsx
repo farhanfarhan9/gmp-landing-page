@@ -31,7 +31,7 @@ function CompanyProfile() {
         <div>
         <div
             className="bg-[#24AD69] hover:bg-green-700 text-[15px] text-white py-3 px-5 md:py-2 md:px-4 rounded-full cursor-pointer"
-            onClick={() => setIsModalOpen(true)} // Open modal on click
+            // onClick={() => setIsModalOpen(true)} // Open modal on click
           >
             {Translator.t("download", lang)}
           </div>

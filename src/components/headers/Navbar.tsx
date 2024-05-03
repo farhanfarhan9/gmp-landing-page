@@ -36,7 +36,7 @@ const Navbar = () => {
   const options_company = [
     {
       image: "/img/company-navbar/nadic.png",
-      url: "javascript:void(0);",
+      url: "https://nadic.co.id/",
     },
     {
       image: "/img/company-navbar/seg.png",
@@ -52,7 +52,7 @@ const Navbar = () => {
     },
     {
       image: "/img/company-navbar/bluewave.png",
-      url: "javascript:void(0);",
+      url: "https://bluewave.industries/login",
     },
     {
       image: "/img/company-navbar/utl.png",

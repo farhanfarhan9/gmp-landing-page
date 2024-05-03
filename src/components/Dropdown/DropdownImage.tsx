@@ -41,12 +41,18 @@ const DropdownImage = ({
         <div className="absolute z-50 bg-white border-2 shadow-lg rounded-xl">
           {options.map((option, index) => (
             <React.Fragment key={option.url}>
-              <div className="flex items-center justify-center w-full p-3 space-x-2">
-                <img src={option.image} alt={option.url} className="max-w-[100px]" />
+              <div className="flex items-center justify-center w-full p-3 space-x-2 hover:bg-[#F2F2F2]">
                 <a
                   href={option.url}
                   onClick={() => handleOptionClick(option.url)}
-                ></a>
+                  className=""
+                >
+                  <img
+                    src={option.image}
+                    alt={option.url}
+                    className="max-w-[100px]"
+                  />
+                </a>
               </div>
               {index !== options.length - 1 && <hr />}
             </React.Fragment>

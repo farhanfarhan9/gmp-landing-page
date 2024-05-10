@@ -6,10 +6,11 @@ import Translator from "@/utils/Translator";
 import LanguageSwitcher from "./LanguageSwitcher";
 import Dropdown from "@/components/Dropdown/Dropdown";
 import DropdownImage from "@/components/Dropdown/DropdownImage";
-
-import { useSearchParams } from "next/navigation";
+import { useSearchParams, usePathname } from "next/navigation";
 
 const Navbar = () => {
+  const pathname = usePathname();
+
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const searchParams = useSearchParams();
@@ -97,13 +98,19 @@ const Navbar = () => {
             <div className="flex items-center ml-4 xl:ml-6">
               <div className="flex ml-10 space-x-4 align-middle">
                 <a
-                  className="text-lg text-[#41444B] hover:text-gray-800 dark:hover:text-white px-2 py-1 rounded-md"
+                  className={`text-lg ${
+                    pathname === "/about-us"
+                      ? "text-blue-500"
+                      : "text-[#41444B]"
+                  } hover:text-gray-800 dark:hover:text-white px-2 py-1 rounded-md`}
                   href={Translator.gotoUrl("/about-us", lang)}
                 >
                   {Translator.t("about-us", lang)}
                 </a>
                 <Link
-                  className="text-lg text-[#41444B] hover:text-gray-800 dark:hover:text-white px-2 py-1 rounded-md"
+                  className={`text-lg ${
+                    pathname === "/project" ? "text-blue-500" : "text-[#41444B]"
+                  } hover:text-gray-800 dark:hover:text-white px-2 py-1 rounded-md`}
                   href={Translator.gotoUrl("/project", lang)}
                 >
                   {Translator.t("project", lang)}

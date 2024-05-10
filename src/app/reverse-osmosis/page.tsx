@@ -12,11 +12,11 @@ function ReverseOsmosis() {
       <div className="flex w-full justify-center bg-[#EDF2F5]">
         <img
           src="/img/solutions-and-product/machinaries-or-wastewater-technology/reverse-osmosis.png"
-          className="max-w-7xl w-full object-cover mt-5 xl:mt-48 px-5 xl:px-0 -my-40 z-50"
+          className="z-50 object-cover w-full px-5 mt-5 -my-40 max-w-7xl xl:mt-48 xl:px-0"
           alt=""
         />
       </div>
-      <div className="flex w-full justify-end">
+      <div className="flex justify-end w-full">
         <Image
           className="z-0"
           src="/img/solutions-and-product/pattern.png"
@@ -25,10 +25,10 @@ function ReverseOsmosis() {
           alt=""
         />
       </div>
-      <div className="flex w-full justify-center px-5 xl:px-0">
+      <div className="flex justify-center w-full px-5 xl:px-0">
         <div className="max-w-7xl">
           <div className="mt-5">
-            <span className="text-[#0E4F94] font-semibold">
+            <span className="text-[#0E4F94] text-4xl font-semibold">
               {Translator.t("reverse-osmosis-title", lang)}
             </span>
           </div>

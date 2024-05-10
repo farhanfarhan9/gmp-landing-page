@@ -22,9 +22,9 @@ const Contact = () => {
   }
   return (
     <div id="contact">
-      <div className="w-full flex justify-center">
-        <div className="max-w-7xl xl:flex px-5 xl:px-0 w-full">
-          <div className="w-full xl:w-2/5 flex flex-col items-center md:items-start">
+      <div className="flex justify-center w-full">
+        <div className="w-full px-5 max-w-7xl xl:flex xl:px-0">
+          <div className="flex flex-col items-center w-full xl:w-2/5 md:items-start">
             <Image
               width={236}
               height={48}
@@ -66,7 +66,7 @@ const Contact = () => {
               </a>
             </div>
           </div>
-          <div className="w-full xl:w-1/5 pt-10 xl:pt-0 flex flex-col items-center md:items-start">
+          <div className="flex flex-col items-center w-full pt-10 xl:w-1/5 xl:pt-0 md:items-start">
             <div className="font-bold">Quick Links</div>
             <div className="mt-5">
               <Link href={Translator.gotoUrl("/", lang)}>Home</Link>
@@ -86,7 +86,7 @@ const Contact = () => {
               </Link>
             </div>
           </div>
-          <div className="w-full xl:w-1/5 pt-10 xl:pt-0 flex flex-col items-center md:items-start">
+          <div className="flex flex-col items-center w-full pt-10 xl:w-1/5 xl:pt-0 md:items-start">
             <div className="font-bold">
               <div>Information</div>
             </div>
@@ -101,13 +101,13 @@ const Contact = () => {
               </Link>
             </div>
           </div>
-          <div className="w-full xl:w-1/5 pt-10 xl:pt-0 flex flex-col items-center md:items-start">
+          <div className="flex flex-col items-center w-full pt-10 xl:w-1/5 xl:pt-0 md:items-start">
             <form onSubmit={hadlesubmit}>
               <div className="font-bold text-center md:text-start">Send Us Your Email</div>
               <div className="mt-5">
                 <input
                   value={name}
-                  className="border border-black px-3 py-2 xl:w-full rounded-xl"
+                  className="border border-[#9C9C9C] px-3 py-2 xl:w-full rounded-md"
                   type="text"
                   placeholder="Full Name"
                   onChange={(e) => setName(e.target.value)}
@@ -116,13 +116,13 @@ const Contact = () => {
               <div className="mt-5">
                 <input
                   value={email}
-                  className="border border-black px-3 py-2 xl:w-full rounded-xl"
+                  className="border border-[#9C9C9C] px-3 py-2 xl:w-full rounded-md"
                   type="email"
                   placeholder="Email"
                   onChange={(e) => setEmail(e.target.value)}
                 ></input>
               </div>
-              <div className="mt-5 flex justify-center md:justify-start">
+              <div className="flex justify-center mt-5 md:justify-start">
                 <button
                   type="submit"
                   className="bg-[#0E4F94] text-white px-6 py-3 rounded-full"
@@ -137,8 +137,8 @@ const Contact = () => {
       <div className="mt-10">
         <hr className="border-[#0E4F94]" />
 
-        <div className="w-full flex justify-center my-10">
-          <div className="hidden xl:flex max-w-7xl w-full font-semibold justify-end">
+        <div className="flex justify-center w-full my-10">
+          <div className="justify-end hidden w-full font-semibold xl:flex max-w-7xl">
             <a
               href="https://www.youtube.com/@SatriaNusaEnjinering-wk4xl"
               target="_BLANK"
@@ -171,8 +171,8 @@ const Contact = () => {
               Satria Nusa Enjinering © All rights reserved Copyrights 2024
             </div>
           </div>
-          <div className="xl:hidden max-w-7xl w-full">
-            <div className="flex gap-5 justify-center">
+          <div className="w-full xl:hidden max-w-7xl">
+            <div className="flex justify-center gap-5">
               <a
                 href="https://www.youtube.com/@SatriaNusaEnjinering-wk4xl"
                 target="_BLANK"
@@ -202,7 +202,7 @@ const Contact = () => {
                 />
               </a>
             </div>
-            <div className="flex xl:hidden max-w-7xl w-full font-semibold justify-center mt-5 text-center">
+            <div className="flex justify-center w-full mt-5 font-semibold text-center xl:hidden max-w-7xl">
               <div className="px-5 xl:px-0">
                 Satria Nusa Enjinering © All rights reserved Copyrights 2024
               </div>

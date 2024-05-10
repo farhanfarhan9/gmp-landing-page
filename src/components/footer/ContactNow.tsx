@@ -53,7 +53,7 @@ const ContactNow = () => {
         </div>
         <div className="mb-9"></div>
         <div>
-          <button className="w-full hover:shadow-form rounded-md bg-green-800 border-4 py-3 px-8 text-base font-semibold text-white outline-none">
+          <button className="w-full px-8 py-3 text-base font-semibold text-white bg-green-800 border-4 rounded-md outline-none hover:shadow-form">
             Submit
           </button>
         </div>

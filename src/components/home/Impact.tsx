@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { useSearchParams } from "next/navigation";
 import ImpactEquivalent from "./ImpactEquivalent";
 
 const millisecondsPerDay = 24 * 60 * 60 * 1000;
@@ -13,11 +12,6 @@ const Impact = () => {
   useEffect(() => {
     if (typeof window !== "undefined") {
       const startDate = new Date("06/21/2023 00:00:00");
-      // const startDate = new Date("2023-06-21T10:00:00+08:00");
-
-      console.log(startDate);
-      // console.log(startDate1);
-      
       const currentDate = new Date();
       const elapsedTime = currentDate.getTime() - startDate.getTime();
       const totalDays = Math.floor(elapsedTime / millisecondsPerDay);
@@ -67,8 +61,12 @@ const Impact = () => {
                 height={100}
               />
               <div>
-                <div className="text-[#0E4F94] font-bold text-sm md:text-3xl">29+</div>
-                <div className="mt-3 font-bold text-sm md:text-base">Projects</div>
+                <div className="text-[#0E4F94] font-bold text-sm md:text-3xl">
+                  29+
+                </div>
+                <div className="mt-3 font-bold text-sm md:text-base">
+                  Projects
+                </div>
               </div>
             </div>
             <div className="flex items-center gap-2 md:gap-5">
@@ -93,7 +91,9 @@ const Impact = () => {
                     </div>
                   </div>
                 </div>
-                <div className="mt-3 font-bold text-sm md:text-base">Conserved Water</div>
+                <div className="mt-3 font-bold text-sm md:text-base">
+                  Conserved Water
+                </div>
               </div>
             </div>
           </div>

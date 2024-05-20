@@ -87,8 +87,8 @@ const Navbar = () => {
                   width={236}
                   height={48}
                   unoptimized
-                  className="object-scale-down pl-6 w-36 xl:pl-7"
-                  src="/img/bluewave/bluewave-logo.png"
+                  className="object-scale-down pl-6 cursor-default w-36 xl:pl-7"
+                  src="/img/company-navbar/iso.png"
                   alt="Logo"
                 />
               </span>

@@ -161,7 +161,7 @@ const Machineries = () => {
                   alt=""
                 />
                 <p className="mt-2 text-xl font-semibold text-center">
-                  Lamella Clarifier Tank
+                  Aquahelix AquaClear Cube
                 </p>
               </Link>
             </div>

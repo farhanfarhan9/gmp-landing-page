@@ -13,6 +13,11 @@ const Impact = () => {
   useEffect(() => {
     if (typeof window !== "undefined") {
       const startDate = new Date("06/21/2023 00:00:00");
+      // const startDate = new Date("2023-06-21T10:00:00+08:00");
+
+      console.log(startDate);
+      // console.log(startDate1);
+      
       const currentDate = new Date();
       const elapsedTime = currentDate.getTime() - startDate.getTime();
       const totalDays = Math.floor(elapsedTime / millisecondsPerDay);
@@ -20,11 +25,12 @@ const Impact = () => {
 
       const storedValue = localStorage.getItem("counterValue");
 
-      if (storedValue) {
-        setValue(parseFloat(storedValue));
-      } else {
-        setValue(1783605 + additionalValue);
-      }
+      // if (storedValue) {
+      //   setValue(parseFloat(storedValue));
+      // } else {
+      //   setValue(1783605 + additionalValue);
+      // }
+      setValue(1783605 + additionalValue);
 
       const interval = setInterval(() => {
         setValue((prevValue) => {

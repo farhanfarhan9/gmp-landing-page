@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { useSearchParams } from "next/navigation";
 import ImpactEquivalent from "./ImpactEquivalent";
 
 const millisecondsPerDay = 24 * 60 * 60 * 1000;
@@ -20,11 +19,12 @@ const Impact = () => {
 
       const storedValue = localStorage.getItem("counterValue");
 
-      if (storedValue) {
-        setValue(parseFloat(storedValue));
-      } else {
-        setValue(1783605 + additionalValue);
-      }
+      // if (storedValue) {
+      //   setValue(parseFloat(storedValue));
+      // } else {
+      //   setValue(1783605 + additionalValue);
+      // }
+      setValue(1783605 + additionalValue);
 
       const interval = setInterval(() => {
         setValue((prevValue) => {
@@ -61,8 +61,12 @@ const Impact = () => {
                 height={100}
               />
               <div>
-                <div className="text-[#0E4F94] font-bold text-sm md:text-3xl">29+</div>
-                <div className="mt-3 font-bold text-sm md:text-base">Projects</div>
+                <div className="text-[#0E4F94] font-bold text-sm md:text-3xl">
+                  29+
+                </div>
+                <div className="mt-3 font-bold text-sm md:text-base">
+                  Projects
+                </div>
               </div>
             </div>
             <div className="flex items-center gap-2 md:gap-5">
@@ -87,7 +91,9 @@ const Impact = () => {
                     </div>
                   </div>
                 </div>
-                <div className="mt-3 font-bold text-sm md:text-base">Conserved Water</div>
+                <div className="mt-3 font-bold text-sm md:text-base">
+                  Conserved Water
+                </div>
               </div>
             </div>
           </div>

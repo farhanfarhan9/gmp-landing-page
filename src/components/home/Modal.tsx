@@ -37,22 +37,17 @@ function Modal({ isOpen, onClose }: ModalProps) {
     e.preventDefault();
 
     try {
-      const response = await fetch("/submitForm.php", {
-        method: "POST",
+      const response = await fetch("https://api.satrianusa.group/api/send-file", {
+        method: "POST", // Specify the request method as POST
         headers: {
-          "Content-Type": "application/json",
+          "Content-Type": "application/json", // Set the content type to JSON
         },
         body: JSON.stringify(formData),
       });
-
-      if (response.ok) {
-        onClose();
-        alert("Form submitted successfully");
-      } else {
-        throw new Error("Failed to submit form data");
-      }
+      console.log(response);
+      
     } catch (error) {
-      console.error("Error submitting form data:", error);
+      console.log("Error submitting form data:", error);
     }
   };
 

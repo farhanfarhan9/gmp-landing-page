@@ -10,9 +10,11 @@ function WetScrubber() {
   return (
     <>
       <div className="flex w-full justify-center bg-[#EDF2F5]">
-        <img
+        <Image
+          width={900}
+          height={600}
           src="/img/solutions-and-product/machinaries-or-wastewater-technology/wet-scrubber.png"
-          className="z-50 object-cover w-full px-5 mt-5 -my-40 max-w-7xl xl:mt-20 xl:px-0"
+          className="z-20 object-cover w-full px-5 mt-5 -my-40 max-w-7xl xl:mt-20 xl:px-0"
           alt=""
         />
       </div>

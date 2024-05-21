@@ -10,9 +10,11 @@ function LamellaClarifierTank() {
   return (
     <>
       <div className="flex w-full justify-center bg-[#EDF2F5]">
-        <img
+        <Image
+          width={900}
+          height={600}
           src="/img/solutions-and-product/machinaries-or-wastewater-technology/lct-2.png"
-          className="z-50 object-cover w-full px-5 mt-5 -my-40 max-w-7xl xl:mt-20 xl:px-0"
+          className="z-20 object-cover w-full px-5 mt-5 -my-40 max-w-7xl xl:mt-20 xl:px-0"
           alt=""
         />
       </div>
@@ -40,7 +42,7 @@ function LamellaClarifierTank() {
             <li className="list-decimal">{Translator.t("aac-2", lang)}</li>
             <li className="list-decimal">{Translator.t("aac-3", lang)}</li>
           </ol>
-          
+
           <p className="my-20 text-[#9C9C9C]">
             Design and Manufacturing by PT. Satria Nusa Enjinering
           </p>

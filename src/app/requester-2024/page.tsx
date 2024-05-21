@@ -1,15 +1,23 @@
 "use client";
 import Translator from "@/utils/Translator";
 import Image from "next/image";
-import { React, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 
+interface RequesterData {
+  id: number;
+  name: string;
+  position: string;
+  email: string;
+  phone: string;
+}
 function Bluewave() {
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang") || undefined;
 
-  const [data, setData] = useState([]); // State to store API data
+  const [data, setData] = useState<RequesterData[]>([]); // State to store API data, initialized as an array of CompanyData
+
 
   useEffect(() => {
     // Define the async function to fetch data from the API
@@ -54,7 +62,7 @@ function Bluewave() {
             </thead>
             <tbody>
               {data.map((item, index) => (
-                <tr className="border-b odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 dark:border-gray-700">
+                <tr key={index} className="border-b odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 dark:border-gray-700">
                   <th
                     scope="row"
                     className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"

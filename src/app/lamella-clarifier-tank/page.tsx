@@ -12,11 +12,11 @@ function LamellaClarifierTank() {
       <div className="flex w-full justify-center bg-[#EDF2F5]">
         <img
           src="/img/solutions-and-product/machinaries-or-wastewater-technology/lct-2.png"
-          className="z-50 object-cover w-full px-5 mt-5 -my-40 max-w-7xl xl:mt-48 xl:px-0"
+          className="z-50 object-cover w-full px-5 mt-5 -my-40 max-w-7xl xl:mt-20 xl:px-0"
           alt=""
         />
       </div>
-      <div className="flex justify-end w-full">
+      <div className="absolute z-10 flex justify-end w-full">
         <Image
           className="z-0"
           src="/img/solutions-and-product/pattern.png"
@@ -25,7 +25,7 @@ function LamellaClarifierTank() {
           alt=""
         />
       </div>
-      <div className="flex justify-center w-full px-5 xl:px-0">
+      <div className="relative z-20 flex justify-center w-full px-5 mt-44 xl:px-0">
         <div className="max-w-7xl">
           <div className="mt-5">
             <span className="text-[#0E4F94] text-4xl font-semibold">

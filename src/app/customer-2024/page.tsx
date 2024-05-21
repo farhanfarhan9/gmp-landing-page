@@ -1,13 +1,33 @@
 "use client";
 import Translator from "@/utils/Translator";
 import Image from "next/image";
-import React from "react";
+import { React, useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 
 function Bluewave() {
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang") || undefined;
+
+  const [data, setData] = useState([]); // State to store API data
+
+  useEffect(() => {
+    // Define the async function to fetch data from the API
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          "https://api.satrianusa.group/api/get-downloader"
+        );
+        const result = await response.json();
+        setData(result); // Update state with fetched data
+      } catch (error) {
+        console.error("Error fetching company profile data:", error);
+      }
+    };
+
+    fetchData(); // Call the function to fetch data
+  }, []); 
+  
   return (
     <>
       <div className="mx-auto my-20 max-w-7xl">
@@ -15,6 +35,9 @@ function Bluewave() {
           <table className="w-full text-sm text-left text-gray-500 rtl:text-right dark:text-gray-400">
             <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
               <tr>
+                <th scope="col" className="px-6 py-3">
+                  No
+                </th>
                 <th scope="col" className="px-6 py-3">
                   Fullname
                 </th>
@@ -30,61 +53,21 @@ function Bluewave() {
               </tr>
             </thead>
             <tbody>
-              <tr className="border-b odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 dark:border-gray-700">
-                <th
-                  scope="row"
-                  className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-                >
-                  Apple MacBook Pro 17"
-                </th>
-                <td className="px-6 py-4">Silver</td>
-                <td className="px-6 py-4">Laptop</td>
-                <td className="px-6 py-4">$2999</td>
-              </tr>
-              <tr className="border-b odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 dark:border-gray-700">
-                <th
-                  scope="row"
-                  className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-                >
-                  Microsoft Surface Pro
-                </th>
-                <td className="px-6 py-4">White</td>
-                <td className="px-6 py-4">Laptop PC</td>
-                <td className="px-6 py-4">$1999</td>
-              </tr>
-              <tr className="border-b odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 dark:border-gray-700">
-                <th
-                  scope="row"
-                  className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-                >
-                  Magic Mouse 2
-                </th>
-                <td className="px-6 py-4">Black</td>
-                <td className="px-6 py-4">Accessories</td>
-                <td className="px-6 py-4">$99</td>
-              </tr>
-              <tr className="border-b odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 dark:border-gray-700">
-                <th
-                  scope="row"
-                  className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-                >
-                  Google Pixel Phone
-                </th>
-                <td className="px-6 py-4">Gray</td>
-                <td className="px-6 py-4">Phone</td>
-                <td className="px-6 py-4">$799</td>
-              </tr>
-              <tr>
-                <th
-                  scope="row"
-                  className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-                >
-                  Apple Watch 5
-                </th>
-                <td className="px-6 py-4">Red</td>
-                <td className="px-6 py-4">Wearables</td>
-                <td className="px-6 py-4">$999</td>
-              </tr>
+              {data.map((item, index) => (
+                <tr className="border-b odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 dark:border-gray-700">
+                  <th
+                    scope="row"
+                    className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                  >
+                    {index+1}
+
+                  </th>
+                  <td className="px-6 py-4">{item.name}</td>
+                  <td className="px-6 py-4">{item.position}</td>
+                  <td className="px-6 py-4">{item.email}</td>
+                  <td className="px-6 py-4">{item.phone}</td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>

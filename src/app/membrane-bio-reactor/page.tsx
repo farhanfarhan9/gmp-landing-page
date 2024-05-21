@@ -32,16 +32,16 @@ function MachinariesOrWastewaterTechnology() {
               {Translator.t("membrane-bio-reactor-title", lang)}
             </span>
           </div>
-          <p className="mt-5 leading-6">
+          <p className="mt-5 text-base leading-6">
             {Translator.t("membrane-bio-reactor-desc-1", lang)}
           </p>
-          <p className="mt-5 leading-6">
+          <p className="mt-5 text-base leading-6">
             {Translator.t("membrane-bio-reactor-desc-2", lang)}
           </p>
-          <p className="mt-5 leading-6">
+          <p className="mt-5 text-base leading-6">
             {Translator.t("membrane-bio-reactor-desc-3", lang)}
           </p>
-          <div className="mt-5 leading-6">
+          <div className="mt-5 text-base leading-6">
             <ul className="list-decimal list-inside">
               <li>{Translator.t("membrane-bio-reactor-desc-3-1", lang)}</li>
               <li>{Translator.t("membrane-bio-reactor-desc-3-2", lang)}</li>

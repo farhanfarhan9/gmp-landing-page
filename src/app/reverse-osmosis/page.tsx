@@ -32,19 +32,19 @@ function ReverseOsmosis() {
               {Translator.t("reverse-osmosis-title", lang)}
             </span>
           </div>
-          <p className="mt-5 leading-6">
+          <p className="mt-5 text-base leading-6">
             {Translator.t("reverse-osmosis-desc-1", lang)}
           </p>
-          <p className="mt-5 leading-6">
+          <p className="mt-5 text-base leading-6">
             {Translator.t("reverse-osmosis-desc-2", lang)}
           </p>
-          <p className="mt-5 leading-6">
+          <p className="mt-5 text-base leading-6">
             {Translator.t("reverse-osmosis-desc-3", lang)}
           </p>
-          <p className="mt-5 leading-6">
+          <p className="mt-5 text-base leading-6">
             {Translator.t("reverse-osmosis-desc-4", lang)}
           </p>
-          <p className="mt-5 leading-6">
+          <p className="mt-5 text-base leading-6">
             {Translator.t("reverse-osmosis-desc-5", lang)}
           </p>
           <p className="my-20 text-[#9C9C9C]">

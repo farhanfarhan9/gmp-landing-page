@@ -32,10 +32,10 @@ function LamellaClarifierTank() {
               {Translator.t("lamella-clarifier-tank", lang)}
             </span>
           </div>
-          <p className="mt-5 leading-6">
+          <p className="mt-5 text-base leading-6">
             {Translator.t("lamella-clarifier-tank-desc", lang)}
           </p>
-          <ol className="mt-10 ml-6 space-y-4">
+          <ol className="mt-10 ml-6 space-y-4 text-base">
             <li className="list-decimal">{Translator.t("aac-1", lang)}</li>
             <li className="list-decimal">{Translator.t("aac-2", lang)}</li>
             <li className="list-decimal">{Translator.t("aac-3", lang)}</li>

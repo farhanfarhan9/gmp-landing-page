@@ -100,17 +100,17 @@ const Navbar = () => {
                 <a
                   className={`text-lg ${
                     pathname === "/about-us"
-                      ? "text-blue-500"
+                      ? "text-[#0C5095]"
                       : "text-[#41444B]"
-                  } hover:text-gray-800 dark:hover:text-white px-2 py-1 rounded-md`}
+                  } hover:text-[#0C5095] dark:hover:text-white px-2 py-1 rounded-md`}
                   href={Translator.gotoUrl("/about-us", lang)}
                 >
                   {Translator.t("about-us", lang)}
                 </a>
                 <Link
                   className={`text-lg ${
-                    pathname === "/project" ? "text-blue-500" : "text-[#41444B]"
-                  } hover:text-gray-800 dark:hover:text-white px-2 py-1 rounded-md`}
+                    pathname === "/project" ? "text-[#0C5095]" : "text-[#41444B]"
+                  } hover:text-[#0C5095] dark:hover:text-white px-2 py-1 rounded-md`}
                   href={Translator.gotoUrl("/project", lang)}
                 >
                   {Translator.t("project", lang)}

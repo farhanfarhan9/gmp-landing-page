@@ -32,16 +32,16 @@ function FilterPress() {
               {Translator.t("filter-press-title", lang)}
             </span>
           </div>
-          <p className="mt-5 leading-6">
+          <p className="mt-5 text-base leading-6">
             {Translator.t("filter-press-desc-1", lang)}
           </p>
-          <p className="mt-5 leading-6">
+          <p className="mt-5 text-base leading-6">
             {Translator.t("filter-press-desc-2", lang)}
           </p>
-          <p className="mt-5 leading-6">
+          <p className="mt-5 text-base leading-6">
             {Translator.t("filter-press-desc-3", lang)}
           </p>
-          <div className="mt-5 leading-6">
+          <div className="mt-5 text-base leading-6">
             <ul className="list-decimal list-inside">
               <li>
                 <span>{Translator.t("filter-press-desc-4-1", lang)} </span>

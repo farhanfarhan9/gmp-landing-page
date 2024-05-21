@@ -32,16 +32,16 @@ function DissolvedAirFlotation() {
               {Translator.t("dissolved-air-flotation", lang)}
             </span>
           </div>
-          <p className="mt-5 leading-6">
+          <p className="mt-5 text-base leading-6">
             {Translator.t("dissolved-air-flotation-desc-1", lang)}
           </p>
-          <p className="mt-5 leading-6">
+          <p className="mt-5 text-base leading-6">
             {Translator.t("dissolved-air-flotation-desc-2", lang)}
           </p>
-          <p className="mt-5 leading-6">
+          <p className="mt-5 text-base leading-6">
             {Translator.t("dissolved-air-flotation-desc-3", lang)}
           </p>
-          <p className="mt-5 leading-6">
+          <p className="mt-5 text-base leading-6">
             {Translator.t("dissolved-air-flotation-desc-4", lang)}
           </p>
           <p className="my-20 text-[#9C9C9C]">

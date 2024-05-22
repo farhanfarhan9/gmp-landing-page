@@ -94,13 +94,13 @@ const Navbar = () => {
                 />
               </span>
               <div className="absolute z-50 invisible bg-white border-2 shadow-lg left-10 w-fit rounded-xl group-hover:visible">
-                <div className="block p-2 text-sm font-medium hover:text-black">
+                <div className="block p-2 text-sm font-medium cursor-default hover:text-black">
                   ISO 9001:2015
                 </div>
-                <div className="block p-2 text-sm font-medium hover:text-black">
+                <div className="block p-2 text-sm font-medium cursor-default hover:text-black">
                   ISO 14001:2015
                 </div>
-                <div className="block p-2 text-sm font-medium hover:text-black">
+                <div className="block p-2 text-sm font-medium cursor-default hover:text-black">
                   ISO 45001:2018
                 </div>
               </div>

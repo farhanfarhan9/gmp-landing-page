@@ -32,7 +32,7 @@ function Bluewave() {
             method: 'GET', // Assuming GET method
             headers: {
               'Content-Type': 'application/json',
-              'password': 'password' // Add the header here
+              'password': password // Add the header here
             }
           });
           const result = await response.json();
@@ -48,11 +48,7 @@ function Bluewave() {
 
   const handlePasswordSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (password === correctPassword) {
-      setIsAuthorized(true);
-    } else {
-      alert("Incorrect password");
-    }
+    setIsAuthorized(true);
   };
 
   return (

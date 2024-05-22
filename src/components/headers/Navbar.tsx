@@ -81,18 +81,33 @@ const Navbar = () => {
                 />
               </span>
             </Link>
-            <Link href={Translator.gotoUrl("/bluewave", lang)}>
+
+            <div className="relative py-2 cursor-pointer group">
               <span className="flex-shrink-0">
                 <Image
                   width={236}
                   height={48}
                   unoptimized
-                  className="object-scale-down pl-6 cursor-default w-36 xl:pl-7"
+                  className="object-scale-down ml-6 cursor-default w-36 xl:ml-7 "
                   src="/img/company-navbar/iso.png"
                   alt="Logo"
                 />
               </span>
-            </Link>
+              <div className="absolute z-50 invisible bg-white border-2 shadow-lg left-10 w-fit rounded-xl group-hover:visible">
+                <div className="block p-2 text-sm font-medium hover:text-black">
+                  ISO 9001:2015
+                </div>
+                <div className="block p-2 text-sm font-medium hover:text-black">
+                  ISO 14001:2015
+                </div>
+                <div className="block p-2 text-sm font-medium hover:text-black">
+                  ISO 45001:2018
+                </div>
+              </div>
+              {/* <div className="absolute z-50 flex flex-col invisible w-full px-4 py-1 text-gray-800 bg-red-100 shadow-xl group-hover:visible">
+                  
+                </div> */}
+            </div>
           </div>
           <div className="hidden xl:block">
             <div className="flex items-center ml-4 xl:ml-6">
@@ -109,7 +124,9 @@ const Navbar = () => {
                 </a>
                 <Link
                   className={`text-lg ${
-                    pathname === "/project" ? "text-[#0C5095]" : "text-[#41444B]"
+                    pathname === "/project"
+                      ? "text-[#0C5095]"
+                      : "text-[#41444B]"
                   } hover:text-[#0C5095] dark:hover:text-white px-2 py-1 rounded-md`}
                   href={Translator.gotoUrl("/project", lang)}
                 >

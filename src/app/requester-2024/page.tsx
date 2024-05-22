@@ -23,9 +23,13 @@ function Bluewave() {
     // Define the async function to fetch data from the API
     const fetchData = async () => {
       try {
-        const response = await fetch(
-          "https://api.satrianusa.group/api/get-downloader"
-        );
+        const response = await fetch('https://api.satrianusa.group/api/get-downloader', {
+          method: 'GET', // Assuming GET method
+          headers: {
+            'Content-Type': 'application/json',
+            'password': 'password' // Add the header here
+          }
+        });
         const result = await response.json();
         setData(result); // Update state with fetched data
       } catch (error) {

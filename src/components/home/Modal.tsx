@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import Translator from "@/utils/Translator";
+import toast, { Toaster } from 'react-hot-toast';
 
 interface ModalProps {
   isOpen: boolean;
@@ -35,7 +36,9 @@ function Modal({ isOpen, onClose }: ModalProps) {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
+    onClose();
+    setFormData({ name: "", position: "", email: "", phone: "" });
+    toast.success("Submission successful! Please check your email for the company profile document.",{ duration: 3000 });
     try {
       const response = await fetch("https://api.satrianusa.group/api/send-file", {
         method: "POST", // Specify the request method as POST
@@ -44,7 +47,6 @@ function Modal({ isOpen, onClose }: ModalProps) {
         },
         body: JSON.stringify(formData),
       });
-      console.log(response);
       
     } catch (error) {
       console.log("Error submitting form data:", error);

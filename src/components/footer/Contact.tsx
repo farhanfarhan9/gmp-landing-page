@@ -44,7 +44,7 @@ const Contact = () => {
                   height={25}
                   unoptimized
                   className=""
-                  src="/img/footer/wa.png"
+                  src="/img/footer/wa.svg"
                   alt="WhatsApp Logo"
                 />
               </div>
@@ -57,7 +57,7 @@ const Contact = () => {
                   height={25}
                   unoptimized
                   className=""
-                  src="/img/footer/email.png"
+                  src="/img/footer/email.svg"
                   alt="Email Logo"
                 />
               </div>
@@ -149,7 +149,7 @@ const Contact = () => {
                 height={25}
                 unoptimized
                 className=""
-                src="/img/footer/youtube.png"
+                src="/img/footer/youtube.svg"
                 alt="Workflow"
               />
             </a>
@@ -163,7 +163,7 @@ const Contact = () => {
                 height={25}
                 unoptimized
                 className=""
-                src="/img/footer/linkedin.png"
+                src="/img/footer/linkedin.svg"
                 alt="Workflow"
               />
             </a>
@@ -183,7 +183,7 @@ const Contact = () => {
                   height={25}
                   unoptimized
                   className=""
-                  src="/img/footer/youtube.png"
+                  src="/img/footer/youtube.svg"
                   alt="Workflow"
                 />
               </a>
@@ -197,7 +197,7 @@ const Contact = () => {
                   height={25}
                   unoptimized
                   className=""
-                  src="/img/footer/linkedin.png"
+                  src="/img/footer/linkedin.svg"
                   alt="Workflow"
                 />
               </a>

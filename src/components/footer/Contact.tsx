@@ -29,7 +29,7 @@ const Contact = () => {
               width={236}
               height={48}
               unoptimized
-              className=""
+              className="my-auto"
               src="/logo_k3.png"
               alt="Workflow"
             />
@@ -38,12 +38,11 @@ const Contact = () => {
             </div>
             <div className="mt-10 font-bold">Contact Us</div>
             <div className="flex mt-3">
-              <div className="mr-2">
+              <div className="my-auto mr-2">
                 <Image
                   width={25}
                   height={25}
                   unoptimized
-                  className=""
                   src="/img/footer/wa.svg"
                   alt="WhatsApp Logo"
                 />
@@ -51,7 +50,7 @@ const Contact = () => {
               <a href="tel:+6281534617975">+6281534617975</a>
             </div>
             <div className="flex mt-3">
-              <div className="mr-2">
+              <div className="my-auto mr-2">
                 <Image
                   width={25}
                   height={25}
@@ -103,7 +102,9 @@ const Contact = () => {
           </div>
           <div className="flex flex-col items-center w-full pt-10 xl:w-1/5 xl:pt-0 md:items-start">
             <form onSubmit={hadlesubmit}>
-              <div className="font-bold text-center md:text-start">Send Us Your Email</div>
+              <div className="font-bold text-center md:text-start">
+                Send Us Your Email
+              </div>
               <div className="mt-5">
                 <input
                   value={name}

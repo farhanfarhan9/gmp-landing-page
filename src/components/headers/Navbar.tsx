@@ -97,9 +97,11 @@ const Navbar = () => {
                 <div className="block p-2 text-sm font-medium cursor-default hover:text-black">
                   ISO 9001:2015
                 </div>
+                <hr />
                 <div className="block p-2 text-sm font-medium cursor-default hover:text-black">
                   ISO 14001:2015
                 </div>
+                <hr />
                 <div className="block p-2 text-sm font-medium cursor-default hover:text-black">
                   ISO 45001:2018
                 </div>

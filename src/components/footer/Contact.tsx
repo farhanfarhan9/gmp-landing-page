@@ -25,14 +25,39 @@ const Contact = () => {
       <div className="flex justify-center w-full">
         <div className="w-full px-5 max-w-7xl xl:flex xl:px-0">
           <div className="flex flex-col items-center w-full xl:w-2/5 md:items-start">
-            <Image
-              width={236}
-              height={48}
-              unoptimized
-              className="my-auto"
-              src="/logo_k3.png"
-              alt="Workflow"
-            />
+            <div className="flex">
+              <Image
+                width={236}
+                height={48}
+                unoptimized
+                className="my-auto"
+                src="/logo_k3.png"
+                alt="Workflow"
+              />
+              <div className="relative py-2 cursor-pointer group whitespace-nowrap">
+                  <Image
+                    width={236}
+                    height={48}
+                    unoptimized
+                    className="object-scale-down ml-2 cursor-default w-36 xl:ml-3 "
+                    src="/img/company-navbar/iso.png"
+                    alt="Logo"
+                  />
+                <div className="absolute z-50 invisible bg-white border-2 shadow-lg -left-10 lg:left-10 w-fit rounded-xl group-hover:visible">
+                  <div className="block p-2 text-sm font-medium cursor-default hover:text-black">
+                    ISO 9001:2015
+                  </div>
+                  <hr />
+                  <div className="block p-2 text-sm font-medium cursor-default hover:text-black">
+                    ISO 14001:2015
+                  </div>
+                  <hr />
+                  <div className="block p-2 text-sm font-medium cursor-default hover:text-black">
+                    ISO 45001:2018
+                  </div>
+                </div>
+              </div>
+            </div>
             <div className="text-sm font-light">
               Sustainability Starts from Reliable Engineering
             </div>

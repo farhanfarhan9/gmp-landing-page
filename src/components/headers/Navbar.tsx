@@ -106,9 +106,6 @@ const Navbar = () => {
                   ISO 45001:2018
                 </div>
               </div>
-              {/* <div className="absolute z-50 flex flex-col invisible w-full px-4 py-1 text-gray-800 bg-red-100 shadow-xl group-hover:visible">
-                  
-                </div> */}
             </div>
           </div>
           <div className="hidden xl:block">

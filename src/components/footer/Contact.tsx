@@ -43,7 +43,7 @@ const Contact = () => {
                     src="/img/company-navbar/iso.png"
                     alt="Logo"
                   />
-                <div className="absolute z-50 invisible bg-white border-2 shadow-lg -left-10 lg:left-10 w-fit rounded-xl group-hover:visible">
+                <div className="absolute z-50 invisible bg-white border-2 shadow-lg -left-10 lg:left-6 w-fit rounded-xl group-hover:visible">
                   <div className="block p-2 text-sm font-medium cursor-default hover:text-black">
                     ISO 9001:2015
                   </div>

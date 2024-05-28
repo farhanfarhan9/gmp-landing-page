@@ -28,7 +28,7 @@ function AboutHead() {
         alt=""
       />
       <div className="mx-4 mt-16 mb-12 md:mx-auto max-w-7xl md:mb-64">
-        <div className="text-xl md:text-5xl max-w-3xl mx-auto font-bold text-[#0E4F94] text-center capitalize leading-tight">
+        <div className="text-xl md:text-5xl max-w-3xl mx-auto font-bold text-[#0E4F94] text-center capitalize leading-tight" style={{ lineHeight: 1.25 }}>
           {Translator.t("about-us-title", lang)}
         </div>
         <div className="text-base mt-7">

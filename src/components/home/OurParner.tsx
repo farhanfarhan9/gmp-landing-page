@@ -79,6 +79,10 @@ function OurParner() {
       img: "/img/partner/ebara.png",
       alt: "ebara",
     },
+    {
+      img: "/img/partner/rockwell.png",
+      alt: "rockwell-automation",
+    },
   ];
   return (
     <div className="flex flex-col justify-between gap-10 py-20 mx-4 my-10 md:mx-auto md:max-w-7xl md:flex-row md:gap-3">

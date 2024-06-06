@@ -19,48 +19,6 @@ const Navbar = () => {
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
-
-  const options = [
-    {
-      text: Translator.t("machinaries-title", lang),
-      url: Translator.gotoUrl("/machinaries-or-wastewater-technology", lang),
-    },
-    {
-      text: Translator.t("bluewave-industries", lang),
-      url: Translator.gotoUrl("/bluewave", lang),
-    },
-    {
-      text: Translator.t("consumables", lang),
-      url: Translator.gotoUrl("/bacteria", lang),
-    },
-  ];
-  const options_company = [
-    {
-      image: "/img/company-navbar/nadic.png",
-      url: "https://nadic.co.id/",
-    },
-    {
-      image: "/img/company-navbar/seg.png",
-      url: "javascript:void(0);",
-    },
-    {
-      image: "/img/company-navbar/smi.png",
-      url: "javascript:void(0);",
-    },
-    {
-      image: "/img/company-navbar/sge.png",
-      url: "javascript:void(0);",
-    },
-    {
-      image: "/img/company-navbar/bluewave.png",
-      url: "https://bluewave.industries/login",
-    },
-    {
-      image: "/img/company-navbar/utl.png",
-      url: "javascript:void(0);",
-    },
-  ];
-
   return (
     <nav className="bg-white dark:bg-gray-800">
       <div className="mx-auto font-semibold max-w-7xl">
@@ -76,41 +34,15 @@ const Navbar = () => {
                   height={48}
                   unoptimized
                   className="pl-6 xl:pl-0"
-                  src="/logo_k3.png"
+                  src="/logo.png"
                   alt="Logo"
                 />
               </span>
             </Link>
-
-            <div className="relative py-2 cursor-pointer group">
-              <span className="flex-shrink-0">
-                <Image
-                  width={236}
-                  height={48}
-                  unoptimized
-                  className="object-scale-down ml-6 cursor-default w-36 xl:ml-7 "
-                  src="/img/company-navbar/iso.png"
-                  alt="Logo"
-                />
-              </span>
-              <div className="absolute z-50 invisible bg-white border-2 shadow-lg left-10 w-fit rounded-xl group-hover:visible">
-                <div className="block p-2 text-sm font-medium cursor-default hover:text-black">
-                  ISO 9001:2015
-                </div>
-                <hr />
-                <div className="block p-2 text-sm font-medium cursor-default hover:text-black">
-                  ISO 14001:2015
-                </div>
-                <hr />
-                <div className="block p-2 text-sm font-medium cursor-default hover:text-black">
-                  ISO 45001:2018
-                </div>
-              </div>
-            </div>
           </div>
           <div className="hidden xl:block">
             <div className="flex items-center ml-4 xl:ml-6">
-              <div className="flex ml-10 space-x-4 align-middle">
+              <div className="flex ml-10 space-x-4 text-base font-normal align-middle">
                 <a
                   className={`text-lg ${
                     pathname === "/about-us"
@@ -119,30 +51,50 @@ const Navbar = () => {
                   } hover:text-[#0C5095] dark:hover:text-white px-2 py-1 rounded-md`}
                   href={Translator.gotoUrl("/about-us", lang)}
                 >
-                  {Translator.t("about-us", lang)}
+                  About Us
                 </a>
                 <Link
                   className={`text-lg ${
-                    pathname === "/project"
+                    pathname === "/product-services"
                       ? "text-[#0C5095]"
                       : "text-[#41444B]"
                   } hover:text-[#0C5095] dark:hover:text-white px-2 py-1 rounded-md`}
-                  href={Translator.gotoUrl("/project", lang)}
+                  href="/product & Services"
                 >
-                  {Translator.t("project", lang)}
+                  Product & Services
+                </Link>
+                <Link
+                  className={`text-lg ${
+                    pathname === "/infrastructure"
+                      ? "text-[#0C5095]"
+                      : "text-[#41444B]"
+                  } hover:text-[#0C5095] dark:hover:text-white px-2 py-1 rounded-md`}
+                  href="/product & Services"
+                >
+                  Infrastructure
+                </Link>
+                <Link
+                  className={`text-lg ${
+                    pathname === "/awards" ? "text-[#0C5095]" : "text-[#41444B]"
+                  } hover:text-[#0C5095] dark:hover:text-white px-2 py-1 rounded-md`}
+                  href="/product & Services"
+                >
+                  Awards
+                </Link>
+                <Link
+                  className={`text-lg ${
+                    pathname === "/partners"
+                      ? "text-[#0C5095]"
+                      : "text-[#41444B]"
+                  } hover:text-[#0C5095] dark:hover:text-white px-2 py-1 rounded-md`}
+                  href="/product & Services"
+                >
+                  Partners
                 </Link>
                 <div>
-                  <Dropdown
-                    options={options}
-                    title={Translator.t("sol-product", lang)}
-                  />
-                </div>
-                <LanguageSwitcher />
-                <div>
-                  <DropdownImage
-                    options={options_company}
-                    title="Satria Nusa Group"
-                  />
+                  <div className="px-4 py-2 bg-white border border-[#0088BB] rounded-lg">
+                    <span className="text-[#0088BB]">Contact us</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -173,33 +125,37 @@ const Navbar = () => {
               className="block px-2 py-1 text-base font-medium text-gray-500 rounded-md hover:text-gray-800 dark:text-white"
               href="/about-us"
             >
-              {Translator.t("about-us", lang)}
+              About Us
             </a>
             <a
               className="block px-2 py-1 text-base font-medium text-gray-500 rounded-md hover:text-gray-800 dark:text-white"
-              href="/project"
+              href="/product-services"
             >
-              {Translator.t("project", lang)}
+              Product & Services
             </a>
             <Link
               className="block px-2 py-1 text-base font-medium text-gray-500 rounded-md hover:text-gray-800 dark:hover:text-white"
-              href="/machinaries-or-wastewater-technology"
+              href="/infrastructure"
             >
-              {Translator.t("machinaries-title", lang)}
+              Infrastructure
             </Link>
             <Link
               className="block px-2 py-1 text-base font-medium text-gray-500 rounded-md hover:text-gray-800 dark:hover:text-white"
-              href="/bluewave"
+              href="/awards"
             >
-              {Translator.t("bluewave-industries", lang)}
+              Awards
             </Link>
             <Link
               className="block px-2 py-1 text-base font-medium text-gray-500 rounded-md hover:text-gray-800 dark:hover:text-white"
-              href="/bacteria"
+              href="/partners"
             >
-              {Translator.t("consumables", lang)}
+              Partners
             </Link>
-            <LanguageSwitcher />
+            <div>
+              <div className="px-4 py-2 bg-white border w-fit border-[#0088BB] rounded-lg">
+                <span className="text-[#0088BB] text-base">Contact us</span>
+              </div>
+            </div>
           </div>
         </div>
       )}

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@googlemaps/js-api-loader": "^1.16.6",
     "@headlessui/react": "^1.7.15",
     "@loadable/component": "^5.15.3",
     "@types/node": "20.3.1",
@@ -37,6 +38,7 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.10",
+    "@types/google.maps": "^3.55.9",
     "@types/js-cookie": "^3.0.4",
     "@types/react-slick": "^0.23.10",
     "@types/react-transition-group": "^4.4.6",

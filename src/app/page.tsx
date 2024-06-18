@@ -35,7 +35,6 @@ export default function HomePage() {
       <AwardAchievement />
       <Partners />
       <Maps/>
-      <OurParner />
     </>
   );
 }

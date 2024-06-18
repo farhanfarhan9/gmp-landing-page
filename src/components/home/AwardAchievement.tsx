@@ -14,7 +14,7 @@ function AwardAchievement() {
         Sales Productivity
       </div>
       <div className="container">
-        <div className="flex flex-col grid-cols-9 p-2 mx-auto text-white md:grid ">
+        <div className="flex flex-col grid-cols-9 pt-2 mx-auto overflow-y-auto text-white max-h-lvh md:grid">
           <div className="flex flex-row-reverse pt-5 md:contents">
             <div className="col-start-1 col-end-5 px-4 py-2  ml-auto bg-[#098AD2] rounded-full shadow-md h-fit">
               <h3 className="text-lg font-semibold">1995 & 1996</h3>
@@ -25,7 +25,7 @@ function AwardAchievement() {
               </div>
               <div className="absolute w-6 h-6 -mt-2 bg-white border-4 border-[#098AD2] rounded-full shadow top-1"></div>
             </div>
-            <div className="col-start-6 col-end-10 space-y-3 leading-tight text-justify">
+            <div className="col-start-6 col-end-10 pb-10 space-y-3 leading-tight text-justify">
               <p className="text-xl text-[#098AD2] font-semibold">
                 THE BEST DISTRIBUTOR
               </p>
@@ -35,7 +35,7 @@ function AwardAchievement() {
             </div>
           </div>
           <div className="flex pt-5 md:contents">
-            <div className="col-start-1 col-end-5 space-y-3 text-right">
+            <div className="col-start-1 col-end-5 pb-10 space-y-3 text-right">
               <p className="text-xl text-[#098AD2] font-semibold">
                 THE BEST DISTRIBUTOR
               </p>
@@ -63,7 +63,7 @@ function AwardAchievement() {
               </div>
               <div className="absolute w-6 h-6 -mt-2 bg-white border-4 border-[#098AD2] rounded-full shadow top-1"></div>
             </div>
-            <div className="col-start-6 col-end-10 space-y-3 leading-tight text-justify">
+            <div className="col-start-6 col-end-10 pb-10 space-y-3 leading-tight text-justify">
               <p className="text-xl text-[#098AD2] font-semibold">
                 THE BEST DISTRIBUTOR
               </p>
@@ -71,7 +71,7 @@ function AwardAchievement() {
             </div>
           </div>
           <div className="flex pt-5 md:contents">
-            <div className="col-start-1 col-end-5 space-y-3 text-right">
+            <div className="col-start-1 col-end-5 pb-10 space-y-3 text-right">
               <p className="text-xl text-[#098AD2] font-semibold">
                 THE BEST DISTRIBUTOR
               </p>
@@ -97,7 +97,7 @@ function AwardAchievement() {
               </div>
               <div className="absolute w-6 h-6 -mt-2 bg-white border-4 border-[#098AD2] rounded-full shadow top-1"></div>
             </div>
-            <div className="col-start-6 col-end-10 space-y-3 leading-tight text-justify">
+            <div className="col-start-6 col-end-10 pb-10 space-y-3 leading-tight text-justify">
               <p className="text-xl text-[#098AD2] font-semibold">
                 BEST CUSTOMER NATIONAL
               </p>
@@ -105,7 +105,7 @@ function AwardAchievement() {
             </div>
           </div>
           <div className="flex pt-5 md:contents">
-            <div className="col-start-1 col-end-5 space-y-3 text-right">
+            <div className="col-start-1 col-end-5 pb-10 space-y-3 text-right">
               <p className="text-xl text-[#098AD2] font-semibold">
                 THE BEST DISTRIBUTOR
               </p>
@@ -122,7 +122,7 @@ function AwardAchievement() {
             </div>
           </div>
           <div className="flex flex-row-reverse md:contents">
-            <div className="col-start-1 col-end-5 ml-auto space-y-3">
+            <div className="col-start-1 col-end-5 ml-auto space-y-2">
               <h3 className="text-lg font-semibold px-4 py-2 bg-[#098AD2] rounded-full shadow-md h-fit">
                 2005 SEMESTER II
               </h3>
@@ -136,7 +136,7 @@ function AwardAchievement() {
               </div>
               <div className="absolute w-6 h-6 -mt-2 bg-white border-4 border-[#098AD2] rounded-full shadow top-1"></div>
             </div>
-            <div className="col-start-6 col-end-10 space-y-3 leading-tight text-justify">
+            <div className="col-start-6 col-end-10 pb-10 space-y-3 leading-tight text-justify">
               <p className="text-xl text-[#098AD2] font-semibold">
                 THE BEST DISTRIBUTOR
               </p>
@@ -144,7 +144,7 @@ function AwardAchievement() {
             </div>
           </div>
           <div className="flex pt-5 md:contents">
-            <div className="col-start-1 col-end-5 space-y-3 text-right">
+            <div className="col-start-1 col-end-5 pb-10 space-y-3 text-right">
               <p className="text-xl text-[#098AD2] font-semibold">
                 THE BEST DISTRIBUTOR
               </p>
@@ -172,7 +172,7 @@ function AwardAchievement() {
               </div>
               <div className="absolute w-6 h-6 -mt-2 bg-white border-4 border-[#098AD2] rounded-full shadow top-1"></div>
             </div>
-            <div className="col-start-6 col-end-10 space-y-3 leading-tight text-justify">
+            <div className="col-start-6 col-end-10 pb-10 space-y-3 leading-tight text-justify">
               <p className="text-xl text-[#098AD2] font-semibold">
                 LOYALTY PROGRAM SEMANGAT AWARDS
               </p>
@@ -180,7 +180,7 @@ function AwardAchievement() {
             </div>
           </div>
           <div className="flex pt-5 md:contents">
-            <div className="col-start-1 col-end-5 space-y-3 text-right">
+            <div className="col-start-1 col-end-5 pb-10 space-y-3 text-right">
               <p className="text-xl text-[#098AD2] font-semibold">
                 APPRECIATION AWARDS
               </p>
@@ -208,7 +208,7 @@ function AwardAchievement() {
               </div>
               <div className="absolute w-6 h-6 -mt-2 bg-white border-4 border-[#098AD2] rounded-full shadow top-1"></div>
             </div>
-            <div className="col-start-6 col-end-10 space-y-3 leading-tight text-justify">
+            <div className="col-start-6 col-end-10 pb-10 space-y-3 leading-tight text-justify">
               <p className="text-xl text-[#098AD2] font-semibold">
                 EXCELLENT BUSINESS PARTNER AWARDS
               </p>
@@ -216,7 +216,7 @@ function AwardAchievement() {
             </div>
           </div>
           <div className="flex pt-5 md:contents">
-            <div className="col-start-1 col-end-5 space-y-3 text-right">
+            <div className="col-start-1 col-end-5 pb-10 space-y-3 text-right">
               <div>
                 <p className="text-xl text-[#098AD2] font-semibold">
                   RECOGNITION AWARDS

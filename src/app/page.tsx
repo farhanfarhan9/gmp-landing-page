@@ -14,6 +14,7 @@ import AwardAchievement from "@/components/home/AwardAchievement";
 import Partners from "@/components/home/Partners";
 import OurService from "@/components/home/OurService";
 import toast, { Toaster } from 'react-hot-toast';
+import Maps from "@/components/home/Maps";
 
 export default function HomePage() {
 
@@ -33,6 +34,7 @@ export default function HomePage() {
       <TotalEmployee />
       <AwardAchievement />
       <Partners />
+      <Maps/>
       <OurParner />
     </>
   );

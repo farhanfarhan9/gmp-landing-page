@@ -23,17 +23,17 @@ function OurService() {
     },
   ];
   return (
-    <div className="py-20 bg-[#D9F1FF]">
+    <div className="py-10 md:py-20 bg-[#D9F1FF]">
       <div className="mx-auto md:max-w-7xl">
-        <div className="text-4xl font-semibold text-[#098AD2] ">
+        <div className="text-xl text-center md:text-left md:text-4xl font-semibold text-[#098AD2] ">
           Company Profile
         </div>
 
-        <div className="flex mt-10">
-          <div className="md:w-1/3 border-r-4 border-r-[#098AD2]">
-            <ul className="space-y-8">
+        <div className="flex flex-col mt-5 md:mt-10 md:flex-row">
+          <div className="md:w-1/3 md:border-r-4 md:border-r-[#098AD2]">
+            <ul className="flex justify-center md:space-y-8 md:flex-col">
               <li
-                className={`text-3xl font-semibold px-2 py-4 cursor-pointer text-black ${
+                className={`text-sm md:text-3xl font-semibold px-4 py-1 md:px-2 md:py-4 cursor-pointer text-black ${
                   activeservice === 0 && "bg-[#098AD2] text-white"
                 }`}
                 onClick={() => setactiveservice(0)}
@@ -41,7 +41,7 @@ function OurService() {
                 Vision
               </li>
               <li
-                className={`text-3xl font-semibold px-2 py-4 cursor-pointer  text-black ${
+                className={`text-sm md:text-3xl font-semibold px-4 py-1 md:px-2 md:py-4 cursor-pointer  text-black ${
                   activeservice === 1 && "bg-[#098AD2] text-white"
                 }`}
                 onClick={() => setactiveservice(1)}
@@ -50,15 +50,15 @@ function OurService() {
               </li>
             </ul>
           </div>
-          <div className="pl-10 md:w-full">
+          <div className="px-10 md:pl-10 md:w-full">
             {activeservice === 0 ? (
-              <div className="space-y-10">
+              <div className="space-y-5 md:space-y-10">
                 {/* Content for Vision */}
-                <h2 className="text-3xl font-semibold">Company Vision</h2>
-                <p className="text-xl font-semibold">
+                <h2 className="hidden text-3xl font-semibold md:block">Company Vision</h2>
+                <p className="text-sm font-normal md:text-xl md:font-semibold">
                   To become a reliable, productive and trusted distributor.{" "}
                 </p>
-                <div className="flex gap-10">
+                <div className="flex w-full gap-5 overflow-x-auto md:gap-10">
                   <Image
                     src={"/img/home/vision1.png"}
                     className="object-cover w-full h-full"
@@ -84,8 +84,8 @@ function OurService() {
               </div>
             ) : (
               <div className="">
-                <h2 className="text-3xl font-semibold">Company Mission</h2>
-                <ul className="mt-10 space-y-4">
+                <h2 className="hidden text-3xl font-semibold md:block">Company Mission</h2>
+                <ul className="mt-5 space-y-4 md:mt-10">
                   <li className="flex gap-10">
                   <Image
                     src={"/img/home/m1.png"}
@@ -94,7 +94,7 @@ function OurService() {
                     width={40}
                     height={40}
                   />
-                  <p className="my-auto">Develop and improve HR quality, especially in the sales department.</p>
+                  <p className="my-auto text-sm font-normal md:text-xl md:font-semibold">Develop and improve HR quality, especially in the sales department.</p>
                   </li>
                   <li className="flex gap-10">
                   <Image
@@ -104,7 +104,7 @@ function OurService() {
                     width={40}
                     height={40}
                   />
-                  <p className="my-auto">Keep developing sustainable IT and management system that is capable of optimizing business operations.</p>
+                  <p className="my-auto text-sm font-normal md:text-xl md:font-semibold">Keep developing sustainable IT and management system that is capable of optimizing business operations.</p>
                   </li>
                   <li className="flex gap-10">
                   <Image
@@ -114,7 +114,7 @@ function OurService() {
                     width={40}
                     height={40}
                   />
-                  <p className="my-auto">Maintain and improve the good business relationship between principals and customers.</p>
+                  <p className="my-auto text-sm font-normal md:text-xl md:font-semibold">Maintain and improve the good business relationship between principals and customers.</p>
                   </li>
                   <li className="flex gap-10">
                   <Image
@@ -124,7 +124,7 @@ function OurService() {
                     width={40}
                     height={40}
                   />
-                  <p className="my-auto">Create teamworks and maintain a safe, harmonious, and work productive atmosphere among the shareholders, company leaders, and employees.</p>
+                  <p className="my-auto text-sm font-normal md:text-xl md:font-semibold">Create teamworks and maintain a safe, harmonious, and work productive atmosphere among the shareholders, company leaders, and employees.</p>
                   </li>
                   <li className="flex gap-10">
                   <Image
@@ -134,7 +134,7 @@ function OurService() {
                     width={40}
                     height={40}
                   />
-                  <p className="my-auto">Build and develop an ideal enterprise infrastructure along with the development and distribution demands.</p>
+                  <p className="my-auto text-sm font-normal md:text-xl md:font-semibold">Build and develop an ideal enterprise infrastructure along with the development and distribution demands.</p>
                   </li>
                   <li className="flex gap-10">
                   <Image
@@ -144,7 +144,7 @@ function OurService() {
                     width={40}
                     height={40}
                   />
-                  <p className="my-auto">Expanding business network and increase the number of good principals and mutually benecial selectively.</p>
+                  <p className="my-auto text-sm font-normal md:text-xl md:font-semibold">Expanding business network and increase the number of good principals and mutually benecial selectively.</p>
                   </li>
                 </ul>
               </div>

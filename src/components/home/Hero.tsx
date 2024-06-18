@@ -18,11 +18,11 @@ const Hero = () => {
       />
 
       <div className="absolute z-10 w-full px-4 mx-auto md:max-w-7xl ">
-        <h1 className="text-5xl font-semibold text-white">
+        <h1 className="text-2xl font-semibold text-center text-white md:text-left md:text-5xl">
           PT. Global Mitra Prima
         </h1>
 
-        <h3 className="w-2/3 mt-10 text-3xl font-normal leading-8 text-white">
+        <h3 className="w-2/3 mx-auto mt-10 text-base font-normal leading-8 text-center text-white md:mx-0 md:text-left md:text-3xl">
           Leading Distributor for Pharmaceutical and FMCG in North Sumatra and
           DI Aceh
         </h3>

@@ -9,7 +9,7 @@ function ProjectMap() {
   const lang = searchParams.get("lang") || undefined;
   return (
     <div className='mx-4 my-10 mt-10 md:mx-auto max-w-7xl'>
-        <div className='text-[#0E4F94] text-xl md:text-5xl text-center font-bold'>
+        <div className='text-[#098AD2] text-xl md:text-5xl text-center font-bold'>
             Location
         </div>
         <Image className='object-scale-down mt-7' src={"/img/home/map.png"} alt="" width={2000} height={400} />

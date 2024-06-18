@@ -9,35 +9,35 @@ function InfrastructureIt() {
   const lang = searchParams.get("lang") || undefined;
   const [activeservice, setactiveservice] = useState(0);
   return (
-    <div className="py-10 mt-10 space-y-10">
+    <div className="py-5 mx-auto mt-5 space-y-10 md:py-10 md:mt-10">
       <div className="text-4xl font-semibold text-[#098AD2] text-center flex justify-between gap-5">
         <Image
-          className=""
+          className="hidden md:block"
           src={"/img/home/infoleft.png"}
           alt=""
           width={400}
           height={300}
         />
-        <div className="flex flex-col my-auto space-y-10">
-          <div className="flex justify-center gap-4">
-            <span className="border-r-4 border-[#098AD2] pr-5 ">
+        <div className="flex flex-col px-2 mx-auto my-auto space-y-5 md:space-y-10 md:mx-0">
+          <div className="text-xl md:text-4xl font-semibold text-[#098AD2] text-center flex justify-center gap-3 md:gap-5">
+            <span className="border-r-2 md:border-r-4 border-[#098AD2] pr-3">
               Infrastructure
             </span>
             <span>IT</span>
           </div>
           <div className="px-4 mx-auto py-2 w-fit border border-[#098AD2] bg-[#D9F1FF] rounded-full">
-            <p className="text-xl font-semibold text-[#098AD2]">
+            <p className="text-base md:text-xl font-semibold text-[#098AD2]">
               SFA to salesman
             </p>
           </div>
           <div className="px-4 mx-auto py-2 w-fit border border-[#098AD2] bg-[#D9F1FF] rounded-full">
-            <p className="text-xl font-semibold text-[#098AD2]">
+            <p className="text-base md:text-xl font-semibold text-[#098AD2]">
               Back to back interfacing IT system
             </p>
           </div>
         </div>
         <Image
-          className=""
+          className="hidden md:block"
           src={"/img/home/inforight.png"}
           alt=""
           width={400}

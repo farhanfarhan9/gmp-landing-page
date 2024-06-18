@@ -9,13 +9,13 @@ function ProjectServices() {
   const lang = searchParams.get("lang") || undefined;
   const [activeservice, setactiveservice] = useState(0);
   return (
-    <div className="py-10 mt-10">
-      <div className="text-4xl font-bold text-[#098AD2] text-center">
+    <div className="py-5 mt-5 md:py-10 md:mt-10">
+      <div className="text-xl md:text-4xl font-bold text-[#098AD2] text-center">
         Product & Services
       </div>
-      <div className="justify-center hidden py-3 mx-auto text-xl md:flex mt-7 max-w-7xl">
+      <div className="flex justify-center py-3 mx-auto text-xl mt-7 max-w-7xl">
         <div
-          className={`text-center pb-5 border-b-4 font-bold text-[#B3B3B3] px-14 cursor-pointer ${
+          className={`text-center text-sm md:text-base pb-5 border-b-4 font-bold text-[#B3B3B3] px-14 cursor-pointer ${
             activeservice === 0 && "!text-black border-[#098AD2]"
           }`}
           onClick={() => setactiveservice(0)}
@@ -23,7 +23,7 @@ function ProjectServices() {
           Within City
         </div>
         <div
-          className={`text-center pb-5 border-b-4 font-bold text-[#B3B3B3] px-14 cursor-pointer ${
+          className={`text-center text-sm md:text-base pb-5 border-b-4 font-bold text-[#B3B3B3] px-14 cursor-pointer ${
             activeservice === 1 && "!text-black border-[#098AD2]"
           }`}
           onClick={() => setactiveservice(1)}
@@ -34,7 +34,7 @@ function ProjectServices() {
       <div className="hidden mx-auto md:flex md:max-w-7xl">
         {activeservice === 0 ? (
           <div className="grid w-full grid-cols-9 gap-5 p-2 border-2 border-[#B3B3B3] rounded-xl">
-            <div className="w-full text-[#098AD2] my-auto text-xl font-semibold text-center">
+            <div className="w-full text-[#098AD2] my-auto text-base md:text-xl font-semibold text-center">
               PRODUCT
             </div>
             <div className="col-span-8 rounded-lg p-4 bg-gradient-to-r from-[#05476C] to-[#098AD2] grid grid-cols-8">
@@ -139,7 +139,7 @@ function ProjectServices() {
           </div>
         ) : (
           <div className="grid w-full grid-cols-9 gap-5 p-2 border-2 border-[#B3B3B3] rounded-xl">
-            <div className="w-full text-[#098AD2] my-auto text-xl font-semibold text-center">
+            <div className="w-full text-[#098AD2] my-auto text-base md:text-xl font-semibold text-center">
               PRODUCT
             </div>
             <div className="col-span-8 rounded-lg p-4 bg-gradient-to-r from-[#05476C] to-[#098AD2] grid grid-cols-8">

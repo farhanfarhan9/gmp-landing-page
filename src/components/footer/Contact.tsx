@@ -23,7 +23,7 @@ const Contact = () => {
   return (
     <div id="contact">
       <div className="flex justify-center w-full">
-        <div className="w-full px-5 max-w-7xl xl:flex xl:px-0">
+        <div className="justify-between w-full px-5 max-w-7xl xl:flex xl:px-0">
           <div className="flex flex-col items-center w-full xl:w-2/5 md:items-start">
             <div className="flex">
               <Image
@@ -31,170 +31,69 @@ const Contact = () => {
                 height={48}
                 unoptimized
                 className="my-auto"
-                src="/logo_k3.png"
+                src="/logo.png"
                 alt="Workflow"
               />
-              <div className="relative py-2 cursor-pointer group whitespace-nowrap">
-                  <Image
-                    width={236}
-                    height={48}
-                    unoptimized
-                    className="object-scale-down ml-2 cursor-default w-36 xl:ml-3 "
-                    src="/img/company-navbar/iso.png"
-                    alt="Logo"
-                  />
-                <div className="absolute z-50 invisible bg-white border-2 shadow-lg -left-10 lg:left-6 w-fit rounded-xl group-hover:visible">
-                  <div className="block p-2 text-sm font-medium cursor-default hover:text-black">
-                    ISO 9001:2015
-                  </div>
-                  <hr />
-                  <div className="block p-2 text-sm font-medium cursor-default hover:text-black">
-                    ISO 14001:2015
-                  </div>
-                  <hr />
-                  <div className="block p-2 text-sm font-medium cursor-default hover:text-black">
-                    ISO 45001:2018
-                  </div>
-                </div>
-              </div>
             </div>
-            <div className="text-sm font-light">
-              Sustainability Starts from Reliable Engineering
-            </div>
-            <div className="mt-10 font-bold">Contact Us</div>
+            <div className="mt-10 font-bold text-[#098AD2]">Address</div>
             <div className="flex mt-3">
-              <div className="my-auto mr-2">
-                <Image
-                  width={25}
-                  height={25}
-                  unoptimized
-                  src="/img/footer/wa.svg"
-                  alt="WhatsApp Logo"
-                />
-              </div>
-              <a href="tel:+6281534617975">+6281534617975</a>
-            </div>
-            <div className="flex mt-3">
-              <div className="my-auto mr-2">
-                <Image
-                  width={25}
-                  height={25}
-                  unoptimized
-                  className=""
-                  src="/img/footer/email.svg"
-                  alt="Email Logo"
-                />
-              </div>
-              <a href="mailto:project@satrianusa.group">
-                project@satrianusa.group
-              </a>
+              Jl. Budi Luhur No. 196 Medan 20123 Sumatera Utara - Indonesia
             </div>
           </div>
           <div className="flex flex-col items-center w-full pt-10 xl:w-1/5 xl:pt-0 md:items-start">
-            <div className="font-bold">Quick Links</div>
+            <div className="font-bold text-[#098AD2]">Quick Links</div>
             <div className="mt-5">
-              <Link href={Translator.gotoUrl("/", lang)}>Home</Link>
+              {/* <Link href={Translator.gotoUrl("/", lang)}>Home</Link> */}
+              Home
             </div>
             <div className="mt-5">
-              <Link href={Translator.gotoUrl("/", lang)}>Our Impact</Link>
+              {/* <Link href={Translator.gotoUrl("/", lang)}>About Us</Link> */}
+              About Us
             </div>
             <div className="mt-5">
-              <Link href={Translator.gotoUrl("/about-us", lang)}>About Us</Link>
+              {/* <Link href={Translator.gotoUrl("/about-us", lang)}>About Us</Link> */}
+              Product & Services
             </div>
             <div className="mt-5">
-              <Link href={Translator.gotoUrl("/project", lang)}>Projects</Link>
+              {/* <Link href={Translator.gotoUrl("/project", lang)}>Projects</Link> */}
+              Infrastructures
             </div>
             <div className="mt-5">
-              <Link href={Translator.gotoUrl("/project", lang)}>
+              {/* <Link href={Translator.gotoUrl("/project", lang)}>
                 Solutions & Products
-              </Link>
-            </div>
-          </div>
-          <div className="flex flex-col items-center w-full pt-10 xl:w-1/5 xl:pt-0 md:items-start">
-            <div className="font-bold">
-              <div>Information</div>
+              </Link> */}
+              Awards
             </div>
             <div className="mt-5">
-              <Link href={Translator.gotoUrl("/project", lang)}>
-                Terms & Condition
-              </Link>
-            </div>
-            <div className="mt-5">
-              <Link href={Translator.gotoUrl("/project", lang)}>
-                Privacy Policy
-              </Link>
+              {/* <Link href={Translator.gotoUrl("/project", lang)}>
+                Solutions & Products
+              </Link> */}
+              Partners
             </div>
           </div>
-          <div className="flex flex-col items-center w-full pt-10 xl:w-1/5 xl:pt-0 md:items-start">
-            <form onSubmit={hadlesubmit}>
-              <div className="font-bold text-center md:text-start">
-                Send Us Your Email
+          <div>
+            <div className="flex flex-col items-center w-full pt-10 xl:pt-0 md:items-start">
+              <div className="font-bold">
+                <div className="text-[#098AD2]">Phone</div>
               </div>
-              <div className="mt-5">
-                <input
-                  value={name}
-                  className="border border-[#9C9C9C] px-3 py-2 xl:w-full rounded-md"
-                  type="text"
-                  placeholder="Full Name"
-                  onChange={(e) => setName(e.target.value)}
-                ></input>
-              </div>
-              <div className="mt-5">
-                <input
-                  value={email}
-                  className="border border-[#9C9C9C] px-3 py-2 xl:w-full rounded-md"
-                  type="email"
-                  placeholder="Email"
-                  onChange={(e) => setEmail(e.target.value)}
-                ></input>
-              </div>
-              <div className="flex justify-center mt-5 md:justify-start">
-                <button
-                  type="submit"
-                  className="bg-[#0E4F94] text-white px-6 py-3 rounded-full"
-                >
-                  Submit
-                </button>
-              </div>
-            </form>
+              <div className="mt-5">(061) 8444555</div>
+            </div>
+            <div className="flex flex-col items-center w-full pt-10 mt-5 xl:pt-0 md:items-start">
+              <form onSubmit={hadlesubmit}>
+                <div className="font-bold text-center md:text-start text-[#098AD2]">
+                  Email
+                </div>
+                <div className="mt-5">gmp.medan@gmail.com</div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
       <div className="mt-10">
-        <hr className="border-[#0E4F94]" />
-
-        <div className="flex justify-center w-full my-10">
-          <div className="justify-end hidden w-full font-semibold xl:flex max-w-7xl">
-            <a
-              href="https://www.youtube.com/@SatriaNusaEnjinering-wk4xl"
-              target="_BLANK"
-              className="mr-5"
-            >
-              <Image
-                width={25}
-                height={25}
-                unoptimized
-                className=""
-                src="/img/footer/youtube.svg"
-                alt="Workflow"
-              />
-            </a>
-            <a
-              href="https://www.linkedin.com/company/satrianusaenjinering"
-              target="_BLANK"
-              className="mr-20"
-            >
-              <Image
-                width={25}
-                height={25}
-                unoptimized
-                className=""
-                src="/img/footer/linkedin.svg"
-                alt="Workflow"
-              />
-            </a>
+        <div className="flex justify-center w-full py-5 bg-[#098AD2]">
+          <div className="justify-center hidden w-full font-semibold text-white xl:flex max-w-7xl">
             <div className="px-5 xl:px-0">
-              Satria Nusa Enjinering © All rights reserved Copyrights 2024
+            PT. Global Mitra Prima © All rights reserved Copyrights 2024
             </div>
           </div>
           <div className="w-full xl:hidden max-w-7xl">

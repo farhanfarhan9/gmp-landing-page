@@ -93,43 +93,13 @@ const Contact = () => {
         <div className="flex justify-center w-full py-5 bg-[#098AD2]">
           <div className="justify-center hidden w-full font-semibold text-white xl:flex max-w-7xl">
             <div className="px-5 xl:px-0">
-            PT. Global Mitra Prima © All rights reserved Copyrights 2024
+              PT. Global Mitra Prima © All rights reserved Copyrights 2024
             </div>
           </div>
           <div className="w-full xl:hidden max-w-7xl">
-            <div className="flex justify-center gap-5">
-              <a
-                href="https://www.youtube.com/@SatriaNusaEnjinering-wk4xl"
-                target="_BLANK"
-                className=""
-              >
-                <Image
-                  width={25}
-                  height={25}
-                  unoptimized
-                  className=""
-                  src="/img/footer/youtube.svg"
-                  alt="Workflow"
-                />
-              </a>
-              <a
-                href="https://www.linkedin.com/company/satrianusaenjinering"
-                target="_BLANK"
-                className=""
-              >
-                <Image
-                  width={25}
-                  height={25}
-                  unoptimized
-                  className=""
-                  src="/img/footer/linkedin.svg"
-                  alt="Workflow"
-                />
-              </a>
-            </div>
             <div className="flex justify-center w-full mt-5 font-semibold text-center xl:hidden max-w-7xl">
-              <div className="px-5 xl:px-0">
-                Satria Nusa Enjinering © All rights reserved Copyrights 2024
+              <div className="px-5 text-white xl:px-0">
+                PT. Global Mitra Prima © All rights reserved Copyrights 2024
               </div>
             </div>
           </div>

@@ -9,7 +9,7 @@ function Principle() {
   const lang = searchParams.get("lang") || undefined;
   const [activeservice, setactiveservice] = useState(0);
   return (
-    <div className="py-10 mt-10 md:mx-auto md:max-w-7xl">
+    <div className="px-2 py-10 mt-10 md:mx-auto md:max-w-7xl md:px-0">
       <div className="text-xl md:hidden md:text-4xl font-bold text-[#098AD2] text-center">
       Principle
       </div>

@@ -8,7 +8,7 @@ function ProjectMap() {
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang") || undefined;
   return (
-    <div className='mx-4 my-10 mt-10 md:mx-auto max-w-7xl'>
+    <div className='px-2 mx-4 my-10 mt-10 md:mx-auto max-w-7xl md:px-0'>
         <div className='text-[#098AD2] text-xl md:text-5xl text-center font-bold'>
             Location
         </div>

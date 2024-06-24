@@ -9,7 +9,7 @@ function WarehouseFacility() {
   const lang = searchParams.get("lang") || undefined;
   const [activeservice, setactiveservice] = useState(0);
   return (
-    <div className="py-5 mt-5 md:py-10 md:mt-10 md:mx-auto md:max-w-7xl">
+    <div className="px-2 py-5 mt-5 md:py-10 md:mt-10 md:mx-auto md:max-w-7xl md:px-0">
       <div className="text-xl md:hidden md:text-4xl font-semibold text-[#098AD2] text-center">
         Warehouse Facilities
       </div>
@@ -22,7 +22,7 @@ function WarehouseFacility() {
             <div className="flex w-full gap-8">
               <Image
                 src={"/img/home/w1.png"}
-                className="w-fit h-fit"
+                className="object-scale-down w-10 h-10 md:w-fit md:h-fit"
                 alt=""
                 width={40}
                 height={40}
@@ -32,7 +32,7 @@ function WarehouseFacility() {
             <div className="flex w-full gap-8">
               <Image
                 src={"/img/home/w5.png"}
-                className="w-fit h-fit"
+                className="object-scale-down w-10 h-10 md:w-fit md:h-fit"
                 alt=""
                 width={40}
                 height={40}
@@ -42,7 +42,7 @@ function WarehouseFacility() {
             <div className="flex w-full gap-8">
               <Image
                 src={"/img/home/w2.png"}
-                className="w-fit h-fit"
+                className="object-scale-down w-10 h-10 md:w-fit md:h-fit"
                 alt=""
                 width={40}
                 height={40}
@@ -52,7 +52,7 @@ function WarehouseFacility() {
             <div className="flex w-full gap-8">
               <Image
                 src={"/img/home/w6.png"}
-                className="w-fit h-fit"
+                className="object-scale-down w-10 h-10 md:w-fit md:h-fit"
                 alt=""
                 width={40}
                 height={40}
@@ -62,7 +62,7 @@ function WarehouseFacility() {
             <div className="flex w-full gap-8">
               <Image
                 src={"/img/home/w3.png"}
-                className="w-fit h-fit"
+                className="object-scale-down w-10 h-10 md:w-fit md:h-fit"
                 alt=""
                 width={40}
                 height={40}
@@ -72,7 +72,7 @@ function WarehouseFacility() {
             <div className="flex w-full gap-8">
               <Image
                 src={"/img/home/w7.png"}
-                className="w-fit h-fit"
+                className="object-scale-down w-10 h-10 md:w-fit md:h-fit"
                 alt=""
                 width={40}
                 height={40}
@@ -82,7 +82,7 @@ function WarehouseFacility() {
             <div className="flex w-full gap-8">
               <Image
                 src={"/img/home/w4.png"}
-                className="w-fit h-fit"
+                className="object-scale-down w-10 h-10 md:w-fit md:h-fit"
                 alt=""
                 width={40}
                 height={40}
@@ -92,7 +92,7 @@ function WarehouseFacility() {
             <div className="flex w-full gap-8">
               <Image
                 src={"/img/home/w8.png"}
-                className="w-fit h-fit"
+                className="object-scale-down w-10 h-10 md:w-fit md:h-fit"
                 alt=""
                 width={40}
                 height={40}

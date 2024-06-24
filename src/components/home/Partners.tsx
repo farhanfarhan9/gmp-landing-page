@@ -9,183 +9,183 @@ function Partners() {
   const lang = searchParams.get("lang") || undefined;
   const [activeservice, setactiveservice] = useState(0);
   return (
-    <div className="py-10 mt-10 space-y-10 md:mx-auto md:max-w-7xl">
-      <div className="text-4xl font-semibold text-[#098AD2] text-center">
-        Partners
+    <div className="py-10 mt-10 space-y-5 md:space-y-10 md:mx-auto md:max-w-7xl">
+      <div>
+        <div className="text-xl md:text-4xl font-semibold text-[#098AD2] text-center">
+          Partners
+        </div>
+        <div className="grid w-full grid-cols-3 gap-5 my-auto mt-5 text-center md:gap-3 md:grid-cols-9 content-evenly">
+          <Image
+            src={"/img/home/partners/partner1.png"}
+            className="object-scale-down mx-auto my-auto w-fit"
+            alt=""
+            width={20}
+            height={20}
+          />
+          <Image
+            src={"/img/home/partners/partner2.png"}
+            className="object-scale-down mx-auto my-auto w-fit"
+            alt=""
+            width={20}
+            height={20}
+          />
+          <Image
+            src={"/img/home/partners/partner3.png"}
+            className="object-scale-down mx-auto my-auto w-fit"
+            alt=""
+            width={20}
+            height={20}
+          />
+          <Image
+            src={"/img/home/partners/partner4.png"}
+            className="object-scale-down mx-auto my-auto w-fit"
+            alt=""
+            width={20}
+            height={20}
+          />
+          <Image
+            src={"/img/home/partners/partner5.png"}
+            className="object-scale-down mx-auto my-auto w-fit"
+            alt=""
+            width={20}
+            height={20}
+          />
+          <Image
+            src={"/img/home/partners/partner6.png"}
+            className="object-scale-down mx-auto my-auto w-fit"
+            alt=""
+            width={20}
+            height={20}
+          />
+          <Image
+            src={"/img/home/partners/partner7.png"}
+            className="object-scale-down mx-auto my-auto w-fit"
+            alt=""
+            width={20}
+            height={20}
+          />
+          <Image
+            src={"/img/home/partners/partner8.png"}
+            className="object-scale-down mx-auto my-auto w-fit"
+            alt=""
+            width={20}
+            height={20}
+          />
+          <Image
+            src={"/img/home/partners/partner9.png"}
+            className="object-scale-down mx-auto my-auto w-fit"
+            alt=""
+            width={20}
+            height={20}
+          />
+          <Image
+            src={"/img/home/partners/partner10.png"}
+            className="object-scale-down mx-auto my-auto w-fit"
+            alt=""
+            width={20}
+            height={20}
+          />
+          <Image
+            src={"/img/home/partners/partner11.png"}
+            className="object-scale-down mx-auto my-auto w-fit"
+            alt=""
+            width={20}
+            height={20}
+          />
+          <Image
+            src={"/img/home/partners/partner12.png"}
+            className="object-scale-down mx-auto my-auto w-fit"
+            alt=""
+            width={20}
+            height={20}
+          />
+          <Image
+            src={"/img/home/partners/partner13.png"}
+            className="object-scale-down mx-auto my-auto w-fit"
+            alt=""
+            width={20}
+            height={20}
+          />
+          <Image
+            src={"/img/home/partners/partner14.png"}
+            className="object-scale-down mx-auto my-auto w-fit"
+            alt=""
+            width={20}
+            height={20}
+          />
+          <Image
+            src={"/img/home/partners/partner15.png"}
+            className="object-scale-down mx-auto my-auto w-fit"
+            alt=""
+            width={20}
+            height={20}
+          />
+          <Image
+            src={"/img/home/partners/partner16.png"}
+            className="object-scale-down mx-auto my-auto w-fit"
+            alt=""
+            width={20}
+            height={20}
+          />
+        </div>
       </div>
-      <div className="flex justify-between w-full gap-5 my-auto">
-        <Image
-          src={"/img/home/partners/partner1.png"}
-          className="object-scale-down w-full"
-          alt=""
-          width={20}
-          height={20}
-        />
-        <Image
-          src={"/img/home/partners/partner2.png"}
-          className="object-scale-down w-full"
-          alt=""
-          width={20}
-          height={20}
-        />
-        <Image
-          src={"/img/home/partners/partner3.png"}
-          className="object-scale-down w-full"
-          alt=""
-          width={20}
-          height={20}
-        />
-        <Image
-          src={"/img/home/partners/partner4.png"}
-          className="object-scale-down w-full"
-          alt=""
-          width={20}
-          height={20}
-        />
-        <Image
-          src={"/img/home/partners/partner5.png"}
-          className="object-scale-down w-full"
-          alt=""
-          width={20}
-          height={20}
-        />
-        <Image
-          src={"/img/home/partners/partner6.png"}
-          className="object-scale-down w-full"
-          alt=""
-          width={20}
-          height={20}
-        />
-        <Image
-          src={"/img/home/partners/partner7.png"}
-          className="object-scale-down w-full"
-          alt=""
-          width={20}
-          height={20}
-        />
-        <Image
-          src={"/img/home/partners/partner8.png"}
-          className="object-scale-down w-full"
-          alt=""
-          width={20}
-          height={20}
-        />
-        <Image
-          src={"/img/home/partners/partner9.png"}
-          className="object-scale-down w-full"
-          alt=""
-          width={20}
-          height={20}
-        />
-      </div>
-      <div className="flex justify-between w-full gap-5 my-auto">
-        <Image
-          src={"/img/home/partners/partner10.png"}
-          className="object-scale-down w-fit"
-          alt=""
-          width={20}
-          height={20}
-        />
-        <Image
-          src={"/img/home/partners/partner11.png"}
-          className="object-scale-down w-fit"
-          alt=""
-          width={20}
-          height={20}
-        />
-        <Image
-          src={"/img/home/partners/partner12.png"}
-          className="object-scale-down w-fit"
-          alt=""
-          width={20}
-          height={20}
-        />
-        <Image
-          src={"/img/home/partners/partner13.png"}
-          className="object-scale-down w-fit"
-          alt=""
-          width={20}
-          height={20}
-        />
-        <Image
-          src={"/img/home/partners/partner14.png"}
-          className="object-scale-down w-fit"
-          alt=""
-          width={20}
-          height={20}
-        />
-        <Image
-          src={"/img/home/partners/partner15.png"}
-          className="object-scale-down w-fit"
-          alt=""
-          width={20}
-          height={20}
-        />
-        <Image
-          src={"/img/home/partners/partner16.png"}
-          className="object-scale-down w-fit"
-          alt=""
-          width={20}
-          height={20}
-        />
-      </div>
-      <div className="py-20">
-        <div className="text-4xl font-semibold text-[#098AD2] text-center">
+      <div>
+        <div className="text-xl md:text-4xl font-semibold text-[#098AD2] text-center">
           Customers
         </div>
-        <div className="flex justify-between w-full gap-5 my-auto">
+        <div className="grid w-full grid-cols-3 gap-5 my-auto mt-5 text-center md:gap-3 md:grid-cols-7 content-evenly">
           <Image
             src={"/img/home/partners/customers1.png"}
-            className="object-scale-down w-full"
+            className="object-scale-down mx-auto my-auto w-fit"
             alt=""
             width={20}
             height={20}
           />
           <Image
             src={"/img/home/partners/customers2.png"}
-            className="object-scale-down w-full"
+            className="object-scale-down mx-auto my-auto w-fit"
             alt=""
             width={20}
             height={20}
           />
           <Image
             src={"/img/home/partners/customers3.png"}
-            className="object-scale-down w-full"
+            className="object-scale-down mx-auto my-auto w-fit"
             alt=""
             width={20}
             height={20}
           />
           <Image
             src={"/img/home/partners/customers4.png"}
-            className="object-scale-down w-full"
+            className="object-scale-down mx-auto my-auto w-fit"
             alt=""
             width={20}
             height={20}
           />
           <Image
             src={"/img/home/partners/customers5.png"}
-            className="object-scale-down w-full"
+            className="object-scale-down mx-auto my-auto w-fit"
             alt=""
             width={20}
             height={20}
           />
           <Image
             src={"/img/home/partners/customers6.png"}
-            className="object-scale-down w-full"
+            className="object-scale-down mx-auto my-auto w-fit"
             alt=""
             width={20}
             height={20}
           />
           <Image
             src={"/img/home/partners/customers7.png"}
-            className="object-scale-down w-full"
+            className="object-scale-down mx-auto my-auto w-fit"
             alt=""
             width={20}
             height={20}
           />
         </div>
       </div>
-      {/* <div className="grid grid-cols-9 gap-4">
+      {/* <div className="grid grid-cols-3 gap-4 md:grid-cols-9">
         <div className="w-full my-auto">
           <Image
             src={"/img/home/partners/partner1.png"}

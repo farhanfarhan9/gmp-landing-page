@@ -10,7 +10,7 @@ function AwardAchievement() {
   const [activeservice, setactiveservice] = useState(0);
   return (
     <div className="py-10 mt-10 space-y-10 md:mx-auto md:max-w-7xl">
-      <div className="text-4xl font-semibold text-[#098AD2] text-center">
+      <div className="text-xl md:text-4xl font-semibold text-[#098AD2] text-center">
         Sales Productivity
       </div>
       <div className="container">

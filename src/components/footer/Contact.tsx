@@ -91,13 +91,13 @@ const Contact = () => {
       </div>
       <div className="mt-10">
         <div className="flex justify-center w-full py-5 bg-[#098AD2]">
-          <div className="justify-center hidden w-full font-semibold text-white xl:flex max-w-7xl">
+          <div className="justify-center hidden w-full text-base font-normal text-white xl:flex max-w-7xl">
             <div className="px-5 xl:px-0">
               PT. Global Mitra Prima © All rights reserved Copyrights 2024
             </div>
           </div>
           <div className="w-full xl:hidden max-w-7xl">
-            <div className="flex justify-center w-full mt-5 font-semibold text-center xl:hidden max-w-7xl">
+            <div className="flex justify-center w-full mt-5 text-base font-normal text-center xl:hidden max-w-7xl">
               <div className="px-5 text-white xl:px-0">
                 PT. Global Mitra Prima © All rights reserved Copyrights 2024
               </div>

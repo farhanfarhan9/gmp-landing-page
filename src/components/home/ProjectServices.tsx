@@ -9,7 +9,7 @@ function ProjectServices() {
   const lang = searchParams.get("lang") || undefined;
   const [activeservice, setactiveservice] = useState(0);
   return (
-    <div className="py-5 mt-5 md:py-10 md:mt-10">
+    <div className="py-5 mt-5 md:py-10 md:mt-10" id="product">
       <div className="text-xl md:text-4xl font-bold text-[#098AD2] text-center">
         Product & Services
       </div>

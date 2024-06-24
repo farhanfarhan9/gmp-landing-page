@@ -9,7 +9,7 @@ function TotalEmployee() {
   const lang = searchParams.get("lang") || undefined;
   const [activeservice, setactiveservice] = useState(0);
   return (
-    <div className="py-10 mt-10 space-y-10 md:space-y-20 md:mx-auto md:max-w-7xl">
+    <div className="px-2 py-10 mt-10 space-y-10 md:space-y-20 md:mx-auto md:max-w-7xl">
       <div className="text-xl md:text-4xl font-semibold text-[#098AD2] text-center">
         Total Employee
       </div>

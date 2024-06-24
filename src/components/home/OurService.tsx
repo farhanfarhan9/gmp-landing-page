@@ -23,7 +23,7 @@ function OurService() {
     },
   ];
   return (
-    <div className="py-10 md:py-20 bg-[#D9F1FF]">
+    <div className="py-10 md:py-20 bg-[#D9F1FF]" id="about">
       <div className="mx-auto md:max-w-7xl">
         <div className="text-xl text-center md:text-left md:text-4xl font-semibold text-[#098AD2] ">
           Company Profile

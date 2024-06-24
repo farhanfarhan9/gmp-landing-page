@@ -49,48 +49,49 @@ const Navbar = () => {
                       ? "text-[#0C5095]"
                       : "text-[#41444B]"
                   } hover:text-[#0C5095] dark:hover:text-white px-2 py-1 rounded-md`}
-                  href={Translator.gotoUrl("/about-us", lang)}
+                  href={Translator.gotoUrl("#about", lang)}
                 >
                   About Us
                 </a>
-                <Link
+                <a
                   className={`text-lg ${
                     pathname === "/product-services"
                       ? "text-[#0C5095]"
                       : "text-[#41444B]"
                   } hover:text-[#0C5095] dark:hover:text-white px-2 py-1 rounded-md`}
-                  href="/product & Services"
+                  href={Translator.gotoUrl("#product", lang)}
                 >
                   Product & Services
-                </Link>
-                <Link
+                </a>
+                <a
                   className={`text-lg ${
                     pathname === "/infrastructure"
                       ? "text-[#0C5095]"
                       : "text-[#41444B]"
                   } hover:text-[#0C5095] dark:hover:text-white px-2 py-1 rounded-md`}
-                  href="/product & Services"
+                  href={Translator.gotoUrl("#infrasctructure", lang)}
                 >
                   Infrastructure
-                </Link>
-                <Link
+                </a>
+                <a
                   className={`text-lg ${
                     pathname === "/awards" ? "text-[#0C5095]" : "text-[#41444B]"
                   } hover:text-[#0C5095] dark:hover:text-white px-2 py-1 rounded-md`}
-                  href="/product & Services"
+                  href={Translator.gotoUrl("#awards", lang)}
                 >
                   Awards
-                </Link>
-                <Link
+                </a>
+                <a
                   className={`text-lg ${
                     pathname === "/partners"
                       ? "text-[#0C5095]"
                       : "text-[#41444B]"
                   } hover:text-[#0C5095] dark:hover:text-white px-2 py-1 rounded-md`}
-                  href="/product & Services"
+                  href={Translator.gotoUrl("#partner", lang)}
+
                 >
                   Partners
-                </Link>
+                </a>
                 <div>
                   <div className="px-4 py-2 bg-white border border-[#0088BB] rounded-lg">
                     <span className="text-[#0088BB]">Contact us</span>

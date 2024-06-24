@@ -7,9 +7,12 @@ import { useState } from "react";
 function Partners() {
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang") || undefined;
-  const [activeservice, setactiveservice] = useState(0);
+  const [activepartner, setactivepartner] = useState(0);
+  const togglePartner = () => {
+    setactivepartner((prev) => (prev === 0 ? 1 : 0));
+  };
   return (
-    <div className="py-10 mt-10 space-y-5 md:space-y-10 md:mx-auto md:max-w-7xl">
+    <div className="py-10 mt-10 space-y-5 md:space-y-24 md:mx-auto md:max-w-7xl" id="partner">
       <div>
         <div className="text-xl md:text-4xl font-semibold text-[#098AD2] text-center">
           Partners
@@ -78,58 +81,99 @@ function Partners() {
             width={20}
             height={20}
           />
-          <Image
-            src={"/img/home/partners/partner10.png"}
-            className="object-scale-down mx-auto my-auto w-fit"
-            alt=""
-            width={20}
-            height={20}
-          />
-          <Image
-            src={"/img/home/partners/partner11.png"}
-            className="object-scale-down mx-auto my-auto w-fit"
-            alt=""
-            width={20}
-            height={20}
-          />
-          <Image
-            src={"/img/home/partners/partner12.png"}
-            className="object-scale-down mx-auto my-auto w-fit"
-            alt=""
-            width={20}
-            height={20}
-          />
-          <Image
-            src={"/img/home/partners/partner13.png"}
-            className="object-scale-down mx-auto my-auto w-fit"
-            alt=""
-            width={20}
-            height={20}
-          />
-          <Image
-            src={"/img/home/partners/partner14.png"}
-            className="object-scale-down mx-auto my-auto w-fit"
-            alt=""
-            width={20}
-            height={20}
-          />
-          <Image
-            src={"/img/home/partners/partner15.png"}
-            className="object-scale-down mx-auto my-auto w-fit"
-            alt=""
-            width={20}
-            height={20}
-          />
-          <Image
-            src={"/img/home/partners/partner16.png"}
-            className="object-scale-down mx-auto my-auto w-fit"
-            alt=""
-            width={20}
-            height={20}
-          />
+          {activepartner === 1 && (
+            <>
+              <Image
+                src={"/img/home/partners/partner10.png"}
+                className="object-scale-down mx-auto my-auto w-fit"
+                alt=""
+                width={20}
+                height={20}
+              />
+              <Image
+                src={"/img/home/partners/partner11.png"}
+                className="object-scale-down mx-auto my-auto w-fit"
+                alt=""
+                width={20}
+                height={20}
+              />
+              <Image
+                src={"/img/home/partners/partner12.png"}
+                className="object-scale-down mx-auto my-auto w-fit"
+                alt=""
+                width={20}
+                height={20}
+              />
+              <Image
+                src={"/img/home/partners/partner13.png"}
+                className="object-scale-down mx-auto my-auto w-fit"
+                alt=""
+                width={20}
+                height={20}
+              />
+              <Image
+                src={"/img/home/partners/partner14.png"}
+                className="object-scale-down mx-auto my-auto w-fit"
+                alt=""
+                width={20}
+                height={20}
+              />
+              <Image
+                src={"/img/home/partners/partner15.png"}
+                className="object-scale-down mx-auto my-auto w-fit"
+                alt=""
+                width={20}
+                height={20}
+              />
+              <Image
+                src={"/img/home/partners/partner16.png"}
+                className="object-scale-down mx-auto my-auto w-fit"
+                alt=""
+                width={20}
+                height={20}
+              />
+            </>
+          )}
         </div>
+        <p
+          className="text-center text-[#098AD2] text-xl flex justify-center cursor-pointer"
+          onClick={() => togglePartner()}
+        >
+          {activepartner === 0 ? "See more" : "See less"}
+          {activepartner === 0 ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              className="my-auto size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          ) : (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              className="my-auto size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4.5 15.75 7.5-7.5 7.5 7.5"
+              />
+            </svg>
+          )}
+        </p>
       </div>
-      <div>
+      <div >
         <div className="text-xl md:text-4xl font-semibold text-[#098AD2] text-center">
           Customers
         </div>
@@ -184,6 +228,11 @@ function Partners() {
             height={20}
           />
         </div>
+        <p
+          className="text-center text-[#098AD2] text-xl flex justify-center "
+        >
+          And More
+        </p>
       </div>
       {/* <div className="grid grid-cols-3 gap-4 md:grid-cols-9">
         <div className="w-full my-auto">

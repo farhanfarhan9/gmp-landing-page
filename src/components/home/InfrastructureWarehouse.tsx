@@ -9,7 +9,7 @@ function InfrastructureWarehouse() {
   const lang = searchParams.get("lang") || undefined;
   const [activeservice, setactiveservice] = useState(0);
   return (
-    <div className="py-5 mt-5 space-y-10 md:py-10 md:mt-10 md:mx-auto md:max-w-7xl">
+    <div className="py-5 mt-5 space-y-10 md:py-10 md:mt-10 md:mx-auto md:max-w-7xl" id="infrasctructure">
       <div className="text-xl md:text-4xl font-semibold text-[#098AD2] text-center flex justify-center gap-3 md:gap-5">
         <span className="border-r-2 md:border-r-4 border-[#098AD2] pr-3">Infrastructure</span>
         <span>Warehouse</span>

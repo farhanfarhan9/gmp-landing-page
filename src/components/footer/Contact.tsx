@@ -97,7 +97,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="w-full xl:hidden max-w-7xl">
-            <div className="flex justify-center w-full mt-5 text-base font-normal text-center xl:hidden max-w-7xl">
+            <div className="flex justify-center w-full text-base font-normal text-center xl:hidden max-w-7xl">
               <div className="px-5 text-white xl:px-0">
                 PT. Global Mitra Prima © All rights reserved Copyrights 2024
               </div>

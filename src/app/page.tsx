@@ -25,7 +25,7 @@ export default function HomePage() {
       <OurService  />
       <ProjectMap />
       <ProjectServices />
-      <Principle />
+      {/* <Principle /> */}
       <Outlets />
       <SalesProductivity />
       <InfrastructureWarehouse />

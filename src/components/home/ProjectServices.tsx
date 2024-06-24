@@ -31,7 +31,7 @@ function ProjectServices() {
           Suburb
         </div>
       </div>
-      <div className="hidden mx-auto md:flex md:max-w-7xl">
+      <div className="flex mx-auto md:max-w-7xl">
         {activeservice === 0 ? (
           <div className="grid w-full grid-cols-9 gap-5 p-2 border-2 border-[#B3B3B3] rounded-xl">
             <div className="w-full text-[#098AD2] my-auto text-base md:text-xl font-semibold text-center">

@@ -11,7 +11,7 @@ function ProjectServices() {
   return (
     <div className="py-5 mt-5 md:py-10 md:mt-10" id="product">
       <div className="text-xl md:text-4xl font-bold text-[#098AD2] text-center">
-        Product & Services
+        {Translator.t("product-services", lang)}
       </div>
       <div className="flex justify-center py-3 mx-auto text-xl mt-7 max-w-7xl">
         <div
@@ -20,7 +20,7 @@ function ProjectServices() {
           }`}
           onClick={() => setactiveservice(0)}
         >
-          Within City
+          {Translator.t("within-city", lang)}
         </div>
         <div
           className={`text-center text-sm md:text-base pb-5 border-b-4 font-bold text-[#B3B3B3] px-14 cursor-pointer ${
@@ -28,7 +28,7 @@ function ProjectServices() {
           }`}
           onClick={() => setactiveservice(1)}
         >
-          Suburb
+          {Translator.t("suburb", lang)}
         </div>
       </div>
       <div className="flex px-2 mx-auto md:max-w-7xl md:px-0">
@@ -142,43 +142,54 @@ function ProjectServices() {
             <table className="w-full text-sm text-left text-gray-500 rtl:text-right ">
               <thead className="text-xs uppercase bg-gradient-to-r from-[#05476C] to-[#098AD2] text-white">
                 <tr>
-                  <th scope="col" className="px-6 py-3 font-semibold bg-white ">
-                    PRODUCT
+                  <th
+                    scope="col"
+                    className="px-6 py-3 text-base font-semibold text-[#098AD2] bg-white "
+                  >
+                    {Translator.t("product", lang)}
                   </th>
-                  <th scope="col" className="px-6 py-3 font-semibold rounded-l-lg">
-                  Pharmacy/Hospital
+                  <th
+                    scope="col"
+                    className="px-6 py-3 text-base font-semibold rounded-l-lg"
+                  >
+                    {Translator.t("hospital", lang)}
                   </th>
-                  <th scope="col" className="px-6 py-3 font-semibold">
-                  Drug Store
+                  <th scope="col" className="px-6 py-3 text-base font-semibold">
+                    {Translator.t("drug-store", lang)}
                   </th>
-                  <th scope="col" className="px-6 py-3 font-semibold">
-                  Modern Trade
+                  <th scope="col" className="px-6 py-3 text-base font-semibold">
+                    {Translator.t("modern-trade", lang)}
                   </th>
-                  <th scope="col" className="px-6 py-3 font-semibold">
-                  General Trade                  
+                  <th scope="col" className="px-6 py-3 text-base font-semibold">
+                    {Translator.t("general-trade", lang)}
                   </th>
-                  <th scope="col" className="px-6 py-3 font-semibold">
-                  Horeca
+                  <th scope="col" className="px-6 py-3 text-base font-semibold">
+                    {Translator.t("horeca", lang)}
                   </th>
-                  <th scope="col" className="px-6 py-3 font-semibold rounded-r-lg">
-                  Electrical Store
+                  <th
+                    scope="col"
+                    className="px-6 py-3 text-base font-semibold rounded-r-lg"
+                  >
+                    {Translator.t("electrical-store", lang)}
                   </th>
                 </tr>
               </thead>
               <tbody>
-                <tr className="bg-white border-b ">
-                  <th className="px-6 py-4 ">
+                <tr className="text-base bg-white border-b">
+                  <th className="px-6 py-4 font-semibold ">
                     PHARMACEUTICAL / HEALTH EQUIPMENT
                   </th>
                   <td className="px-6 py-4">Same Day Services</td>
                   <td className="px-6 py-4">Same Day Services</td>
-                  <td className="px-6 py-4">2 x 24 Hours (according to purchase orders)</td>
+                  <td className="px-6 py-4">
+                    2 x 24 Hours (according to purchase orders)
+                  </td>
                   <td className="px-6 py-4">2 x 24 Hours</td>
                   <td className="px-6 py-4">-</td>
                   <td className="px-6 py-4">-</td>
                 </tr>
-                <tr className="bg-white border-b ">
-                  <th className="px-6 py-4 ">
+                <tr className="text-base bg-white border-b">
+                  <th className="px-6 py-4 font-semibold">
                     CONSUMER GOODS & COSMETICS
                   </th>
                   <td className="px-6 py-4">2 x 24 Hours</td>
@@ -188,10 +199,8 @@ function ProjectServices() {
                   <td className="px-6 py-4">2 x 24 Hours</td>
                   <td className="px-6 py-4">1 x 24 Hours</td>
                 </tr>
-                <tr className="bg-white">
-                  <th className="px-6 py-4 ">
-                  FOOD & BEVERAGES
-                  </th>
+                <tr className="text-base bg-white">
+                  <th className="px-6 py-4 font-semibold">FOOD & BEVERAGES</th>
                   <td className="px-6 py-4">2 x 24 Hours</td>
                   <td className="px-6 py-4">2 x 24 Hours</td>
                   <td className="px-6 py-4">2 x 24 Hours</td>
@@ -206,60 +215,73 @@ function ProjectServices() {
           <div className="relative w-full overflow-x-auto border-2 border-[#B3B3B3] rounded-xl p-2">
             <table className="w-full text-sm text-left text-gray-500 rtl:text-right ">
               <thead className="text-xs uppercase bg-gradient-to-r from-[#05476C] to-[#098AD2] text-white">
-                <tr>
-                  <th scope="col" className="px-6 py-3 bg-white ">
-                    PRODUCT
+                <tr className="text-base font-semibold">
+                  <th
+                    scope="col"
+                    className="px-6 py-3 text-base font-semibold text-[#098AD2] bg-white"
+                  >
+                    {Translator.t("product", lang)}
                   </th>
-                  <th scope="col" className="px-6 py-3 font-semibold rounded-l-lg">
-                  Pharmacy/Hospital
-                  </th>
-                  <th scope="col" className="px-6 py-3 font-semibold">
-                  Drug Store
-                  </th>
-                  <th scope="col" className="px-6 py-3 font-semibold">
-                  Modern Trade
-                  </th>
-                  <th scope="col" className="px-6 py-3 font-semibold">
-                  General Trade                  
+                  <th
+                    scope="col"
+                    className="px-6 py-3 font-semibold rounded-l-lg"
+                  >
+                    {Translator.t("hospital", lang)}
                   </th>
                   <th scope="col" className="px-6 py-3 font-semibold">
-                  Horeca
+                    {Translator.t("drug-store", lang)}
                   </th>
-                  <th scope="col" className="px-6 py-3 font-semibold rounded-r-lg">
-                  Electrical Store
+                  <th scope="col" className="px-6 py-3 font-semibold">
+                    {Translator.t("modern-trade", lang)}
+                  </th>
+                  <th scope="col" className="px-6 py-3 font-semibold">
+                    {Translator.t("general-trade", lang)}
+                  </th>
+                  <th scope="col" className="px-6 py-3 font-semibold">
+                    {Translator.t("horeca", lang)}
+                  </th>
+                  <th
+                    scope="col"
+                    className="px-6 py-3 font-semibold rounded-r-lg"
+                  >
+                    {Translator.t("electrical-store", lang)}
                   </th>
                 </tr>
               </thead>
               <tbody>
-                <tr className="bg-white border-b ">
-                  <th className="px-6 py-4 ">
+                <tr className="text-base bg-white border-b ">
+                  <th className="px-6 py-4 font-semibold">
                     PHARMACEUTICAL / HEALTH EQUIPMENT
                   </th>
                   <td className="px-6 py-4">3 x 24 Hours</td>
                   <td className="px-6 py-4">3 x 24 Hours</td>
-                  <td className="px-6 py-4">3 x 24 Hours (according to purchase orders)</td>
+                  <td className="px-6 py-4">
+                    3 x 24 Hours (according to purchase orders)
+                  </td>
                   <td className="px-6 py-4">3 x 24 Hours</td>
                   <td className="px-6 py-4">-</td>
                   <td className="px-6 py-4">-</td>
                 </tr>
-                <tr className="bg-white border-b ">
-                  <th className="px-6 py-4 ">
+                <tr className="text-base bg-white border-b ">
+                  <th className="px-6 py-4 font-semibold">
                     CONSUMER GOODS & COSMETICS
                   </th>
                   <td className="px-6 py-4">3 x 24 Hours</td>
                   <td className="px-6 py-4">3 x 24 Hours</td>
-                  <td className="px-6 py-4">3 x 24 Hours (according to purchase orders)</td>
+                  <td className="px-6 py-4">
+                    3 x 24 Hours (according to purchase orders)
+                  </td>
                   <td className="px-6 py-4">3 x 24 Hours</td>
                   <td className="px-6 py-4">-</td>
                   <td className="px-6 py-4">2 x 24 Hours</td>
                 </tr>
-                <tr className="bg-white">
-                  <th className="px-6 py-4 ">
-                  FOOD & BEVERAGES
-                  </th>
+                <tr className="text-base bg-white">
+                  <th className="px-6 py-4 font-semibold">FOOD & BEVERAGES</th>
                   <td className="px-6 py-4">3 x 24 Hours</td>
                   <td className="px-6 py-4">3 x 24 Hours</td>
-                  <td className="px-6 py-4">3 x 24 Hours (according to purchase orders)</td>
+                  <td className="px-6 py-4">
+                    3 x 24 Hours (according to purchase orders)
+                  </td>
                   <td className="px-6 py-4">3 x 24 Hours</td>
                   <td className="px-6 py-4">3 x 24 Hours</td>
                   <td className="px-6 py-4">-</td>

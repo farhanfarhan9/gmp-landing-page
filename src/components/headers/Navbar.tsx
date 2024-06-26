@@ -7,11 +7,13 @@ import LanguageSwitcher from "./LanguageSwitcher";
 import Dropdown from "@/components/Dropdown/Dropdown";
 import DropdownImage from "@/components/Dropdown/DropdownImage";
 import { useSearchParams, usePathname } from "next/navigation";
+import Modal from "./../home/Modal";
 
 const Navbar = () => {
   const pathname = usePathname();
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false); // State to control modal visibility
 
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang") || undefined;
@@ -51,7 +53,7 @@ const Navbar = () => {
                   } hover:text-[#0C5095] dark:hover:text-white px-2 py-1 rounded-md`}
                   href={Translator.gotoUrl("#about", lang)}
                 >
-                  About Us
+                  {Translator.t("about-us", lang)}
                 </a>
                 <a
                   className={`text-lg ${
@@ -61,7 +63,7 @@ const Navbar = () => {
                   } hover:text-[#0C5095] dark:hover:text-white px-2 py-1 rounded-md`}
                   href={Translator.gotoUrl("#product", lang)}
                 >
-                  Product & Services
+                  {Translator.t("product-services", lang)}
                 </a>
                 <a
                   className={`text-lg ${
@@ -71,7 +73,7 @@ const Navbar = () => {
                   } hover:text-[#0C5095] dark:hover:text-white px-2 py-1 rounded-md`}
                   href={Translator.gotoUrl("#infrasctructure", lang)}
                 >
-                  Infrastructure
+                  {Translator.t("infrastructure", lang)}
                 </a>
                 <a
                   className={`text-lg ${
@@ -79,7 +81,7 @@ const Navbar = () => {
                   } hover:text-[#0C5095] dark:hover:text-white px-2 py-1 rounded-md`}
                   href={Translator.gotoUrl("#awards", lang)}
                 >
-                  Awards
+                  {Translator.t("awards", lang)}
                 </a>
                 <a
                   className={`text-lg ${
@@ -88,15 +90,18 @@ const Navbar = () => {
                       : "text-[#41444B]"
                   } hover:text-[#0C5095] dark:hover:text-white px-2 py-1 rounded-md`}
                   href={Translator.gotoUrl("#partner", lang)}
-
                 >
-                  Partners
+                  {Translator.t("partners", lang)}
                 </a>
                 <div>
-                  <div className="px-4 py-2 bg-white border border-[#0088BB] rounded-lg">
+                  <div
+                    className="px-4 py-2 bg-white border border-[#0088BB] rounded-lg cursor-pointer"
+                    onClick={() => setIsModalOpen(true)}
+                  >
                     <span className="text-[#0088BB]">Contact us</span>
                   </div>
                 </div>
+                <LanguageSwitcher />
               </div>
             </div>
           </div>
@@ -126,40 +131,46 @@ const Navbar = () => {
               className="block px-2 py-1 text-base font-medium text-gray-500 rounded-md hover:text-gray-800 dark:text-white"
               href="/about-us"
             >
-              About Us
+              {Translator.t("about-us", lang)}
             </a>
             <a
               className="block px-2 py-1 text-base font-medium text-gray-500 rounded-md hover:text-gray-800 dark:text-white"
               href="/product-services"
             >
-              Product & Services
+              {Translator.t("product-services", lang)}
             </a>
             <Link
               className="block px-2 py-1 text-base font-medium text-gray-500 rounded-md hover:text-gray-800 dark:hover:text-white"
               href="/infrastructure"
             >
-              Infrastructure
+              {Translator.t("infrastructure", lang)}
             </Link>
             <Link
               className="block px-2 py-1 text-base font-medium text-gray-500 rounded-md hover:text-gray-800 dark:hover:text-white"
               href="/awards"
             >
-              Awards
+              {Translator.t("awards", lang)}
             </Link>
             <Link
               className="block px-2 py-1 text-base font-medium text-gray-500 rounded-md hover:text-gray-800 dark:hover:text-white"
               href="/partners"
             >
-              Partners
+              {Translator.t("partners", lang)}
             </Link>
             <div>
-              <div className="px-4 py-2 bg-white border w-fit border-[#0088BB] rounded-lg">
+              <div
+                className="px-4 py-2 bg-white border w-fit border-[#0088BB] rounded-lg cursor-pointer"
+                onClick={() => setIsModalOpen(true)}
+              >
                 <span className="text-[#0088BB] text-base">Contact us</span>
               </div>
             </div>
+            <LanguageSwitcher />
           </div>
         </div>
       )}
+      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />{" "}
+      {/* Pass isOpen state and onClose function to Modal */}
     </nav>
   );
 };

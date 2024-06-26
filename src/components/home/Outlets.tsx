@@ -13,9 +13,11 @@ function Outlets() {
       <div className="flex flex-col md:flex-row">
         <div className="mx-auto md:mx-0 md:my-auto md:w-1/3 ">
           <div className="text-xl md:text-4xl font-semibold text-[#098AD2] text-center md:text-left">
-            Number of Outlets
+            {Translator.t("number-outlet", lang)}
           </div>
-          <p className="text-lg font-medium text-center md:text-3xl md:text-left">*as per 2023</p>
+          <p className="text-lg font-medium text-center md:text-3xl md:text-left">
+            *{Translator.t("number-asper", lang)}
+          </p>
         </div>
         <Image
           className="w-full md:w-2/3"

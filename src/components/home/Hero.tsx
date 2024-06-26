@@ -23,8 +23,7 @@ const Hero = () => {
         </h1>
 
         <h3 className="w-2/3 mx-auto mt-10 text-base font-normal leading-8 text-center text-white md:mx-0 md:text-left md:text-3xl">
-          Leading Distributor for Pharmaceutical and FMCG in North Sumatra and
-          DI Aceh
+          {Translator.t("hero-text", lang)}
         </h3>
       </div>
     </section>

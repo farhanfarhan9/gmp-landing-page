@@ -60,7 +60,7 @@ function Modal({ isOpen, onClose }: ModalProps) {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed top-0 left-0 flex items-center justify-center w-full h-full bg-gray-800 bg-opacity-75">
+    <div className="fixed top-0 left-0 z-30 flex items-center justify-center w-full h-full bg-gray-800 bg-opacity-75">
       <div
         className="relative w-4/5 p-8 bg-white rounded-lg md:w-1/2 modal-content"
         onClick={(e) => e.stopPropagation()}
@@ -86,7 +86,7 @@ function Modal({ isOpen, onClose }: ModalProps) {
         </button>
         <div>
           <h1 className="text-[#0E4F94] font-bold text-4xl mb-10">
-            Request Company Profile
+            Contact Us
           </h1>
           <form className="w-full mx-auto space-y-5" onSubmit={handleSubmit}>
             <div className="w-full">

@@ -11,8 +11,8 @@ function InfrastructureWarehouse() {
   return (
     <div className="py-5 mt-5 space-y-10 md:py-10 md:mt-10 md:mx-auto md:max-w-7xl" id="infrasctructure">
       <div className="text-xl md:text-4xl font-semibold text-[#098AD2] text-center flex justify-center gap-3 md:gap-5">
-        <span className="border-r-2 md:border-r-4 border-[#098AD2] pr-3">Infrastructure</span>
-        <span>Warehouse</span>
+        <span className="border-r-2 md:border-r-4 border-[#098AD2] pr-3">{Translator.t("infrastructure", lang)}</span>
+        <span>{Translator.t("warehouse", lang)}</span>
       </div>
       <div className="grid grid-cols-1 px-2 md:grid-cols-3 gap-14">
         <div className="w-full pl-6 border-l-2 border-l-[#77C3ED] space-y-5">

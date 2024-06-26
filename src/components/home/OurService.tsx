@@ -26,7 +26,7 @@ function OurService() {
     <div className="py-10 md:py-20 bg-[#D9F1FF]" id="about">
       <div className="mx-auto md:max-w-7xl">
         <div className="text-xl text-center md:text-left md:text-4xl font-semibold text-[#098AD2] ">
-          Company Profile
+          {Translator.t("company-profile-title", lang)}
         </div>
 
         <div className="flex flex-col mt-5 md:mt-10 md:flex-row">
@@ -38,7 +38,7 @@ function OurService() {
                 }`}
                 onClick={() => setactiveservice(0)}
               >
-                Vision
+                {Translator.t("vision", lang)}
               </li>
               <li
                 className={`text-sm md:text-3xl font-semibold px-4 py-1 md:px-2 md:py-4 cursor-pointer  text-black ${
@@ -46,7 +46,7 @@ function OurService() {
                 }`}
                 onClick={() => setactiveservice(1)}
               >
-                Mission
+                {Translator.t("mission", lang)}
               </li>
             </ul>
           </div>
@@ -54,9 +54,11 @@ function OurService() {
             {activeservice === 0 ? (
               <div className="space-y-5 md:space-y-10">
                 {/* Content for Vision */}
-                <h2 className="hidden text-3xl font-semibold md:block">Company Vision</h2>
+                <h2 className="hidden text-3xl font-semibold md:block">
+                  {Translator.t("company-vision", lang)}
+                </h2>
                 <p className="text-sm font-normal md:text-xl md:font-semibold">
-                  To become a reliable, productive and trusted distributor.{" "}
+                  {Translator.t("company-vision-1", lang)}
                 </p>
                 <div className="flex w-full gap-5 overflow-x-auto md:gap-10">
                   <Image
@@ -84,67 +86,81 @@ function OurService() {
               </div>
             ) : (
               <div className="">
-                <h2 className="hidden text-3xl font-semibold md:block">Company Mission</h2>
+                <h2 className="hidden text-3xl font-semibold md:block">
+                  {Translator.t("company-mission", lang)}
+                </h2>
                 <ul className="mt-5 space-y-4 md:mt-10">
                   <li className="flex gap-10">
-                  <Image
-                    src={"/img/home/m1.png"}
-                    className="w-fit h-fit"
-                    alt=""
-                    width={40}
-                    height={40}
-                  />
-                  <p className="my-auto text-sm font-normal md:text-xl md:font-semibold">Develop and improve HR quality, especially in the sales department.</p>
+                    <Image
+                      src={"/img/home/m1.png"}
+                      className="w-fit h-fit"
+                      alt=""
+                      width={40}
+                      height={40}
+                    />
+                    <p className="my-auto text-sm font-normal md:text-xl md:font-semibold">
+                      {Translator.t("company-mission-1", lang)}
+                    </p>
                   </li>
                   <li className="flex gap-10">
-                  <Image
-                    src={"/img/home/m2.png"}
-                    className="w-fit h-fit"
-                    alt=""
-                    width={40}
-                    height={40}
-                  />
-                  <p className="my-auto text-sm font-normal md:text-xl md:font-semibold">Keep developing sustainable IT and management system that is capable of optimizing business operations.</p>
+                    <Image
+                      src={"/img/home/m2.png"}
+                      className="w-fit h-fit"
+                      alt=""
+                      width={40}
+                      height={40}
+                    />
+                    <p className="my-auto text-sm font-normal md:text-xl md:font-semibold">
+                      {Translator.t("company-mission-2", lang)}
+                    </p>
                   </li>
                   <li className="flex gap-10">
-                  <Image
-                    src={"/img/home/m3.png"}
-                    className="w-fit h-fit"
-                    alt=""
-                    width={40}
-                    height={40}
-                  />
-                  <p className="my-auto text-sm font-normal md:text-xl md:font-semibold">Maintain and improve the good business relationship between principals and customers.</p>
+                    <Image
+                      src={"/img/home/m3.png"}
+                      className="w-fit h-fit"
+                      alt=""
+                      width={40}
+                      height={40}
+                    />
+                    <p className="my-auto text-sm font-normal md:text-xl md:font-semibold">
+                      {Translator.t("company-mission-3", lang)}
+                    </p>
                   </li>
                   <li className="flex gap-10">
-                  <Image
-                    src={"/img/home/m4.png"}
-                    className="w-fit h-fit"
-                    alt=""
-                    width={40}
-                    height={40}
-                  />
-                  <p className="my-auto text-sm font-normal md:text-xl md:font-semibold">Create teamworks and maintain a safe, harmonious, and work productive atmosphere among the shareholders, company leaders, and employees.</p>
+                    <Image
+                      src={"/img/home/m4.png"}
+                      className="w-fit h-fit"
+                      alt=""
+                      width={40}
+                      height={40}
+                    />
+                    <p className="my-auto text-sm font-normal md:text-xl md:font-semibold">
+                      {Translator.t("company-mission-4", lang)}
+                    </p>
                   </li>
                   <li className="flex gap-10">
-                  <Image
-                    src={"/img/home/m5.png"}
-                    className="w-fit h-fit"
-                    alt=""
-                    width={40}
-                    height={40}
-                  />
-                  <p className="my-auto text-sm font-normal md:text-xl md:font-semibold">Build and develop an ideal enterprise infrastructure along with the development and distribution demands.</p>
+                    <Image
+                      src={"/img/home/m5.png"}
+                      className="w-fit h-fit"
+                      alt=""
+                      width={40}
+                      height={40}
+                    />
+                    <p className="my-auto text-sm font-normal md:text-xl md:font-semibold">
+                      {Translator.t("company-mission-5", lang)}
+                    </p>
                   </li>
                   <li className="flex gap-10">
-                  <Image
-                    src={"/img/home/m6.png"}
-                    className="w-fit h-fit"
-                    alt=""
-                    width={40}
-                    height={40}
-                  />
-                  <p className="my-auto text-sm font-normal md:text-xl md:font-semibold">Expanding business network and increase the number of good principals and mutually benecial selectively.</p>
+                    <Image
+                      src={"/img/home/m6.png"}
+                      className="w-fit h-fit"
+                      alt=""
+                      width={40}
+                      height={40}
+                    />
+                    <p className="my-auto text-sm font-normal md:text-xl md:font-semibold">
+                      {Translator.t("company-mission-6", lang)}
+                    </p>
                   </li>
                 </ul>
               </div>

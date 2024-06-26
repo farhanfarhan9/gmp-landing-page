@@ -11,12 +11,12 @@ function WarehouseFacility() {
   return (
     <div className="px-2 py-5 mt-5 md:py-10 md:mt-10 md:mx-auto md:max-w-7xl md:px-0">
       <div className="text-xl md:hidden md:text-4xl font-semibold text-[#098AD2] text-center">
-        Warehouse Facilities
+        {Translator.t("warehouse-facility", lang)}
       </div>
       <div className="flex gap-5">
         <div className="flex flex-col w-3/4 mx-auto my-auto md:mx-0">
           <div className="text-4xl hidden md:block font-semibold text-[#098AD2] text-left">
-            Warehouse Facilities
+            {Translator.t("warehouse-facility", lang)}
           </div>
           <div className="grid grid-cols-1 gap-5 mx-auto mt-5 md:gap-10 md:mt-10 md:grid-cols-2 md:mx-0">
             <div className="flex w-full gap-8">
@@ -27,7 +27,9 @@ function WarehouseFacility() {
                 width={40}
                 height={40}
               />
-              <p className="my-auto text-base font-semibold text-black md:text-xl">Racking System</p>
+              <p className="my-auto text-base font-semibold text-black md:text-xl">
+                {Translator.t("warehouse-facility-1", lang)}
+              </p>
             </div>
             <div className="flex w-full gap-8">
               <Image
@@ -37,7 +39,9 @@ function WarehouseFacility() {
                 width={40}
                 height={40}
               />
-              <p className="my-auto text-base font-semibold text-black md:text-xl">Pharmaceutical Warehouse CDOB Standard</p>
+              <p className="my-auto text-base font-semibold text-black md:text-xl">
+                {Translator.t("warehouse-facility-2", lang)}
+              </p>
             </div>
             <div className="flex w-full gap-8">
               <Image
@@ -47,7 +51,9 @@ function WarehouseFacility() {
                 width={40}
                 height={40}
               />
-              <p className="my-auto text-base font-semibold text-black md:text-xl">Reach Trucks and Warehouse Equipment Support</p>
+              <p className="my-auto text-base font-semibold text-black md:text-xl">
+                {Translator.t("warehouse-facility-3", lang)}
+              </p>
             </div>
             <div className="flex w-full gap-8">
               <Image
@@ -57,7 +63,9 @@ function WarehouseFacility() {
                 width={40}
                 height={40}
               />
-              <p className="my-auto text-base font-semibold text-black md:text-xl">Has temperature control {'<30°'}, {'25°'}, {'<8°'}</p>
+              <p className="my-auto text-base font-semibold text-black md:text-xl">
+                {Translator.t("warehouse-facility-4", lang)}
+              </p>
             </div>
             <div className="flex w-full gap-8">
               <Image
@@ -67,7 +75,9 @@ function WarehouseFacility() {
                 width={40}
                 height={40}
               />
-              <p className="my-auto text-base font-semibold text-black md:text-xl">Separated Warehouse for bad stock/ED handling</p>
+              <p className="my-auto text-base font-semibold text-black md:text-xl">
+                {Translator.t("warehouse-facility-5", lang)}
+              </p>
             </div>
             <div className="flex w-full gap-8">
               <Image
@@ -77,7 +87,9 @@ function WarehouseFacility() {
                 width={40}
                 height={40}
               />
-              <p className="my-auto text-base font-semibold text-black md:text-xl">Separated Warehouse for Special Handling Product</p>
+              <p className="my-auto text-base font-semibold text-black md:text-xl">
+                {Translator.t("warehouse-facility-6", lang)}
+              </p>
             </div>
             <div className="flex w-full gap-8">
               <Image
@@ -87,7 +99,9 @@ function WarehouseFacility() {
                 width={40}
                 height={40}
               />
-              <p className="my-auto text-base font-semibold text-black md:text-xl">Special Handling Location for Near ED product</p>
+              <p className="my-auto text-base font-semibold text-black md:text-xl">
+                {Translator.t("warehouse-facility-7", lang)}
+              </p>
             </div>
             <div className="flex w-full gap-8">
               <Image
@@ -97,7 +111,9 @@ function WarehouseFacility() {
                 width={40}
                 height={40}
               />
-              <p className="my-auto text-base font-semibold text-black md:text-xl">Pest Control</p>
+              <p className="my-auto text-base font-semibold text-black md:text-xl">
+                {Translator.t("warehouse-facility-8", lang)}
+              </p>
             </div>
           </div>
         </div>

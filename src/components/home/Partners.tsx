@@ -85,7 +85,7 @@ function Partners() {
             <>
               <Image
                 src={"/img/home/partners/partner10.png"}
-                className="object-scale-down col-start-2 mx-auto my-auto w-fit"
+                className="object-scale-down mx-auto my-auto md:col-start-2 w-fit"
                 alt=""
                 width={20}
                 height={20}

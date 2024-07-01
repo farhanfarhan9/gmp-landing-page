@@ -264,5 +264,8 @@
   "runner-up": "RUNNER UP DISTRIBUTOR LEAGUE",
   "see-more": "See more",
   "see-less": "See less",
-  "address": "Address"
+  "address": "Address",
+  "headquarter": "HEADQUARTER",
+  "branches": "BRANCHES",
+  "stations": "STATIONS"
 }

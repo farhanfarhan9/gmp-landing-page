@@ -264,6 +264,9 @@
   "runner-up": "RUNNER UP LIGA DISTRIBUTOR",
   "see-more": "Lihat lebih banyak",
   "see-less": "Lihat lebih sedikit",
-  "address": "Alamat"
+  "address": "Alamat",
+  "headquarter": "KANTOR PUSAT",
+  "branches": "CABANG",
+  "stations": "STASIUN"
 
 }

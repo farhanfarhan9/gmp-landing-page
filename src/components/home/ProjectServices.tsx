@@ -177,34 +177,63 @@ function ProjectServices() {
               <tbody>
                 <tr className="text-base bg-white border-b">
                   <th className="px-6 py-4 font-semibold ">
-                    PHARMACEUTICAL / HEALTH EQUIPMENT
+                    {Translator.t("pharmaceutical", lang)}
                   </th>
-                  <td className="px-6 py-4">Same Day Services</td>
-                  <td className="px-6 py-4">Same Day Services</td>
                   <td className="px-6 py-4">
-                    2 x 24 Hours (according to purchase orders)
+                    {Translator.t("same-day", lang)}
                   </td>
-                  <td className="px-6 py-4">2 x 24 Hours</td>
+                  <td className="px-6 py-4">
+                    {Translator.t("same-day", lang)}
+                  </td>
+                  <td className="px-6 py-4">
+                    2 x 24 {Translator.t("hours", lang)} (
+                    {Translator.t("according", lang)})
+                  </td>
+                  <td className="px-6 py-4">
+                    2 x 24 {Translator.t("hours", lang)}
+                  </td>
                   <td className="px-6 py-4">-</td>
                   <td className="px-6 py-4">-</td>
                 </tr>
                 <tr className="text-base bg-white border-b">
                   <th className="px-6 py-4 font-semibold">
-                    CONSUMER GOODS & COSMETICS
+                    {Translator.t("consumer", lang)}
                   </th>
-                  <td className="px-6 py-4">2 x 24 Hours</td>
-                  <td className="px-6 py-4">2 x 24 Hours</td>
-                  <td className="px-6 py-4">2 x 24 Hours</td>
-                  <td className="px-6 py-4">2 x 24 Hours</td>
-                  <td className="px-6 py-4">2 x 24 Hours</td>
-                  <td className="px-6 py-4">1 x 24 Hours</td>
+                  <td className="px-6 py-4">
+                    2 x 24 {Translator.t("hours", lang)}
+                  </td>
+                  <td className="px-6 py-4">
+                    2 x 24 {Translator.t("hours", lang)}
+                  </td>
+                  <td className="px-6 py-4">
+                    2 x 24 {Translator.t("hours", lang)}
+                  </td>
+                  <td className="px-6 py-4">
+                    2 x 24 {Translator.t("hours", lang)}
+                  </td>
+                  <td className="px-6 py-4">
+                    2 x 24 {Translator.t("hours", lang)}
+                  </td>
+                  <td className="px-6 py-4">
+                    1 x 24 {Translator.t("hours", lang)}
+                  </td>
                 </tr>
                 <tr className="text-base bg-white">
-                  <th className="px-6 py-4 font-semibold">FOOD & BEVERAGES</th>
-                  <td className="px-6 py-4">2 x 24 Hours</td>
-                  <td className="px-6 py-4">2 x 24 Hours</td>
-                  <td className="px-6 py-4">2 x 24 Hours</td>
-                  <td className="px-6 py-4">2 x 24 Hours</td>
+                  <th className="px-6 py-4 font-semibold">
+                    {Translator.t("fnb2", lang)}
+                  </th>
+                  <td className="px-6 py-4">
+                    2 x 24 {Translator.t("hours", lang)}
+                  </td>
+                  <td className="px-6 py-4">
+                    2 x 24 {Translator.t("hours", lang)}
+                  </td>
+                  <td className="px-6 py-4">
+                    2 x 24 {Translator.t("hours", lang)}
+                  </td>
+                  <td className="px-6 py-4">
+                    2 x 24 {Translator.t("hours", lang)}
+                  </td>
                   <td className="px-6 py-4">-</td>
                   <td className="px-6 py-4">-</td>
                 </tr>
@@ -251,39 +280,41 @@ function ProjectServices() {
               <tbody>
                 <tr className="text-base bg-white border-b ">
                   <th className="px-6 py-4 font-semibold">
-                    PHARMACEUTICAL / HEALTH EQUIPMENT
+                    {Translator.t("pharmaceutical", lang)}
                   </th>
-                  <td className="px-6 py-4">3 x 24 Hours</td>
-                  <td className="px-6 py-4">3 x 24 Hours</td>
+                  <td className="px-6 py-4">3 x 24 {Translator.t("Hours", lang)}</td>
+                  <td className="px-6 py-4">3 x 24 {Translator.t("Hours", lang)}</td>
                   <td className="px-6 py-4">
-                    3 x 24 Hours (according to purchase orders)
+                    3 x 24 {Translator.t("Hours", lang)} ({Translator.t("according", lang)})
                   </td>
-                  <td className="px-6 py-4">3 x 24 Hours</td>
+                  <td className="px-6 py-4">3 x 24 {Translator.t("Hours", lang)}</td>
                   <td className="px-6 py-4">-</td>
                   <td className="px-6 py-4">-</td>
                 </tr>
                 <tr className="text-base bg-white border-b ">
                   <th className="px-6 py-4 font-semibold">
-                    CONSUMER GOODS & COSMETICS
+                    {Translator.t("consumer", lang)}
                   </th>
-                  <td className="px-6 py-4">3 x 24 Hours</td>
-                  <td className="px-6 py-4">3 x 24 Hours</td>
+                  <td className="px-6 py-4">3 x 24 {Translator.t("Hours", lang)}</td>
+                  <td className="px-6 py-4">3 x 24 {Translator.t("Hours", lang)}</td>
                   <td className="px-6 py-4">
-                    3 x 24 Hours (according to purchase orders)
+                    3 x 24 {Translator.t("Hours", lang)} ({Translator.t("according", lang)})
                   </td>
-                  <td className="px-6 py-4">3 x 24 Hours</td>
+                  <td className="px-6 py-4">3 x 24 {Translator.t("Hours", lang)}</td>
                   <td className="px-6 py-4">-</td>
-                  <td className="px-6 py-4">2 x 24 Hours</td>
+                  <td className="px-6 py-4">2 x 24 {Translator.t("Hours", lang)}</td>
                 </tr>
                 <tr className="text-base bg-white">
-                  <th className="px-6 py-4 font-semibold">FOOD & BEVERAGES</th>
-                  <td className="px-6 py-4">3 x 24 Hours</td>
-                  <td className="px-6 py-4">3 x 24 Hours</td>
+                  <th className="px-6 py-4 font-semibold">
+                    {Translator.t("fnb2", lang)}
+                  </th>
+                  <td className="px-6 py-4">3 x 24 {Translator.t("Hours", lang)}</td>
+                  <td className="px-6 py-4">3 x 24 {Translator.t("Hours", lang)}</td>
                   <td className="px-6 py-4">
-                    3 x 24 Hours (according to purchase orders)
+                    3 x 24 {Translator.t("Hours", lang)} ({Translator.t("according", lang)})
                   </td>
-                  <td className="px-6 py-4">3 x 24 Hours</td>
-                  <td className="px-6 py-4">3 x 24 Hours</td>
+                  <td className="px-6 py-4">3 x 24 {Translator.t("Hours", lang)}</td>
+                  <td className="px-6 py-4">3 x 24 {Translator.t("Hours", lang)}</td>
                   <td className="px-6 py-4">-</td>
                 </tr>
               </tbody>

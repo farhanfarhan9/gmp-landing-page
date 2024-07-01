@@ -11,7 +11,7 @@ function AwardAchievement() {
   return (
     <div className="py-10 mt-10 space-y-10 md:mx-auto md:max-w-7xl" id="awards">
       <div className="text-xl md:text-4xl font-semibold text-[#098AD2] text-center">
-        Award And Major Achievement
+        {Translator.t("award", lang)}
       </div>
       <div className="container">
         <div className="flex flex-col grid-cols-9 p-2 mx-auto overflow-y-auto md:grid text-blue-50 max-h-lvh">
@@ -29,10 +29,11 @@ function AwardAchievement() {
                 </h3>
               </div>
               <p className="text-xl text-[#098AD2] font-semibold">
-                THE BEST DISTRIBUTOR
+                {Translator.t("best-distiributor", lang)}
               </p>
               <p className="text-xl text-black">
-                FROM PT. CARLO ERBA FARMITALIA INTERNATIONAL INDONESIA
+                {Translator.t("from", lang)} PT. CARLO ERBA FARMITALIA
+                INTERNATIONAL INDONESIA
               </p>
             </div>
           </div>
@@ -42,10 +43,11 @@ function AwardAchievement() {
                 <h3 className="text-lg font-semibold text-white">1997</h3>
               </div>
               <p className="text-xl text-[#098AD2] font-semibold">
-                THE BEST DISTRIBUTOR
+                {Translator.t("best-distiributor", lang)}
               </p>
               <p className="text-xl text-black">
-                FROM PT. CARLO ERBA FARMITALIA INTERNATIONAL INDONESIA
+                {Translator.t("from", lang)} PT. CARLO ERBA FARMITALIA
+                INTERNATIONAL INDONESIA
               </p>
             </div>
             <div className="relative col-start-5 col-end-6 mr-10 md:mx-auto">
@@ -67,9 +69,11 @@ function AwardAchievement() {
                 <h3 className="text-lg font-semibold text-white">2003</h3>
               </div>
               <p className="text-xl text-[#098AD2] font-semibold">
-                THE BEST DISTRIBUTOR
+                {Translator.t("best-distiributor", lang)}
               </p>
-              <p className="text-xl text-black">FROM PT. MAKARIZO INDONESIA</p>
+              <p className="text-xl text-black">
+                {Translator.t("from", lang)} PT. MAKARIZO INDONESIA
+              </p>
             </div>
           </div>
           <div className="flex flex-row-reverse md:contents">
@@ -80,9 +84,11 @@ function AwardAchievement() {
                 </h3>
               </div>
               <p className="text-xl text-[#098AD2] font-semibold">
-                THE BEST DISTRIBUTOR
+                {Translator.t("best-distiributor", lang)}
               </p>
-              <p className="text-xl text-black">FROM PT. SAKA FARMA</p>
+              <p className="text-xl text-black">
+                {Translator.t("from", lang)} PT. SAKA FARMA
+              </p>
             </div>
             <div className="relative col-start-5 col-end-6 mr-10 md:mx-auto">
               <div className="flex items-center justify-center w-6 h-full">
@@ -103,9 +109,11 @@ function AwardAchievement() {
                 <h3 className="text-lg font-semibold text-white">2004</h3>
               </div>
               <p className="text-xl text-[#098AD2] font-semibold">
-                BEST CUSTOMER NATIONAL
+                {Translator.t("best-customer", lang)}
               </p>
-              <p className="text-xl text-black">FROM PT. KIMIA FARMA</p>
+              <p className="text-xl text-black">
+                {Translator.t("from", lang)} PT. KIMIA FARMA
+              </p>
             </div>
           </div>
           <div className="flex flex-row-reverse md:contents">
@@ -114,9 +122,11 @@ function AwardAchievement() {
                 <h3 className="text-lg font-semibold text-white">2005</h3>
               </div>
               <p className="text-xl text-[#098AD2] font-semibold">
-                THE BEST DISTRIBUTOR
+                {Translator.t("best-distiributor", lang)}
               </p>
-              <p className="text-xl text-black">FROM PT. ERRITA FARMA</p>
+              <p className="text-xl text-black">
+                {Translator.t("from", lang)} PT. ERRITA FARMA
+              </p>
             </div>
             <div className="relative col-start-5 col-end-6 mr-10 md:mx-auto">
               <div className="flex items-center justify-center w-6 h-full">
@@ -144,9 +154,11 @@ function AwardAchievement() {
                 </h3>
               </div>
               <p className="text-xl text-[#098AD2] font-semibold">
-                BEST CUSTOMER NATIONAL
+                {Translator.t("best-customer", lang)}
               </p>
-              <p className="text-xl text-black">FROM PT. KIMIA FARMA</p>
+              <p className="text-xl text-black">
+                {Translator.t("from", lang)} PT. KIMIA FARMA
+              </p>
             </div>
           </div>
           <div className="flex flex-row-reverse md:contents">
@@ -155,10 +167,10 @@ function AwardAchievement() {
                 <h3 className="text-lg font-semibold text-white">2007</h3>
               </div>
               <p className="text-xl text-[#098AD2] font-semibold">
-                THE BEST DISTRIBUTOR
+                {Translator.t("best-distiributor", lang)}
               </p>
               <p className="text-xl text-black">
-                FROM PT. JOHNSON & JOHNSON INDONESIA
+                {Translator.t("from", lang)} PT. JOHNSON & JOHNSON INDONESIA
               </p>
             </div>
             <div className="relative col-start-5 col-end-6 mr-10 md:mx-auto">
@@ -180,9 +192,11 @@ function AwardAchievement() {
                 <h3 className="text-lg font-semibold text-white">2013, 2017</h3>
               </div>
               <p className="text-xl text-[#098AD2] font-semibold">
-                LOYALTY PROGRAM SEMANGAT AWARDS
+                {Translator.t("loyalti-program", lang)}
               </p>
-              <p className="text-xl text-black">FROM PT. MERCK TBK</p>
+              <p className="text-xl text-black">
+                {Translator.t("from", lang)} PT. MERCK TBK
+              </p>
             </div>
           </div>
           <div className="flex flex-row-reverse md:contents">
@@ -191,10 +205,10 @@ function AwardAchievement() {
                 <h3 className="text-lg font-semibold text-white">2014</h3>
               </div>
               <p className="text-xl text-[#098AD2] font-semibold">
-                APPRECIATION AWARDS
+                {Translator.t("appr-award", lang)}
               </p>
               <p className="text-xl text-black">
-                FROM PT. RECKITT BENCKISER INDONESIA
+                {Translator.t("from", lang)} PT. RECKITT BENCKISER INDONESIA
               </p>
             </div>
             <div className="relative col-start-5 col-end-6 mr-10 md:mx-auto">
@@ -216,9 +230,11 @@ function AwardAchievement() {
                 <h3 className="text-lg font-semibold text-white">2017</h3>
               </div>
               <p className="text-xl text-[#098AD2] font-semibold">
-                EXCELLENT BUSINESS PARTNER AWARDS
+                {Translator.t("exellence-bp", lang)}
               </p>
-              <p className="text-xl text-black">FROM PT. JOHNSON & JOHNSON</p>
+              <p className="text-xl text-black">
+                {Translator.t("from", lang)} PT. JOHNSON & JOHNSON
+              </p>
             </div>
           </div>
           <div className="flex flex-row-reverse md:contents">
@@ -228,24 +244,26 @@ function AwardAchievement() {
               </div>
               <div>
                 <p className="text-xl text-[#098AD2] font-semibold">
-                  RECOGNITION AWARDS
+                  {Translator.t("recognition-award", lang)}
                 </p>
                 <p className="text-xl text-black">
-                  FROM GLAXO SMITH KLINE INDONESIA
+                  {Translator.t("from", lang)} GLAXO SMITH KLINE INDONESIA
                 </p>
               </div>
               <div className="mt-4">
                 <p className="text-xl text-[#098AD2] font-semibold">
-                  OUTSTANDING BUSSINESS PARTNER APPRECIATION
+                  {Translator.t("outstanding")}
                 </p>
-                <p className="text-xl text-black">FROM PT. JOHNSON & JOHNSON</p>
+                <p className="text-xl text-black">
+                  {Translator.t("from", lang)} PT. JOHNSON & JOHNSON
+                </p>
               </div>
               <div className="mt-4">
                 <p className="text-xl text-[#098AD2] font-semibold">
-                  THE BEST DISTRIBUTOR
+                  {Translator.t("best-distiributor", lang)}
                 </p>
                 <p className="text-xl text-black">
-                  FROM PT. RECKITT BENCKISER INDONESIA
+                  {Translator.t("from", lang)} PT. RECKITT BENCKISER INDONESIA
                 </p>
               </div>
             </div>
@@ -269,21 +287,27 @@ function AwardAchievement() {
               </div>
               <div>
                 <p className="text-xl text-[#098AD2] font-semibold">
-                HIGHEST TOTAL DISTRIBUTION POINT ACHIEVEMENT AWARD
+                  {Translator.t("highest-total", lang)}
                 </p>
-                <p className="text-xl text-black">FROM PT. JOHNSON & JOHNSON</p>
+                <p className="text-xl text-black">
+                  {Translator.t("from", lang)} PT. JOHNSON & JOHNSON
+                </p>
               </div>
               <div className="mt-4">
                 <p className="text-xl text-[#098AD2] font-semibold">
-                BEST SELLOUT GROWTH IN NESTLE BREAKFAST CEREAL CATEGORY
+                  {Translator.t("best-sellout")}
                 </p>
-                <p className="text-xl text-black">FROM PT. NESTLE INDONESIA</p>
+                <p className="text-xl text-black">
+                  {Translator.t("from", lang)} PT. NESTLE INDONESIA
+                </p>
               </div>
               <div className="mt-4">
                 <p className="text-xl text-[#098AD2] font-semibold">
-                RUNNER UP DISTRIBUTOR LEAGUE
+                  {Translator.t("runner-up", lang)}
                 </p>
-                <p className="text-xl text-black">FROM PT. MONDELEZ INDONESIA</p>
+                <p className="text-xl text-black">
+                  {Translator.t("from", lang)} PT. MONDELEZ INDONESIA
+                </p>
               </div>
             </div>
           </div>

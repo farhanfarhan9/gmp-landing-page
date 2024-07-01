@@ -93,14 +93,14 @@ const Navbar = () => {
                 >
                   {Translator.t("partners", lang)}
                 </a>
-                <div>
+                {/* <div>
                   <div
                     className="px-4 py-2 bg-white border border-[#0088BB] rounded-lg cursor-pointer"
                     onClick={() => setIsModalOpen(true)}
                   >
-                    <span className="text-[#0088BB]">Contact us</span>
+                    <span className="text-[#0088BB]">{Translator.t("contact-us", lang)}</span>
                   </div>
-                </div>
+                </div> */}
                 <LanguageSwitcher />
               </div>
             </div>
@@ -157,14 +157,14 @@ const Navbar = () => {
             >
               {Translator.t("partners", lang)}
             </Link>
-            <div>
+            {/* <div>
               <div
                 className="px-4 py-2 bg-white border w-fit border-[#0088BB] rounded-lg cursor-pointer"
                 onClick={() => setIsModalOpen(true)}
               >
                 <span className="text-[#0088BB] text-base">Contact us</span>
               </div>
-            </div>
+            </div> */}
             <LanguageSwitcher />
           </div>
         </div>

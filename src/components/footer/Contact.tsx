@@ -35,46 +35,38 @@ const Contact = () => {
                 alt="Workflow"
               />
             </div>
-            <div className="mt-10 font-bold text-[#098AD2]">Address</div>
+            <div className="mt-10 font-bold text-[#098AD2]">{Translator.t('address', lang)}</div>
             <div className="flex mt-3">
               Jl. Budi Luhur No. 196 Medan 20123 Sumatera Utara - Indonesia
             </div>
           </div>
           <div className="flex flex-col items-center w-full pt-10 xl:w-1/5 xl:pt-0 md:items-start">
-            <div className="font-bold text-[#098AD2]">Quick Links</div>
+            <div className="font-bold text-[#098AD2]">{Translator.t('quick-links', lang)}</div>
             <div className="mt-5">
-              {/* <Link href={Translator.gotoUrl("/", lang)}>Home</Link> */}
-              Home
+              <Link href={Translator.gotoUrl("/", lang)}>Home</Link>
+
             </div>
             <div className="mt-5">
-              {/* <Link href={Translator.gotoUrl("/", lang)}>About Us</Link> */}
-              About Us
+              <Link href={Translator.gotoUrl("#about", lang)}>{Translator.t("about-us", lang)}</Link>
             </div>
             <div className="mt-5">
-              {/* <Link href={Translator.gotoUrl("/about-us", lang)}>About Us</Link> */}
-              Product & Services
+              <Link href={Translator.gotoUrl("#product", lang)}>{Translator.t("product-services", lang)}</Link>
             </div>
             <div className="mt-5">
-              {/* <Link href={Translator.gotoUrl("/project", lang)}>Projects</Link> */}
-              Infrastructures
+              <Link href={Translator.gotoUrl("#infrasctructure", lang)}>{Translator.t("infrastructure", lang)}</Link>
             </div>
             <div className="mt-5">
-              {/* <Link href={Translator.gotoUrl("/project", lang)}>
-                Solutions & Products
-              </Link> */}
-              Awards
+              <Link href={Translator.gotoUrl("#awards", lang)}>{Translator.t("awards", lang)}</Link>
+
             </div>
             <div className="mt-5">
-              {/* <Link href={Translator.gotoUrl("/project", lang)}>
-                Solutions & Products
-              </Link> */}
-              Partners
+              <Link href={Translator.gotoUrl("#partner", lang)}>{Translator.t("partners", lang)}</Link>
             </div>
           </div>
           <div>
             <div className="flex flex-col items-center w-full pt-10 xl:pt-0 md:items-start">
               <div className="font-bold">
-                <div className="text-[#098AD2]">Phone</div>
+                <div className="text-[#098AD2]">{Translator.t('phone2', lang)}</div>
               </div>
               <div className="mt-5">(061) 8444555</div>
             </div>

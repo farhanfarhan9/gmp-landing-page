@@ -15,9 +15,9 @@ function Partners() {
     <div className="py-10 mt-10 space-y-5 md:space-y-24 md:mx-auto md:max-w-7xl" id="partner">
       <div>
         <div className="text-xl md:text-4xl font-semibold text-[#098AD2] text-center">
-          Partners
+          {Translator.t('partners', lang)}
         </div>
-        <div className="grid w-full grid-cols-3 gap-5 my-auto mt-5 text-center md:gap-3 md:grid-cols-9 content-evenly">
+        <div className="grid w-full grid-cols-3 gap-5 px-2 my-auto mt-5 text-center md:gap-3 md:grid-cols-9 content-evenly">
           <Image
             src={"/img/home/partners/partner1.png"}
             className="object-scale-down mx-auto my-auto w-fit"
@@ -136,22 +136,22 @@ function Partners() {
           )}
         </div>
         <p
-          className="text-center text-[#098AD2] text-xl flex justify-center cursor-pointer"
+          className="text-center text-[#098AD2] text-lg mt-1 flex justify-center cursor-pointer"
           onClick={() => togglePartner()}
         >
-          {activepartner === 0 ? "See more" : "See less"}
+          {activepartner === 0 ? Translator.t('see-more', lang) : Translator.t('see-less', lang)}
           {activepartner === 0 ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="1.5"
+              strokeWidth="1.5"
               stroke="currentColor"
               className="my-auto size-6"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 d="m19.5 8.25-7.5 7.5-7.5-7.5"
               />
             </svg>
@@ -160,13 +160,13 @@ function Partners() {
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="1.5"
+              strokeWidth="1.5"
               stroke="currentColor"
               className="my-auto size-6"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 d="m4.5 15.75 7.5-7.5 7.5 7.5"
               />
             </svg>
@@ -175,9 +175,9 @@ function Partners() {
       </div>
       <div >
         <div className="text-xl md:text-4xl font-semibold text-[#098AD2] text-center">
-          Customers
+          {Translator.t('customer', lang)}
         </div>
-        <div className="grid w-full grid-cols-3 gap-5 my-auto mt-5 text-center md:gap-3 md:grid-cols-7 content-evenly">
+        <div className="grid w-full grid-cols-3 gap-5 px-2 my-auto mt-5 text-center md:gap-3 md:grid-cols-7 content-evenly">
           <Image
             src={"/img/home/partners/customers1.png"}
             className="object-scale-down mx-auto my-auto w-fit"
@@ -229,9 +229,9 @@ function Partners() {
           />
         </div>
         <p
-          className="text-center text-[#098AD2] text-xl flex justify-center "
+          className="text-center text-[#098AD2] text-lg flex justify-center "
         >
-          And More
+          {Translator.t('and-more', lang)}
         </p>
       </div>
       {/* <div className="grid grid-cols-3 gap-4 md:grid-cols-9">

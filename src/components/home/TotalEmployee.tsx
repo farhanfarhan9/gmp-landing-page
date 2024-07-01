@@ -11,7 +11,7 @@ function TotalEmployee() {
   return (
     <div className="px-2 py-10 mt-10 space-y-10 md:space-y-20 md:mx-auto md:max-w-7xl">
       <div className="text-xl md:text-4xl font-semibold text-[#098AD2] text-center">
-        Total Employee
+        Total {Translator.t("employee", lang)}
       </div>
       <div className="flex flex-col justify-center gap-10 md:flex-row">
         <div className="flex flex-col items-center space-y-2 text-black md:space-y-5">
@@ -22,8 +22,8 @@ function TotalEmployee() {
             width={40}
             height={40}
           />
-          <p className="text-base font-semibold md:text-xl">People</p> 
-          <h2 className="text-lg font-semibold md:text-3xl">Number of Employees</h2>
+          <p className="text-base font-semibold md:text-xl">{Translator.t("people",lang)}</p> 
+          <h2 className="text-lg font-semibold md:text-3xl">{Translator.t("noe",lang)}</h2>
         </div>
         <div className="flex flex-col items-center space-y-2 text-black md:space-y-5">
           <Image
@@ -33,8 +33,8 @@ function TotalEmployee() {
             width={40}
             height={40}
           />
-          <p className="text-base font-semibold md:text-xl">People</p> 
-          <h2 className="text-lg font-semibold md:text-3xl">Sales Force</h2>
+          <p className="text-base font-semibold md:text-xl">{Translator.t("people",lang)}</p> 
+          <h2 className="text-lg font-semibold md:text-3xl">{Translator.t("sales-force", lang)}</h2>
         </div>
       </div>
     </div>

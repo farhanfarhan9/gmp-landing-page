@@ -267,5 +267,7 @@
   "address": "Address",
   "headquarter": "HEADQUARTER",
   "branches": "BRANCHES",
-  "stations": "STATIONS"
+  "stations": "STATIONS",
+  "company": "Company",
+  "message": "Message"
 }

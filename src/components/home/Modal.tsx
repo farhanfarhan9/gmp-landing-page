@@ -85,7 +85,7 @@ function Modal({ isOpen, onClose }: ModalProps) {
           </svg>
         </button>
         <div>
-          <h1 className="text-[#0E4F94] font-bold text-4xl mb-10">
+          <h1 className="text-[#098AD2] font-bold text-4xl mb-10">
             Contact Us
           </h1>
           <form className="w-full mx-auto space-y-5" onSubmit={handleSubmit}>
@@ -104,11 +104,11 @@ function Modal({ isOpen, onClose }: ModalProps) {
             </div>
             <div className="w-full">
               <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                {Translator.t("jobtitle", lang)}
+                {Translator.t("company", lang)}
               </label>
               <input
                 type="text"
-                name="position"
+                name="company"
                 value={formData.position}
                 onChange={handleChange}
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
@@ -130,28 +130,22 @@ function Modal({ isOpen, onClose }: ModalProps) {
             </div>
             <div className="w-full">
               <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                {Translator.t("phone", lang)}
+                {Translator.t("message", lang)}
               </label>
-              <input
-                type="text"
-                name="phone"
-                value={formData.phone}
-                onChange={handleChange}
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                required
-              />
+              <textarea name="message" rows={4} className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"></textarea>
+
             </div>
 
             <div className="flex justify-end space-x-5">
               <button
-                className="text-[#0E4F94] border border-[#0E4F94] py-3 px-5 md:py-2 md:px-4 rounded-3xl"
+                className="text-[#098AD2] border text-base border-[#098AD2] py-2 px-5 md:py-2 md:px-4 rounded-3xl"
                 onClick={closeModal}
               >
                 Cancel
               </button>
               <button
                 type="submit"
-                className="text-white bg-[#0E4F94] py-3 px-5 md:py-2 md:px-4 rounded-3xl hover:bg-blue-700"
+                className="text-white bg-[#098AD2] text-base py-2 px-5 md:py-2 md:px-4 rounded-3xl hover:bg-blue-700"
               >
                 Send
               </button>

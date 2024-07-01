@@ -267,6 +267,7 @@
   "address": "Alamat",
   "headquarter": "KANTOR PUSAT",
   "branches": "CABANG",
-  "stations": "STASIUN"
-
+  "stations": "STASIUN",
+  "company": "Perusahaan",
+  "message": "Pesan"
 }

@@ -63,21 +63,21 @@ function OurService() {
                 <div className="flex w-full gap-5 overflow-x-auto md:gap-10">
                   <Image
                     src={"/img/home/vision1.png"}
-                    className="object-cover w-full h-full"
+                    className="object-cover w-4/5 h-full md:w-full"
                     alt=""
                     width={2000}
                     height={400}
                   />
                   <Image
                     src={"/img/home/vision2.png"}
-                    className="object-cover w-full h-full"
+                    className="object-cover w-4/5 h-full md:w-full"
                     alt=""
                     width={2000}
                     height={400}
                   />
                   <Image
                     src={"/img/home/vision3.png"}
-                    className="object-cover w-full h-full"
+                    className="object-cover w-4/5 h-full md:w-full"
                     alt=""
                     width={2000}
                     height={400}
@@ -90,78 +90,20 @@ function OurService() {
                   {Translator.t("company-mission", lang)}
                 </h2>
                 <ul className="mt-5 space-y-4 md:mt-10">
-                  <li className="flex gap-10">
-                    <Image
-                      src={"/img/home/m1.png"}
-                      className="w-fit h-fit"
-                      alt=""
-                      width={40}
-                      height={40}
-                    />
-                    <p className="my-auto text-sm font-normal md:text-xl md:font-semibold">
-                      {Translator.t("company-mission-1", lang)}
-                    </p>
-                  </li>
-                  <li className="flex gap-10">
-                    <Image
-                      src={"/img/home/m2.png"}
-                      className="w-fit h-fit"
-                      alt=""
-                      width={40}
-                      height={40}
-                    />
-                    <p className="my-auto text-sm font-normal md:text-xl md:font-semibold">
-                      {Translator.t("company-mission-2", lang)}
-                    </p>
-                  </li>
-                  <li className="flex gap-10">
-                    <Image
-                      src={"/img/home/m3.png"}
-                      className="w-fit h-fit"
-                      alt=""
-                      width={40}
-                      height={40}
-                    />
-                    <p className="my-auto text-sm font-normal md:text-xl md:font-semibold">
-                      {Translator.t("company-mission-3", lang)}
-                    </p>
-                  </li>
-                  <li className="flex gap-10">
-                    <Image
-                      src={"/img/home/m4.png"}
-                      className="w-fit h-fit"
-                      alt=""
-                      width={40}
-                      height={40}
-                    />
-                    <p className="my-auto text-sm font-normal md:text-xl md:font-semibold">
-                      {Translator.t("company-mission-4", lang)}
-                    </p>
-                  </li>
-                  <li className="flex gap-10">
-                    <Image
-                      src={"/img/home/m5.png"}
-                      className="w-fit h-fit"
-                      alt=""
-                      width={40}
-                      height={40}
-                    />
-                    <p className="my-auto text-sm font-normal md:text-xl md:font-semibold">
-                      {Translator.t("company-mission-5", lang)}
-                    </p>
-                  </li>
-                  <li className="flex gap-10">
-                    <Image
-                      src={"/img/home/m6.png"}
-                      className="w-fit h-fit"
-                      alt=""
-                      width={40}
-                      height={40}
-                    />
-                    <p className="my-auto text-sm font-normal md:text-xl md:font-semibold">
-                      {Translator.t("company-mission-6", lang)}
-                    </p>
-                  </li>
+                  {[1, 2, 3, 4, 5, 6].map((item) => (
+                    <li key={item} className="flex w-full gap-10">
+                      <Image
+                        src={`/img/home/m${item}.png`}
+                        className="object-scale-down w-8 h-fit"
+                        alt=""
+                        width={80}
+                        height={80}
+                      />
+                      <p className="flex-1 my-auto text-sm font-normal md:text-xl md:font-semibold">
+                        {Translator.t(`company-mission-${item}`, lang)}
+                      </p>
+                    </li>
+                  ))}
                 </ul>
               </div>
             )}

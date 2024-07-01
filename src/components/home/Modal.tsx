@@ -10,9 +10,9 @@ interface ModalProps {
 
 interface FormData {
   name: string;
-  position: string;
+  company: string;
   email: string;
-  phone: string;
+  message: string;
 }
 
 function Modal({ isOpen, onClose }: ModalProps) {
@@ -21,9 +21,9 @@ function Modal({ isOpen, onClose }: ModalProps) {
 
   const [formData, setFormData] = useState<FormData>({
     name: "",
-    position: "",
+    company: "",
     email: "",
-    phone: "",
+    message: "",
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -37,10 +37,10 @@ function Modal({ isOpen, onClose }: ModalProps) {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     onClose();
-    setFormData({ name: "", position: "", email: "", phone: "" });
+    setFormData({ name: "", company: "", email: "", message: "" });
     toast.success("Submission successful! Please check your email for the company profile document.",{ duration: 3000 });
     try {
-      const response = await fetch("https://api.satrianusa.group/api/send-file", {
+      const response = await fetch("https://api.globalmitraprima.com/api/send-email", {
         method: "POST", // Specify the request method as POST
         headers: {
           "Content-Type": "application/json", // Set the content type to JSON
@@ -109,7 +109,7 @@ function Modal({ isOpen, onClose }: ModalProps) {
               <input
                 type="text"
                 name="company"
-                value={formData.position}
+                value={formData.company}
                 onChange={handleChange}
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                 required
@@ -132,7 +132,7 @@ function Modal({ isOpen, onClose }: ModalProps) {
               <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
                 {Translator.t("message", lang)}
               </label>
-              <textarea name="message" rows={4} className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"></textarea>
+              <textarea name="message" rows={4} className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500">{formData.message}</textarea>
 
             </div>
 

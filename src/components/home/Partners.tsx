@@ -12,12 +12,15 @@ function Partners() {
     setactivepartner((prev) => (prev === 0 ? 1 : 0));
   };
   return (
-    <div className="py-10 mt-10 space-y-5 md:space-y-24 md:mx-auto md:max-w-7xl" id="partner">
+    <div
+      className="py-10 mt-10 space-y-5 md:space-y-24 md:mx-auto md:max-w-7xl"
+      id="partner"
+    >
       <div>
         <div className="text-xl md:text-4xl font-semibold text-[#098AD2] text-center">
-          {Translator.t('partners', lang)}
+          {Translator.t("partners", lang)}
         </div>
-        <div className="grid w-full grid-cols-3 gap-5 px-2 my-auto mt-5 text-center md:gap-3 md:grid-cols-9 content-evenly">
+        <div className="flex gap-5">
           <Image
             src={"/img/home/partners/partner1.png"}
             className="object-scale-down mx-auto my-auto w-fit"
@@ -81,6 +84,63 @@ function Partners() {
             width={20}
             height={20}
           />
+        </div>
+        {activepartner === 1 && (
+          <div className="flex gap-5">
+            <Image
+              src={"/img/home/partners/partner10.png"}
+              className="object-scale-down mx-auto my-auto w-fit"
+              alt=""
+              width={20}
+              height={20}
+            />
+            <Image
+              src={"/img/home/partners/partner11.png"}
+              className="object-scale-down mx-auto my-auto w-fit"
+              alt=""
+              width={20}
+              height={20}
+            />
+            <Image
+              src={"/img/home/partners/partner12.png"}
+              className="object-scale-down mx-auto my-auto w-fit"
+              alt=""
+              width={20}
+              height={20}
+            />
+            <Image
+              src={"/img/home/partners/partner13.png"}
+              className="object-scale-down mx-auto my-auto w-fit"
+              alt=""
+              width={20}
+              height={20}
+            />
+            <Image
+              src={"/img/home/partners/partner14.png"}
+              className="object-scale-down mx-auto my-auto w-fit"
+              alt=""
+              width={20}
+              height={20}
+            />
+            <Image
+              src={"/img/home/partners/partner15.png"}
+              className="object-scale-down mx-auto my-auto w-fit"
+              alt=""
+              width={20}
+              height={20}
+            />
+            <Image
+              src={"/img/home/partners/partner16.png"}
+              className="object-scale-down mx-auto my-auto w-fit"
+              alt=""
+              width={20}
+              height={20}
+            />
+          </div>
+        )}
+        {/* <div className="grid w-full grid-cols-3 gap-5 px-2 my-auto mt-5 text-center md:gap-3 md:grid-cols-9 content-evenly">
+          
+          
           {activepartner === 1 && (
             <>
               <Image
@@ -134,12 +194,14 @@ function Partners() {
               />
             </>
           )}
-        </div>
+        </div> */}
         <p
           className="text-center text-[#098AD2] text-lg mt-1 flex justify-center cursor-pointer"
           onClick={() => togglePartner()}
         >
-          {activepartner === 0 ? Translator.t('see-more', lang) : Translator.t('see-less', lang)}
+          {activepartner === 0
+            ? Translator.t("see-more", lang)
+            : Translator.t("see-less", lang)}
           {activepartner === 0 ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -173,9 +235,9 @@ function Partners() {
           )}
         </p>
       </div>
-      <div >
+      <div>
         <div className="text-xl md:text-4xl font-semibold text-[#098AD2] text-center">
-          {Translator.t('customer', lang)}
+          {Translator.t("customer", lang)}
         </div>
         <div className="grid w-full grid-cols-3 gap-5 px-2 my-auto mt-5 text-center md:gap-3 md:grid-cols-7 content-evenly">
           <Image
@@ -228,10 +290,8 @@ function Partners() {
             height={20}
           />
         </div>
-        <p
-          className="text-center text-[#098AD2] text-lg flex justify-center "
-        >
-          {Translator.t('and-more', lang)}
+        <p className="text-center text-[#098AD2] text-lg flex justify-center ">
+          {Translator.t("and-more", lang)}
         </p>
       </div>
       {/* <div className="grid grid-cols-3 gap-4 md:grid-cols-9">

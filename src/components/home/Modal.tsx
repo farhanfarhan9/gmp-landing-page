@@ -26,7 +26,7 @@ function Modal({ isOpen, onClose }: ModalProps) {
     msg: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
@@ -38,9 +38,9 @@ function Modal({ isOpen, onClose }: ModalProps) {
     e.preventDefault();
     onClose();
     setFormData({ name: "", company: "", email: "", msg: "" });
-    toast.success("Submission successful! Please check your email for the company profile document.",{ duration: 3000 });
+    toast.success("Submission successfull.",{ duration: 3000 });
     try {
-      const response = await fetch("https://api.globalmitraprima.com/api/send-email", {
+      const response = await fetch("http://127.0.0.1:8000/api/send-mail", {
         method: "POST", // Specify the request method as POST
         headers: {
           "Content-Type": "application/json", // Set the content type to JSON
@@ -130,9 +130,9 @@ function Modal({ isOpen, onClose }: ModalProps) {
             </div>
             <div className="w-full">
               <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                {Translator.t("msg", lang)}
+                {Translator.t("message", lang)}
               </label>
-              <textarea name="msg" rows={4} className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500">{formData.msg}</textarea>
+              <textarea name="msg" onChange={handleChange} rows={4} className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500">{formData.msg}</textarea>
 
             </div>
 

@@ -12,7 +12,7 @@ interface FormData {
   name: string;
   company: string;
   email: string;
-  message: string;
+  msg: string;
 }
 
 function Modal({ isOpen, onClose }: ModalProps) {
@@ -23,7 +23,7 @@ function Modal({ isOpen, onClose }: ModalProps) {
     name: "",
     company: "",
     email: "",
-    message: "",
+    msg: "",
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -37,7 +37,7 @@ function Modal({ isOpen, onClose }: ModalProps) {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     onClose();
-    setFormData({ name: "", company: "", email: "", message: "" });
+    setFormData({ name: "", company: "", email: "", msg: "" });
     toast.success("Submission successful! Please check your email for the company profile document.",{ duration: 3000 });
     try {
       const response = await fetch("https://api.globalmitraprima.com/api/send-email", {
@@ -130,9 +130,9 @@ function Modal({ isOpen, onClose }: ModalProps) {
             </div>
             <div className="w-full">
               <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                {Translator.t("message", lang)}
+                {Translator.t("msg", lang)}
               </label>
-              <textarea name="message" rows={4} className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500">{formData.message}</textarea>
+              <textarea name="msg" rows={4} className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500">{formData.msg}</textarea>
 
             </div>
 

@@ -40,7 +40,7 @@ function Modal({ isOpen, onClose }: ModalProps) {
     setFormData({ name: "", company: "", email: "", msg: "" });
     toast.success("Submission successfull.",{ duration: 3000 });
     try {
-      const response = await fetch("http://api.globalmitraprima.com/api/send-mail", {
+      const response = await fetch("https://api.globalmitraprima.com/api/send-mail", {
         method: "POST", // Specify the request method as POST
         headers: {
           "Content-Type": "application/json", // Set the content type to JSON

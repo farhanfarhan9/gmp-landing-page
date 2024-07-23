@@ -17,7 +17,7 @@ function SalesProductivity() {
         <div className="flex items-center justify-center w-44 md:w-64 h-44 md:h-64 p-5 rounded-full bg-[#098AD2]">
           <div className="text-center">
             <h1 className="text-2xl font-bold text-white md:text-8xl">85%</h1>
-            <p className="text-base font-semibold text-white md:text-xl">
+            <p style={{whiteSpace: 'pre-line'}} className="text-base font-semibold text-white md:text-xl">
               {Translator.t("avg-collection", lang)}
             </p>
           </div>

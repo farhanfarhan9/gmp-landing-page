@@ -231,7 +231,7 @@ function Partners() {
                     />
                 </div>
                 <p
-                    className="text-center text-[#098AD2] mt-6 text-lg flex justify-center "
+                    className="text-center text-[#098AD2] text-lg flex justify-center "
                 >
                     {Translator.t('and-more', lang)}
                 </p>

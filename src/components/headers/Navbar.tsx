@@ -22,7 +22,7 @@ const Navbar = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
   return (
-    <nav className="bg-white dark:bg-gray-800">
+    <nav className="fixed z-30 w-full bg-white shadow-md dark:bg-gray-800">
       <div className="mx-auto font-semibold max-w-7xl">
         <div
           className="flex items-center justify-between h-16"
@@ -50,7 +50,7 @@ const Navbar = () => {
                     pathname === "/about-us"
                       ? "text-[#0C5095]"
                       : "text-[#41444B]"
-                  } hover:text-[#0C5095] dark:hover:text-white px-2 py-1 rounded-md`}
+                  } hover:text-[#0C5095] hover:border-b-[#0C5095] hover:border-b-2 dark:hover:text-white px-2 py-1`}
                   href={Translator.gotoUrl("#about", lang)}
                 >
                   {Translator.t("about-us", lang)}
@@ -60,7 +60,7 @@ const Navbar = () => {
                     pathname === "/product-services"
                       ? "text-[#0C5095]"
                       : "text-[#41444B]"
-                  } hover:text-[#0C5095] dark:hover:text-white px-2 py-1 rounded-md`}
+                  } hover:text-[#0C5095] hover:border-b-[#0C5095] hover:border-b-2 dark:hover:text-white px-2 py-1`}
                   href={Translator.gotoUrl("#product", lang)}
                 >
                   {Translator.t("product-services", lang)}
@@ -70,7 +70,7 @@ const Navbar = () => {
                     pathname === "/infrastructure"
                       ? "text-[#0C5095]"
                       : "text-[#41444B]"
-                  } hover:text-[#0C5095] dark:hover:text-white px-2 py-1 rounded-md`}
+                  } hover:text-[#0C5095] hover:border-b-[#0C5095] hover:border-b-2 dark:hover:text-white px-2 py-1`}
                   href={Translator.gotoUrl("#infrasctructure", lang)}
                 >
                   {Translator.t("infrastructure", lang)}
@@ -78,7 +78,7 @@ const Navbar = () => {
                 <a
                   className={`text-lg ${
                     pathname === "/awards" ? "text-[#0C5095]" : "text-[#41444B]"
-                  } hover:text-[#0C5095] dark:hover:text-white px-2 py-1 rounded-md`}
+                  } hover:text-[#0C5095] hover:border-b-[#0C5095] hover:border-b-2 dark:hover:text-white px-2 py-1`}
                   href={Translator.gotoUrl("#awards", lang)}
                 >
                   {Translator.t("awards", lang)}
@@ -88,7 +88,7 @@ const Navbar = () => {
                     pathname === "/partners"
                       ? "text-[#0C5095]"
                       : "text-[#41444B]"
-                  } hover:text-[#0C5095] dark:hover:text-white px-2 py-1 rounded-md`}
+                  } hover:text-[#0C5095] hover:border-b-[#0C5095] hover:border-b-2 dark:hover:text-white px-2 py-1`}
                   href={Translator.gotoUrl("#partner", lang)}
                 >
                   {Translator.t("partners", lang)}
@@ -98,7 +98,9 @@ const Navbar = () => {
                     className="px-4 py-2 bg-white border border-[#0088BB] rounded-lg cursor-pointer"
                     onClick={() => setIsModalOpen(true)}
                   >
-                    <span className="text-[#0088BB]">{Translator.t("contact-us", lang)}</span>
+                    <span className="text-[#0088BB]">
+                      {Translator.t("contact-us", lang)}
+                    </span>
                   </div>
                 </div>
                 <LanguageSwitcher />

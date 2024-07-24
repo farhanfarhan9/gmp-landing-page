@@ -43,24 +43,23 @@ const Contact = () => {
           <div className="flex flex-col items-center w-full pt-10 xl:w-1/5 xl:pt-0 md:items-start">
             <div className="font-bold text-[#098AD2]">{Translator.t('quick-links', lang)}</div>
             <div className="mt-5">
-              <Link href={Translator.gotoUrl("/", lang)}>Home</Link>
+              <Link className="hover:text-[#098AD2]" href={Translator.gotoUrl("/", lang)}>Home</Link>
+            </div>
+            <div className="mt-5">
+              <Link className="hover:text-[#098AD2]" href={Translator.gotoUrl("#about", lang)}>{Translator.t("about-us", lang)}</Link>
+            </div>
+            <div className="mt-5">
+              <Link className="hover:text-[#098AD2]" href={Translator.gotoUrl("#product", lang)}>{Translator.t("product-services", lang)}</Link>
+            </div>
+            <div className="mt-5">
+              <Link className="hover:text-[#098AD2]" href={Translator.gotoUrl("#infrasctructure", lang)}>{Translator.t("infrastructure", lang)}</Link>
+            </div>
+            <div className="mt-5">
+              <Link className="hover:text-[#098AD2]" href={Translator.gotoUrl("#awards", lang)}>{Translator.t("awards", lang)}</Link>
 
             </div>
             <div className="mt-5">
-              <Link href={Translator.gotoUrl("#about", lang)}>{Translator.t("about-us", lang)}</Link>
-            </div>
-            <div className="mt-5">
-              <Link href={Translator.gotoUrl("#product", lang)}>{Translator.t("product-services", lang)}</Link>
-            </div>
-            <div className="mt-5">
-              <Link href={Translator.gotoUrl("#infrasctructure", lang)}>{Translator.t("infrastructure", lang)}</Link>
-            </div>
-            <div className="mt-5">
-              <Link href={Translator.gotoUrl("#awards", lang)}>{Translator.t("awards", lang)}</Link>
-
-            </div>
-            <div className="mt-5">
-              <Link href={Translator.gotoUrl("#partner", lang)}>{Translator.t("partners", lang)}</Link>
+              <Link className="hover:text-[#098AD2]" href={Translator.gotoUrl("#partner", lang)}>{Translator.t("partners", lang)}</Link>
             </div>
           </div>
           <div>

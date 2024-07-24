@@ -8,7 +8,7 @@ const Hero = () => {
   const lang = searchParams.get("lang") || undefined;
 
   return (
-    <section className="relative flex items-center justify-center h-[320px] md:h-auto">
+    <section className="relative flex items-center justify-center h-[320px] md:h-auto pt-20">
       <Image
         src={"/img/home/hero.png"}
         className="object-cover w-full h-full"

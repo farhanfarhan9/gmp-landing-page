@@ -75,7 +75,7 @@ function ProjectMap() {
                 {Translator.t("stations", lang)}
               </h1>
             <div className="grid grid-cols-2 gap-10 ml-10">
-              <ul className="mt-2 space-y-2">
+              <ul className="mt-2 ml-2 space-y-2">
                 {[
                   "Langkat",
                   "Kabanjahe",

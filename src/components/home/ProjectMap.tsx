@@ -25,7 +25,7 @@ function ProjectMap() {
         <div className="w-full text-black md:my-32 md:w-1/2">
           <div className="flex justify-between">
             <div>
-              <h1 className="flex items-center justify-center gap-2 text-base font-semibold md:text-3xl">
+              <h1 className="flex items-center gap-2 text-base font-semibold md:text-3xl">
                 <span className="text-[#098AD2] text-xl md:text-5xl font-bold my-0">
                   1{" "}
                 </span>
@@ -38,7 +38,7 @@ function ProjectMap() {
               </ul>
             </div>
             <div>
-              <h1 className="flex items-center justify-center gap-2 text-base font-semibold md:text-3xl">
+              <h1 className="flex items-center gap-2 text-base font-semibold md:text-3xl">
                 <span className="text-[#098AD2] text-xl md:text-5xl font-bold my-0">
                   5{" "}
                 </span>
@@ -68,7 +68,7 @@ function ProjectMap() {
             </div>
           </div>
           <div className="mt-10">
-            <h1 className="flex items-center justify-center gap-2 text-base font-semibold md:text-3xl">
+            <h1 className="flex items-center gap-2 text-base font-semibold md:text-3xl">
                 <span className="text-[#098AD2] text-xl md:text-5xl font-bold my-0">
                   12{" "}
                 </span>

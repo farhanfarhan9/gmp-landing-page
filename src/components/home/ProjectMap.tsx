@@ -31,7 +31,7 @@ function ProjectMap() {
                 </span>
                 {Translator.t("headquarter", lang)}
               </h1>
-              <ul className="mt-2 ml-10">
+              <ul className="mt-2 ml-12">
                 <li className="text-base font-medium text-blue-500 list-disc">
                   <p className="text-sm text-black md:text-base">Medan</p>
                 </li>
@@ -44,7 +44,7 @@ function ProjectMap() {
                 </span>
                 {Translator.t("branches", lang)}
               </h1>
-              <ul className="mt-2 ml-10">
+              <ul className="mt-2 ml-16">
                 <li className="text-base font-medium text-blue-500 list-disc">
                   <p className="text-sm text-black md:text-base">
                     Pematang Siantar
@@ -74,7 +74,7 @@ function ProjectMap() {
                 </span>
                 {Translator.t("stations", lang)}
               </h1>
-            <div className="grid grid-cols-2 gap-10 ml-10">
+            <div className="grid grid-cols-2 gap-10 ml-16">
               <ul className="mt-2 ml-2 space-y-2">
                 {[
                   "Langkat",

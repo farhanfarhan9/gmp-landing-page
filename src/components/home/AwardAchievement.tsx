@@ -9,7 +9,7 @@ function AwardAchievement() {
   const lang = searchParams.get("lang") || undefined;
   const [activeservice, setactiveservice] = useState(0);
   return (
-    <div className="py-10 mt-10 space-y-10 md:mx-auto md:max-w-7xl" id="awards">
+    <div className="relative z-10 py-10 mt-10 space-y-10 md:mx-auto md:max-w-7xl" id="awards">
       <div className="text-xl md:text-4xl font-semibold text-[#098AD2] text-center">
         {Translator.t("award", lang)}
       </div>

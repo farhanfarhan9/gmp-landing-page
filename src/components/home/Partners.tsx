@@ -202,19 +202,20 @@ function Partners() {
                         height={20}
                     />
                     <Image
-                        src={"/img/home/partners/customers4.png"}
-                        className="object-scale-down mx-auto my-auto w-fit"
-                        alt=""
-                        width={20}
-                        height={20}
-                    />
-                    <Image
                         src={"/img/home/partners/customers5.png"}
                         className="object-scale-down mx-auto my-auto w-fit"
                         alt=""
                         width={20}
                         height={20}
                     />
+                    <Image
+                        src={"/img/home/partners/customers4.png"}
+                        className="object-scale-down mx-auto my-auto w-fit"
+                        alt=""
+                        width={20}
+                        height={20}
+                    />
+                    
                     <Image
                         src={"/img/home/partners/customers6.png"}
                         className="object-scale-down mx-auto my-auto w-fit"

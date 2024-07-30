@@ -179,7 +179,7 @@ function Partners() {
                     {Translator.t('customer', lang)}
                 </div>
                 <div
-                    className="grid w-full grid-cols-3 gap-5 px-2 my-auto mt-5 text-center md:gap-3 md:grid-cols-7 content-evenly">
+                    className="grid w-full grid-cols-3 gap-10 px-2 my-auto mt-5 text-center md:gap-10 md:grid-cols-7 content-evenly">
                     <Image
                         src={"/img/home/partners/customers1.png"}
                         className="object-scale-down mx-auto my-auto w-fit"
@@ -202,20 +202,19 @@ function Partners() {
                         height={20}
                     />
                     <Image
-                        src={"/img/home/partners/customers5.png"}
-                        className="object-scale-down mx-auto my-auto w-fit"
-                        alt=""
-                        width={20}
-                        height={20}
-                    />
-                    <Image
                         src={"/img/home/partners/customers4.png"}
                         className="object-scale-down mx-auto my-auto w-fit"
                         alt=""
                         width={20}
                         height={20}
                     />
-                    
+                    <Image
+                        src={"/img/home/partners/customers5.png"}
+                        className="object-scale-down mx-auto my-auto w-fit"
+                        alt=""
+                        width={20}
+                        height={20}
+                    />
                     <Image
                         src={"/img/home/partners/customers6.png"}
                         className="object-scale-down mx-auto my-auto w-fit"
@@ -232,7 +231,7 @@ function Partners() {
                     />
                 </div>
                 <p
-                    className="text-center text-[#098AD2] text-lg flex justify-center "
+                    className="text-center text-[#098AD2] text-lg flex justify-center mt-6"
                 >
                     {Translator.t('and-more', lang)}
                 </p>
